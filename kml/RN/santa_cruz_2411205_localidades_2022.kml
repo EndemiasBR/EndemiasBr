@@ -1,0 +1,633 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<kml xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:atom="http://www.w3.org/2005/Atom" xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+<name>santa_cruz_2411205_localidades_2022</name>
+<visibility>1</visibility>
+<Schema name="Povoados" id="kml_schema_ft_Povoados">
+<SimpleField type="xsd:string" name="CD_UF">
+<displayName>CD_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_UF">
+<displayName>NM_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="SIGLA_UF">
+<displayName>SIGLA_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_MUN">
+<displayName>CD_MUN</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_MUN">
+<displayName>NM_MUN</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_RGINT">
+<displayName>CD_RGINT</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_RGINT">
+<displayName>NM_RGINT</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_RGI">
+<displayName>CD_RGI</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_RGI">
+<displayName>NM_RGI</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CT_LOCALIDADE">
+<displayName>CT_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_LOCALIDADE">
+<displayName>CD_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_LOCALIDADE">
+<displayName>NM_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="LAT_LOCALIDADE">
+<displayName>LAT_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="LONG_LOCALIDADE">
+<displayName>LONG_LOCALIDADE</displayName>
+</SimpleField>
+</Schema>
+<Schema name="Localidades" id="kml_schema_ft_Localidades">
+<SimpleField type="xsd:string" name="CD_UF">
+<displayName>CD_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_UF">
+<displayName>NM_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="SIGLA_UF">
+<displayName>SIGLA_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_MUN">
+<displayName>CD_MUN</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_MUN">
+<displayName>NM_MUN</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_RGINT">
+<displayName>CD_RGINT</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_RGINT">
+<displayName>NM_RGINT</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_RGI">
+<displayName>CD_RGI</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_RGI">
+<displayName>NM_RGI</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CT_LOCALIDADE">
+<displayName>CT_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="SCT_LOCALIDADE">
+<displayName>SCT_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_LOCALIDADE">
+<displayName>CD_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_LOCALIDADE">
+<displayName>NM_LOCALIDADE</displayName>
+</SimpleField>
+</Schema>
+<Schema name="01. Cidade" id="kml_schema_ft_01._Cidade">
+<SimpleField type="xsd:string" name="CD_UF">
+<displayName>CD_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_UF">
+<displayName>NM_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="SIGLA_UF">
+<displayName>SIGLA_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_MUN">
+<displayName>CD_MUN</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_MUN">
+<displayName>NM_MUN</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_RGINT">
+<displayName>CD_RGINT</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_RGINT">
+<displayName>NM_RGINT</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_RGI">
+<displayName>CD_RGI</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_RGI">
+<displayName>NM_RGI</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CT_LOCALIDADE">
+<displayName>CT_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="SCT_LOCALIDADE">
+<displayName>SCT_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_LOCALIDADE">
+<displayName>CD_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_LOCALIDADE">
+<displayName>NM_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="LAT_LOCALIDADE">
+<displayName>LAT_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="LONG_LOCALIDADE">
+<displayName>LONG_LOCALIDADE</displayName>
+</SimpleField>
+</Schema>
+<Schema name="Município" id="kml_schema_ft_Município">
+<SimpleField type="xsd:string" name="CD_UF">
+<displayName>CD_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_UF">
+<displayName>NM_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_MUN">
+<displayName>CD_MUN</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_MUN">
+<displayName>NM_MUN</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_RGINT">
+<displayName>CD_RGINT</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_RGINT">
+<displayName>NM_RGINT</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_RGI">
+<displayName>CD_RGI</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_RGI">
+<displayName>NM_RGI</displayName>
+</SimpleField>
+</Schema>
+<Folder id="01. Cidade">
+<name>01. Cidade</name>
+<Folder id="01.03. Sede Municipal">
+<name>01.03. Sede Municipal</name>
+<Placemark id="01.03. Sede Municipal">
+<name>Santa Cruz [2411205]</name>
+<visibility>1</visibility>
+<snippet> </snippet>
+<description>&lt;center&gt;&lt;table&gt;&lt;tr&gt;&lt;th colspan='2' align='center'&gt;&lt;em&gt;Atributos&lt;/em&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_UF&lt;/th&gt;
+&lt;td&gt;24&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_UF&lt;/th&gt;
+&lt;td&gt;Rio Grande do Norte&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;SIGLA_UF&lt;/th&gt;
+&lt;td&gt;RN&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_MUN&lt;/th&gt;
+&lt;td&gt;2411205&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_MUN&lt;/th&gt;
+&lt;td&gt;Santa Cruz&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGINT&lt;/th&gt;
+&lt;td&gt;2401&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGINT&lt;/th&gt;
+&lt;td&gt;Natal&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGI&lt;/th&gt;
+&lt;td&gt;240004&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGI&lt;/th&gt;
+&lt;td&gt;Santa Cruz&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Cidade&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;SCT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Sede Municipal&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;2411205&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Santa Cruz&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;LAT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;-6.2298&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;LONG_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;-36.0195&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;&lt;/center&gt;</description>
+<Style>
+<IconStyle>
+<color>ff00aaff</color>
+<scale>1.0</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<scale>1.0</scale>
+</LabelStyle>
+<LineStyle>
+<color>ffffffff</color>
+<width>3</width>
+<gx:labelVisibility>1</gx:labelVisibility>
+</LineStyle>
+<PolyStyle>
+<color>00ffffff</color>
+</PolyStyle>
+</Style>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_01._Cidade">
+<SimpleData name="CD_UF">24</SimpleData>
+<SimpleData name="NM_UF">Rio Grande do Norte</SimpleData>
+<SimpleData name="SIGLA_UF">RN</SimpleData>
+<SimpleData name="CD_MUN">2411205</SimpleData>
+<SimpleData name="NM_MUN">Santa Cruz</SimpleData>
+<SimpleData name="CD_RGINT">2401</SimpleData>
+<SimpleData name="NM_RGINT">Natal</SimpleData>
+<SimpleData name="CD_RGI">240004</SimpleData>
+<SimpleData name="NM_RGI">Santa Cruz</SimpleData>
+<SimpleData name="CT_LOCALIDADE">Cidade</SimpleData>
+<SimpleData name="SCT_LOCALIDADE">Sede Municipal</SimpleData>
+<SimpleData name="CD_LOCALIDADE">2411205</SimpleData>
+<SimpleData name="NM_LOCALIDADE">Santa Cruz</SimpleData>
+<SimpleData name="LAT_LOCALIDADE">-6.2298</SimpleData>
+<SimpleData name="LONG_LOCALIDADE">-36.0195</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<extrude>0</extrude>
+<coordinates>-36.0195,-6.22979999979562,0.0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+</Folder>
+<Folder id="06. Povoados">
+<name>06. Povoados</name>
+<Placemark id="06. Povoados">
+<name>Bom Sucesso [241120500001]</name>
+<visibility>1</visibility>
+<snippet> </snippet>
+<description>&lt;center&gt;&lt;table&gt;&lt;tr&gt;&lt;th colspan='2' align='center'&gt;&lt;em&gt;Atributos&lt;/em&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_UF&lt;/th&gt;
+&lt;td&gt;24&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_UF&lt;/th&gt;
+&lt;td&gt;Rio Grande do Norte&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;SIGLA_UF&lt;/th&gt;
+&lt;td&gt;RN&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_MUN&lt;/th&gt;
+&lt;td&gt;2411205&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_MUN&lt;/th&gt;
+&lt;td&gt;Santa Cruz&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGINT&lt;/th&gt;
+&lt;td&gt;2401&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGINT&lt;/th&gt;
+&lt;td&gt;Natal&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGI&lt;/th&gt;
+&lt;td&gt;240004&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGI&lt;/th&gt;
+&lt;td&gt;Santa Cruz&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Povoado&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;241120500001&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Bom Sucesso&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;LAT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;-6.3444&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;LONG_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;-35.9494&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;&lt;/center&gt;</description>
+<Style>
+<IconStyle>
+<color>ff00ff54</color>
+<scale>0.8</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<scale>0.8</scale>
+</LabelStyle>
+<LineStyle>
+<color>72ff54ff</color>
+<width>1.0</width>
+<gx:labelVisibility>1</gx:labelVisibility>
+</LineStyle>
+<PolyStyle>
+<color>66ff54ff</color>
+</PolyStyle>
+</Style>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_Povoados">
+<SimpleData name="CD_UF">24</SimpleData>
+<SimpleData name="NM_UF">Rio Grande do Norte</SimpleData>
+<SimpleData name="SIGLA_UF">RN</SimpleData>
+<SimpleData name="CD_MUN">2411205</SimpleData>
+<SimpleData name="NM_MUN">Santa Cruz</SimpleData>
+<SimpleData name="CD_RGINT">2401</SimpleData>
+<SimpleData name="NM_RGINT">Natal</SimpleData>
+<SimpleData name="CD_RGI">240004</SimpleData>
+<SimpleData name="NM_RGI">Santa Cruz</SimpleData>
+<SimpleData name="CT_LOCALIDADE">Povoado</SimpleData>
+<SimpleData name="CD_LOCALIDADE">241120500001</SimpleData>
+<SimpleData name="NM_LOCALIDADE">Bom Sucesso</SimpleData>
+<SimpleData name="LAT_LOCALIDADE">-6.3444</SimpleData>
+<SimpleData name="LONG_LOCALIDADE">-35.9494</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<extrude>0</extrude>
+<coordinates>-35.9494003813559,-6.34443416928345,0.0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Folder id="10. Localidades Quilombolas">
+<name>10. Localidades Quilombolas</name>
+<visibility>1</visibility>
+<Style>
+<IconStyle>
+<color>ffffa0ef</color>
+<scale>0.8</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<scale>0.8</scale>
+</LabelStyle>
+<LineStyle>
+<width>1.0</width>
+<gx:labelVisibility>1</gx:labelVisibility>
+</LineStyle>
+</Style>
+<Folder id="10.02. Outras Localidades Quilombolas">
+<name>10.02. Outras Localidades Quilombolas</name>
+<visibility>1</visibility>
+<Style>
+<IconStyle>
+<color>ffffa0ef</color>
+<scale>0.8</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<scale>0.8</scale>
+</LabelStyle>
+<LineStyle>
+<width>1.0</width>
+<gx:labelVisibility>1</gx:labelVisibility>
+</LineStyle>
+</Style>
+<Placemark id="10.02. Outras Localidades Quilombolas">
+<name>Comunidade Quilombola Gameleira [241120500002]</name>
+<visibility>1</visibility>
+<snippet> </snippet>
+<description>&lt;center&gt;&lt;table&gt;&lt;tr&gt;&lt;th colspan='2' align='center'&gt;&lt;em&gt;Attributes&lt;/em&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_UF&lt;/th&gt;
+&lt;td&gt;24&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_UF&lt;/th&gt;
+&lt;td&gt;Rio Grande do Norte&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;SIGLA_UF&lt;/th&gt;
+&lt;td&gt;RN&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_MUN&lt;/th&gt;
+&lt;td&gt;2411205&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_MUN&lt;/th&gt;
+&lt;td&gt;Santa Cruz&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGINT&lt;/th&gt;
+&lt;td&gt;2401&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGINT&lt;/th&gt;
+&lt;td&gt;Natal&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGI&lt;/th&gt;
+&lt;td&gt;240004&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGI&lt;/th&gt;
+&lt;td&gt;Santa Cruz&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Localidade Quilombola&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;SCT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Outras Localidades Quilombolas&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;241120500002&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Comunidade Quilombola Gameleira&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;&lt;/center&gt;</description>
+<Style>
+<IconStyle>
+<color>ffffa0ef</color>
+<scale>0.8</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<scale>0.8</scale>
+</LabelStyle>
+<LineStyle>
+<width>1.0</width>
+<gx:labelVisibility>1</gx:labelVisibility>
+</LineStyle>
+</Style>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_Localidades">
+<SimpleData name="CD_UF">24</SimpleData>
+<SimpleData name="NM_UF">Rio Grande do Norte</SimpleData>
+<SimpleData name="SIGLA_UF">RN</SimpleData>
+<SimpleData name="CD_MUN">2411205</SimpleData>
+<SimpleData name="NM_MUN">Santa Cruz</SimpleData>
+<SimpleData name="CD_RGINT">2401</SimpleData>
+<SimpleData name="NM_RGINT">Natal</SimpleData>
+<SimpleData name="CD_RGI">240004</SimpleData>
+<SimpleData name="NM_RGI">Santa Cruz</SimpleData>
+<SimpleData name="CT_LOCALIDADE">Localidade Quilombola</SimpleData>
+<SimpleData name="SCT_LOCALIDADE">Outras Localidades Quilombolas</SimpleData>
+<SimpleData name="CD_LOCALIDADE">241120500002</SimpleData>
+<SimpleData name="NM_LOCALIDADE">Comunidade Quilombola Gameleira</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<extrude>0</extrude>
+<coordinates>-36.0695512644,-6.10020026364981,0.0</coordinates>
+</Point>
+</Placemark>
+<Placemark id="10.02. Outras Localidades Quilombolas">
+<name>Comunidade Quilombola Santa Cruz [241120500003]</name>
+<visibility>1</visibility>
+<snippet> </snippet>
+<description>&lt;center&gt;&lt;table&gt;&lt;tr&gt;&lt;th colspan='2' align='center'&gt;&lt;em&gt;Attributes&lt;/em&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_UF&lt;/th&gt;
+&lt;td&gt;24&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_UF&lt;/th&gt;
+&lt;td&gt;Rio Grande do Norte&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;SIGLA_UF&lt;/th&gt;
+&lt;td&gt;RN&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_MUN&lt;/th&gt;
+&lt;td&gt;2411205&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_MUN&lt;/th&gt;
+&lt;td&gt;Santa Cruz&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGINT&lt;/th&gt;
+&lt;td&gt;2401&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGINT&lt;/th&gt;
+&lt;td&gt;Natal&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGI&lt;/th&gt;
+&lt;td&gt;240004&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGI&lt;/th&gt;
+&lt;td&gt;Santa Cruz&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Localidade Quilombola&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;SCT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Outras Localidades Quilombolas&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;241120500003&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Comunidade Quilombola Santa Cruz&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;&lt;/center&gt;</description>
+<Style>
+<IconStyle>
+<color>ffffa0ef</color>
+<scale>0.8</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<scale>0.8</scale>
+</LabelStyle>
+<LineStyle>
+<width>1.0</width>
+<gx:labelVisibility>1</gx:labelVisibility>
+</LineStyle>
+</Style>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_Localidades">
+<SimpleData name="CD_UF">24</SimpleData>
+<SimpleData name="NM_UF">Rio Grande do Norte</SimpleData>
+<SimpleData name="SIGLA_UF">RN</SimpleData>
+<SimpleData name="CD_MUN">2411205</SimpleData>
+<SimpleData name="NM_MUN">Santa Cruz</SimpleData>
+<SimpleData name="CD_RGINT">2401</SimpleData>
+<SimpleData name="NM_RGINT">Natal</SimpleData>
+<SimpleData name="CD_RGI">240004</SimpleData>
+<SimpleData name="NM_RGI">Santa Cruz</SimpleData>
+<SimpleData name="CT_LOCALIDADE">Localidade Quilombola</SimpleData>
+<SimpleData name="SCT_LOCALIDADE">Outras Localidades Quilombolas</SimpleData>
+<SimpleData name="CD_LOCALIDADE">241120500003</SimpleData>
+<SimpleData name="NM_LOCALIDADE">Comunidade Quilombola Santa Cruz</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<extrude>0</extrude>
+<coordinates>-36.0676451956,-6.09860502751986,0.0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+</Folder>
+<Folder id="13. Referência">
+<name>13. Referência</name>
+<Placemark id="13. Referência">
+<name>Santa Cruz [2411205]</name>
+<visibility>1</visibility>
+<snippet> </snippet>
+<description>&lt;center&gt;&lt;table&gt;&lt;tr&gt;&lt;th colspan='2' align='center'&gt;&lt;em&gt;Attributes&lt;/em&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_UF&lt;/th&gt;
+&lt;td&gt;24&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_UF&lt;/th&gt;
+&lt;td&gt;Rio Grande do Norte&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_MUN&lt;/th&gt;
+&lt;td&gt;2411205&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_MUN&lt;/th&gt;
+&lt;td&gt;Santa Cruz&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_RGINT&lt;/th&gt;
+&lt;td&gt;2401&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_RGINT&lt;/th&gt;
+&lt;td&gt;Natal&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_RGI&lt;/th&gt;
+&lt;td&gt;240004&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_RGI&lt;/th&gt;
+&lt;td&gt;Santa Cruz&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;&lt;/center&gt;</description>
+<Style>
+<IconStyle>
+<scale>0.7</scale>
+</IconStyle>
+<LabelStyle>
+<scale>0.7</scale>
+</LabelStyle>
+<LineStyle>
+<color>ffffffff</color>
+<width>3</width>
+<gx:labelVisibility>1</gx:labelVisibility>
+</LineStyle>
+<PolyStyle>
+<color>00ffffff</color>
+</PolyStyle>
+</Style>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_Município">
+<SimpleData name="CD_UF">24</SimpleData>
+<SimpleData name="NM_UF">Rio Grande do Norte</SimpleData>
+<SimpleData name="CD_MUN">2411205</SimpleData>
+<SimpleData name="NM_MUN">Santa Cruz</SimpleData>
+<SimpleData name="CD_RGINT">2401</SimpleData>
+<SimpleData name="NM_RGINT">Natal</SimpleData>
+<SimpleData name="CD_RGI">240004</SimpleData>
+<SimpleData name="NM_RGI">Santa Cruz</SimpleData>
+</SchemaData>
+</ExtendedData>
+<MultiGeometry>
+<Polygon>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>-36.0338229,-6.29932059979338,0.0 -36.035094,-6.29940549979338,0.0 -36.0370218,-6.30147269979331,0.0 -36.0386654,-6.30156029979331,0.0 -36.0397544,-6.30259579979327,0.0 -36.0419405,-6.30339829979325,0.0 -36.0427868,-6.30261169979327,0.0 -36.0438458,-6.30041909979334,0.0 -36.0466348,-6.30018279979335,0.0 -36.0472208,-6.30089649979333,0.0 -36.0455228,-6.30318289979325,0.0 -36.0454725,-6.30444509979321,0.0 -36.0468134,-6.30587629979317,0.0 -36.0489176,-6.30707369979313,0.0 -36.0513194,-6.30661429979314,0.0 -36.0526645,-6.30678009979314,0.0 -36.0549286,-6.30892749979307,0.0 -36.0561106,-6.30861779979308,0.0 -36.056412,-6.30721119979312,0.0 -36.058096,-6.30623639979316,0.0 -36.0592857,-6.30578879979317,0.0 -36.0615591,-6.30611879979316,0.0 -36.0639686,-6.30447239979321,0.0 -36.0659878,-6.30503559979319,0.0 -36.0673492,-6.30354539979324,0.0 -36.0686569,-6.30259959979327,0.0 -36.0706814,-6.30237429979328,0.0 -36.0721081,-6.30309579979326,0.0 -36.0736172,-6.30460509979321,0.0 -36.0747996,-6.3049225997932,0.0 -36.0762676,-6.30361089979324,0.0 -36.0772878,-6.30352959979325,0.0 -36.0784651,-6.30416959979322,0.0 -36.0799317,-6.30583029979317,0.0 -36.0823289,-6.30608829979316,0.0 -36.0828455,-6.30702329979313,0.0 -36.1198972,-6.32390459979259,0.0 -36.1199303,-6.32391969979259,0.0 -36.1218576,-6.32574949979253,0.0 -36.1242593,-6.32735939979248,0.0 -36.1250789,-6.32760719979247,0.0 -36.1260105,-6.32727099979248,0.0 -36.1262023,-6.32500149979255,0.0 -36.12675,-6.32419349979258,0.0 -36.1290987,-6.32309169979261,0.0 -36.1298367,-6.3234213997926,0.0 -36.1328959,-6.3265345997925,0.0 -36.1394372,-6.3297630997924,0.0 -36.1537636,-6.29983659979336,0.0 -36.1535422,-6.29980599979336,0.0 -36.1485721,-6.27736949979409,0.0 -36.1409641,-6.2430490997952,0.0 -36.1406401,-6.24158749979524,0.0 -36.1337594,-6.21057279979624,0.0 -36.0778611,-6.19614579979671,0.0 -36.0766678,-6.1684745997976,0.0 -36.0770446,-6.16269149979779,0.0 -36.0798348,-6.11986859979917,0.0 -36.0803515,-6.10201289979975,0.0 -36.071872,-6.1004323997998,0.0 -36.0692762,-6.09860809979986,0.0 -36.0677407,-6.09696939979991,0.0 -36.0658286,-6.09379099980002,0.0 -36.0625698,-6.09023949980013,0.0 -36.0609776,-6.08906489980017,0.0 -36.0497186,-6.08535659980029,0.0 -36.0488131,-6.08471709980031,0.0 -36.0475244,-6.08273369980037,0.0 -36.0451567,-6.08002679980046,0.0 -36.0442724,-6.07951059980048,0.0 -36.0436291,-6.07896479980049,0.0 -36.0423734,-6.07789949980053,0.0 -36.0412633,-6.07660919980057,0.0 -36.0398869,-6.07544259980061,0.0 -36.0358979,-6.0726008998007,0.0 -36.0345694,-6.07135389980074,0.0 -36.031832,-6.06938939980081,0.0 -36.0295372,-6.0693883998008,0.0 -36.0284119,-6.0693863998008,0.0 -36.0274228,-6.07026759980077,0.0 -36.0257826,-6.0725297998007,0.0 -36.0247364,-6.07365159980066,0.0 -36.0227345,-6.07507079980062,0.0 -36.0193277,-6.07663169980057,0.0 -36.0183826,-6.07741249980054,0.0 -36.0167903,-6.07927579980048,0.0 -36.0137829,-6.08228429980039,0.0 -36.0071048,-6.08773849980021,0.0 -36.0057159,-6.08867659980018,0.0 -36.0047191,-6.08866989980018,0.0 -36.0009792,-6.08666239980024,0.0 -35.9995215,-6.08631329980026,0.0 -35.9980209,-6.08657869980025,0.0 -35.9960716,-6.0881206998002,0.0 -35.9938901,-6.09180869980008,0.0 -35.9915384,-6.0942699998,0.0 -35.9906095,-6.09573059979995,0.0 -35.9895545,-6.09665509979992,0.0 -35.9871948,-6.09758709979989,0.0 -35.9864623,-6.09828039979987,0.0 -35.9864408,-6.10118239979977,0.0 -35.9865597,-6.10139599979977,0.0 -35.9875925,-6.10325159979971,0.0 -35.9876141,-6.10715529979958,0.0 -35.9862091,-6.11114449979946,0.0 -35.9845041,-6.11245599979941,0.0 -35.9829654,-6.11460749979934,0.0 -35.980939,-6.12426799979903,0.0 -35.9812426,-6.12755809979893,0.0 -35.9828309,-6.1344403997987,0.0 -35.985342,-6.13856099979857,0.0 -35.9869961,-6.14291549979843,0.0 -35.9868839,-6.14421919979839,0.0 -35.98656,-6.14521609979835,0.0 -35.9853036,-6.14661669979831,0.0 -35.9846962,-6.14729309979829,0.0 -35.9823296,-6.14874599979824,0.0 -35.9815639,-6.14838249979825,0.0 -35.9804128,-6.1469355997983,0.0 -35.9798402,-6.14655589979831,0.0 -35.9787027,-6.14770929979828,0.0 -35.9761817,-6.14887169979824,0.0 -35.9743471,-6.14888349979824,0.0 -35.9723222,-6.14950559979821,0.0 -35.9714403,-6.14962379979821,0.0 -35.9707597,-6.14928289979822,0.0 -35.9703475,-6.14821499979826,0.0 -35.9697313,-6.14753039979828,0.0 -35.9690775,-6.14730499979829,0.0 -35.9667969,-6.14815689979826,0.0 -35.9653335,-6.14900829979823,0.0 -35.9644306,-6.14809459979826,0.0 -35.9633272,-6.14756419979828,0.0 -35.9622703,-6.14787769979827,0.0 -35.9617011,-6.14857069979825,0.0 -35.9624161,-6.15238929979812,0.0 -35.9621729,-6.15277899979811,0.0 -35.9601856,-6.1531245997981,0.0 -35.9600144,-6.15328759979809,0.0 -35.9594068,-6.15386599979807,0.0 -35.9595756,-6.15501389979804,0.0 -35.9608843,-6.15561829979802,0.0 -35.9624351,-6.15576309979801,0.0 -35.9640246,-6.15559959979802,0.0 -35.9662327,-6.156181099798,0.0 -35.967292,-6.15665329979798,0.0 -35.9677065,-6.15741769979796,0.0 -35.9681869,-6.15961299979789,0.0 -35.9678719,-6.1653800997977,0.0 -35.9675525,-6.16683739979766,0.0 -35.9680237,-6.17058539979753,0.0 -35.9677023,-6.17142869979751,0.0 -35.9668886,-6.17181719979749,0.0 -35.9646027,-6.1716002997975,0.0 -35.9585998,-6.17017769979755,0.0 -35.9536666,-6.17058829979754,0.0 -35.9492602,-6.17015369979755,0.0 -35.9427944,-6.16674439979766,0.0 -35.9405479,-6.16591579979769,0.0 -35.9390794,-6.16569329979769,0.0 -35.937351,-6.16576679979769,0.0 -35.9315119,-6.16827399979761,0.0 -35.9306064,-6.16813349979761,0.0 -35.9295232,-6.1654517997977,0.0 -35.9283735,-6.16441209979773,0.0 -35.927503,-6.16407449979775,0.0 -35.9253265,-6.16400929979775,0.0 -35.9182066,-6.16278959979779,0.0 -35.9175273,-6.16267189979779,0.0 -35.9111582,-6.18987259979691,0.0 -35.8939132,-6.26340379979454,0.0 -35.8869705,-6.29296279979358,0.0 -35.8802204,-6.32168069979266,0.0 -35.8705459,-6.36278219979133,0.0 -35.8749231,-6.36098489979139,0.0 -35.8782943,-6.36017349979142,0.0 -35.8823905,-6.35664269979153,0.0 -35.8837957,-6.35597329979155,0.0 -35.8863595,-6.35582789979156,0.0 -35.8879979,-6.35521189979158,0.0 -35.8921523,-6.35289379979165,0.0 -35.8929681,-6.35259349979166,0.0 -35.8994463,-6.35216629979168,0.0 -35.9002691,-6.35222139979168,0.0 -35.9029363,-6.35309119979165,0.0 -35.9053394,-6.35248769979167,0.0 -35.907198,-6.35260909979166,0.0 -35.9087609,-6.35543879979157,0.0 -35.9092678,-6.35800479979149,0.0 -35.9100859,-6.35866569979147,0.0 -35.9119992,-6.35905279979145,0.0 -35.9149328,-6.35998749979142,0.0 -35.9187113,-6.36119129979138,0.0 -35.919795,-6.36243699979135,0.0 -35.9209546,-6.36606209979123,0.0 -35.9215464,-6.36672929979121,0.0 -35.9250127,-6.36821489979116,0.0 -35.9270776,-6.37289029979101,0.0 -35.9282791,-6.37347789979099,0.0 -35.9346472,-6.37410259979097,0.0 -35.9375431,-6.37507959979094,0.0 -35.9445616,-6.37880159979082,0.0 -35.9484785,-6.3825348997907,0.0 -35.9556555,-6.38355319979066,0.0 -35.9585183,-6.38472239979063,0.0 -35.9619474,-6.38793689979052,0.0 -35.9650148,-6.38780139979053,0.0 -35.9652351,-6.42664019978927,0.0 -35.9654865,-6.47097199978784,0.0 -35.9682279,-6.46397009978807,0.0 -35.9887447,-6.41010269978981,0.0 -35.997485,-6.39034099979045,0.0 -36.0154697,-6.3453144997919,0.0 -36.0338229,-6.29932059979338,0.0</coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</MultiGeometry>
+</Placemark>
+</Folder>
+</Document></kml>

@@ -1,0 +1,967 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<kml xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:atom="http://www.w3.org/2005/Atom" xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+<name>satuba_2708907_localidades_2022</name>
+<visibility>1</visibility>
+<Schema name="Povoados" id="kml_schema_ft_Povoados">
+<SimpleField type="xsd:string" name="CD_UF">
+<displayName>CD_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_UF">
+<displayName>NM_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="SIGLA_UF">
+<displayName>SIGLA_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_MUN">
+<displayName>CD_MUN</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_MUN">
+<displayName>NM_MUN</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_RGINT">
+<displayName>CD_RGINT</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_RGINT">
+<displayName>NM_RGINT</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_RGI">
+<displayName>CD_RGI</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_RGI">
+<displayName>NM_RGI</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CT_LOCALIDADE">
+<displayName>CT_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_LOCALIDADE">
+<displayName>CD_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_LOCALIDADE">
+<displayName>NM_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="LAT_LOCALIDADE">
+<displayName>LAT_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="LONG_LOCALIDADE">
+<displayName>LONG_LOCALIDADE</displayName>
+</SimpleField>
+</Schema>
+<Schema name="Núcleos Rurais" id="kml_schema_ft_Núcleos_Rurais">
+<SimpleField type="xsd:string" name="CD_UF">
+<displayName>CD_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_UF">
+<displayName>NM_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="SIGLA_UF">
+<displayName>SIGLA_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_MUN">
+<displayName>CD_MUN</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_MUN">
+<displayName>NM_MUN</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_RGINT">
+<displayName>CD_RGINT</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_RGINT">
+<displayName>NM_RGINT</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_RGI">
+<displayName>CD_RGI</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_RGI">
+<displayName>NM_RGI</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CT_LOCALIDADE">
+<displayName>CT_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_LOCALIDADE">
+<displayName>CD_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_LOCALIDADE">
+<displayName>NM_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="LAT_LOCALIDADE">
+<displayName>LAT_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="LONG_LOCALIDADE">
+<displayName>LONG_LOCALIDADE</displayName>
+</SimpleField>
+</Schema>
+<Schema name="Localidades" id="kml_schema_ft_Localidades">
+<SimpleField type="xsd:string" name="CD_UF">
+<displayName>CD_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_UF">
+<displayName>NM_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="SIGLA_UF">
+<displayName>SIGLA_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_MUN">
+<displayName>CD_MUN</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_MUN">
+<displayName>NM_MUN</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_RGINT">
+<displayName>CD_RGINT</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_RGINT">
+<displayName>NM_RGINT</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_RGI">
+<displayName>CD_RGI</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_RGI">
+<displayName>NM_RGI</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CT_LOCALIDADE">
+<displayName>CT_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="SCT_LOCALIDADE">
+<displayName>SCT_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_LOCALIDADE">
+<displayName>CD_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_LOCALIDADE">
+<displayName>NM_LOCALIDADE</displayName>
+</SimpleField>
+</Schema>
+<Schema name="Núcleos Urbanos" id="kml_schema_ft_Núcleos_Urbanos">
+<SimpleField type="xsd:string" name="CD_UF">
+<displayName>CD_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_UF">
+<displayName>NM_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="SIGLA_UF">
+<displayName>SIGLA_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_MUN">
+<displayName>CD_MUN</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_MUN">
+<displayName>NM_MUN</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_RGINT">
+<displayName>CD_RGINT</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_RGINT">
+<displayName>NM_RGINT</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_RGI">
+<displayName>CD_RGI</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_RGI">
+<displayName>NM_RGI</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CT_LOCALIDADE">
+<displayName>CT_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_LOCALIDADE">
+<displayName>CD_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_LOCALIDADE">
+<displayName>NM_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="LAT_LOCALIDADE">
+<displayName>LAT_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="LONG_LOCALIDADE">
+<displayName>LONG_LOCALIDADE</displayName>
+</SimpleField>
+</Schema>
+<Schema name="01. Cidade" id="kml_schema_ft_01._Cidade">
+<SimpleField type="xsd:string" name="CD_UF">
+<displayName>CD_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_UF">
+<displayName>NM_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="SIGLA_UF">
+<displayName>SIGLA_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_MUN">
+<displayName>CD_MUN</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_MUN">
+<displayName>NM_MUN</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_RGINT">
+<displayName>CD_RGINT</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_RGINT">
+<displayName>NM_RGINT</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_RGI">
+<displayName>CD_RGI</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_RGI">
+<displayName>NM_RGI</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CT_LOCALIDADE">
+<displayName>CT_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="SCT_LOCALIDADE">
+<displayName>SCT_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_LOCALIDADE">
+<displayName>CD_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_LOCALIDADE">
+<displayName>NM_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="LAT_LOCALIDADE">
+<displayName>LAT_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="LONG_LOCALIDADE">
+<displayName>LONG_LOCALIDADE</displayName>
+</SimpleField>
+</Schema>
+<Schema name="Município" id="kml_schema_ft_Município">
+<SimpleField type="xsd:string" name="CD_UF">
+<displayName>CD_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_UF">
+<displayName>NM_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_MUN">
+<displayName>CD_MUN</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_MUN">
+<displayName>NM_MUN</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_RGINT">
+<displayName>CD_RGINT</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_RGINT">
+<displayName>NM_RGINT</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_RGI">
+<displayName>CD_RGI</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_RGI">
+<displayName>NM_RGI</displayName>
+</SimpleField>
+</Schema>
+<Folder id="01. Cidade">
+<name>01. Cidade</name>
+<Folder id="01.03. Sede Municipal">
+<name>01.03. Sede Municipal</name>
+<Placemark id="01.03. Sede Municipal">
+<name>Satuba [2708907]</name>
+<visibility>1</visibility>
+<snippet> </snippet>
+<description>&lt;center&gt;&lt;table&gt;&lt;tr&gt;&lt;th colspan='2' align='center'&gt;&lt;em&gt;Atributos&lt;/em&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_UF&lt;/th&gt;
+&lt;td&gt;27&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_UF&lt;/th&gt;
+&lt;td&gt;Alagoas&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;SIGLA_UF&lt;/th&gt;
+&lt;td&gt;AL&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_MUN&lt;/th&gt;
+&lt;td&gt;2708907&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_MUN&lt;/th&gt;
+&lt;td&gt;Satuba&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGINT&lt;/th&gt;
+&lt;td&gt;2701&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGINT&lt;/th&gt;
+&lt;td&gt;Maceió&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGI&lt;/th&gt;
+&lt;td&gt;270001&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGI&lt;/th&gt;
+&lt;td&gt;Maceió&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Cidade&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;SCT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Sede Municipal&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;2708907&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Satuba&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;LAT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;-9.5726&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;LONG_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;-35.8256&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;&lt;/center&gt;</description>
+<Style>
+<IconStyle>
+<color>ff00aaff</color>
+<scale>1.0</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<scale>1.0</scale>
+</LabelStyle>
+<LineStyle>
+<color>ffffffff</color>
+<width>3</width>
+<gx:labelVisibility>1</gx:labelVisibility>
+</LineStyle>
+<PolyStyle>
+<color>00ffffff</color>
+</PolyStyle>
+</Style>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_01._Cidade">
+<SimpleData name="CD_UF">27</SimpleData>
+<SimpleData name="NM_UF">Alagoas</SimpleData>
+<SimpleData name="SIGLA_UF">AL</SimpleData>
+<SimpleData name="CD_MUN">2708907</SimpleData>
+<SimpleData name="NM_MUN">Satuba</SimpleData>
+<SimpleData name="CD_RGINT">2701</SimpleData>
+<SimpleData name="NM_RGINT">Maceió</SimpleData>
+<SimpleData name="CD_RGI">270001</SimpleData>
+<SimpleData name="NM_RGI">Maceió</SimpleData>
+<SimpleData name="CT_LOCALIDADE">Cidade</SimpleData>
+<SimpleData name="SCT_LOCALIDADE">Sede Municipal</SimpleData>
+<SimpleData name="CD_LOCALIDADE">2708907</SimpleData>
+<SimpleData name="NM_LOCALIDADE">Satuba</SimpleData>
+<SimpleData name="LAT_LOCALIDADE">-9.5726</SimpleData>
+<SimpleData name="LONG_LOCALIDADE">-35.8256</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<extrude>0</extrude>
+<coordinates>-35.825616,-9.57256999968941,0.0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+</Folder>
+<Folder id="05. Núcleos Urbanos">
+<name>05. Núcleos Urbanos</name>
+<Placemark id="localidades">
+<name>Rio Novo [2708907011]</name>
+<visibility>1</visibility>
+<snippet> </snippet>
+<description>&lt;center&gt;&lt;table&gt;&lt;tr&gt;&lt;th colspan='2' align='center'&gt;&lt;em&gt;Attributes&lt;/em&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_UF&lt;/th&gt;
+&lt;td&gt;27&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_UF&lt;/th&gt;
+&lt;td&gt;Alagoas&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;SIGLA_UF&lt;/th&gt;
+&lt;td&gt;AL&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_MUN&lt;/th&gt;
+&lt;td&gt;2708907&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_MUN&lt;/th&gt;
+&lt;td&gt;Satuba&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGINT&lt;/th&gt;
+&lt;td&gt;2701&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGINT&lt;/th&gt;
+&lt;td&gt;Maceió&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGI&lt;/th&gt;
+&lt;td&gt;270001&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGI&lt;/th&gt;
+&lt;td&gt;Maceió&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Núcleo Urbano&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;2708907011&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Rio Novo&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;LAT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;-9.5743&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;LONG_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;-35.8125&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;&lt;/center&gt;</description>
+<Style>
+<IconStyle>
+<color>ff0000ff</color>
+<scale>0.9</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<scale>0.9</scale>
+</LabelStyle>
+<LineStyle>
+<color>72ffffff</color>
+<width>1.0</width>
+<gx:labelVisibility>1</gx:labelVisibility>
+</LineStyle>
+<PolyStyle>
+<color>66ff54ff</color>
+</PolyStyle>
+</Style>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_Núcleos_Urbanos">
+<SimpleData name="CD_UF">27</SimpleData>
+<SimpleData name="NM_UF">Alagoas</SimpleData>
+<SimpleData name="SIGLA_UF">AL</SimpleData>
+<SimpleData name="CD_MUN">2708907</SimpleData>
+<SimpleData name="NM_MUN">Satuba</SimpleData>
+<SimpleData name="CD_RGINT">2701</SimpleData>
+<SimpleData name="NM_RGINT">Maceió</SimpleData>
+<SimpleData name="CD_RGI">270001</SimpleData>
+<SimpleData name="NM_RGI">Maceió</SimpleData>
+<SimpleData name="CT_LOCALIDADE">Núcleo Urbano</SimpleData>
+<SimpleData name="CD_LOCALIDADE">2708907011</SimpleData>
+<SimpleData name="NM_LOCALIDADE">Rio Novo</SimpleData>
+<SimpleData name="LAT_LOCALIDADE">-9.5743</SimpleData>
+<SimpleData name="LONG_LOCALIDADE">-35.8125</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<extrude>0</extrude>
+<coordinates>-35.8124597813455,-9.57430844770157,0.0</coordinates>
+</Point>
+</Placemark>
+<Placemark id="localidades">
+<name>Conjunto Luiz Gonzaga [2708907012]</name>
+<visibility>1</visibility>
+<snippet> </snippet>
+<description>&lt;center&gt;&lt;table&gt;&lt;tr&gt;&lt;th colspan='2' align='center'&gt;&lt;em&gt;Attributes&lt;/em&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_UF&lt;/th&gt;
+&lt;td&gt;27&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_UF&lt;/th&gt;
+&lt;td&gt;Alagoas&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;SIGLA_UF&lt;/th&gt;
+&lt;td&gt;AL&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_MUN&lt;/th&gt;
+&lt;td&gt;2708907&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_MUN&lt;/th&gt;
+&lt;td&gt;Satuba&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGINT&lt;/th&gt;
+&lt;td&gt;2701&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGINT&lt;/th&gt;
+&lt;td&gt;Maceió&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGI&lt;/th&gt;
+&lt;td&gt;270001&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGI&lt;/th&gt;
+&lt;td&gt;Maceió&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Núcleo Urbano&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;2708907012&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Conjunto Luiz Gonzaga&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;LAT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;-9.588&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;LONG_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;-35.8722&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;&lt;/center&gt;</description>
+<Style>
+<IconStyle>
+<color>ff0000ff</color>
+<scale>0.9</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<scale>0.9</scale>
+</LabelStyle>
+<LineStyle>
+<color>72ffffff</color>
+<width>1.0</width>
+<gx:labelVisibility>1</gx:labelVisibility>
+</LineStyle>
+<PolyStyle>
+<color>66ff54ff</color>
+</PolyStyle>
+</Style>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_Núcleos_Urbanos">
+<SimpleData name="CD_UF">27</SimpleData>
+<SimpleData name="NM_UF">Alagoas</SimpleData>
+<SimpleData name="SIGLA_UF">AL</SimpleData>
+<SimpleData name="CD_MUN">2708907</SimpleData>
+<SimpleData name="NM_MUN">Satuba</SimpleData>
+<SimpleData name="CD_RGINT">2701</SimpleData>
+<SimpleData name="NM_RGINT">Maceió</SimpleData>
+<SimpleData name="CD_RGI">270001</SimpleData>
+<SimpleData name="NM_RGI">Maceió</SimpleData>
+<SimpleData name="CT_LOCALIDADE">Núcleo Urbano</SimpleData>
+<SimpleData name="CD_LOCALIDADE">2708907012</SimpleData>
+<SimpleData name="NM_LOCALIDADE">Conjunto Luiz Gonzaga</SimpleData>
+<SimpleData name="LAT_LOCALIDADE">-9.588</SimpleData>
+<SimpleData name="LONG_LOCALIDADE">-35.8722</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<extrude>0</extrude>
+<coordinates>-35.8722392083333,-9.58801065593893,0.0</coordinates>
+</Point>
+</Placemark>
+<Placemark id="localidades">
+<name>Portal dos Gregórios [2708907013]</name>
+<visibility>1</visibility>
+<snippet> </snippet>
+<description>&lt;center&gt;&lt;table&gt;&lt;tr&gt;&lt;th colspan='2' align='center'&gt;&lt;em&gt;Attributes&lt;/em&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_UF&lt;/th&gt;
+&lt;td&gt;27&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_UF&lt;/th&gt;
+&lt;td&gt;Alagoas&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;SIGLA_UF&lt;/th&gt;
+&lt;td&gt;AL&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_MUN&lt;/th&gt;
+&lt;td&gt;2708907&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_MUN&lt;/th&gt;
+&lt;td&gt;Satuba&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGINT&lt;/th&gt;
+&lt;td&gt;2701&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGINT&lt;/th&gt;
+&lt;td&gt;Maceió&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGI&lt;/th&gt;
+&lt;td&gt;270001&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGI&lt;/th&gt;
+&lt;td&gt;Maceió&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Núcleo Urbano&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;2708907013&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Portal dos Gregórios&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;LAT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;-9.5965&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;LONG_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;-35.867&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;&lt;/center&gt;</description>
+<Style>
+<IconStyle>
+<color>ff0000ff</color>
+<scale>0.9</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<scale>0.9</scale>
+</LabelStyle>
+<LineStyle>
+<color>72ffffff</color>
+<width>1.0</width>
+<gx:labelVisibility>1</gx:labelVisibility>
+</LineStyle>
+<PolyStyle>
+<color>66ff54ff</color>
+</PolyStyle>
+</Style>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_Núcleos_Urbanos">
+<SimpleData name="CD_UF">27</SimpleData>
+<SimpleData name="NM_UF">Alagoas</SimpleData>
+<SimpleData name="SIGLA_UF">AL</SimpleData>
+<SimpleData name="CD_MUN">2708907</SimpleData>
+<SimpleData name="NM_MUN">Satuba</SimpleData>
+<SimpleData name="CD_RGINT">2701</SimpleData>
+<SimpleData name="NM_RGINT">Maceió</SimpleData>
+<SimpleData name="CD_RGI">270001</SimpleData>
+<SimpleData name="NM_RGI">Maceió</SimpleData>
+<SimpleData name="CT_LOCALIDADE">Núcleo Urbano</SimpleData>
+<SimpleData name="CD_LOCALIDADE">2708907013</SimpleData>
+<SimpleData name="NM_LOCALIDADE">Portal dos Gregórios</SimpleData>
+<SimpleData name="LAT_LOCALIDADE">-9.5965</SimpleData>
+<SimpleData name="LONG_LOCALIDADE">-35.867</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<extrude>0</extrude>
+<coordinates>-35.8669632571428,-9.59654200826007,0.0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Folder id="06. Povoados">
+<name>06. Povoados</name>
+<Placemark id="06. Povoados">
+<name>Santa Apolônia [270890700003]</name>
+<visibility>1</visibility>
+<snippet> </snippet>
+<description>&lt;center&gt;&lt;table&gt;&lt;tr&gt;&lt;th colspan='2' align='center'&gt;&lt;em&gt;Atributos&lt;/em&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_UF&lt;/th&gt;
+&lt;td&gt;27&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_UF&lt;/th&gt;
+&lt;td&gt;Alagoas&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;SIGLA_UF&lt;/th&gt;
+&lt;td&gt;AL&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_MUN&lt;/th&gt;
+&lt;td&gt;2708907&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_MUN&lt;/th&gt;
+&lt;td&gt;Satuba&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGINT&lt;/th&gt;
+&lt;td&gt;2701&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGINT&lt;/th&gt;
+&lt;td&gt;Maceió&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGI&lt;/th&gt;
+&lt;td&gt;270001&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGI&lt;/th&gt;
+&lt;td&gt;Maceió&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Povoado&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;270890700003&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Santa Apolônia&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;LAT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;-9.5626&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;LONG_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;-35.8569&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;&lt;/center&gt;</description>
+<Style>
+<IconStyle>
+<color>ff00ff54</color>
+<scale>0.8</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<scale>0.8</scale>
+</LabelStyle>
+<LineStyle>
+<color>72ff54ff</color>
+<width>1.0</width>
+<gx:labelVisibility>1</gx:labelVisibility>
+</LineStyle>
+<PolyStyle>
+<color>66ff54ff</color>
+</PolyStyle>
+</Style>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_Povoados">
+<SimpleData name="CD_UF">27</SimpleData>
+<SimpleData name="NM_UF">Alagoas</SimpleData>
+<SimpleData name="SIGLA_UF">AL</SimpleData>
+<SimpleData name="CD_MUN">2708907</SimpleData>
+<SimpleData name="NM_MUN">Satuba</SimpleData>
+<SimpleData name="CD_RGINT">2701</SimpleData>
+<SimpleData name="NM_RGINT">Maceió</SimpleData>
+<SimpleData name="CD_RGI">270001</SimpleData>
+<SimpleData name="NM_RGI">Maceió</SimpleData>
+<SimpleData name="CT_LOCALIDADE">Povoado</SimpleData>
+<SimpleData name="CD_LOCALIDADE">270890700003</SimpleData>
+<SimpleData name="NM_LOCALIDADE">Santa Apolônia</SimpleData>
+<SimpleData name="LAT_LOCALIDADE">-9.5626</SimpleData>
+<SimpleData name="LONG_LOCALIDADE">-35.8569</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<extrude>0</extrude>
+<coordinates>-35.8568576108538,-9.56264754813099,0.0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Folder id="07. Núcleos Rurais">
+<name>07. Núcleos Rurais</name>
+<Placemark id="localidades">
+<name>Fazenda Primavera [270890700001]</name>
+<visibility>1</visibility>
+<snippet> </snippet>
+<description>&lt;center&gt;&lt;table&gt;&lt;tr&gt;&lt;th colspan='2' align='center'&gt;&lt;em&gt;Attributes&lt;/em&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_UF&lt;/th&gt;
+&lt;td&gt;27&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_UF&lt;/th&gt;
+&lt;td&gt;Alagoas&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;SIGLA_UF&lt;/th&gt;
+&lt;td&gt;AL&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_MUN&lt;/th&gt;
+&lt;td&gt;2708907&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_MUN&lt;/th&gt;
+&lt;td&gt;Satuba&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGINT&lt;/th&gt;
+&lt;td&gt;2701&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGINT&lt;/th&gt;
+&lt;td&gt;Maceió&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGI&lt;/th&gt;
+&lt;td&gt;270001&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGI&lt;/th&gt;
+&lt;td&gt;Maceió&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Núcleo Rural&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;270890700001&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Fazenda Primavera&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;LAT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;-9.5883&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;LONG_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;-35.8752&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;&lt;/center&gt;</description>
+<Style>
+<IconStyle>
+<color>ff00aaaa</color>
+<scale>0.8</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<scale>0.8</scale>
+</LabelStyle>
+<LineStyle>
+<color>72ff54ff</color>
+<width>1.0</width>
+<gx:labelVisibility>1</gx:labelVisibility>
+</LineStyle>
+<PolyStyle>
+<color>66ff54ff</color>
+</PolyStyle>
+</Style>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_Núcleos_Rurais">
+<SimpleData name="CD_UF">27</SimpleData>
+<SimpleData name="NM_UF">Alagoas</SimpleData>
+<SimpleData name="SIGLA_UF">AL</SimpleData>
+<SimpleData name="CD_MUN">2708907</SimpleData>
+<SimpleData name="NM_MUN">Satuba</SimpleData>
+<SimpleData name="CD_RGINT">2701</SimpleData>
+<SimpleData name="NM_RGINT">Maceió</SimpleData>
+<SimpleData name="CD_RGI">270001</SimpleData>
+<SimpleData name="NM_RGI">Maceió</SimpleData>
+<SimpleData name="CT_LOCALIDADE">Núcleo Rural</SimpleData>
+<SimpleData name="CD_LOCALIDADE">270890700001</SimpleData>
+<SimpleData name="NM_LOCALIDADE">Fazenda Primavera</SimpleData>
+<SimpleData name="LAT_LOCALIDADE">-9.5883</SimpleData>
+<SimpleData name="LONG_LOCALIDADE">-35.8752</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<extrude>0</extrude>
+<coordinates>-35.8751821329114,-9.58833263892941,0.0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Folder id="12. Outras Localidades">
+<name>12. Outras Localidades</name>
+<Placemark id="12. Outras Localidades">
+<name>Serra Verde [270890700004]</name>
+<visibility>1</visibility>
+<snippet> </snippet>
+<description>&lt;center&gt;&lt;table&gt;&lt;tr&gt;&lt;th colspan='2' align='center'&gt;&lt;em&gt;Attributes&lt;/em&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_UF&lt;/th&gt;
+&lt;td&gt;27&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_UF&lt;/th&gt;
+&lt;td&gt;Alagoas&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;SIGLA_UF&lt;/th&gt;
+&lt;td&gt;AL&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_MUN&lt;/th&gt;
+&lt;td&gt;2708907&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_MUN&lt;/th&gt;
+&lt;td&gt;Satuba&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGINT&lt;/th&gt;
+&lt;td&gt;2701&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGINT&lt;/th&gt;
+&lt;td&gt;Maceió&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGI&lt;/th&gt;
+&lt;td&gt;270001&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGI&lt;/th&gt;
+&lt;td&gt;Maceió&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Outras Localidades&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;SCT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;270890700004&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Serra Verde&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;&lt;/center&gt;</description>
+<Style>
+<IconStyle>
+<color>ff0069d3</color>
+<scale>0.6</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<scale>0.6</scale>
+</LabelStyle>
+<LineStyle>
+<width>1.0</width>
+<gx:labelVisibility>1</gx:labelVisibility>
+</LineStyle>
+</Style>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_Localidades">
+<SimpleData name="CD_UF">27</SimpleData>
+<SimpleData name="NM_UF">Alagoas</SimpleData>
+<SimpleData name="SIGLA_UF">AL</SimpleData>
+<SimpleData name="CD_MUN">2708907</SimpleData>
+<SimpleData name="NM_MUN">Satuba</SimpleData>
+<SimpleData name="CD_RGINT">2701</SimpleData>
+<SimpleData name="NM_RGINT">Maceió</SimpleData>
+<SimpleData name="CD_RGI">270001</SimpleData>
+<SimpleData name="NM_RGI">Maceió</SimpleData>
+<SimpleData name="CT_LOCALIDADE">Outras Localidades</SimpleData>
+<SimpleData name="CD_LOCALIDADE">270890700004</SimpleData>
+<SimpleData name="NM_LOCALIDADE">Serra Verde</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<extrude>0</extrude>
+<coordinates>-35.8557417,-9.58640129968897,0.0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Folder id="13. Referência">
+<name>13. Referência</name>
+<Placemark id="13. Referência">
+<name>Satuba [2708907]</name>
+<visibility>1</visibility>
+<snippet> </snippet>
+<description>&lt;center&gt;&lt;table&gt;&lt;tr&gt;&lt;th colspan='2' align='center'&gt;&lt;em&gt;Attributes&lt;/em&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_UF&lt;/th&gt;
+&lt;td&gt;27&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_UF&lt;/th&gt;
+&lt;td&gt;Alagoas&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_MUN&lt;/th&gt;
+&lt;td&gt;2708907&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_MUN&lt;/th&gt;
+&lt;td&gt;Satuba&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_RGINT&lt;/th&gt;
+&lt;td&gt;2701&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_RGINT&lt;/th&gt;
+&lt;td&gt;Maceió&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_RGI&lt;/th&gt;
+&lt;td&gt;270001&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_RGI&lt;/th&gt;
+&lt;td&gt;Maceió&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;&lt;/center&gt;</description>
+<Style>
+<IconStyle>
+<scale>0.7</scale>
+</IconStyle>
+<LabelStyle>
+<scale>0.7</scale>
+</LabelStyle>
+<LineStyle>
+<color>ffffffff</color>
+<width>3</width>
+<gx:labelVisibility>1</gx:labelVisibility>
+</LineStyle>
+<PolyStyle>
+<color>00ffffff</color>
+</PolyStyle>
+</Style>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_Município">
+<SimpleData name="CD_UF">27</SimpleData>
+<SimpleData name="NM_UF">Alagoas</SimpleData>
+<SimpleData name="CD_MUN">2708907</SimpleData>
+<SimpleData name="NM_MUN">Satuba</SimpleData>
+<SimpleData name="CD_RGINT">2701</SimpleData>
+<SimpleData name="NM_RGINT">Maceió</SimpleData>
+<SimpleData name="CD_RGI">270001</SimpleData>
+<SimpleData name="NM_RGI">Maceió</SimpleData>
+</SchemaData>
+</ExtendedData>
+<MultiGeometry>
+<Polygon>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>-35.8101549,-9.5693741996895,0.0 -35.8105412,-9.57046109968947,0.0 -35.8109218,-9.57153199968944,0.0 -35.8119003,-9.57428549968935,0.0 -35.8119008,-9.57428699968935,0.0 -35.8122109,-9.57515939968933,0.0 -35.8122322,-9.57521939968932,0.0 -35.8123052,-9.57542489968931,0.0 -35.812742,-9.57665389968928,0.0 -35.8137437,-9.57947259968919,0.0 -35.8143532,-9.58000529968917,0.0 -35.8143548,-9.58000669968917,0.0 -35.8143815,-9.58001559968917,0.0 -35.8144421,-9.58000619968917,0.0 -35.8146144,-9.57995819968917,0.0 -35.8148158,-9.57991779968917,0.0 -35.8149899,-9.57991409968917,0.0 -35.8150133,-9.57991239968918,0.0 -35.8154679,-9.57987909968918,0.0 -35.8156603,-9.57988949968918,0.0 -35.8157463,-9.57994149968918,0.0 -35.8158543,-9.58004819968917,0.0 -35.8159155,-9.58016819968917,0.0 -35.8159463,-9.58029079968916,0.0 -35.8160102,-9.58038299968916,0.0 -35.8160932,-9.58047279968916,0.0 -35.8160966,-9.58047659968916,0.0 -35.8162255,-9.58059599968916,0.0 -35.8163414,-9.58066969968916,0.0 -35.8164961,-9.58068649968915,0.0 -35.8166437,-9.58067809968915,0.0 -35.8167705,-9.58064239968916,0.0 -35.8168441,-9.58062169968916,0.0 -35.8169081,-9.58057369968916,0.0 -35.8169113,-9.58057129968916,0.0 -35.817066,-9.58036499968917,0.0 -35.8171544,-9.58025099968917,0.0 -35.8173192,-9.58014899968917,0.0 -35.8173215,-9.58014799968917,0.0 -35.8175375,-9.58004819968917,0.0 -35.8176992,-9.58002309968917,0.0 -35.8178627,-9.58003859968917,0.0 -35.818081,-9.58011899968917,0.0 -35.8180909,-9.58012439968917,0.0 -35.818142,-9.58015239968917,0.0 -35.8181446,-9.58015379968917,0.0 -35.8182115,-9.58019349968917,0.0 -35.8182622,-9.58018139968917,0.0 -35.8182994,-9.58015139968917,0.0 -35.8183454,-9.58006759968917,0.0 -35.8187337,-9.57858279968922,0.0 -35.8223276,-9.57839099968922,0.0 -35.8235558,-9.57831769968923,0.0 -35.8254348,-9.57844239968922,0.0 -35.8254957,-9.57844649968922,0.0 -35.8257381,-9.5823714996891,0.0 -35.8262656,-9.5824946996891,0.0 -35.8263121,-9.58250549968909,0.0 -35.8288025,-9.58308729968908,0.0 -35.8302046,-9.58515389968901,0.0 -35.8315769,-9.58717659968895,0.0 -35.8324483,-9.58846099968891,0.0 -35.8333845,-9.58984079968887,0.0 -35.8340288,-9.59079059968884,0.0 -35.8347823,-9.5919011996888,0.0 -35.835583,-9.59308129968877,0.0 -35.8363119,-9.59415569968873,0.0 -35.8373863,-9.59573939968868,0.0 -35.8385585,-9.59746709968863,0.0 -35.8394899,-9.59883989968858,0.0 -35.8395756,-9.59896619968858,0.0 -35.8400182,-9.59962809968856,0.0 -35.8401533,-9.59983009968856,0.0 -35.840587,-9.60049209968854,0.0 -35.8408658,-9.60089409968852,0.0 -35.8410078,-9.60110069968852,0.0 -35.8413701,-9.6016325996885,0.0 -35.8415033,-9.60183009968849,0.0 -35.8418113,-9.60228949968848,0.0 -35.8424437,-9.60325019968845,0.0 -35.8425949,-9.60347349968844,0.0 -35.8427028,-9.60362819968844,0.0 -35.8432526,-9.60441659968841,0.0 -35.8433638,-9.60452079968841,0.0 -35.8433408,-9.60454649968841,0.0 -35.8454244,-9.60674689968834,0.0 -35.8454834,-9.60678619968834,0.0 -35.8455145,-9.60680689968834,0.0 -35.8455734,-9.60679389968834,0.0 -35.8455749,-9.60679399968834,0.0 -35.8464815,-9.60688049968834,0.0 -35.8464949,-9.60688179968833,0.0 -35.846999,-9.60694429968833,0.0 -35.8470186,-9.60694679968833,0.0 -35.8471848,-9.60696169968833,0.0 -35.8474633,-9.60698669968833,0.0 -35.847802,-9.60702279968833,0.0 -35.847811,-9.60702359968833,0.0 -35.8478511,-9.60702719968833,0.0 -35.8481003,-9.60704969968833,0.0 -35.8485155,-9.60710369968833,0.0 -35.8489316,-9.60711339968833,0.0 -35.8495833,-9.60717109968833,0.0 -35.849858,-9.60719529968833,0.0 -35.8498695,-9.60719639968833,0.0 -35.8501295,-9.60723619968832,0.0 -35.8501689,-9.60724229968832,0.0 -35.8502718,-9.60726289968832,0.0 -35.8506319,-9.60734869968832,0.0 -35.8514477,-9.60754319968832,0.0 -35.8517649,-9.60774299968831,0.0 -35.8516127,-9.60824749968829,0.0 -35.851551,-9.60836649968829,0.0 -35.8513527,-9.60874949968828,0.0 -35.8512952,-9.60885039968827,0.0 -35.8512938,-9.60885269968828,0.0 -35.8510979,-9.60919599968826,0.0 -35.8510949,-9.60920129968827,0.0 -35.8509406,-9.60959769968825,0.0 -35.8506796,-9.61006799968824,0.0 -35.8506766,-9.61007579968824,0.0 -35.850638,-9.61017679968823,0.0 -35.850538,-9.61046479968822,0.0 -35.8504243,-9.61079219968821,0.0 -35.8502959,-9.6111620996882,0.0 -35.8502911,-9.6111748996882,0.0 -35.8501697,-9.61150349968819,0.0 -35.8500546,-9.61173649968818,0.0 -35.850043,-9.61175769968818,0.0 -35.8497099,-9.61236739968817,0.0 -35.8498491,-9.61253299968816,0.0 -35.8499407,-9.61263609968816,0.0 -35.8500288,-9.61266049968816,0.0 -35.8500896,-9.61268909968816,0.0 -35.8501845,-9.61268729968815,0.0 -35.85033,-9.61271339968816,0.0 -35.8504696,-9.61267179968815,0.0 -35.8505441,-9.61257909968816,0.0 -35.8506369,-9.61232929968817,0.0 -35.8508291,-9.61194739968817,0.0 -35.8508507,-9.61190439968818,0.0 -35.8508714,-9.61186339968818,0.0 -35.8509389,-9.61173329968818,0.0 -35.8509696,-9.61167439968818,0.0 -35.8511807,-9.6112679996882,0.0 -35.8514001,-9.6111943996882,0.0 -35.851496,-9.61100459968821,0.0 -35.8515516,-9.61088219968821,0.0 -35.8516108,-9.61074039968821,0.0 -35.851633,-9.61056769968822,0.0 -35.8516254,-9.61046049968822,0.0 -35.8516862,-9.61028489968823,0.0 -35.8517444,-9.61015329968823,0.0 -35.8518742,-9.61001119968824,0.0 -35.8518974,-9.60998569968824,0.0 -35.8521456,-9.60979039968824,0.0 -35.8523938,-9.60959509968825,0.0 -35.8524824,-9.60957729968825,0.0 -35.8528524,-9.60943519968825,0.0 -35.8528722,-9.60943509968826,0.0 -35.8532396,-9.60943299968825,0.0 -35.8534099,-9.60945419968826,0.0 -35.8535158,-9.60947339968825,0.0 -35.8536691,-9.60951109968826,0.0 -35.8538431,-9.60955789968825,0.0 -35.8540171,-9.60960479968825,0.0 -35.85408,-9.60962819968825,0.0 -35.8541428,-9.60965159968825,0.0 -35.854358,-9.60973179968825,0.0 -35.8545922,-9.60984309968825,0.0 -35.8547577,-9.60997359968824,0.0 -35.854906,-9.61011109968823,0.0 -35.8549527,-9.61015809968823,0.0 -35.8550635,-9.61026979968823,0.0 -35.8551146,-9.61033049968823,0.0 -35.8551399,-9.61036049968823,0.0 -35.8551964,-9.61045189968822,0.0 -35.8554002,-9.61097449968821,0.0 -35.8554364,-9.61101279968821,0.0 -35.8554795,-9.61107829968821,0.0 -35.8555096,-9.6111568996882,0.0 -35.8555171,-9.6111999996882,0.0 -35.8557227,-9.61260239968816,0.0 -35.8557437,-9.61274569968815,0.0 -35.8560757,-9.61515629968808,0.0 -35.8561413,-9.61563289968806,0.0 -35.8584951,-9.61781369968799,0.0 -35.8587268,-9.61802839968799,0.0 -35.8590972,-9.61836609968798,0.0 -35.8608474,-9.61996199968793,0.0 -35.8608779,-9.61998979968793,0.0 -35.8615732,-9.6207704996879,0.0 -35.8620177,-9.62114749968789,0.0 -35.8623457,-9.62132819968789,0.0 -35.8623513,-9.62133339968788,0.0 -35.8630172,-9.62194059968787,0.0 -35.8632701,-9.62215749968786,0.0 -35.8633006,-9.62218699968786,0.0 -35.8644919,-9.62333829968782,0.0 -35.8645081,-9.62335299968782,0.0 -35.8653255,-9.6240938996878,0.0 -35.867507,-9.62616559968773,0.0 -35.8675095,-9.62616799968773,0.0 -35.8676422,-9.62629399968773,0.0 -35.8676564,-9.62625429968773,0.0 -35.867735,-9.62603439968774,0.0 -35.8681129,-9.62539099968776,0.0 -35.8681144,-9.62538809968776,0.0 -35.8692097,-9.62328669968782,0.0 -35.8693299,-9.62306189968783,0.0 -35.869342,-9.62303929968783,0.0 -35.8701755,-9.62152279968788,0.0 -35.8703151,-9.62126869968789,0.0 -35.8703293,-9.62124279968789,0.0 -35.8704133,-9.62108249968789,0.0 -35.8704287,-9.62104959968789,0.0 -35.8706168,-9.62064599968791,0.0 -35.8708076,-9.62029379968791,0.0 -35.8709905,-9.61995779968793,0.0 -35.8710568,-9.61983589968793,0.0 -35.8733668,-9.61559249968806,0.0 -35.8762863,-9.61036739968823,0.0 -35.8768198,-9.60966569968825,0.0 -35.8769119,-9.60933799968826,0.0 -35.8771459,-9.60778889968831,0.0 -35.878017,-9.60125649968851,0.0 -35.8780952,-9.60067019968853,0.0 -35.8807478,-9.60097809968852,0.0 -35.8821449,-9.60114039968852,0.0 -35.882228,-9.60114999968851,0.0 -35.8843248,-9.59600219968867,0.0 -35.8872426,-9.5888385996889,0.0 -35.8696222,-9.57137499968945,0.0 -35.8622313,-9.56407509968967,0.0 -35.8579302,-9.5598268996898,0.0 -35.8578549,-9.5597525996898,0.0 -35.8463394,-9.54837889969016,0.0 -35.8273002,-9.5503832996901,0.0 -35.8171169,-9.54410689969029,0.0 -35.8171074,-9.54410109969029,0.0 -35.8163576,-9.54363889969031,0.0 -35.8163131,-9.54361149969031,0.0 -35.8160179,-9.54342959969032,0.0 -35.8159316,-9.54337639969031,0.0 -35.8156966,-9.54323149969032,0.0 -35.8156522,-9.54320419969032,0.0 -35.8153761,-9.54303399969033,0.0 -35.8153318,-9.54300669969033,0.0 -35.8150442,-9.54282939969033,0.0 -35.8149995,-9.54280189969034,0.0 -35.8147241,-9.54263209969034,0.0 -35.8146797,-9.54260469969034,0.0 -35.8146323,-9.54257549969034,0.0 -35.8145922,-9.54255079969035,0.0 -35.81459,-9.54254949969034,0.0 -35.8130996,-9.54163079969037,0.0 -35.8130777,-9.54161739969037,0.0 -35.8130575,-9.54160489969037,0.0 -35.8129806,-9.54155749969037,0.0 -35.8129359,-9.54152999969038,0.0 -35.8126582,-9.54135879969038,0.0 -35.8126139,-9.54133149969038,0.0 -35.8123364,-9.54116049969039,0.0 -35.812292,-9.54113309969039,0.0 -35.812014,-9.54096169969039,0.0 -35.8119694,-9.54093429969039,0.0 -35.8116949,-9.5407650996904,0.0 -35.811652,-9.5407385996904,0.0 -35.8113673,-9.5405631996904,0.0 -35.8113227,-9.5405356996904,0.0 -35.8110472,-9.54036589969041,0.0 -35.8110135,-9.54034509969041,0.0 -35.8110026,-9.54033839969041,0.0 -35.8107268,-9.54016839969042,0.0 -35.8106816,-9.54014059969042,0.0 -35.8103548,-9.53993909969043,0.0 -35.8102533,-9.53987659969043,0.0 -35.8088791,-9.53902959969045,0.0 -35.8087898,-9.53897459969046,0.0 -35.8087095,-9.53892509969046,0.0 -35.8051924,-9.53675729969052,0.0 -35.8041602,-9.53612109969055,0.0 -35.8038046,-9.53590199969055,0.0 -35.8037687,-9.53587979969055,0.0 -35.8012115,-9.5343036996906,0.0 -35.801188,-9.5342892996906,0.0 -35.8010212,-9.5341863996906,0.0 -35.7981909,-9.53244199969066,0.0 -35.797173,-9.53181459969068,0.0 -35.7970213,-9.53172109969068,0.0 -35.7967038,-9.53152549969069,0.0 -35.7978772,-9.53482689969058,0.0 -35.7980733,-9.53537879969057,0.0 -35.798088,-9.53542039969056,0.0 -35.7980931,-9.53543469969056,0.0 -35.7981111,-9.53548509969056,0.0 -35.798303,-9.53602529969054,0.0 -35.7986323,-9.53695189969051,0.0 -35.7988569,-9.5375835996905,0.0 -35.7988629,-9.53760059969049,0.0 -35.7991232,-9.53833309969047,0.0 -35.7995185,-9.53944539969044,0.0 -35.8020364,-9.54653019969022,0.0 -35.80368,-9.55115509969008,0.0 -35.805936,-9.55750309968988,0.0 -35.8098872,-9.56862099968953,0.0 -35.8101549,-9.5693741996895,0.0</coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</MultiGeometry>
+</Placemark>
+</Folder>
+</Document></kml>

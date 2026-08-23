@@ -1,0 +1,918 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<kml xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:atom="http://www.w3.org/2005/Atom" xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+<name>santa_luz_2209302_localidades_2022</name>
+<visibility>1</visibility>
+<Schema name="Povoados" id="kml_schema_ft_Povoados">
+<SimpleField type="xsd:string" name="CD_UF">
+<displayName>CD_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_UF">
+<displayName>NM_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="SIGLA_UF">
+<displayName>SIGLA_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_MUN">
+<displayName>CD_MUN</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_MUN">
+<displayName>NM_MUN</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_RGINT">
+<displayName>CD_RGINT</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_RGINT">
+<displayName>NM_RGINT</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_RGI">
+<displayName>CD_RGI</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_RGI">
+<displayName>NM_RGI</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CT_LOCALIDADE">
+<displayName>CT_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_LOCALIDADE">
+<displayName>CD_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_LOCALIDADE">
+<displayName>NM_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="LAT_LOCALIDADE">
+<displayName>LAT_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="LONG_LOCALIDADE">
+<displayName>LONG_LOCALIDADE</displayName>
+</SimpleField>
+</Schema>
+<Schema name="Localidades" id="kml_schema_ft_Localidades">
+<SimpleField type="xsd:string" name="CD_UF">
+<displayName>CD_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_UF">
+<displayName>NM_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="SIGLA_UF">
+<displayName>SIGLA_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_MUN">
+<displayName>CD_MUN</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_MUN">
+<displayName>NM_MUN</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_RGINT">
+<displayName>CD_RGINT</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_RGINT">
+<displayName>NM_RGINT</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_RGI">
+<displayName>CD_RGI</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_RGI">
+<displayName>NM_RGI</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CT_LOCALIDADE">
+<displayName>CT_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="SCT_LOCALIDADE">
+<displayName>SCT_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_LOCALIDADE">
+<displayName>CD_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_LOCALIDADE">
+<displayName>NM_LOCALIDADE</displayName>
+</SimpleField>
+</Schema>
+<Schema name="01. Cidade" id="kml_schema_ft_01._Cidade">
+<SimpleField type="xsd:string" name="CD_UF">
+<displayName>CD_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_UF">
+<displayName>NM_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="SIGLA_UF">
+<displayName>SIGLA_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_MUN">
+<displayName>CD_MUN</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_MUN">
+<displayName>NM_MUN</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_RGINT">
+<displayName>CD_RGINT</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_RGINT">
+<displayName>NM_RGINT</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_RGI">
+<displayName>CD_RGI</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_RGI">
+<displayName>NM_RGI</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CT_LOCALIDADE">
+<displayName>CT_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="SCT_LOCALIDADE">
+<displayName>SCT_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_LOCALIDADE">
+<displayName>CD_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_LOCALIDADE">
+<displayName>NM_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="LAT_LOCALIDADE">
+<displayName>LAT_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="LONG_LOCALIDADE">
+<displayName>LONG_LOCALIDADE</displayName>
+</SimpleField>
+</Schema>
+<Schema name="Município" id="kml_schema_ft_Município">
+<SimpleField type="xsd:string" name="CD_UF">
+<displayName>CD_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_UF">
+<displayName>NM_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_MUN">
+<displayName>CD_MUN</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_MUN">
+<displayName>NM_MUN</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_RGINT">
+<displayName>CD_RGINT</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_RGINT">
+<displayName>NM_RGINT</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_RGI">
+<displayName>CD_RGI</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_RGI">
+<displayName>NM_RGI</displayName>
+</SimpleField>
+</Schema>
+<Folder id="01. Cidade">
+<name>01. Cidade</name>
+<Folder id="01.03. Sede Municipal">
+<name>01.03. Sede Municipal</name>
+<Placemark id="01.03. Sede Municipal">
+<name>Santa Luz [2209302]</name>
+<visibility>1</visibility>
+<snippet> </snippet>
+<description>&lt;center&gt;&lt;table&gt;&lt;tr&gt;&lt;th colspan='2' align='center'&gt;&lt;em&gt;Atributos&lt;/em&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_UF&lt;/th&gt;
+&lt;td&gt;22&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_UF&lt;/th&gt;
+&lt;td&gt;Piauí&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;SIGLA_UF&lt;/th&gt;
+&lt;td&gt;PI&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_MUN&lt;/th&gt;
+&lt;td&gt;2209302&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_MUN&lt;/th&gt;
+&lt;td&gt;Santa Luz&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGINT&lt;/th&gt;
+&lt;td&gt;2205&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGINT&lt;/th&gt;
+&lt;td&gt;Corrente - Bom Jesus&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGI&lt;/th&gt;
+&lt;td&gt;220016&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGI&lt;/th&gt;
+&lt;td&gt;Bom Jesus&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Cidade&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;SCT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Sede Municipal&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;2209302&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Santa Luz&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;LAT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;-8.9502&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;LONG_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;-44.1315&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;&lt;/center&gt;</description>
+<Style>
+<IconStyle>
+<color>ff00aaff</color>
+<scale>1.0</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<scale>1.0</scale>
+</LabelStyle>
+<LineStyle>
+<color>ffffffff</color>
+<width>3</width>
+<gx:labelVisibility>1</gx:labelVisibility>
+</LineStyle>
+<PolyStyle>
+<color>00ffffff</color>
+</PolyStyle>
+</Style>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_01._Cidade">
+<SimpleData name="CD_UF">22</SimpleData>
+<SimpleData name="NM_UF">Piauí</SimpleData>
+<SimpleData name="SIGLA_UF">PI</SimpleData>
+<SimpleData name="CD_MUN">2209302</SimpleData>
+<SimpleData name="NM_MUN">Santa Luz</SimpleData>
+<SimpleData name="CD_RGINT">2205</SimpleData>
+<SimpleData name="NM_RGINT">Corrente - Bom Jesus</SimpleData>
+<SimpleData name="CD_RGI">220016</SimpleData>
+<SimpleData name="NM_RGI">Bom Jesus</SimpleData>
+<SimpleData name="CT_LOCALIDADE">Cidade</SimpleData>
+<SimpleData name="SCT_LOCALIDADE">Sede Municipal</SimpleData>
+<SimpleData name="CD_LOCALIDADE">2209302</SimpleData>
+<SimpleData name="NM_LOCALIDADE">Santa Luz</SimpleData>
+<SimpleData name="LAT_LOCALIDADE">-8.9502</SimpleData>
+<SimpleData name="LONG_LOCALIDADE">-44.1315</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<extrude>0</extrude>
+<coordinates>-44.1315,-8.9501999997089,0.0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+</Folder>
+<Folder id="06. Povoados">
+<name>06. Povoados</name>
+<Placemark id="06. Povoados">
+<name>Cajazeira [220930200001]</name>
+<visibility>1</visibility>
+<snippet> </snippet>
+<description>&lt;center&gt;&lt;table&gt;&lt;tr&gt;&lt;th colspan='2' align='center'&gt;&lt;em&gt;Atributos&lt;/em&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_UF&lt;/th&gt;
+&lt;td&gt;22&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_UF&lt;/th&gt;
+&lt;td&gt;Piauí&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;SIGLA_UF&lt;/th&gt;
+&lt;td&gt;PI&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_MUN&lt;/th&gt;
+&lt;td&gt;2209302&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_MUN&lt;/th&gt;
+&lt;td&gt;Santa Luz&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGINT&lt;/th&gt;
+&lt;td&gt;2205&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGINT&lt;/th&gt;
+&lt;td&gt;Corrente - Bom Jesus&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGI&lt;/th&gt;
+&lt;td&gt;220016&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGI&lt;/th&gt;
+&lt;td&gt;Bom Jesus&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Povoado&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;220930200001&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Cajazeira&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;LAT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;-8.9105&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;LONG_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;-44.247&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;&lt;/center&gt;</description>
+<Style>
+<IconStyle>
+<color>ff00ff54</color>
+<scale>0.8</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<scale>0.8</scale>
+</LabelStyle>
+<LineStyle>
+<color>72ff54ff</color>
+<width>1.0</width>
+<gx:labelVisibility>1</gx:labelVisibility>
+</LineStyle>
+<PolyStyle>
+<color>66ff54ff</color>
+</PolyStyle>
+</Style>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_Povoados">
+<SimpleData name="CD_UF">22</SimpleData>
+<SimpleData name="NM_UF">Piauí</SimpleData>
+<SimpleData name="SIGLA_UF">PI</SimpleData>
+<SimpleData name="CD_MUN">2209302</SimpleData>
+<SimpleData name="NM_MUN">Santa Luz</SimpleData>
+<SimpleData name="CD_RGINT">2205</SimpleData>
+<SimpleData name="NM_RGINT">Corrente - Bom Jesus</SimpleData>
+<SimpleData name="CD_RGI">220016</SimpleData>
+<SimpleData name="NM_RGI">Bom Jesus</SimpleData>
+<SimpleData name="CT_LOCALIDADE">Povoado</SimpleData>
+<SimpleData name="CD_LOCALIDADE">220930200001</SimpleData>
+<SimpleData name="NM_LOCALIDADE">Cajazeira</SimpleData>
+<SimpleData name="LAT_LOCALIDADE">-8.9105</SimpleData>
+<SimpleData name="LONG_LOCALIDADE">-44.247</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<extrude>0</extrude>
+<coordinates>-44.2469533459119,-8.91052020411267,0.0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Folder id="12. Outras Localidades">
+<name>12. Outras Localidades</name>
+<Placemark id="12. Outras Localidades">
+<name>Laranjeira [220930200002]</name>
+<visibility>1</visibility>
+<snippet> </snippet>
+<description>&lt;center&gt;&lt;table&gt;&lt;tr&gt;&lt;th colspan='2' align='center'&gt;&lt;em&gt;Attributes&lt;/em&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_UF&lt;/th&gt;
+&lt;td&gt;22&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_UF&lt;/th&gt;
+&lt;td&gt;Piauí&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;SIGLA_UF&lt;/th&gt;
+&lt;td&gt;PI&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_MUN&lt;/th&gt;
+&lt;td&gt;2209302&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_MUN&lt;/th&gt;
+&lt;td&gt;Santa Luz&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGINT&lt;/th&gt;
+&lt;td&gt;2205&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGINT&lt;/th&gt;
+&lt;td&gt;Corrente - Bom Jesus&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGI&lt;/th&gt;
+&lt;td&gt;220016&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGI&lt;/th&gt;
+&lt;td&gt;Bom Jesus&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Outras Localidades&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;SCT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;220930200002&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Laranjeira&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;&lt;/center&gt;</description>
+<Style>
+<IconStyle>
+<color>ff0069d3</color>
+<scale>0.6</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<scale>0.6</scale>
+</LabelStyle>
+<LineStyle>
+<width>1.0</width>
+<gx:labelVisibility>1</gx:labelVisibility>
+</LineStyle>
+</Style>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_Localidades">
+<SimpleData name="CD_UF">22</SimpleData>
+<SimpleData name="NM_UF">Piauí</SimpleData>
+<SimpleData name="SIGLA_UF">PI</SimpleData>
+<SimpleData name="CD_MUN">2209302</SimpleData>
+<SimpleData name="NM_MUN">Santa Luz</SimpleData>
+<SimpleData name="CD_RGINT">2205</SimpleData>
+<SimpleData name="NM_RGINT">Corrente - Bom Jesus</SimpleData>
+<SimpleData name="CD_RGI">220016</SimpleData>
+<SimpleData name="NM_RGI">Bom Jesus</SimpleData>
+<SimpleData name="CT_LOCALIDADE">Outras Localidades</SimpleData>
+<SimpleData name="CD_LOCALIDADE">220930200002</SimpleData>
+<SimpleData name="NM_LOCALIDADE">Laranjeira</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<extrude>0</extrude>
+<coordinates>-44.055867,-9.01722199970679,0.0</coordinates>
+</Point>
+</Placemark>
+<Placemark id="12. Outras Localidades">
+<name>Baião [220930200003]</name>
+<visibility>1</visibility>
+<snippet> </snippet>
+<description>&lt;center&gt;&lt;table&gt;&lt;tr&gt;&lt;th colspan='2' align='center'&gt;&lt;em&gt;Attributes&lt;/em&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_UF&lt;/th&gt;
+&lt;td&gt;22&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_UF&lt;/th&gt;
+&lt;td&gt;Piauí&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;SIGLA_UF&lt;/th&gt;
+&lt;td&gt;PI&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_MUN&lt;/th&gt;
+&lt;td&gt;2209302&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_MUN&lt;/th&gt;
+&lt;td&gt;Santa Luz&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGINT&lt;/th&gt;
+&lt;td&gt;2205&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGINT&lt;/th&gt;
+&lt;td&gt;Corrente - Bom Jesus&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGI&lt;/th&gt;
+&lt;td&gt;220016&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGI&lt;/th&gt;
+&lt;td&gt;Bom Jesus&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Outras Localidades&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;SCT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;220930200003&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Baião&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;&lt;/center&gt;</description>
+<Style>
+<IconStyle>
+<color>ff0069d3</color>
+<scale>0.6</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<scale>0.6</scale>
+</LabelStyle>
+<LineStyle>
+<width>1.0</width>
+<gx:labelVisibility>1</gx:labelVisibility>
+</LineStyle>
+</Style>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_Localidades">
+<SimpleData name="CD_UF">22</SimpleData>
+<SimpleData name="NM_UF">Piauí</SimpleData>
+<SimpleData name="SIGLA_UF">PI</SimpleData>
+<SimpleData name="CD_MUN">2209302</SimpleData>
+<SimpleData name="NM_MUN">Santa Luz</SimpleData>
+<SimpleData name="CD_RGINT">2205</SimpleData>
+<SimpleData name="NM_RGINT">Corrente - Bom Jesus</SimpleData>
+<SimpleData name="CD_RGI">220016</SimpleData>
+<SimpleData name="NM_RGI">Bom Jesus</SimpleData>
+<SimpleData name="CT_LOCALIDADE">Outras Localidades</SimpleData>
+<SimpleData name="CD_LOCALIDADE">220930200003</SimpleData>
+<SimpleData name="NM_LOCALIDADE">Baião</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<extrude>0</extrude>
+<coordinates>-44.175189,-9.0997359997042,0.0</coordinates>
+</Point>
+</Placemark>
+<Placemark id="12. Outras Localidades">
+<name>Alagoado [220930200007]</name>
+<visibility>1</visibility>
+<snippet> </snippet>
+<description>&lt;center&gt;&lt;table&gt;&lt;tr&gt;&lt;th colspan='2' align='center'&gt;&lt;em&gt;Attributes&lt;/em&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_UF&lt;/th&gt;
+&lt;td&gt;22&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_UF&lt;/th&gt;
+&lt;td&gt;Piauí&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;SIGLA_UF&lt;/th&gt;
+&lt;td&gt;PI&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_MUN&lt;/th&gt;
+&lt;td&gt;2209302&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_MUN&lt;/th&gt;
+&lt;td&gt;Santa Luz&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGINT&lt;/th&gt;
+&lt;td&gt;2205&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGINT&lt;/th&gt;
+&lt;td&gt;Corrente - Bom Jesus&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGI&lt;/th&gt;
+&lt;td&gt;220016&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGI&lt;/th&gt;
+&lt;td&gt;Bom Jesus&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Outras Localidades&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;SCT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;220930200007&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Alagoado&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;&lt;/center&gt;</description>
+<Style>
+<IconStyle>
+<color>ff0069d3</color>
+<scale>0.6</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<scale>0.6</scale>
+</LabelStyle>
+<LineStyle>
+<width>1.0</width>
+<gx:labelVisibility>1</gx:labelVisibility>
+</LineStyle>
+</Style>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_Localidades">
+<SimpleData name="CD_UF">22</SimpleData>
+<SimpleData name="NM_UF">Piauí</SimpleData>
+<SimpleData name="SIGLA_UF">PI</SimpleData>
+<SimpleData name="CD_MUN">2209302</SimpleData>
+<SimpleData name="NM_MUN">Santa Luz</SimpleData>
+<SimpleData name="CD_RGINT">2205</SimpleData>
+<SimpleData name="NM_RGINT">Corrente - Bom Jesus</SimpleData>
+<SimpleData name="CD_RGI">220016</SimpleData>
+<SimpleData name="NM_RGI">Bom Jesus</SimpleData>
+<SimpleData name="CT_LOCALIDADE">Outras Localidades</SimpleData>
+<SimpleData name="CD_LOCALIDADE">220930200007</SimpleData>
+<SimpleData name="NM_LOCALIDADE">Alagoado</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<extrude>0</extrude>
+<coordinates>-44.029946,-9.03668999970618,0.0</coordinates>
+</Point>
+</Placemark>
+<Placemark id="12. Outras Localidades">
+<name>Brejo dos Altos [220930200008]</name>
+<visibility>1</visibility>
+<snippet> </snippet>
+<description>&lt;center&gt;&lt;table&gt;&lt;tr&gt;&lt;th colspan='2' align='center'&gt;&lt;em&gt;Attributes&lt;/em&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_UF&lt;/th&gt;
+&lt;td&gt;22&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_UF&lt;/th&gt;
+&lt;td&gt;Piauí&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;SIGLA_UF&lt;/th&gt;
+&lt;td&gt;PI&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_MUN&lt;/th&gt;
+&lt;td&gt;2209302&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_MUN&lt;/th&gt;
+&lt;td&gt;Santa Luz&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGINT&lt;/th&gt;
+&lt;td&gt;2205&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGINT&lt;/th&gt;
+&lt;td&gt;Corrente - Bom Jesus&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGI&lt;/th&gt;
+&lt;td&gt;220016&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGI&lt;/th&gt;
+&lt;td&gt;Bom Jesus&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Outras Localidades&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;SCT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;220930200008&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Brejo dos Altos&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;&lt;/center&gt;</description>
+<Style>
+<IconStyle>
+<color>ff0069d3</color>
+<scale>0.6</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<scale>0.6</scale>
+</LabelStyle>
+<LineStyle>
+<width>1.0</width>
+<gx:labelVisibility>1</gx:labelVisibility>
+</LineStyle>
+</Style>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_Localidades">
+<SimpleData name="CD_UF">22</SimpleData>
+<SimpleData name="NM_UF">Piauí</SimpleData>
+<SimpleData name="SIGLA_UF">PI</SimpleData>
+<SimpleData name="CD_MUN">2209302</SimpleData>
+<SimpleData name="NM_MUN">Santa Luz</SimpleData>
+<SimpleData name="CD_RGINT">2205</SimpleData>
+<SimpleData name="NM_RGINT">Corrente - Bom Jesus</SimpleData>
+<SimpleData name="CD_RGI">220016</SimpleData>
+<SimpleData name="NM_RGI">Bom Jesus</SimpleData>
+<SimpleData name="CT_LOCALIDADE">Outras Localidades</SimpleData>
+<SimpleData name="CD_LOCALIDADE">220930200008</SimpleData>
+<SimpleData name="NM_LOCALIDADE">Brejo dos Altos</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<extrude>0</extrude>
+<coordinates>-44.27983,-8.9311799997095,0.0</coordinates>
+</Point>
+</Placemark>
+<Placemark id="12. Outras Localidades">
+<name>Morrinhos [220930200009]</name>
+<visibility>1</visibility>
+<snippet> </snippet>
+<description>&lt;center&gt;&lt;table&gt;&lt;tr&gt;&lt;th colspan='2' align='center'&gt;&lt;em&gt;Attributes&lt;/em&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_UF&lt;/th&gt;
+&lt;td&gt;22&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_UF&lt;/th&gt;
+&lt;td&gt;Piauí&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;SIGLA_UF&lt;/th&gt;
+&lt;td&gt;PI&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_MUN&lt;/th&gt;
+&lt;td&gt;2209302&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_MUN&lt;/th&gt;
+&lt;td&gt;Santa Luz&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGINT&lt;/th&gt;
+&lt;td&gt;2205&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGINT&lt;/th&gt;
+&lt;td&gt;Corrente - Bom Jesus&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGI&lt;/th&gt;
+&lt;td&gt;220016&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGI&lt;/th&gt;
+&lt;td&gt;Bom Jesus&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Outras Localidades&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;SCT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;220930200009&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Morrinhos&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;&lt;/center&gt;</description>
+<Style>
+<IconStyle>
+<color>ff0069d3</color>
+<scale>0.6</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<scale>0.6</scale>
+</LabelStyle>
+<LineStyle>
+<width>1.0</width>
+<gx:labelVisibility>1</gx:labelVisibility>
+</LineStyle>
+</Style>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_Localidades">
+<SimpleData name="CD_UF">22</SimpleData>
+<SimpleData name="NM_UF">Piauí</SimpleData>
+<SimpleData name="SIGLA_UF">PI</SimpleData>
+<SimpleData name="CD_MUN">2209302</SimpleData>
+<SimpleData name="NM_MUN">Santa Luz</SimpleData>
+<SimpleData name="CD_RGINT">2205</SimpleData>
+<SimpleData name="NM_RGINT">Corrente - Bom Jesus</SimpleData>
+<SimpleData name="CD_RGI">220016</SimpleData>
+<SimpleData name="NM_RGI">Bom Jesus</SimpleData>
+<SimpleData name="CT_LOCALIDADE">Outras Localidades</SimpleData>
+<SimpleData name="CD_LOCALIDADE">220930200009</SimpleData>
+<SimpleData name="NM_LOCALIDADE">Morrinhos</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<extrude>0</extrude>
+<coordinates>-44.188376,-8.99292099970756,0.0</coordinates>
+</Point>
+</Placemark>
+<Placemark id="12. Outras Localidades">
+<name>Angical [220930200010]</name>
+<visibility>1</visibility>
+<snippet> </snippet>
+<description>&lt;center&gt;&lt;table&gt;&lt;tr&gt;&lt;th colspan='2' align='center'&gt;&lt;em&gt;Attributes&lt;/em&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_UF&lt;/th&gt;
+&lt;td&gt;22&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_UF&lt;/th&gt;
+&lt;td&gt;Piauí&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;SIGLA_UF&lt;/th&gt;
+&lt;td&gt;PI&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_MUN&lt;/th&gt;
+&lt;td&gt;2209302&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_MUN&lt;/th&gt;
+&lt;td&gt;Santa Luz&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGINT&lt;/th&gt;
+&lt;td&gt;2205&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGINT&lt;/th&gt;
+&lt;td&gt;Corrente - Bom Jesus&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGI&lt;/th&gt;
+&lt;td&gt;220016&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGI&lt;/th&gt;
+&lt;td&gt;Bom Jesus&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Outras Localidades&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;SCT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;220930200010&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Angical&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;&lt;/center&gt;</description>
+<Style>
+<IconStyle>
+<color>ff0069d3</color>
+<scale>0.6</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<scale>0.6</scale>
+</LabelStyle>
+<LineStyle>
+<width>1.0</width>
+<gx:labelVisibility>1</gx:labelVisibility>
+</LineStyle>
+</Style>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_Localidades">
+<SimpleData name="CD_UF">22</SimpleData>
+<SimpleData name="NM_UF">Piauí</SimpleData>
+<SimpleData name="SIGLA_UF">PI</SimpleData>
+<SimpleData name="CD_MUN">2209302</SimpleData>
+<SimpleData name="NM_MUN">Santa Luz</SimpleData>
+<SimpleData name="CD_RGINT">2205</SimpleData>
+<SimpleData name="NM_RGINT">Corrente - Bom Jesus</SimpleData>
+<SimpleData name="CD_RGI">220016</SimpleData>
+<SimpleData name="NM_RGI">Bom Jesus</SimpleData>
+<SimpleData name="CT_LOCALIDADE">Outras Localidades</SimpleData>
+<SimpleData name="CD_LOCALIDADE">220930200010</SimpleData>
+<SimpleData name="NM_LOCALIDADE">Angical</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<extrude>0</extrude>
+<coordinates>-44.175728,-8.91377799971004,0.0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Folder id="13. Referência">
+<name>13. Referência</name>
+<Placemark id="13. Referência">
+<name>Santa Luz [2209302]</name>
+<visibility>1</visibility>
+<snippet> </snippet>
+<description>&lt;center&gt;&lt;table&gt;&lt;tr&gt;&lt;th colspan='2' align='center'&gt;&lt;em&gt;Attributes&lt;/em&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_UF&lt;/th&gt;
+&lt;td&gt;22&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_UF&lt;/th&gt;
+&lt;td&gt;Piauí&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_MUN&lt;/th&gt;
+&lt;td&gt;2209302&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_MUN&lt;/th&gt;
+&lt;td&gt;Santa Luz&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_RGINT&lt;/th&gt;
+&lt;td&gt;2205&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_RGINT&lt;/th&gt;
+&lt;td&gt;Corrente - Bom Jesus&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_RGI&lt;/th&gt;
+&lt;td&gt;220016&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_RGI&lt;/th&gt;
+&lt;td&gt;Bom Jesus&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;&lt;/center&gt;</description>
+<Style>
+<IconStyle>
+<scale>0.7</scale>
+</IconStyle>
+<LabelStyle>
+<scale>0.7</scale>
+</LabelStyle>
+<LineStyle>
+<color>ffffffff</color>
+<width>3</width>
+<gx:labelVisibility>1</gx:labelVisibility>
+</LineStyle>
+<PolyStyle>
+<color>00ffffff</color>
+</PolyStyle>
+</Style>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_Município">
+<SimpleData name="CD_UF">22</SimpleData>
+<SimpleData name="NM_UF">Piauí</SimpleData>
+<SimpleData name="CD_MUN">2209302</SimpleData>
+<SimpleData name="NM_MUN">Santa Luz</SimpleData>
+<SimpleData name="CD_RGINT">2205</SimpleData>
+<SimpleData name="NM_RGINT">Corrente - Bom Jesus</SimpleData>
+<SimpleData name="CD_RGI">220016</SimpleData>
+<SimpleData name="NM_RGI">Bom Jesus</SimpleData>
+</SchemaData>
+</ExtendedData>
+<MultiGeometry>
+<Polygon>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>-44.1032461,-9.17397579970187,0.0 -44.1969715,-9.11789719970363,0.0 -44.2379198,-9.0933966997044,0.0 -44.3059563,-9.03450639970625,0.0 -44.3064742,-9.03405779970626,0.0 -44.3115673,-9.0296469997064,0.0 -44.3120251,-9.02917869970642,0.0 -44.3115886,-9.02836139970644,0.0 -44.3111516,-9.02806389970645,0.0 -44.310862,-9.02780539970646,0.0 -44.310633,-9.02748489970647,0.0 -44.3103943,-9.02700589970649,0.0 -44.310351,-9.0264536997065,0.0 -44.3104327,-9.02550479970653,0.0 -44.3107719,-9.02477129970656,0.0 -44.3111999,-9.02426059970657,0.0 -44.3121775,-9.02382589970659,0.0 -44.3127247,-9.02380229970659,0.0 -44.3132203,-9.02391589970658,0.0 -44.3135584,-9.02373669970659,0.0 -44.3139881,-9.02312249970661,0.0 -44.3143207,-9.02241329970663,0.0 -44.3142553,-9.02178069970665,0.0 -44.3139528,-9.02156969970666,0.0 -44.313532,-9.02140649970666,0.0 -44.3133848,-9.02123759970667,0.0 -44.3133722,-9.02076629970668,0.0 -44.3131929,-9.02042429970669,0.0 -44.3129148,-9.02009089970671,0.0 -44.3128623,-9.01966969970671,0.0 -44.3129364,-9.01916939970673,0.0 -44.3132064,-9.01888559970674,0.0 -44.3136607,-9.01876309970674,0.0 -44.3140603,-9.01884269970674,0.0 -44.3145877,-9.01925939970673,0.0 -44.3157712,-9.01975519970671,0.0 -44.316017,-9.0201754997067,0.0 -44.3158412,-9.02072689970668,0.0 -44.3156006,-9.02109649970667,0.0 -44.3151994,-9.02222089970664,0.0 -44.3154322,-9.02255969970662,0.0 -44.31577,-9.02264029970662,0.0 -44.3161217,-9.02250799970663,0.0 -44.3163956,-9.02211279970664,0.0 -44.3165909,-9.02161849970665,0.0 -44.3166287,-9.02096129970667,0.0 -44.3164976,-9.02044149970669,0.0 -44.3165226,-9.01989599970671,0.0 -44.3166538,-9.01967079970672,0.0 -44.3168387,-9.01931239970672,0.0 -44.31681,-9.01906219970673,0.0 -44.3166126,-9.01881939970674,0.0 -44.3165752,-9.01860149970675,0.0 -44.3166978,-9.01827869970676,0.0 -44.3166095,-9.01753619970678,0.0 -44.3163589,-9.0170366997068,0.0 -44.3160321,-9.01678569970681,0.0 -44.3153587,-9.01659619970681,0.0 -44.3151279,-9.01650919970681,0.0 -44.3149261,-9.01628259970682,0.0 -44.3149489,-9.01590729970683,0.0 -44.3151124,-9.01559529970684,0.0 -44.3152727,-9.01523039970686,0.0 -44.3152839,-9.01493009970687,0.0 -44.3150424,-9.01462359970687,0.0 -44.3145427,-9.01426619970688,0.0 -44.3140013,-9.01406249970689,0.0 -44.3136525,-9.01402219970689,0.0 -44.3131742,-9.01417299970689,0.0 -44.3129485,-9.01439069970688,0.0 -44.3128932,-9.01462729970688,0.0 -44.3130311,-9.01486299970687,0.0 -44.3129785,-9.01505709970686,0.0 -44.3127727,-9.01520139970686,0.0 -44.3124958,-9.01528419970685,0.0 -44.3123094,-9.01548619970685,0.0 -44.3122721,-9.01575359970684,0.0 -44.3124427,-9.01599799970683,0.0 -44.3126762,-9.01617239970683,0.0 -44.3127845,-9.01645229970682,0.0 -44.3127498,-9.01680699970681,0.0 -44.312525,-9.01721549970679,0.0 -44.3123093,-9.01733179970679,0.0 -44.3120412,-9.01738219970679,0.0 -44.3118213,-9.01725469970679,0.0 -44.3114662,-9.0169788997068,0.0 -44.3109878,-9.01657509970682,0.0 -44.3107895,-9.01614139970683,0.0 -44.310775,-9.01568799970684,0.0 -44.3109014,-9.01538349970685,0.0 -44.3111331,-9.01517619970686,0.0 -44.3112677,-9.01487379970686,0.0 -44.3113691,-9.01446739970688,0.0 -44.3115333,-9.01399089970689,0.0 -44.3120197,-9.01357689970691,0.0 -44.3128744,-9.01323969970692,0.0 -44.3131345,-9.01292719970693,0.0 -44.3135744,-9.01195169970696,0.0 -44.3136965,-9.01104819970699,0.0 -44.3135823,-9.01033649970701,0.0 -44.3132893,-9.00966979970703,0.0 -44.3132853,-9.00929609970704,0.0 -44.3130978,-9.00859339970706,0.0 -44.3129161,-9.00790419970709,0.0 -44.3129447,-9.00766909970709,0.0 -44.313226,-9.00695499970712,0.0 -44.3133068,-9.00660229970713,0.0 -44.3131891,-9.00638929970713,0.0 -44.313039,-9.00577769970715,0.0 -44.3127777,-9.00505869970718,0.0 -44.3124444,-9.00483199970718,0.0 -44.3121491,-9.00478859970718,0.0 -44.311918,-9.00496139970718,0.0 -44.3117365,-9.00524269970717,0.0 -44.3112733,-9.00552749970716,0.0 -44.3107681,-9.00574049970716,0.0 -44.3101778,-9.00600899970715,0.0 -44.3098887,-9.00664739970713,0.0 -44.3100117,-9.00703519970711,0.0 -44.3103512,-9.00762749970709,0.0 -44.3103225,-9.00799249970708,0.0 -44.3101579,-9.00824359970708,0.0 -44.3094547,-9.00837819970707,0.0 -44.3085905,-9.00842699970707,0.0 -44.308155,-9.00828589970707,0.0 -44.3080411,-9.00809109970708,0.0 -44.3079622,-9.00776699970709,0.0 -44.3078632,-9.0074201997071,0.0 -44.3074318,-9.00661659970712,0.0 -44.3073569,-9.00618089970714,0.0 -44.307436,-9.00514469970717,0.0 -44.3074656,-9.00448529970719,0.0 -44.3076364,-9.00398449970721,0.0 -44.3078644,-9.00362889970722,0.0 -44.3082955,-9.00330099970723,0.0 -44.3089545,-9.00307029970723,0.0 -44.3098524,-9.00322109970723,0.0 -44.3103038,-9.00327109970723,0.0 -44.3104634,-9.00307069970724,0.0 -44.310521,-9.00282599970724,0.0 -44.3104781,-9.00256329970725,0.0 -44.3105109,-9.00195679970727,0.0 -44.310668,-9.00153909970729,0.0 -44.310915,-9.00127519970729,0.0 -44.3118244,-9.00058979970732,0.0 -44.3127317,-8.99944329970735,0.0 -44.3129503,-8.99863649970738,0.0 -44.3130245,-8.99765099970741,0.0 -44.3128027,-8.99668879970744,0.0 -44.3123224,-8.99618919970745,0.0 -44.3116201,-8.99589959970746,0.0 -44.3109873,-8.99582749970747,0.0 -44.3105459,-8.99616139970746,0.0 -44.3102778,-8.99621179970745,0.0 -44.310016,-8.99601259970746,0.0 -44.309676,-8.99594009970746,0.0 -44.3094023,-8.99607569970746,0.0 -44.3089783,-8.99647479970744,0.0 -44.3087471,-8.99677759970743,0.0 -44.3085872,-8.99736779970742,0.0 -44.3083843,-8.9976953997074,0.0 -44.308042,-8.9977608997074,0.0 -44.3077533,-8.99769319970741,0.0 -44.3075642,-8.99732259970742,0.0 -44.3075081,-8.99662329970744,0.0 -44.3076371,-8.99592079970746,0.0 -44.3078619,-8.99551239970748,0.0 -44.3080488,-8.99527589970748,0.0 -44.3084195,-8.99523519970748,0.0 -44.3087425,-8.99533799970748,0.0 -44.3091485,-8.99552329970748,0.0 -44.3096785,-8.99554219970747,0.0 -44.3101819,-8.99543259970748,0.0 -44.3103624,-8.99509039970749,0.0 -44.3103932,-8.9948472997075,0.0 -44.3103907,-8.9946299997075,0.0 -44.3104299,-8.99427729970751,0.0 -44.3106447,-8.99410009970752,0.0 -44.3111388,-8.99392749970752,0.0 -44.3114957,-8.99409989970752,0.0 -44.3118276,-8.9946554997075,0.0 -44.3120458,-8.9947564997075,0.0 -44.3122426,-8.9945485997075,0.0 -44.3122849,-8.99423049970751,0.0 -44.3123742,-8.99393349970753,0.0 -44.3125267,-8.99366199970753,0.0 -44.3129289,-8.99328509970755,0.0 -44.3145213,-8.99271829970757,0.0 -44.3152056,-8.99236199970758,0.0 -44.3153631,-8.99203979970759,0.0 -44.3152514,-8.99183699970759,0.0 -44.3149099,-8.9916080997076,0.0 -44.3146373,-8.99133549970761,0.0 -44.3144698,-8.99127379970761,0.0 -44.314253,-8.99132919970761,0.0 -44.313962,-8.9913994997076,0.0 -44.3134757,-8.9913488997076,0.0 -44.3125976,-8.99112539970761,0.0 -44.3119335,-8.99088919970762,0.0 -44.3113561,-8.99046789970763,0.0 -44.3111976,-8.99011409970764,0.0 -44.3110953,-8.98984439970765,0.0 -44.3110056,-8.98943079970766,0.0 -44.3106562,-8.98903509970768,0.0 -44.3098523,-8.9883112997077,0.0 -44.3090538,-8.98791819970771,0.0 -44.307942,-8.98778019970772,0.0 -44.3074234,-8.98781629970772,0.0 -44.3070169,-8.98815079970771,0.0 -44.3066858,-8.98853109970769,0.0 -44.3065987,-8.98881999970768,0.0 -44.3065536,-8.98918069970767,0.0 -44.3066149,-8.98956949970766,0.0 -44.3068116,-8.98984679970765,0.0 -44.3069883,-8.99010149970765,0.0 -44.3068898,-8.99033539970764,0.0 -44.3066483,-8.99051409970763,0.0 -44.3060749,-8.99075239970762,0.0 -44.3058217,-8.99065079970763,0.0 -44.3056435,-8.99036969970764,0.0 -44.3054982,-8.98996739970765,0.0 -44.3055573,-8.98974909970766,0.0 -44.3057858,-8.98948889970766,0.0 -44.3059084,-8.98916599970768,0.0 -44.3058786,-8.98885489970768,0.0 -44.3057589,-8.98851999970769,0.0 -44.3055374,-8.9883660997077,0.0 -44.3053198,-8.9884222997077,0.0 -44.3051204,-8.98854289970769,0.0 -44.304856,-8.98874159970769,0.0 -44.3046661,-8.98866529970769,0.0 -44.3045484,-8.9884522997077,0.0 -44.3045919,-8.98806519970771,0.0 -44.3047446,-8.98766359970772,0.0 -44.3049905,-8.98746869970773,0.0 -44.3054092,-8.98738009970773,0.0 -44.3057445,-8.98724349970773,0.0 -44.3060836,-8.98712519970774,0.0 -44.3065662,-8.98715749970773,0.0 -44.3068026,-8.98702939970774,0.0 -44.3069307,-8.98675129970775,0.0 -44.3068572,-8.98647199970776,0.0 -44.3066396,-8.98633639970776,0.0 -44.3063586,-8.98617549970777,0.0 -44.3059556,-8.98581759970778,0.0 -44.3057591,-8.98576569970778,0.0 -44.3055935,-8.98595579970777,0.0 -44.3055365,-8.98616609970777,0.0 -44.3056728,-8.98637539970776,0.0 -44.3056147,-8.98665459970775,0.0 -44.3054901,-8.98672569970775,0.0 -44.3051703,-8.98667579970775,0.0 -44.3047419,-8.98660579970775,0.0 -44.3045742,-8.98667409970775,0.0 -44.3044358,-8.98695809970774,0.0 -44.3041587,-8.98730079970773,0.0 -44.3036922,-8.98799379970771,0.0 -44.3036961,-8.98849739970769,0.0 -44.3036454,-8.98894319970768,0.0 -44.3034595,-8.98924069970767,0.0 -44.3032248,-8.98926519970767,0.0 -44.3029738,-8.98915549970767,0.0 -44.3028479,-8.98894029970768,0.0 -44.3027213,-8.98888949970768,0.0 -44.3025094,-8.98902409970768,0.0 -44.3022384,-8.98924699970767,0.0 -44.3019774,-8.98936859970767,0.0 -44.3015819,-8.98959759970766,0.0 -44.301418,-8.98981419970765,0.0 -44.3011801,-8.99075639970762,0.0 -44.3013026,-8.99104879970761,0.0 -44.3016158,-8.99125289970761,0.0 -44.3024369,-8.9916865997076,0.0 -44.3031258,-8.99215479970758,0.0 -44.3033045,-8.99253129970757,0.0 -44.3031711,-8.99276459970756,0.0 -44.3029543,-8.99281999970756,0.0 -44.302766,-8.99277019970756,0.0 -44.3024383,-8.99245819970757,0.0 -44.3021934,-8.99222879970758,0.0 -44.3018873,-8.99209589970758,0.0 -44.301019,-8.99197889970758,0.0 -44.3003168,-8.99107399970761,0.0 -44.3000779,-8.99036959970764,0.0 -44.2999774,-8.98986649970765,0.0 -44.2994756,-8.98902359970768,0.0 -44.297847,-8.98668599970775,0.0 -44.2969748,-8.98550159970779,0.0 -44.2960297,-8.9851314997078,0.0 -44.2955445,-8.9850827997078,0.0 -44.2953676,-8.9849318997078,0.0 -44.2953172,-8.98468629970782,0.0 -44.295413,-8.98426509970783,0.0 -44.2956701,-8.98389829970784,0.0 -44.2960071,-8.98356429970785,0.0 -44.2964134,-8.98293819970787,0.0 -44.2964974,-8.98223389970789,0.0 -44.2964033,-8.98162949970791,0.0 -44.2961906,-8.98131469970792,0.0 -44.2958187,-8.98114279970792,0.0 -44.2954666,-8.98110959970793,0.0 -44.294964,-8.98115129970793,0.0 -44.2947784,-8.98131269970792,0.0 -44.2946647,-8.98155389970791,0.0 -44.2944801,-8.98168469970791,0.0 -44.2941058,-8.9818649997079,0.0 -44.2937853,-8.9818336997079,0.0 -44.2936458,-8.98170759970791,0.0 -44.2935997,-8.98153769970791,0.0 -44.2934978,-8.98128709970792,0.0 -44.2932415,-8.98111109970793,0.0 -44.2930453,-8.98092729970793,0.0 -44.2929481,-8.98066139970794,0.0 -44.2930204,-8.98048539970794,0.0 -44.2932282,-8.98019359970796,0.0 -44.2934469,-8.97955509970798,0.0 -44.2935955,-8.97934619970798,0.0 -44.293841,-8.97929279970798,0.0 -44.2939455,-8.97915169970799,0.0 -44.2941242,-8.97851189970801,0.0 -44.2940932,-8.97808529970802,0.0 -44.2939408,-8.97765619970804,0.0 -44.2936404,-8.97731469970805,0.0 -44.2933851,-8.97727829970805,0.0 -44.2930508,-8.97740989970804,0.0 -44.2926584,-8.97750359970804,0.0 -44.2925172,-8.97738449970804,0.0 -44.2925606,-8.97711509970805,0.0 -44.2926579,-8.97693039970806,0.0 -44.2928297,-8.97681889970806,0.0 -44.2930237,-8.97669219970807,0.0 -44.2931183,-8.97649199970807,0.0 -44.2933563,-8.97599849970809,0.0 -44.2937665,-8.9755380997081,0.0 -44.2940496,-8.97533279970811,0.0 -44.2942172,-8.97537119970811,0.0 -44.2944211,-8.97527539970811,0.0 -44.2947737,-8.97473649970813,0.0 -44.294825,-8.97436729970814,0.0 -44.2947643,-8.97409349970815,0.0 -44.294508,-8.97373309970816,0.0 -44.2942239,-8.97363469970816,0.0 -44.2939321,-8.97377529970816,0.0 -44.2935828,-8.97405419970815,0.0 -44.2932065,-8.97442299970814,0.0 -44.2926227,-8.97485349970813,0.0 -44.2920188,-8.97524149970811,0.0 -44.2917881,-8.97529089970811,0.0 -44.291685,-8.97517349970811,0.0 -44.2915727,-8.97489869970812,0.0 -44.2913883,-8.97414709970815,0.0 -44.2912314,-8.97321939970817,0.0 -44.2912962,-8.9725727997082,0.0 -44.2914234,-8.9721805997082,0.0 -44.2916625,-8.97198009970821,0.0 -44.2921885,-8.97179929970822,0.0 -44.2927544,-8.97133889970823,0.0 -44.2929316,-8.97110479970824,0.0 -44.2929788,-8.97085999970825,0.0 -44.2929771,-8.97063059970826,0.0 -44.2928413,-8.97055119970826,0.0 -44.2926615,-8.97054709970826,0.0 -44.2923999,-8.97067559970826,0.0 -44.2920948,-8.97072199970826,0.0 -44.2919309,-8.97060179970826,0.0 -44.2918251,-8.97040849970826,0.0 -44.2918582,-8.96979809970828,0.0 -44.2919506,-8.96945579970829,0.0 -44.2921571,-8.9691358997083,0.0 -44.292118,-8.96899579970831,0.0 -44.2918882,-8.96895519970831,0.0 -44.2914549,-8.96878389970832,0.0 -44.2911492,-8.96868089970832,0.0 -44.2908688,-8.96874639970832,0.0 -44.3038875,-8.94352469970911,0.0 -44.3412216,-8.86089439971171,0.0 -44.3415869,-8.86008529971173,0.0 -44.3538904,-8.83283329971259,0.0 -44.3455054,-8.81935549971302,0.0 -44.3320718,-8.81691679971309,0.0 -44.3049715,-8.79926859971365,0.0 -44.2695896,-8.8230388997129,0.0 -44.3006113,-8.84703319971214,0.0 -44.2988165,-8.84664299971216,0.0 -44.298017,-8.84675279971215,0.0 -44.2975749,-8.84699929971214,0.0 -44.2961165,-8.84895269971208,0.0 -44.2946015,-8.85005119971205,0.0 -44.2924613,-8.85051549971203,0.0 -44.2915042,-8.85114749971201,0.0 -44.2912445,-8.85339999971194,0.0 -44.2906152,-8.8548099997119,0.0 -44.2897157,-8.85519369971189,0.0 -44.2868036,-8.85513249971189,0.0 -44.2858333,-8.85526909971188,0.0 -44.2849474,-8.85606509971186,0.0 -44.2829172,-8.85851389971178,0.0 -44.2807968,-8.85922479971176,0.0 -44.278508,-8.85952559971175,0.0 -44.2770514,-8.86009999971173,0.0 -44.2761367,-8.8612564997117,0.0 -44.2756921,-8.86224749971167,0.0 -44.2750342,-8.86287809971165,0.0 -44.2738647,-8.86301489971164,0.0 -44.2722395,-8.86270919971165,0.0 -44.2704436,-8.86201739971167,0.0 -44.2692317,-8.86190339971167,0.0 -44.26846,-8.86216099971167,0.0 -44.2680889,-8.86271059971165,0.0 -44.2682272,-8.86466099971159,0.0 -44.2674841,-8.86551949971156,0.0 -44.2670831,-8.86651159971153,0.0 -44.2665205,-8.86728459971151,0.0 -44.2641245,-8.86997429971142,0.0 -44.2634355,-8.87115879971139,0.0 -44.2630331,-8.87223109971135,0.0 -44.2626743,-8.8739590997113,0.0 -44.2625836,-8.87627279971122,0.0 -44.2624109,-8.8769879997112,0.0 -44.2620683,-8.87759369971118,0.0 -44.2625235,-8.87740209971119,0.0 -44.2630093,-8.87756789971118,0.0 -44.2629778,-8.87888969971114,0.0 -44.2633353,-8.87922799971113,0.0 -44.2641609,-8.87950509971112,0.0 -44.2641883,-8.88008289971111,0.0 -44.2636455,-8.88052189971109,0.0 -44.262104,-8.88065619971109,0.0 -44.2617051,-8.88098659971108,0.0 -44.2615602,-8.88150809971106,0.0 -44.2622043,-8.88296759971101,0.0 -44.2448619,-8.88303099971101,0.0 -44.1941788,-8.90135839971043,0.0 -44.1933858,-8.90164429971042,0.0 -44.0598866,-8.94977469970891,0.0 -44.0595186,-8.94990739970891,0.0 -44.0037129,-8.97002699970827,0.0 -43.9852726,-8.97667529970806,0.0 -43.9087815,-9.0042525997072,0.0 -43.8692342,-9.01851059970675,0.0 -43.9250852,-9.11789719970363,0.0 -43.9288221,-9.12454699970342,0.0 -43.9428108,-9.14943999970265,0.0 -43.9566519,-9.17407449970187,0.0 -43.8706215,-9.31233459969754,0.0 -43.8698,-9.3136532996975,0.0 -44.0981722,-9.17701169970178,0.0 -44.1016462,-9.17493309970184,0.0 -44.1032461,-9.17397579970187,0.0</coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</MultiGeometry>
+</Placemark>
+</Folder>
+</Document></kml>

@@ -1,0 +1,641 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<kml xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:atom="http://www.w3.org/2005/Atom" xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+<name>acari_2400109_localidades_2022</name>
+<visibility>1</visibility>
+<Schema name="Povoados" id="kml_schema_ft_Povoados">
+<SimpleField type="xsd:string" name="CD_UF">
+<displayName>CD_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_UF">
+<displayName>NM_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="SIGLA_UF">
+<displayName>SIGLA_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_MUN">
+<displayName>CD_MUN</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_MUN">
+<displayName>NM_MUN</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_RGINT">
+<displayName>CD_RGINT</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_RGINT">
+<displayName>NM_RGINT</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_RGI">
+<displayName>CD_RGI</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_RGI">
+<displayName>NM_RGI</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CT_LOCALIDADE">
+<displayName>CT_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_LOCALIDADE">
+<displayName>CD_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_LOCALIDADE">
+<displayName>NM_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="LAT_LOCALIDADE">
+<displayName>LAT_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="LONG_LOCALIDADE">
+<displayName>LONG_LOCALIDADE</displayName>
+</SimpleField>
+</Schema>
+<Schema name="Localidades" id="kml_schema_ft_Localidades">
+<SimpleField type="xsd:string" name="CD_UF">
+<displayName>CD_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_UF">
+<displayName>NM_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="SIGLA_UF">
+<displayName>SIGLA_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_MUN">
+<displayName>CD_MUN</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_MUN">
+<displayName>NM_MUN</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_RGINT">
+<displayName>CD_RGINT</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_RGINT">
+<displayName>NM_RGINT</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_RGI">
+<displayName>CD_RGI</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_RGI">
+<displayName>NM_RGI</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CT_LOCALIDADE">
+<displayName>CT_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="SCT_LOCALIDADE">
+<displayName>SCT_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_LOCALIDADE">
+<displayName>CD_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_LOCALIDADE">
+<displayName>NM_LOCALIDADE</displayName>
+</SimpleField>
+</Schema>
+<Schema name="01. Cidade" id="kml_schema_ft_01._Cidade">
+<SimpleField type="xsd:string" name="CD_UF">
+<displayName>CD_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_UF">
+<displayName>NM_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="SIGLA_UF">
+<displayName>SIGLA_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_MUN">
+<displayName>CD_MUN</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_MUN">
+<displayName>NM_MUN</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_RGINT">
+<displayName>CD_RGINT</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_RGINT">
+<displayName>NM_RGINT</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_RGI">
+<displayName>CD_RGI</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_RGI">
+<displayName>NM_RGI</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CT_LOCALIDADE">
+<displayName>CT_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="SCT_LOCALIDADE">
+<displayName>SCT_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_LOCALIDADE">
+<displayName>CD_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_LOCALIDADE">
+<displayName>NM_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="LAT_LOCALIDADE">
+<displayName>LAT_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="LONG_LOCALIDADE">
+<displayName>LONG_LOCALIDADE</displayName>
+</SimpleField>
+</Schema>
+<Schema name="Município" id="kml_schema_ft_Município">
+<SimpleField type="xsd:string" name="CD_UF">
+<displayName>CD_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_UF">
+<displayName>NM_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_MUN">
+<displayName>CD_MUN</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_MUN">
+<displayName>NM_MUN</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_RGINT">
+<displayName>CD_RGINT</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_RGINT">
+<displayName>NM_RGINT</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_RGI">
+<displayName>CD_RGI</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_RGI">
+<displayName>NM_RGI</displayName>
+</SimpleField>
+</Schema>
+<Folder id="01. Cidade">
+<name>01. Cidade</name>
+<Folder id="01.03. Sede Municipal">
+<name>01.03. Sede Municipal</name>
+<Placemark id="01.03. Sede Municipal">
+<name>Acari [2400109]</name>
+<visibility>1</visibility>
+<snippet> </snippet>
+<description>&lt;center&gt;&lt;table&gt;&lt;tr&gt;&lt;th colspan='2' align='center'&gt;&lt;em&gt;Atributos&lt;/em&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_UF&lt;/th&gt;
+&lt;td&gt;24&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_UF&lt;/th&gt;
+&lt;td&gt;Rio Grande do Norte&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;SIGLA_UF&lt;/th&gt;
+&lt;td&gt;RN&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_MUN&lt;/th&gt;
+&lt;td&gt;2400109&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_MUN&lt;/th&gt;
+&lt;td&gt;Acari&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGINT&lt;/th&gt;
+&lt;td&gt;2402&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGINT&lt;/th&gt;
+&lt;td&gt;Caicó&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGI&lt;/th&gt;
+&lt;td&gt;240008&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGI&lt;/th&gt;
+&lt;td&gt;Currais Novos&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Cidade&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;SCT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Sede Municipal&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;2400109&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Acari&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;LAT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;-6.434&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;LONG_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;-36.6406&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;&lt;/center&gt;</description>
+<Style>
+<IconStyle>
+<color>ff00aaff</color>
+<scale>1.0</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<scale>1.0</scale>
+</LabelStyle>
+<LineStyle>
+<color>ffffffff</color>
+<width>3</width>
+<gx:labelVisibility>1</gx:labelVisibility>
+</LineStyle>
+<PolyStyle>
+<color>00ffffff</color>
+</PolyStyle>
+</Style>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_01._Cidade">
+<SimpleData name="CD_UF">24</SimpleData>
+<SimpleData name="NM_UF">Rio Grande do Norte</SimpleData>
+<SimpleData name="SIGLA_UF">RN</SimpleData>
+<SimpleData name="CD_MUN">2400109</SimpleData>
+<SimpleData name="NM_MUN">Acari</SimpleData>
+<SimpleData name="CD_RGINT">2402</SimpleData>
+<SimpleData name="NM_RGINT">Caicó</SimpleData>
+<SimpleData name="CD_RGI">240008</SimpleData>
+<SimpleData name="NM_RGI">Currais Novos</SimpleData>
+<SimpleData name="CT_LOCALIDADE">Cidade</SimpleData>
+<SimpleData name="SCT_LOCALIDADE">Sede Municipal</SimpleData>
+<SimpleData name="CD_LOCALIDADE">2400109</SimpleData>
+<SimpleData name="NM_LOCALIDADE">Acari</SimpleData>
+<SimpleData name="LAT_LOCALIDADE">-6.434</SimpleData>
+<SimpleData name="LONG_LOCALIDADE">-36.6406</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<extrude>0</extrude>
+<coordinates>-36.64056,-6.43404599978904,0.0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+</Folder>
+<Folder id="06. Povoados">
+<name>06. Povoados</name>
+<Placemark id="06. Povoados">
+<name>Gargalheiras [240010900001]</name>
+<visibility>1</visibility>
+<snippet> </snippet>
+<description>&lt;center&gt;&lt;table&gt;&lt;tr&gt;&lt;th colspan='2' align='center'&gt;&lt;em&gt;Atributos&lt;/em&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_UF&lt;/th&gt;
+&lt;td&gt;24&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_UF&lt;/th&gt;
+&lt;td&gt;Rio Grande do Norte&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;SIGLA_UF&lt;/th&gt;
+&lt;td&gt;RN&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_MUN&lt;/th&gt;
+&lt;td&gt;2400109&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_MUN&lt;/th&gt;
+&lt;td&gt;Acari&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGINT&lt;/th&gt;
+&lt;td&gt;2402&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGINT&lt;/th&gt;
+&lt;td&gt;Caicó&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGI&lt;/th&gt;
+&lt;td&gt;240008&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGI&lt;/th&gt;
+&lt;td&gt;Currais Novos&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Povoado&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;240010900001&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Gargalheiras&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;LAT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;-6.4239&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;LONG_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;-36.6091&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;&lt;/center&gt;</description>
+<Style>
+<IconStyle>
+<color>ff00ff54</color>
+<scale>0.8</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<scale>0.8</scale>
+</LabelStyle>
+<LineStyle>
+<color>72ff54ff</color>
+<width>1.0</width>
+<gx:labelVisibility>1</gx:labelVisibility>
+</LineStyle>
+<PolyStyle>
+<color>66ff54ff</color>
+</PolyStyle>
+</Style>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_Povoados">
+<SimpleData name="CD_UF">24</SimpleData>
+<SimpleData name="NM_UF">Rio Grande do Norte</SimpleData>
+<SimpleData name="SIGLA_UF">RN</SimpleData>
+<SimpleData name="CD_MUN">2400109</SimpleData>
+<SimpleData name="NM_MUN">Acari</SimpleData>
+<SimpleData name="CD_RGINT">2402</SimpleData>
+<SimpleData name="NM_RGINT">Caicó</SimpleData>
+<SimpleData name="CD_RGI">240008</SimpleData>
+<SimpleData name="NM_RGI">Currais Novos</SimpleData>
+<SimpleData name="CT_LOCALIDADE">Povoado</SimpleData>
+<SimpleData name="CD_LOCALIDADE">240010900001</SimpleData>
+<SimpleData name="NM_LOCALIDADE">Gargalheiras</SimpleData>
+<SimpleData name="LAT_LOCALIDADE">-6.4239</SimpleData>
+<SimpleData name="LONG_LOCALIDADE">-36.6091</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<extrude>0</extrude>
+<coordinates>-36.6090923071895,-6.42385707168479,0.0</coordinates>
+</Point>
+</Placemark>
+<Placemark id="06. Povoados">
+<name>Bulhões [240010900002]</name>
+<visibility>1</visibility>
+<snippet> </snippet>
+<description>&lt;center&gt;&lt;table&gt;&lt;tr&gt;&lt;th colspan='2' align='center'&gt;&lt;em&gt;Atributos&lt;/em&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_UF&lt;/th&gt;
+&lt;td&gt;24&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_UF&lt;/th&gt;
+&lt;td&gt;Rio Grande do Norte&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;SIGLA_UF&lt;/th&gt;
+&lt;td&gt;RN&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_MUN&lt;/th&gt;
+&lt;td&gt;2400109&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_MUN&lt;/th&gt;
+&lt;td&gt;Acari&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGINT&lt;/th&gt;
+&lt;td&gt;2402&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGINT&lt;/th&gt;
+&lt;td&gt;Caicó&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGI&lt;/th&gt;
+&lt;td&gt;240008&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGI&lt;/th&gt;
+&lt;td&gt;Currais Novos&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Povoado&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;240010900002&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Bulhões&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;LAT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;-6.3855&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;LONG_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;-36.5788&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;&lt;/center&gt;</description>
+<Style>
+<IconStyle>
+<color>ff00ff54</color>
+<scale>0.8</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<scale>0.8</scale>
+</LabelStyle>
+<LineStyle>
+<color>72ff54ff</color>
+<width>1.0</width>
+<gx:labelVisibility>1</gx:labelVisibility>
+</LineStyle>
+<PolyStyle>
+<color>66ff54ff</color>
+</PolyStyle>
+</Style>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_Povoados">
+<SimpleData name="CD_UF">24</SimpleData>
+<SimpleData name="NM_UF">Rio Grande do Norte</SimpleData>
+<SimpleData name="SIGLA_UF">RN</SimpleData>
+<SimpleData name="CD_MUN">2400109</SimpleData>
+<SimpleData name="NM_MUN">Acari</SimpleData>
+<SimpleData name="CD_RGINT">2402</SimpleData>
+<SimpleData name="NM_RGINT">Caicó</SimpleData>
+<SimpleData name="CD_RGI">240008</SimpleData>
+<SimpleData name="NM_RGI">Currais Novos</SimpleData>
+<SimpleData name="CT_LOCALIDADE">Povoado</SimpleData>
+<SimpleData name="CD_LOCALIDADE">240010900002</SimpleData>
+<SimpleData name="NM_LOCALIDADE">Bulhões</SimpleData>
+<SimpleData name="LAT_LOCALIDADE">-6.3855</SimpleData>
+<SimpleData name="LONG_LOCALIDADE">-36.5788</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<extrude>0</extrude>
+<coordinates>-36.5787676363636,-6.38546304524514,0.0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Folder id="10. Localidades Quilombolas">
+<name>10. Localidades Quilombolas</name>
+<visibility>1</visibility>
+<Style>
+<IconStyle>
+<color>ffffa0ef</color>
+<scale>0.8</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<scale>0.8</scale>
+</LabelStyle>
+<LineStyle>
+<width>1.0</width>
+<gx:labelVisibility>1</gx:labelVisibility>
+</LineStyle>
+</Style>
+<Folder id="10.02. Outras Localidades Quilombolas">
+<name>10.02. Outras Localidades Quilombolas</name>
+<visibility>1</visibility>
+<Style>
+<IconStyle>
+<color>ffffa0ef</color>
+<scale>0.8</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<scale>0.8</scale>
+</LabelStyle>
+<LineStyle>
+<width>1.0</width>
+<gx:labelVisibility>1</gx:labelVisibility>
+</LineStyle>
+</Style>
+<Placemark id="10.02. Outras Localidades Quilombolas">
+<name>Comunidade Quilombola Sítio Saco do Pereira [240010900003]</name>
+<visibility>1</visibility>
+<snippet> </snippet>
+<description>&lt;center&gt;&lt;table&gt;&lt;tr&gt;&lt;th colspan='2' align='center'&gt;&lt;em&gt;Attributes&lt;/em&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_UF&lt;/th&gt;
+&lt;td&gt;24&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_UF&lt;/th&gt;
+&lt;td&gt;Rio Grande do Norte&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;SIGLA_UF&lt;/th&gt;
+&lt;td&gt;RN&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_MUN&lt;/th&gt;
+&lt;td&gt;2400109&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_MUN&lt;/th&gt;
+&lt;td&gt;Acari&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGINT&lt;/th&gt;
+&lt;td&gt;2402&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGINT&lt;/th&gt;
+&lt;td&gt;Caicó&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGI&lt;/th&gt;
+&lt;td&gt;240008&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGI&lt;/th&gt;
+&lt;td&gt;Currais Novos&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Localidade Quilombola&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;SCT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Outras Localidades Quilombolas&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;240010900003&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Comunidade Quilombola Sítio Saco do Pereira&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;&lt;/center&gt;</description>
+<Style>
+<IconStyle>
+<color>ffffa0ef</color>
+<scale>0.8</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<scale>0.8</scale>
+</LabelStyle>
+<LineStyle>
+<width>1.0</width>
+<gx:labelVisibility>1</gx:labelVisibility>
+</LineStyle>
+</Style>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_Localidades">
+<SimpleData name="CD_UF">24</SimpleData>
+<SimpleData name="NM_UF">Rio Grande do Norte</SimpleData>
+<SimpleData name="SIGLA_UF">RN</SimpleData>
+<SimpleData name="CD_MUN">2400109</SimpleData>
+<SimpleData name="NM_MUN">Acari</SimpleData>
+<SimpleData name="CD_RGINT">2402</SimpleData>
+<SimpleData name="NM_RGINT">Caicó</SimpleData>
+<SimpleData name="CD_RGI">240008</SimpleData>
+<SimpleData name="NM_RGI">Currais Novos</SimpleData>
+<SimpleData name="CT_LOCALIDADE">Localidade Quilombola</SimpleData>
+<SimpleData name="SCT_LOCALIDADE">Outras Localidades Quilombolas</SimpleData>
+<SimpleData name="CD_LOCALIDADE">240010900003</SimpleData>
+<SimpleData name="NM_LOCALIDADE">Comunidade Quilombola Sítio Saco do Pereira</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<extrude>0</extrude>
+<coordinates>-36.6459862902,-6.43548734694899,0.0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+</Folder>
+<Folder id="13. Referência">
+<name>13. Referência</name>
+<Placemark id="13. Referência">
+<name>Acari [2400109]</name>
+<visibility>1</visibility>
+<snippet> </snippet>
+<description>&lt;center&gt;&lt;table&gt;&lt;tr&gt;&lt;th colspan='2' align='center'&gt;&lt;em&gt;Attributes&lt;/em&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_UF&lt;/th&gt;
+&lt;td&gt;24&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_UF&lt;/th&gt;
+&lt;td&gt;Rio Grande do Norte&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_MUN&lt;/th&gt;
+&lt;td&gt;2400109&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_MUN&lt;/th&gt;
+&lt;td&gt;Acari&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_RGINT&lt;/th&gt;
+&lt;td&gt;2402&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_RGINT&lt;/th&gt;
+&lt;td&gt;Caicó&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_RGI&lt;/th&gt;
+&lt;td&gt;240008&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_RGI&lt;/th&gt;
+&lt;td&gt;Currais Novos&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;&lt;/center&gt;</description>
+<Style>
+<IconStyle>
+<scale>0.7</scale>
+</IconStyle>
+<LabelStyle>
+<scale>0.7</scale>
+</LabelStyle>
+<LineStyle>
+<color>ffffffff</color>
+<width>3</width>
+<gx:labelVisibility>1</gx:labelVisibility>
+</LineStyle>
+<PolyStyle>
+<color>00ffffff</color>
+</PolyStyle>
+</Style>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_Município">
+<SimpleData name="CD_UF">24</SimpleData>
+<SimpleData name="NM_UF">Rio Grande do Norte</SimpleData>
+<SimpleData name="CD_MUN">2400109</SimpleData>
+<SimpleData name="NM_MUN">Acari</SimpleData>
+<SimpleData name="CD_RGINT">2402</SimpleData>
+<SimpleData name="NM_RGINT">Caicó</SimpleData>
+<SimpleData name="CD_RGI">240008</SimpleData>
+<SimpleData name="NM_RGI">Currais Novos</SimpleData>
+</SchemaData>
+</ExtendedData>
+<MultiGeometry>
+<Polygon>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>-36.7580936,-6.51294779978649,0.0 -36.7588963,-6.51466419978644,0.0 -36.7611108,-6.51567079978641,0.0 -36.7657248,-6.50878739978663,0.0 -36.7683134,-6.50052589978689,0.0 -36.7743156,-6.47296239978778,0.0 -36.7612286,-6.4785463997876,0.0 -36.7535071,-6.44825359978858,0.0 -36.7467238,-6.41488809978965,0.0 -36.7465929,-6.41424449978967,0.0 -36.7422584,-6.39293759979036,0.0 -36.741753,-6.37762339979085,0.0 -36.75243,-6.35389489979162,0.0 -36.7519967,-6.35305519979165,0.0 -36.7485853,-6.35032319979174,0.0 -36.7483947,-6.34883839979178,0.0 -36.7488647,-6.34784569979181,0.0 -36.749015,-6.34662639979186,0.0 -36.748797,-6.34599259979187,0.0 -36.7483099,-6.34545769979189,0.0 -36.7481191,-6.34395129979194,0.0 -36.7486008,-6.34298309979197,0.0 -36.7484287,-6.34156829979202,0.0 -36.7475696,-6.34093229979204,0.0 -36.7447016,-6.33959779979208,0.0 -36.7434972,-6.33914559979209,0.0 -36.7416217,-6.33872229979211,0.0 -36.7396563,-6.33743909979215,0.0 -36.7391512,-6.33642309979218,0.0 -36.753586,-6.32114409979268,0.0 -36.7541536,-6.3205430997927,0.0 -36.7523687,-6.31672229979282,0.0 -36.7484821,-6.31449699979289,0.0 -36.7461792,-6.311015699793,0.0 -36.7447389,-6.31053279979302,0.0 -36.7432953,-6.30752119979312,0.0 -36.7403739,-6.3049145997932,0.0 -36.73856,-6.3018073997933,0.0 -36.7163949,-6.30099689979333,0.0 -36.7157505,-6.29525849979351,0.0 -36.7153504,-6.29468579979353,0.0 -36.7134936,-6.29435339979354,0.0 -36.7135676,-6.29101119979365,0.0 -36.7132619,-6.29003209979368,0.0 -36.7129462,-6.2893703997937,0.0 -36.7106525,-6.28689149979378,0.0 -36.710024,-6.27809499979407,0.0 -36.7095898,-6.2769568997941,0.0 -36.7078404,-6.2768972997941,0.0 -36.7051721,-6.27577959979414,0.0 -36.7030306,-6.27427509979419,0.0 -36.7016558,-6.2740455997942,0.0 -36.7000462,-6.27546179979415,0.0 -36.6994227,-6.27656049979411,0.0 -36.6993075,-6.27676349979411,0.0 -36.6985882,-6.27685849979411,0.0 -36.6976313,-6.27654609979411,0.0 -36.6963685,-6.27499319979416,0.0 -36.6957184,-6.27419379979419,0.0 -36.6928844,-6.27260609979424,0.0 -36.6920522,-6.27259019979424,0.0 -36.6895986,-6.27457509979418,0.0 -36.6872856,-6.27367369979421,0.0 -36.6869192,-6.27258899979424,0.0 -36.6859814,-6.27182109979427,0.0 -36.6852784,-6.27191659979426,0.0 -36.6848663,-6.27180139979427,0.0 -36.6830666,-6.27040479979431,0.0 -36.6815942,-6.26980529979433,0.0 -36.6779574,-6.27132339979428,0.0 -36.6756183,-6.26996859979433,0.0 -36.6737426,-6.27147049979428,0.0 -36.673493,-6.27359579979421,0.0 -36.672502,-6.27526919979416,0.0 -36.6702455,-6.27536569979415,0.0 -36.6625329,-6.27851889979405,0.0 -36.6607034,-6.27794259979407,0.0 -36.6604426,-6.2771329997941,0.0 -36.6596534,-6.27651699979412,0.0 -36.6585451,-6.27669649979411,0.0 -36.6579736,-6.27608739979413,0.0 -36.6573053,-6.27415469979419,0.0 -36.6554658,-6.2738471997942,0.0 -36.655418,-6.27262049979424,0.0 -36.6552558,-6.27239469979425,0.0 -36.6547437,-6.27221579979425,0.0 -36.6519887,-6.27340999979422,0.0 -36.645844,-6.27059359979431,0.0 -36.6452484,-6.27045099979431,0.0 -36.6398087,-6.27130319979428,0.0 -36.632046,-6.26863289979437,0.0 -36.6306125,-6.26851309979437,0.0 -36.6296035,-6.26927879979435,0.0 -36.6283551,-6.27112799979429,0.0 -36.628282,-6.27146829979428,0.0 -36.629025,-6.27520869979416,0.0 -36.6282049,-6.27682399979411,0.0 -36.6281014,-6.28038359979399,0.0 -36.6270275,-6.28233339979393,0.0 -36.6262219,-6.28553149979383,0.0 -36.6259939,-6.28588069979381,0.0 -36.6250688,-6.2864386997938,0.0 -36.6233751,-6.28599039979381,0.0 -36.6210835,-6.28708289979378,0.0 -36.6196801,-6.28814309979374,0.0 -36.6188262,-6.29081869979365,0.0 -36.6175071,-6.29231929979361,0.0 -36.6154704,-6.29330569979358,0.0 -36.6138399,-6.29307469979358,0.0 -36.6045929,-6.29036839979367,0.0 -36.6042722,-6.29048959979367,0.0 -36.5960588,-6.28823329979374,0.0 -36.5952694,-6.29160949979363,0.0 -36.5924905,-6.29698899979345,0.0 -36.589458,-6.29727029979345,0.0 -36.5847694,-6.29987839979336,0.0 -36.5842402,-6.30054229979334,0.0 -36.5840972,-6.30117779979332,0.0 -36.5856376,-6.30337479979325,0.0 -36.5858134,-6.30446859979321,0.0 -36.5847531,-6.30637589979315,0.0 -36.5758491,-6.30781349979311,0.0 -36.5708606,-6.30974719979304,0.0 -36.5709084,-6.311012399793,0.0 -36.5699926,-6.31147869979299,0.0 -36.5676838,-6.31087899979301,0.0 -36.5670188,-6.311206299793,0.0 -36.5668491,-6.31200869979297,0.0 -36.5649663,-6.31227539979296,0.0 -36.5644363,-6.31285519979294,0.0 -36.5647657,-6.31366059979292,0.0 -36.5644039,-6.3142405997929,0.0 -36.5638505,-6.3142661997929,0.0 -36.5635391,-6.31545669979286,0.0 -36.5626602,-6.31602969979284,0.0 -36.5619147,-6.31779789979278,0.0 -36.5616979,-6.32169439979266,0.0 -36.5607501,-6.32376489979259,0.0 -36.5599423,-6.32743649979247,0.0 -36.5593322,-6.32826449979245,0.0 -36.5576417,-6.32861499979244,0.0 -36.5573082,-6.32902809979242,0.0 -36.5581743,-6.3297391997924,0.0 -36.55762,-6.33023509979238,0.0 -36.5548242,-6.33080269979236,0.0 -36.5532568,-6.33472729979224,0.0 -36.5535266,-6.3359459997922,0.0 -36.5532322,-6.33987779979207,0.0 -36.5487661,-6.34260639979198,0.0 -36.547984,-6.34437409979193,0.0 -36.550017,-6.34776239979182,0.0 -36.5508577,-6.35079319979172,0.0 -36.550857,-6.35401749979162,0.0 -36.5508568,-6.36185499979137,0.0 -36.5489263,-6.36291099979133,0.0 -36.5458384,-6.3638049997913,0.0 -36.5436434,-6.3670559997912,0.0 -36.542425,-6.37290279979101,0.0 -36.5407699,-6.373085299791,0.0 -36.5380353,-6.37261109979102,0.0 -36.5272911,-6.3763209997909,0.0 -36.5178284,-6.37821249979084,0.0 -36.5119771,-6.38214149979071,0.0 -36.5094337,-6.38279389979069,0.0 -36.505878,-6.38598429979059,0.0 -36.5043775,-6.38645089979057,0.0 -36.5047975,-6.39010829979045,0.0 -36.5074919,-6.40011669979013,0.0 -36.5107319,-6.40747799978989,0.0 -36.5186723,-6.41807969978955,0.0 -36.5210617,-6.42389969978936,0.0 -36.5256797,-6.43677669978895,0.0 -36.5289271,-6.44333829978874,0.0 -36.5309716,-6.45207159978846,0.0 -36.530573,-6.46053379978818,0.0 -36.5295303,-6.46566599978802,0.0 -36.5308248,-6.47183149978782,0.0 -36.5297487,-6.47673419978766,0.0 -36.528211,-6.47928419978758,0.0 -36.5367132,-6.48117079978752,0.0 -36.5412285,-6.48296949978746,0.0 -36.5432497,-6.48275499978747,0.0 -36.5456655,-6.48414559978742,0.0 -36.5462305,-6.48364439978744,0.0 -36.5490384,-6.48290299978746,0.0 -36.549914,-6.48298279978746,0.0 -36.5505038,-6.48402889978743,0.0 -36.5514456,-6.48407719978742,0.0 -36.5535681,-6.48194749978749,0.0 -36.5560748,-6.48130769978751,0.0 -36.5586225,-6.47818069978762,0.0 -36.5593458,-6.47824419978761,0.0 -36.5605175,-6.47959059978757,0.0 -36.5678522,-6.47807379978762,0.0 -36.5731662,-6.47650009978767,0.0 -36.5784274,-6.47304129978778,0.0 -36.5797772,-6.47290829978778,0.0 -36.5813194,-6.47431869978774,0.0 -36.585355,-6.48204109978749,0.0 -36.5870656,-6.48416129978742,0.0 -36.5901655,-6.48547069978738,0.0 -36.5945912,-6.48546029978738,0.0 -36.5970877,-6.48832879978729,0.0 -36.6116904,-6.49864439978696,0.0 -36.6258,-6.51126109978655,0.0 -36.6243418,-6.51427089978645,0.0 -36.6230684,-6.51556229978641,0.0 -36.6231833,-6.51670909978637,0.0 -36.6269674,-6.51959209978628,0.0 -36.6294843,-6.52262119978618,0.0 -36.6309165,-6.52633979978607,0.0 -36.6331381,-6.52749549978603,0.0 -36.6365741,-6.52805519978601,0.0 -36.6426057,-6.53502909978578,0.0 -36.6480995,-6.53287229978585,0.0 -36.6510802,-6.53912519978565,0.0 -36.6584314,-6.55460229978515,0.0 -36.6656113,-6.56356919978487,0.0 -36.6753199,-6.57697469978443,0.0 -36.679748,-6.57934919978436,0.0 -36.6789762,-6.55133879978526,0.0 -36.6950618,-6.55789299978505,0.0 -36.7035158,-6.53819929978568,0.0 -36.7047899,-6.53934139978565,0.0 -36.7058267,-6.53739939978571,0.0 -36.7075608,-6.53704519978572,0.0 -36.7077549,-6.53647169978574,0.0 -36.708718,-6.53558749978577,0.0 -36.7104524,-6.53650409978574,0.0 -36.7118358,-6.53688459978572,0.0 -36.7124084,-6.53688699978572,0.0 -36.7184339,-6.53296539978585,0.0 -36.7222041,-6.52934519978597,0.0 -36.7241748,-6.52810709978601,0.0 -36.727028,-6.52806039978601,0.0 -36.7288113,-6.52608199978607,0.0 -36.7298339,-6.52620029978607,0.0 -36.7309729,-6.52561009978609,0.0 -36.7323342,-6.5253074997861,0.0 -36.7339303,-6.52550699978609,0.0 -36.7352272,-6.52508119978611,0.0 -36.7367362,-6.52502939978611,0.0 -36.7378835,-6.52312599978617,0.0 -36.7406479,-6.52167209978621,0.0 -36.7413146,-6.52008099978627,0.0 -36.7413721,-6.51934699978629,0.0 -36.7423653,-6.51814329978633,0.0 -36.7428692,-6.51672949978637,0.0 -36.7442649,-6.51663239978638,0.0 -36.744648,-6.51682579978637,0.0 -36.7450597,-6.51774839978634,0.0 -36.7458432,-6.51838959978632,0.0 -36.7474234,-6.51821439978632,0.0 -36.7481586,-6.51724719978636,0.0 -36.7491573,-6.51341759978648,0.0 -36.7503937,-6.51303989978649,0.0 -36.7510926,-6.51562109978641,0.0 -36.7516811,-6.5159675997864,0.0 -36.7536875,-6.51327219978648,0.0 -36.7577657,-6.5128331997865,0.0 -36.7580936,-6.51294779978649,0.0</coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</MultiGeometry>
+</Placemark>
+</Folder>
+</Document></kml>

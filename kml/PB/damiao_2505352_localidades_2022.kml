@@ -1,0 +1,837 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<kml xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:atom="http://www.w3.org/2005/Atom" xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+<name>damiao_2505352_localidades_2022</name>
+<visibility>1</visibility>
+<Schema name="Povoados" id="kml_schema_ft_Povoados">
+<SimpleField type="xsd:string" name="CD_UF">
+<displayName>CD_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_UF">
+<displayName>NM_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="SIGLA_UF">
+<displayName>SIGLA_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_MUN">
+<displayName>CD_MUN</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_MUN">
+<displayName>NM_MUN</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_RGINT">
+<displayName>CD_RGINT</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_RGINT">
+<displayName>NM_RGINT</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_RGI">
+<displayName>CD_RGI</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_RGI">
+<displayName>NM_RGI</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CT_LOCALIDADE">
+<displayName>CT_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_LOCALIDADE">
+<displayName>CD_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_LOCALIDADE">
+<displayName>NM_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="LAT_LOCALIDADE">
+<displayName>LAT_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="LONG_LOCALIDADE">
+<displayName>LONG_LOCALIDADE</displayName>
+</SimpleField>
+</Schema>
+<Schema name="Localidades" id="kml_schema_ft_Localidades">
+<SimpleField type="xsd:string" name="CD_UF">
+<displayName>CD_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_UF">
+<displayName>NM_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="SIGLA_UF">
+<displayName>SIGLA_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_MUN">
+<displayName>CD_MUN</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_MUN">
+<displayName>NM_MUN</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_RGINT">
+<displayName>CD_RGINT</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_RGINT">
+<displayName>NM_RGINT</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_RGI">
+<displayName>CD_RGI</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_RGI">
+<displayName>NM_RGI</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CT_LOCALIDADE">
+<displayName>CT_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="SCT_LOCALIDADE">
+<displayName>SCT_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_LOCALIDADE">
+<displayName>CD_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_LOCALIDADE">
+<displayName>NM_LOCALIDADE</displayName>
+</SimpleField>
+</Schema>
+<Schema name="01. Cidade" id="kml_schema_ft_01._Cidade">
+<SimpleField type="xsd:string" name="CD_UF">
+<displayName>CD_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_UF">
+<displayName>NM_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="SIGLA_UF">
+<displayName>SIGLA_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_MUN">
+<displayName>CD_MUN</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_MUN">
+<displayName>NM_MUN</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_RGINT">
+<displayName>CD_RGINT</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_RGINT">
+<displayName>NM_RGINT</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_RGI">
+<displayName>CD_RGI</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_RGI">
+<displayName>NM_RGI</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CT_LOCALIDADE">
+<displayName>CT_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="SCT_LOCALIDADE">
+<displayName>SCT_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_LOCALIDADE">
+<displayName>CD_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_LOCALIDADE">
+<displayName>NM_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="LAT_LOCALIDADE">
+<displayName>LAT_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="LONG_LOCALIDADE">
+<displayName>LONG_LOCALIDADE</displayName>
+</SimpleField>
+</Schema>
+<Schema name="Município" id="kml_schema_ft_Município">
+<SimpleField type="xsd:string" name="CD_UF">
+<displayName>CD_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_UF">
+<displayName>NM_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_MUN">
+<displayName>CD_MUN</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_MUN">
+<displayName>NM_MUN</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_RGINT">
+<displayName>CD_RGINT</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_RGINT">
+<displayName>NM_RGINT</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_RGI">
+<displayName>CD_RGI</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_RGI">
+<displayName>NM_RGI</displayName>
+</SimpleField>
+</Schema>
+<Folder id="01. Cidade">
+<name>01. Cidade</name>
+<Folder id="01.03. Sede Municipal">
+<name>01.03. Sede Municipal</name>
+<Placemark id="01.03. Sede Municipal">
+<name>Damião [2505352]</name>
+<visibility>1</visibility>
+<snippet> </snippet>
+<description>&lt;center&gt;&lt;table&gt;&lt;tr&gt;&lt;th colspan='2' align='center'&gt;&lt;em&gt;Atributos&lt;/em&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_UF&lt;/th&gt;
+&lt;td&gt;25&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_UF&lt;/th&gt;
+&lt;td&gt;Paraíba&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;SIGLA_UF&lt;/th&gt;
+&lt;td&gt;PB&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_MUN&lt;/th&gt;
+&lt;td&gt;2505352&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_MUN&lt;/th&gt;
+&lt;td&gt;Damião&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGINT&lt;/th&gt;
+&lt;td&gt;2502&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGINT&lt;/th&gt;
+&lt;td&gt;Campina Grande&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGI&lt;/th&gt;
+&lt;td&gt;250006&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGI&lt;/th&gt;
+&lt;td&gt;Cuité - Nova Floresta&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Cidade&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;SCT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Sede Municipal&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;2505352&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Damião&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;LAT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;-6.63&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;LONG_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;-35.906&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;&lt;/center&gt;</description>
+<Style>
+<IconStyle>
+<color>ff00aaff</color>
+<scale>1.0</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<scale>1.0</scale>
+</LabelStyle>
+<LineStyle>
+<color>ffffffff</color>
+<width>3</width>
+<gx:labelVisibility>1</gx:labelVisibility>
+</LineStyle>
+<PolyStyle>
+<color>00ffffff</color>
+</PolyStyle>
+</Style>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_01._Cidade">
+<SimpleData name="CD_UF">25</SimpleData>
+<SimpleData name="NM_UF">Paraíba</SimpleData>
+<SimpleData name="SIGLA_UF">PB</SimpleData>
+<SimpleData name="CD_MUN">2505352</SimpleData>
+<SimpleData name="NM_MUN">Damião</SimpleData>
+<SimpleData name="CD_RGINT">2502</SimpleData>
+<SimpleData name="NM_RGINT">Campina Grande</SimpleData>
+<SimpleData name="CD_RGI">250006</SimpleData>
+<SimpleData name="NM_RGI">Cuité - Nova Floresta</SimpleData>
+<SimpleData name="CT_LOCALIDADE">Cidade</SimpleData>
+<SimpleData name="SCT_LOCALIDADE">Sede Municipal</SimpleData>
+<SimpleData name="CD_LOCALIDADE">2505352</SimpleData>
+<SimpleData name="NM_LOCALIDADE">Damião</SimpleData>
+<SimpleData name="LAT_LOCALIDADE">-6.63</SimpleData>
+<SimpleData name="LONG_LOCALIDADE">-35.906</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<extrude>0</extrude>
+<coordinates>-35.906,-6.62999999978273,0.0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+</Folder>
+<Folder id="06. Povoados">
+<name>06. Povoados</name>
+<Placemark id="06. Povoados">
+<name>Chã do Damião [250535200001]</name>
+<visibility>1</visibility>
+<snippet> </snippet>
+<description>&lt;center&gt;&lt;table&gt;&lt;tr&gt;&lt;th colspan='2' align='center'&gt;&lt;em&gt;Atributos&lt;/em&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_UF&lt;/th&gt;
+&lt;td&gt;25&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_UF&lt;/th&gt;
+&lt;td&gt;Paraíba&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;SIGLA_UF&lt;/th&gt;
+&lt;td&gt;PB&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_MUN&lt;/th&gt;
+&lt;td&gt;2505352&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_MUN&lt;/th&gt;
+&lt;td&gt;Damião&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGINT&lt;/th&gt;
+&lt;td&gt;2502&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGINT&lt;/th&gt;
+&lt;td&gt;Campina Grande&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGI&lt;/th&gt;
+&lt;td&gt;250006&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGI&lt;/th&gt;
+&lt;td&gt;Cuité - Nova Floresta&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Povoado&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;250535200001&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Chã do Damião&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;LAT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;-6.6207&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;LONG_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;-35.9051&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;&lt;/center&gt;</description>
+<Style>
+<IconStyle>
+<color>ff00ff54</color>
+<scale>0.8</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<scale>0.8</scale>
+</LabelStyle>
+<LineStyle>
+<color>72ff54ff</color>
+<width>1.0</width>
+<gx:labelVisibility>1</gx:labelVisibility>
+</LineStyle>
+<PolyStyle>
+<color>66ff54ff</color>
+</PolyStyle>
+</Style>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_Povoados">
+<SimpleData name="CD_UF">25</SimpleData>
+<SimpleData name="NM_UF">Paraíba</SimpleData>
+<SimpleData name="SIGLA_UF">PB</SimpleData>
+<SimpleData name="CD_MUN">2505352</SimpleData>
+<SimpleData name="NM_MUN">Damião</SimpleData>
+<SimpleData name="CD_RGINT">2502</SimpleData>
+<SimpleData name="NM_RGINT">Campina Grande</SimpleData>
+<SimpleData name="CD_RGI">250006</SimpleData>
+<SimpleData name="NM_RGI">Cuité - Nova Floresta</SimpleData>
+<SimpleData name="CT_LOCALIDADE">Povoado</SimpleData>
+<SimpleData name="CD_LOCALIDADE">250535200001</SimpleData>
+<SimpleData name="NM_LOCALIDADE">Chã do Damião</SimpleData>
+<SimpleData name="LAT_LOCALIDADE">-6.6207</SimpleData>
+<SimpleData name="LONG_LOCALIDADE">-35.9051</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<extrude>0</extrude>
+<coordinates>-35.9050507934782,-6.62070349978302,0.0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Folder id="12. Outras Localidades">
+<name>12. Outras Localidades</name>
+<Placemark id="12. Outras Localidades">
+<name>Vila Pedro Marques de Melo [250535200002]</name>
+<visibility>1</visibility>
+<snippet> </snippet>
+<description>&lt;center&gt;&lt;table&gt;&lt;tr&gt;&lt;th colspan='2' align='center'&gt;&lt;em&gt;Attributes&lt;/em&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_UF&lt;/th&gt;
+&lt;td&gt;25&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_UF&lt;/th&gt;
+&lt;td&gt;Paraíba&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;SIGLA_UF&lt;/th&gt;
+&lt;td&gt;PB&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_MUN&lt;/th&gt;
+&lt;td&gt;2505352&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_MUN&lt;/th&gt;
+&lt;td&gt;Damião&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGINT&lt;/th&gt;
+&lt;td&gt;2502&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGINT&lt;/th&gt;
+&lt;td&gt;Campina Grande&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGI&lt;/th&gt;
+&lt;td&gt;250006&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGI&lt;/th&gt;
+&lt;td&gt;Cuité - Nova Floresta&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Outras Localidades&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;SCT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;250535200002&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Vila Pedro Marques de Melo&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;&lt;/center&gt;</description>
+<Style>
+<IconStyle>
+<color>ff0069d3</color>
+<scale>0.6</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<scale>0.6</scale>
+</LabelStyle>
+<LineStyle>
+<width>1.0</width>
+<gx:labelVisibility>1</gx:labelVisibility>
+</LineStyle>
+</Style>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_Localidades">
+<SimpleData name="CD_UF">25</SimpleData>
+<SimpleData name="NM_UF">Paraíba</SimpleData>
+<SimpleData name="SIGLA_UF">PB</SimpleData>
+<SimpleData name="CD_MUN">2505352</SimpleData>
+<SimpleData name="NM_MUN">Damião</SimpleData>
+<SimpleData name="CD_RGINT">2502</SimpleData>
+<SimpleData name="NM_RGINT">Campina Grande</SimpleData>
+<SimpleData name="CD_RGI">250006</SimpleData>
+<SimpleData name="NM_RGI">Cuité - Nova Floresta</SimpleData>
+<SimpleData name="CT_LOCALIDADE">Outras Localidades</SimpleData>
+<SimpleData name="CD_LOCALIDADE">250535200002</SimpleData>
+<SimpleData name="NM_LOCALIDADE">Vila Pedro Marques de Melo</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<extrude>0</extrude>
+<coordinates>-35.978308251,-6.62390375258292,0.0</coordinates>
+</Point>
+</Placemark>
+<Placemark id="12. Outras Localidades">
+<name>Baixa Aripuá [250535200003]</name>
+<visibility>1</visibility>
+<snippet> </snippet>
+<description>&lt;center&gt;&lt;table&gt;&lt;tr&gt;&lt;th colspan='2' align='center'&gt;&lt;em&gt;Attributes&lt;/em&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_UF&lt;/th&gt;
+&lt;td&gt;25&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_UF&lt;/th&gt;
+&lt;td&gt;Paraíba&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;SIGLA_UF&lt;/th&gt;
+&lt;td&gt;PB&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_MUN&lt;/th&gt;
+&lt;td&gt;2505352&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_MUN&lt;/th&gt;
+&lt;td&gt;Damião&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGINT&lt;/th&gt;
+&lt;td&gt;2502&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGINT&lt;/th&gt;
+&lt;td&gt;Campina Grande&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGI&lt;/th&gt;
+&lt;td&gt;250006&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGI&lt;/th&gt;
+&lt;td&gt;Cuité - Nova Floresta&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Outras Localidades&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;SCT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;250535200003&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Baixa Aripuá&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;&lt;/center&gt;</description>
+<Style>
+<IconStyle>
+<color>ff0069d3</color>
+<scale>0.6</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<scale>0.6</scale>
+</LabelStyle>
+<LineStyle>
+<width>1.0</width>
+<gx:labelVisibility>1</gx:labelVisibility>
+</LineStyle>
+</Style>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_Localidades">
+<SimpleData name="CD_UF">25</SimpleData>
+<SimpleData name="NM_UF">Paraíba</SimpleData>
+<SimpleData name="SIGLA_UF">PB</SimpleData>
+<SimpleData name="CD_MUN">2505352</SimpleData>
+<SimpleData name="NM_MUN">Damião</SimpleData>
+<SimpleData name="CD_RGINT">2502</SimpleData>
+<SimpleData name="NM_RGINT">Campina Grande</SimpleData>
+<SimpleData name="CD_RGI">250006</SimpleData>
+<SimpleData name="NM_RGI">Cuité - Nova Floresta</SimpleData>
+<SimpleData name="CT_LOCALIDADE">Outras Localidades</SimpleData>
+<SimpleData name="CD_LOCALIDADE">250535200003</SimpleData>
+<SimpleData name="NM_LOCALIDADE">Baixa Aripuá</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<extrude>0</extrude>
+<coordinates>-35.9542894062,-6.59064857938399,0.0</coordinates>
+</Point>
+</Placemark>
+<Placemark id="12. Outras Localidades">
+<name>Gangorra [250535200004]</name>
+<visibility>1</visibility>
+<snippet> </snippet>
+<description>&lt;center&gt;&lt;table&gt;&lt;tr&gt;&lt;th colspan='2' align='center'&gt;&lt;em&gt;Attributes&lt;/em&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_UF&lt;/th&gt;
+&lt;td&gt;25&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_UF&lt;/th&gt;
+&lt;td&gt;Paraíba&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;SIGLA_UF&lt;/th&gt;
+&lt;td&gt;PB&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_MUN&lt;/th&gt;
+&lt;td&gt;2505352&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_MUN&lt;/th&gt;
+&lt;td&gt;Damião&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGINT&lt;/th&gt;
+&lt;td&gt;2502&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGINT&lt;/th&gt;
+&lt;td&gt;Campina Grande&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGI&lt;/th&gt;
+&lt;td&gt;250006&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGI&lt;/th&gt;
+&lt;td&gt;Cuité - Nova Floresta&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Outras Localidades&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;SCT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;250535200004&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Gangorra&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;&lt;/center&gt;</description>
+<Style>
+<IconStyle>
+<color>ff0069d3</color>
+<scale>0.6</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<scale>0.6</scale>
+</LabelStyle>
+<LineStyle>
+<width>1.0</width>
+<gx:labelVisibility>1</gx:labelVisibility>
+</LineStyle>
+</Style>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_Localidades">
+<SimpleData name="CD_UF">25</SimpleData>
+<SimpleData name="NM_UF">Paraíba</SimpleData>
+<SimpleData name="SIGLA_UF">PB</SimpleData>
+<SimpleData name="CD_MUN">2505352</SimpleData>
+<SimpleData name="NM_MUN">Damião</SimpleData>
+<SimpleData name="CD_RGINT">2502</SimpleData>
+<SimpleData name="NM_RGINT">Campina Grande</SimpleData>
+<SimpleData name="CD_RGI">250006</SimpleData>
+<SimpleData name="NM_RGI">Cuité - Nova Floresta</SimpleData>
+<SimpleData name="CT_LOCALIDADE">Outras Localidades</SimpleData>
+<SimpleData name="CD_LOCALIDADE">250535200004</SimpleData>
+<SimpleData name="NM_LOCALIDADE">Gangorra</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<extrude>0</extrude>
+<coordinates>-35.9290985206,-6.72164315857978,0.0</coordinates>
+</Point>
+</Placemark>
+<Placemark id="12. Outras Localidades">
+<name>Malhada do Gravata [250535200005]</name>
+<visibility>1</visibility>
+<snippet> </snippet>
+<description>&lt;center&gt;&lt;table&gt;&lt;tr&gt;&lt;th colspan='2' align='center'&gt;&lt;em&gt;Attributes&lt;/em&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_UF&lt;/th&gt;
+&lt;td&gt;25&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_UF&lt;/th&gt;
+&lt;td&gt;Paraíba&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;SIGLA_UF&lt;/th&gt;
+&lt;td&gt;PB&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_MUN&lt;/th&gt;
+&lt;td&gt;2505352&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_MUN&lt;/th&gt;
+&lt;td&gt;Damião&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGINT&lt;/th&gt;
+&lt;td&gt;2502&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGINT&lt;/th&gt;
+&lt;td&gt;Campina Grande&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGI&lt;/th&gt;
+&lt;td&gt;250006&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGI&lt;/th&gt;
+&lt;td&gt;Cuité - Nova Floresta&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Outras Localidades&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;SCT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;250535200005&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Malhada do Gravata&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;&lt;/center&gt;</description>
+<Style>
+<IconStyle>
+<color>ff0069d3</color>
+<scale>0.6</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<scale>0.6</scale>
+</LabelStyle>
+<LineStyle>
+<width>1.0</width>
+<gx:labelVisibility>1</gx:labelVisibility>
+</LineStyle>
+</Style>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_Localidades">
+<SimpleData name="CD_UF">25</SimpleData>
+<SimpleData name="NM_UF">Paraíba</SimpleData>
+<SimpleData name="SIGLA_UF">PB</SimpleData>
+<SimpleData name="CD_MUN">2505352</SimpleData>
+<SimpleData name="NM_MUN">Damião</SimpleData>
+<SimpleData name="CD_RGINT">2502</SimpleData>
+<SimpleData name="NM_RGINT">Campina Grande</SimpleData>
+<SimpleData name="CD_RGI">250006</SimpleData>
+<SimpleData name="NM_RGI">Cuité - Nova Floresta</SimpleData>
+<SimpleData name="CT_LOCALIDADE">Outras Localidades</SimpleData>
+<SimpleData name="CD_LOCALIDADE">250535200005</SimpleData>
+<SimpleData name="NM_LOCALIDADE">Malhada do Gravata</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<extrude>0</extrude>
+<coordinates>-35.9518075817,-6.62199171568299,0.0</coordinates>
+</Point>
+</Placemark>
+<Placemark id="12. Outras Localidades">
+<name>São Lourenço de Cima [250535200006]</name>
+<visibility>1</visibility>
+<snippet> </snippet>
+<description>&lt;center&gt;&lt;table&gt;&lt;tr&gt;&lt;th colspan='2' align='center'&gt;&lt;em&gt;Attributes&lt;/em&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_UF&lt;/th&gt;
+&lt;td&gt;25&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_UF&lt;/th&gt;
+&lt;td&gt;Paraíba&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;SIGLA_UF&lt;/th&gt;
+&lt;td&gt;PB&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_MUN&lt;/th&gt;
+&lt;td&gt;2505352&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_MUN&lt;/th&gt;
+&lt;td&gt;Damião&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGINT&lt;/th&gt;
+&lt;td&gt;2502&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGINT&lt;/th&gt;
+&lt;td&gt;Campina Grande&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGI&lt;/th&gt;
+&lt;td&gt;250006&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGI&lt;/th&gt;
+&lt;td&gt;Cuité - Nova Floresta&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Outras Localidades&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;SCT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;250535200006&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;São Lourenço de Cima&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;&lt;/center&gt;</description>
+<Style>
+<IconStyle>
+<color>ff0069d3</color>
+<scale>0.6</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<scale>0.6</scale>
+</LabelStyle>
+<LineStyle>
+<width>1.0</width>
+<gx:labelVisibility>1</gx:labelVisibility>
+</LineStyle>
+</Style>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_Localidades">
+<SimpleData name="CD_UF">25</SimpleData>
+<SimpleData name="NM_UF">Paraíba</SimpleData>
+<SimpleData name="SIGLA_UF">PB</SimpleData>
+<SimpleData name="CD_MUN">2505352</SimpleData>
+<SimpleData name="NM_MUN">Damião</SimpleData>
+<SimpleData name="CD_RGINT">2502</SimpleData>
+<SimpleData name="NM_RGINT">Campina Grande</SimpleData>
+<SimpleData name="CD_RGI">250006</SimpleData>
+<SimpleData name="NM_RGI">Cuité - Nova Floresta</SimpleData>
+<SimpleData name="CT_LOCALIDADE">Outras Localidades</SimpleData>
+<SimpleData name="CD_LOCALIDADE">250535200006</SimpleData>
+<SimpleData name="NM_LOCALIDADE">São Lourenço de Cima</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<extrude>0</extrude>
+<coordinates>-35.9278423109,-6.71873138847987,0.0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Folder id="13. Referência">
+<name>13. Referência</name>
+<Placemark id="13. Referência">
+<name>Damião [2505352]</name>
+<visibility>1</visibility>
+<snippet> </snippet>
+<description>&lt;center&gt;&lt;table&gt;&lt;tr&gt;&lt;th colspan='2' align='center'&gt;&lt;em&gt;Attributes&lt;/em&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_UF&lt;/th&gt;
+&lt;td&gt;25&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_UF&lt;/th&gt;
+&lt;td&gt;Paraíba&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_MUN&lt;/th&gt;
+&lt;td&gt;2505352&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_MUN&lt;/th&gt;
+&lt;td&gt;Damião&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_RGINT&lt;/th&gt;
+&lt;td&gt;2502&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_RGINT&lt;/th&gt;
+&lt;td&gt;Campina Grande&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_RGI&lt;/th&gt;
+&lt;td&gt;250006&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_RGI&lt;/th&gt;
+&lt;td&gt;Cuité - Nova Floresta&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;&lt;/center&gt;</description>
+<Style>
+<IconStyle>
+<scale>0.7</scale>
+</IconStyle>
+<LabelStyle>
+<scale>0.7</scale>
+</LabelStyle>
+<LineStyle>
+<color>ffffffff</color>
+<width>3</width>
+<gx:labelVisibility>1</gx:labelVisibility>
+</LineStyle>
+<PolyStyle>
+<color>00ffffff</color>
+</PolyStyle>
+</Style>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_Município">
+<SimpleData name="CD_UF">25</SimpleData>
+<SimpleData name="NM_UF">Paraíba</SimpleData>
+<SimpleData name="CD_MUN">2505352</SimpleData>
+<SimpleData name="NM_MUN">Damião</SimpleData>
+<SimpleData name="CD_RGINT">2502</SimpleData>
+<SimpleData name="NM_RGINT">Campina Grande</SimpleData>
+<SimpleData name="CD_RGI">250006</SimpleData>
+<SimpleData name="NM_RGI">Cuité - Nova Floresta</SimpleData>
+</SchemaData>
+</ExtendedData>
+<MultiGeometry>
+<Polygon>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>-35.8710249,-6.63282039978264,0.0 -35.8659901,-6.67928379978114,0.0 -35.866695,-6.67971469978113,0.0 -35.8674221,-6.68035019978111,0.0 -35.8678232,-6.68088599978109,0.0 -35.8682654,-6.68147669978107,0.0 -35.868818,-6.68266089978103,0.0 -35.8693415,-6.68416289978098,0.0 -35.8693415,-6.68540489978094,0.0 -35.869894,-6.68635809978091,0.0 -35.8701848,-6.68736899978088,0.0 -35.870683,-6.68838219978085,0.0 -35.8707956,-6.68861109978084,0.0 -35.8712318,-6.68930429978082,0.0 -35.87142,-6.68966719978081,0.0 -35.8717262,-6.69025739978079,0.0 -35.8721042,-6.69086399978077,0.0 -35.8725405,-6.69106619978076,0.0 -35.873371,-6.69105489978076,0.0 -35.8746634,-6.69103729978076,0.0 -35.8768155,-6.69103729978077,0.0 -35.8779788,-6.69118169978076,0.0 -35.8786477,-6.69118169978076,0.0 -35.8790548,-6.69126839978076,0.0 -35.8796364,-6.69103729978076,0.0 -35.8800436,-6.69057519978078,0.0 -35.8810905,-6.69057519978078,0.0 -35.8819339,-6.69063289978078,0.0 -35.8830099,-6.69054629978078,0.0 -35.8842895,-6.69069069978078,0.0 -35.8862089,-6.69086399978077,0.0 -35.8878375,-6.69086399978077,0.0 -35.8887972,-6.69080619978077,0.0 -35.8893207,-6.69109509978076,0.0 -35.8896322,-6.69150759978075,0.0 -35.8897569,-6.69167269978074,0.0 -35.8901932,-6.69184599978074,0.0 -35.8915309,-6.69178829978074,0.0 -35.8923595,-6.69184389978074,0.0 -35.8932177,-6.69187489978074,0.0 -35.8941192,-6.69219259978073,0.0 -35.8943519,-6.69271259978071,0.0 -35.8947008,-6.69360789978068,0.0 -35.8948753,-6.69447449978065,0.0 -35.8952243,-6.69646739978059,0.0 -35.895445,-6.69707569978057,0.0 -35.8958422,-6.69747019978056,0.0 -35.8963529,-6.69777079978055,0.0 -35.8968826,-6.69805259978054,0.0 -35.8973555,-6.69820289978053,0.0 -35.8978472,-6.69848459978053,0.0 -35.8982255,-6.69867249978052,0.0 -35.8984904,-6.69872889978052,0.0 -35.8990578,-6.69852219978052,0.0 -35.8994834,-6.69844039978053,0.0 -35.8996442,-6.69840949978053,0.0 -35.8999351,-6.69856889978052,0.0 -35.9001927,-6.69871009978052,0.0 -35.9007223,-6.6992736997805,0.0 -35.9008926,-6.70030689978047,0.0 -35.9006845,-6.70103949978044,0.0 -35.9004008,-6.70182849978042,0.0 -35.8998712,-6.70257999978039,0.0 -35.8991335,-6.70357559978036,0.0 -35.8986984,-6.70378229978036,0.0 -35.898339,-6.70398889978035,0.0 -35.8978851,-6.70464639978033,0.0 -35.8976013,-6.7055480997803,0.0 -35.8977527,-6.70596139978028,0.0 -35.8983769,-6.70646859978027,0.0 -35.8989254,-6.70686309978026,0.0 -35.8994361,-6.70684439978026,0.0 -35.8998333,-6.70671289978026,0.0 -35.900352,-6.70674589978026,0.0 -35.9006845,-6.70676919978026,0.0 -35.9017627,-6.70690069978025,0.0 -35.9028598,-6.70690069978026,0.0 -35.9040136,-6.70729519978024,0.0 -35.904808,-6.70791509978022,0.0 -35.9060564,-6.70909859978018,0.0 -35.906813,-6.70988759978016,0.0 -35.9073994,-6.71033849978014,0.0 -35.9076453,-6.71073299978013,0.0 -35.9077777,-6.71144679978011,0.0 -35.9078344,-6.71234849978008,0.0 -35.9079858,-6.71317509978005,0.0 -35.9083451,-6.71405799978002,0.0 -35.9088937,-6.71522269977999,0.0 -35.9089693,-6.71572989977997,0.0 -35.9091963,-6.71616199977996,0.0 -35.9098205,-6.71650009977995,0.0 -35.9104258,-6.71678189977994,0.0 -35.9107674,-6.71691379977993,0.0 -35.9117877,-6.71730789977992,0.0 -35.91262,-6.71747689977992,0.0 -35.9135846,-6.7177962997799,0.0 -35.9144169,-6.7177962997799,0.0 -35.9147798,-6.7178279997799,0.0 -35.9160068,-6.7179350997799,0.0 -35.9161382,-6.7179465997799,0.0 -35.9171808,-6.71825009977989,0.0 -35.918182,-6.71828119977989,0.0 -35.9188998,-6.71830349977989,0.0 -35.9207913,-6.71881069977987,0.0 -35.9221721,-6.71946819977985,0.0 -35.9237894,-6.72055769977981,0.0 -35.9241128,-6.7209989997798,0.0 -35.9246984,-6.7211797997798,0.0 -35.9252494,-6.72148519977979,0.0 -35.9260567,-6.72179059977978,0.0 -35.9266461,-6.72221049977976,0.0 -35.9271843,-6.72264319977975,0.0 -35.9279915,-6.72302499977974,0.0 -35.9285169,-6.72349579977972,0.0 -35.9285189,-6.72349819977972,0.0 -35.92885,-6.72378849977971,0.0 -35.9293882,-6.72389029977971,0.0 -35.9301827,-6.72381399977971,0.0 -35.9311693,-6.72293589977974,0.0 -35.9317075,-6.72207059977977,0.0 -35.9320663,-6.72142159977979,0.0 -35.9324891,-6.72064529977981,0.0 -35.9330017,-6.71966539977984,0.0 -35.9333385,-6.71896799977987,0.0 -35.9339242,-6.7178201997799,0.0 -35.9344752,-6.71694209977993,0.0 -35.9348853,-6.71661129977995,0.0 -35.9352569,-6.71648399977995,0.0 -35.9354841,-6.71649389977995,0.0 -35.9364229,-6.71653489977995,0.0 -35.9370508,-6.71673849977994,0.0 -35.937858,-6.71670029977994,0.0 -35.9385115,-6.71622949977995,0.0 -35.9389985,-6.71564409977997,0.0 -35.9395879,-6.71457509978001,0.0 -35.9398954,-6.71368429978004,0.0 -35.9401261,-6.71264079978007,0.0 -35.9403311,-6.71121549978011,0.0 -35.9401724,-6.71012979978015,0.0 -35.9401004,-6.70963749978017,0.0 -35.9399979,-6.7086702997802,0.0 -35.9401261,-6.70744869978024,0.0 -35.9400748,-6.70660869978026,0.0 -35.9404848,-6.70615059978028,0.0 -35.9413049,-6.7054887997803,0.0 -35.9420225,-6.70500529978032,0.0 -35.9425607,-6.70457259978033,0.0 -35.9434064,-6.70385989978035,0.0 -35.9439702,-6.70301999978038,0.0 -35.9441495,-6.7023836997804,0.0 -35.9445596,-6.70139109978043,0.0 -35.9451746,-6.70062749978046,0.0 -35.9460203,-6.69981299978048,0.0 -35.9464816,-6.6992530997805,0.0 -35.9470967,-6.69843859978053,0.0 -35.9475324,-6.69790409978054,0.0 -35.9481987,-6.69762409978055,0.0 -35.9491981,-6.69744589978056,0.0 -35.9507358,-6.69764959978055,0.0 -35.9518121,-6.69782769978055,0.0 -35.9528372,-6.69782769978055,0.0 -35.9533241,-6.69792949978054,0.0 -35.953654,-6.69795679978054,0.0 -35.9546055,-6.69795499978054,0.0 -35.9550924,-6.69808229978054,0.0 -35.9553743,-6.69820949978053,0.0 -35.956015,-6.69848949978052,0.0 -35.9576295,-6.69813319978054,0.0 -35.9578602,-6.69793869978054,0.0 -35.9584752,-6.69742049978056,0.0 -35.9589621,-6.69703869978057,0.0 -35.9600129,-6.69650419978059,0.0 -35.9611917,-6.6962750997806,0.0 -35.961858,-6.6962750997806,0.0 -35.9624475,-6.69637689978059,0.0 -35.9635238,-6.69642779978059,0.0 -35.9640876,-6.69670779978058,0.0 -35.9644208,-6.69711509978057,0.0 -35.9652152,-6.69803139978054,0.0 -35.9661378,-6.69854039978052,0.0 -35.9664966,-6.69889669978051,0.0 -35.9674704,-6.69866769978052,0.0 -35.9683674,-6.69848949978052,0.0 -35.9692387,-6.69889669978051,0.0 -35.9702125,-6.70179829978042,0.0 -35.9711095,-6.70304539978038,0.0 -35.9717245,-6.70373269978036,0.0 -35.9735185,-6.70452169978033,0.0 -35.9741335,-6.70472529978032,0.0 -35.9751073,-6.70469979978032,0.0 -35.976235,-6.70452169978033,0.0 -35.9776445,-6.70439439978033,0.0 -35.9782339,-6.70408899978034,0.0 -35.9787977,-6.70345269978036,0.0 -35.9794896,-6.70322359978037,0.0 -35.9800534,-6.70324909978037,0.0 -35.9803097,-6.70332539978037,0.0 -35.9808735,-6.70307089978038,0.0 -35.9813604,-6.7023836997804,0.0 -35.9818986,-6.70149289978043,0.0 -35.982283,-6.70139109978043,0.0 -35.9829749,-6.70113649978044,0.0 -35.9834106,-6.70098379978045,0.0 -35.9837694,-6.70062749978046,0.0 -35.9840257,-6.69999119978048,0.0 -35.9846151,-6.69994029978048,0.0 -35.985102,-6.69988939978048,0.0 -35.9855377,-6.6991003997805,0.0 -35.9858708,-6.69823499978053,0.0 -35.9862296,-6.69711509978057,0.0 -35.9868703,-6.69678419978058,0.0 -35.987511,-6.69637689978059,0.0 -35.9882285,-6.69599519978061,0.0 -35.9884592,-6.69538429978063,0.0 -35.9889974,-6.69518069978063,0.0 -35.9897149,-6.69474799978064,0.0 -35.9902787,-6.69418799978066,0.0 -35.9907656,-6.69375529978068,0.0 -35.9909963,-6.69350079978069,0.0 -35.991637,-6.69322079978069,0.0 -35.9922701,-6.6928947997807,0.0 -35.9925339,-6.69286449978071,0.0 -35.9928415,-6.69280089978071,0.0 -35.9930465,-6.69269899978071,0.0 -35.9931618,-6.69254629978072,0.0 -35.9934053,-6.69240629978072,0.0 -35.9935334,-6.69229179978072,0.0 -35.9938155,-6.69212329978073,0.0 -35.9936878,-6.69170399978074,0.0 -35.9935837,-6.69121329978076,0.0 -35.9934147,-6.69092919978077,0.0 -35.9931806,-6.69081299978077,0.0 -35.9928946,-6.69063219978078,0.0 -35.9926735,-6.69052889978078,0.0 -35.9924655,-6.69011559978079,0.0 -35.9924005,-6.6897926997808,0.0 -35.9924915,-6.68956029978081,0.0 -35.9927906,-6.68939239978082,0.0 -35.9929856,-6.68931489978082,0.0 -35.9932717,-6.68909539978083,0.0 -35.9932197,-6.68870799978084,0.0 -35.9930376,-6.68829469978085,0.0 -35.9927516,-6.68789439978087,0.0 -35.9924785,-6.68763609978087,0.0 -35.9922184,-6.68730029978089,0.0 -35.9919974,-6.68704199978089,0.0 -35.9919144,-6.6868050997809,0.0 -35.9918934,-6.6867449997809,0.0 -35.9919324,-6.68637049978091,0.0 -35.9921014,-6.68602179978092,0.0 -35.9927256,-6.68587969978093,0.0 -35.9932197,-6.68573769978093,0.0 -35.9934407,-6.68562139978094,0.0 -35.9936487,-6.68542769978094,0.0 -35.9940648,-6.68522109978095,0.0 -35.9943119,-6.68514359978095,0.0 -35.9944939,-6.68515649978095,0.0 -35.9948097,-6.68536839978095,0.0 -35.994975,-6.68547939978094,0.0 -35.9953261,-6.68580219978093,0.0 -35.9957032,-6.68608629978092,0.0 -35.9961453,-6.68635759978092,0.0 -35.9966654,-6.6867191997809,0.0 -35.9970815,-6.6868611997809,0.0 -35.9976276,-6.6869515997809,0.0 -35.9980567,-6.6868740997809,0.0 -35.9982777,-6.6868611997809,0.0 -35.9984988,-6.68660289978091,0.0 -35.9984468,-6.68611219978092,0.0 -35.9986938,-6.68575059978093,0.0 -35.9988498,-6.68541479978095,0.0 -35.9990839,-6.68515649978095,0.0 -35.9991489,-6.68479489978097,0.0 -35.9990839,-6.68448499978097,0.0 -35.9992269,-6.68420089978098,0.0 -35.999591,-6.68402009978099,0.0 -35.9999811,-6.683555099781,0.0 -36.0004492,-6.68307729978102,0.0 -36.0005272,-6.68278029978103,0.0 -36.0008133,-6.68237989978104,0.0 -36.0012944,-6.68252199978104,0.0 -36.0013508,-6.68255199978104,0.0 -36.0016584,-6.68271569978103,0.0 -36.0019445,-6.68287069978103,0.0 -36.0021395,-6.68292229978103,0.0 -36.0024646,-6.68272859978103,0.0 -36.0025426,-6.68236699978104,0.0 -36.0023216,-6.68194079978106,0.0 -36.0021131,-6.68167619978106,0.0 -36.0018275,-6.68146299978107,0.0 -36.0011773,-6.68120469978108,0.0 -36.0008263,-6.68112719978108,0.0 -36.0003712,-6.68119179978108,0.0 -36.0000461,-6.68125639978108,0.0 -35.999617,-6.68126929978108,0.0 -35.9990449,-6.68129509978108,0.0 -35.9984208,-6.68121759978108,0.0 -35.9979397,-6.68106269978109,0.0 -35.9976016,-6.68095929978109,0.0 -35.9974639,-6.68097759978109,0.0 -35.9972115,-6.68101099978109,0.0 -35.9968994,-6.68104969978108,0.0 -35.9965744,-6.68111429978108,0.0 -35.9962363,-6.68117889978108,0.0 -35.9960803,-6.68120469978108,0.0 -35.9958592,-6.68102389978109,0.0 -35.9956382,-6.68075269978109,0.0 -35.9955471,-6.68042979978111,0.0 -35.9956642,-6.68009409978112,0.0 -35.9959112,-6.67977119978113,0.0 -35.9961843,-6.67948709978114,0.0 -35.9964183,-6.67926749978114,0.0 -35.9966654,-6.67912549978115,0.0 -35.9970295,-6.67909959978115,0.0 -35.9972245,-6.67900919978115,0.0 -35.9979917,-6.67877679978116,0.0 -35.9984598,-6.67860889978116,0.0 -35.9986808,-6.67859599978117,0.0 -35.9990319,-6.67849269978117,0.0 -35.999539,-6.67829889978118,0.0 -36.0000201,-6.67819559978118,0.0 -36.0002311,-6.67806809978118,0.0 -36.0003192,-6.67801479978118,0.0 -36.0006182,-6.67796319978118,0.0 -36.0007352,-6.67773069978119,0.0 -36.0008003,-6.6774981997812,0.0 -36.0010304,-6.67732409978121,0.0 -36.0010733,-6.67729159978121,0.0 -36.0013157,-6.67717959978121,0.0 -36.0016324,-6.67703329978121,0.0 -36.001755,-6.67695719978122,0.0 -36.0019445,-6.67683959978122,0.0 -36.0022328,-6.67671529978122,0.0 -36.0026337,-6.67654259978123,0.0 -36.0027006,-6.67643179978123,0.0 -36.0028287,-6.67621969978124,0.0 -36.0030367,-6.67580639978125,0.0 -36.0032058,-6.67519949978127,0.0 -36.0032058,-6.67472159978129,0.0 -36.0032058,-6.6742824997813,0.0 -36.0030237,-6.67401129978131,0.0 -36.0028807,-6.67364969978132,0.0 -36.0029587,-6.67314599978134,0.0 -36.0031668,-6.67302979978134,0.0 -36.0033488,-6.67296519978134,0.0 -36.004077,-6.67282319978135,0.0 -36.00448,-6.67279729978135,0.0 -36.0049872,-6.67277149978135,0.0 -36.0055203,-6.67271979978135,0.0 -36.0060274,-6.67266819978136,0.0 -36.0061544,-6.67246169978136,0.0 -36.0061704,-6.67243569978136,0.0 -36.0060924,-6.67207409978137,0.0 -36.0059364,-6.67176419978138,0.0 -36.0058843,-6.6714154997814,0.0 -36.0058583,-6.67096339978141,0.0 -36.0059364,-6.67053729978142,0.0 -36.0059624,-6.66994319978144,0.0 -36.0060274,-6.66968489978145,0.0 -36.0060794,-6.66951699978146,0.0 -36.0060924,-6.66893579978148,0.0 -36.0061834,-6.66880669978148,0.0 -36.0064955,-6.66862589978149,0.0 -36.0066385,-6.66839339978149,0.0 -36.0066385,-6.6680575997815,0.0 -36.0064565,-6.66765729978152,0.0 -36.0063264,-6.66736019978153,0.0 -36.0061444,-6.66684359978154,0.0 -36.0061964,-6.66649489978155,0.0 -36.0063264,-6.66623659978156,0.0 -36.0064825,-6.66606869978157,0.0 -36.0066905,-6.66570709978158,0.0 -36.0070416,-6.66552629978158,0.0 -36.0072886,-6.66546169978159,0.0 -36.0076527,-6.66534549978159,0.0 -36.0079648,-6.6651258997816,0.0 -36.0080818,-6.66488059978161,0.0 -36.0080558,-6.66455769978162,0.0 -36.0077827,-6.66426069978162,0.0 -36.0072886,-6.66396359978164,0.0 -36.0069246,-6.66373109978164,0.0 -36.0065995,-6.66347279978165,0.0 -36.0060794,-6.66316289978166,0.0 -36.0054943,-6.66251709978168,0.0 -36.0051952,-6.66219429978169,0.0 -36.0049481,-6.6619617997817,0.0 -36.0047531,-6.66171639978171,0.0 -36.0047271,-6.66138059978172,0.0 -36.0047271,-6.66074779978174,0.0 -36.0049481,-6.66001159978176,0.0 -36.0051692,-6.65949499978178,0.0 -36.0052082,-6.6587588997818,0.0 -36.0050522,-6.65833269978182,0.0 -36.0048441,-6.65790649978183,0.0 -36.0048051,-6.65763529978184,0.0 -36.0048961,-6.65727359978185,0.0 -36.0050652,-6.65691199978186,0.0 -36.0051952,-6.65658909978187,0.0 -36.0052602,-6.65627919978188,0.0 -36.0052732,-6.65605959978189,0.0 -36.0049611,-6.6556979997819,0.0 -36.004467,-6.65550429978191,0.0 -36.004324,-6.65518139978192,0.0 -36.0040249,-6.65481979978193,0.0 -36.0036869,-6.65478099978193,0.0 -36.0034138,-6.65465189978194,0.0 -36.0032318,-6.65429019978195,0.0 -36.0036999,-6.65391569978196,0.0 -36.00409,-6.65346369978197,0.0 -36.0045841,-6.65299869978199,0.0 -36.0048441,-6.65286959978199,0.0 -36.0051432,-6.652637099782,0.0 -36.0053902,-6.652507899782,0.0 -36.0057803,-6.65205589978202,0.0 -36.0058453,-6.65173299978203,0.0 -36.0057153,-6.65137139978204,0.0 -36.0054813,-6.65091939978206,0.0 -36.0053512,-6.65054479978207,0.0 -36.0051432,-6.65005409978208,0.0 -36.0048051,-6.64970529978209,0.0 -36.0046491,-6.6494469997821,0.0 -36.004064,-6.64896919978212,0.0 -36.0035178,-6.64846549978213,0.0 -36.0032318,-6.64816839978214,0.0 -36.0029197,-6.64792299978215,0.0 -36.0023606,-6.64753559978217,0.0 -36.0017755,-6.64731599978217,0.0 -36.0013594,-6.64710939978218,0.0 -36.0009043,-6.64691559978218,0.0 -36.0004492,-6.64668319978219,0.0 -36.0004102,-6.6465022997822,0.0 -36.0001241,-6.64616649978221,0.0 -35.999786,-6.64605029978221,0.0 -35.999695,-6.64592109978222,0.0 -35.9999031,-6.64555949978223,0.0 -36.0000071,-6.64471999978225,0.0 -36.0000071,-6.64431959978227,0.0 -36.0000132,-6.64424509978227,0.0 -36.0000461,-6.64384179978228,0.0 -36.0000461,-6.64355759978229,0.0 -35.9999551,-6.6433380997823,0.0 -35.999747,-6.6433509997823,0.0 -35.999396,-6.6434284997823,0.0 -35.9991489,-6.6434413997823,0.0 -35.9988889,-6.64359639978229,0.0 -35.9985898,-6.64375139978229,0.0 -35.9984078,-6.64385469978228,0.0 -35.9982257,-6.64379009978228,0.0 -35.9980177,-6.64349299978229,0.0 -35.9979267,-6.64310559978231,0.0 -35.9977056,-6.64267939978232,0.0 -35.9974846,-6.64243399978233,0.0 -35.9971465,-6.64212399978234,0.0 -35.9969775,-6.64186569978235,0.0 -35.9967824,-6.64147819978236,0.0 -35.9965614,-6.64105199978237,0.0 -35.9963403,-6.64069039978239,0.0 -35.9961843,-6.64043209978239,0.0 -35.9959502,-6.6401608997824,0.0 -35.9954951,-6.63976049978241,0.0 -35.994949,-6.63920509978243,0.0 -35.9945849,-6.63863679978245,0.0 -35.9942469,-6.63833979978246,0.0 -35.9939088,-6.63792649978247,0.0 -35.9934407,-6.63739689978249,0.0 -35.9929726,-6.6370481997825,0.0 -35.9926215,-6.63671239978251,0.0 -35.9921794,-6.63633779978252,0.0 -35.9919194,-6.63606659978253,0.0 -35.9916983,-6.63564039978255,0.0 -35.9915683,-6.63507209978256,0.0 -35.9913343,-6.63464589978258,0.0 -35.9909962,-6.63436169978259,0.0 -35.9907422,-6.63414309978259,0.0 -35.9906061,-6.6340258997826,0.0 -35.990346,-6.63372889978261,0.0 -35.990216,-6.63345759978262,0.0 -35.990086,-6.63266979978264,0.0 -35.99006,-6.63220479978266,0.0 -35.990021,-6.63195939978267,0.0 -35.989904,-6.63179149978267,0.0 -35.9896439,-6.63176569978267,0.0 -35.9893968,-6.63164939978267,0.0 -35.9894879,-6.63131359978269,0.0 -35.9897545,-6.63126949978269,0.0 -35.990112,-6.63121029978269,0.0 -35.9910352,-6.6309906997827,0.0 -35.9915033,-6.6307194997827,0.0 -35.9914253,-6.63029329978272,0.0 -35.9911782,-6.63006079978273,0.0 -35.9910482,-6.62977669978273,0.0 -35.9910872,-6.62935039978275,0.0 -35.9911132,-6.62913089978275,0.0 -35.9908141,-6.62892419978276,0.0 -35.990307,-6.62866589978277,0.0 -35.98993,-6.62847219978278,0.0 -35.9895529,-6.62812339978279,0.0 -35.9892538,-6.62803299978279,0.0 -35.9888637,-6.62796839978279,0.0 -35.9884736,-6.62802009978279,0.0 -35.9881746,-6.62816219978279,0.0 -35.9878625,-6.62835589978278,0.0 -35.9874854,-6.62840759978278,0.0 -35.9872904,-6.62826549978278,0.0 -35.9871344,-6.62808469978279,0.0 -35.9868613,-6.62808469978279,0.0 -35.9864842,-6.62816219978279,0.0 -35.9863815,-6.62820649978279,0.0 -35.9861852,-6.62829129978278,0.0 -35.9858081,-6.62842049978278,0.0 -35.98547,-6.62838169978278,0.0 -35.9851709,-6.62820089978279,0.0 -35.9851059,-6.62790389978279,0.0 -35.98521,-6.6276067997828,0.0 -35.985223,-6.62666389978283,0.0 -35.9851709,-6.62627649978285,0.0 -35.9850929,-6.62578569978286,0.0 -35.9848459,-6.62532069978288,0.0 -35.9847028,-6.62482989978289,0.0 -35.9846248,-6.62442949978291,0.0 -35.9845078,-6.62410659978292,0.0 -35.9844298,-6.62375779978293,0.0 -35.9845078,-6.62357699978293,0.0 -35.9846768,-6.62346079978294,0.0 -35.9849499,-6.62334449978294,0.0 -35.985353,-6.62333159978294,0.0 -35.9854524,-6.62332709978294,0.0 -35.9859251,-6.62330579978294,0.0 -35.9863932,-6.62317659978295,0.0 -35.9867183,-6.62320249978294,0.0 -35.9873164,-6.62303459978295,0.0 -35.9875765,-6.62289249978296,0.0 -35.9877845,-6.62263419978296,0.0 -35.9875505,-6.62201419978298,0.0 -35.9872644,-6.621458799783,0.0 -35.9870043,-6.62101969978302,0.0 -35.9868353,-6.62073549978303,0.0 -35.9863932,-6.62056759978303,0.0 -35.9862762,-6.62037389978304,0.0 -35.9860421,-6.62027049978304,0.0 -35.9856911,-6.62028339978304,0.0 -35.985522,-6.62063219978303,0.0 -35.985431,-6.62074839978303,0.0 -35.985249,-6.62082589978302,0.0 -35.985013,-6.62091809978302,0.0 -35.98509,-6.62068869978303,0.0 -35.9851553,-6.62041619978304,0.0 -35.9851945,-6.62020859978304,0.0 -35.9851945,-6.61996199978305,0.0 -35.9849594,-6.61970249978306,0.0 -35.9846198,-6.61948189978307,0.0 -35.9843193,-6.61911859978308,0.0 -35.9836793,-6.61818439978311,0.0 -35.9836009,-6.61809359978311,0.0 -35.9833135,-6.61778219978312,0.0 -35.9832103,-6.61764399978313,0.0 -35.9828222,-6.61712439978314,0.0 -35.9827126,-6.61697769978315,0.0 -35.9822946,-6.61643269978316,0.0 -35.9820726,-6.61601749978318,0.0 -35.9818113,-6.61587479978318,0.0 -35.981537,-6.61557629978319,0.0 -35.9812366,-6.6152518997832,0.0 -35.9808969,-6.61508329978321,0.0 -35.9805965,-6.61481079978322,0.0 -35.9804789,-6.61446039978323,0.0 -35.9802961,-6.61377269978325,0.0 -35.9800348,-6.61299419978327,0.0 -35.9798781,-6.61277359978328,0.0 -35.9796691,-6.61244919978329,0.0 -35.9794993,-6.61203399978331,0.0 -35.9791335,-6.61132029978333,0.0 -35.9787939,-6.61056769978335,0.0 -35.9784673,-6.61026929978336,0.0 -35.9781277,-6.60998379978337,0.0 -35.9777097,-6.60938699978339,0.0 -35.9771741,-6.60867329978341,0.0 -35.9768737,-6.60827099978343,0.0 -35.9766516,-6.60780389978344,0.0 -35.9764165,-6.60737569978345,0.0 -35.9761422,-6.60714219978346,0.0 -35.9759724,-6.60690859978347,0.0 -35.9758287,-6.60651929978348,0.0 -35.9757634,-6.60638959978349,0.0 -35.9753192,-6.60568889978351,0.0 -35.9750188,-6.60507899978353,0.0 -35.9747837,-6.60457289978355,0.0 -35.9745355,-6.60380739978357,0.0 -35.9742351,-6.6029898997836,0.0 -35.9741436,-6.60245789978361,0.0 -35.9740391,-6.60183499978363,0.0 -35.9740652,-6.60154959978364,0.0 -35.9743918,-6.60138089978365,0.0 -35.9747706,-6.60112139978366,0.0 -35.9749012,-6.60095269978366,0.0 -35.9748751,-6.60073209978367,0.0 -35.973804,-6.59956429978371,0.0 -35.9734644,-6.59916199978372,0.0 -35.9728896,-6.59861699978374,0.0 -35.9724324,-6.59803309978376,0.0 -35.9721973,-6.59765679978377,0.0 -35.9720406,-6.59735829978378,0.0 -35.9717924,-6.59717669978378,0.0 -35.9717271,-6.59708579978379,0.0 -35.9713744,-6.5965018997838,0.0 -35.9711523,-6.59604779978382,0.0 -35.9711654,-6.59574929978383,0.0 -35.9709825,-6.59538599978384,0.0 -35.9707343,-6.59516539978385,0.0 -35.9706298,-6.59482799978386,0.0 -35.9704731,-6.59421809978388,0.0 -35.9703947,-6.5935562997839,0.0 -35.9703424,-6.59299839978392,0.0 -35.9705253,-6.59216789978395,0.0 -35.9706821,-6.59179159978396,0.0 -35.9707082,-6.59118169978398,0.0 -35.9706951,-6.590493999784,0.0 -35.9706167,-6.59000089978401,0.0 -35.97046,-6.58972839978402,0.0 -35.9702771,-6.58940399978403,0.0 -35.9701726,-6.58878109978405,0.0 -35.9697154,-6.58824909978407,0.0 -35.9695064,-6.58800249978408,0.0 -35.9692191,-6.58760029978409,0.0 -35.9688011,-6.5871979997841,0.0 -35.9685137,-6.58702929978411,0.0 -35.9682739,-6.58695189978411,0.0 -35.9679912,-6.58686059978411,0.0 -35.9677691,-6.58657509978413,0.0 -35.9676254,-6.58625069978414,0.0 -35.9675209,-6.58577059978415,0.0 -35.9674817,-6.58539429978416,0.0 -35.9674556,-6.58517369978417,0.0 -35.9674278,-6.58497239978418,0.0 -35.967012,-6.58495449978418,0.0 -35.8784767,-6.56290049978488,0.0 -35.8769867,-6.57780169978441,0.0 -35.8753888,-6.59254809978393,0.0 -35.8710249,-6.63282039978264,0.0</coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</MultiGeometry>
+</Placemark>
+</Folder>
+</Document></kml>

@@ -1,0 +1,615 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<kml xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:atom="http://www.w3.org/2005/Atom" xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+<name>martins_2407401_localidades_2022</name>
+<visibility>1</visibility>
+<Schema name="Povoados" id="kml_schema_ft_Povoados">
+<SimpleField type="xsd:string" name="CD_UF">
+<displayName>CD_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_UF">
+<displayName>NM_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="SIGLA_UF">
+<displayName>SIGLA_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_MUN">
+<displayName>CD_MUN</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_MUN">
+<displayName>NM_MUN</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_RGINT">
+<displayName>CD_RGINT</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_RGINT">
+<displayName>NM_RGINT</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_RGI">
+<displayName>CD_RGI</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_RGI">
+<displayName>NM_RGI</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CT_LOCALIDADE">
+<displayName>CT_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_LOCALIDADE">
+<displayName>CD_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_LOCALIDADE">
+<displayName>NM_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="LAT_LOCALIDADE">
+<displayName>LAT_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="LONG_LOCALIDADE">
+<displayName>LONG_LOCALIDADE</displayName>
+</SimpleField>
+</Schema>
+<Schema name="Vilas" id="kml_schema_ft_Vilas">
+<SimpleField type="xsd:string" name="CD_UF">
+<displayName>CD_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_UF">
+<displayName>NM_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="SIGLA_UF">
+<displayName>SIGLA_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_MUN">
+<displayName>CD_MUN</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_MUN">
+<displayName>NM_MUN</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_RGINT">
+<displayName>CD_RGINT</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_RGINT">
+<displayName>NM_RGINT</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_RGI">
+<displayName>CD_RGI</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_RGI">
+<displayName>NM_RGI</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CT_LOCALIDADE">
+<displayName>CT_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_LOCALIDADE">
+<displayName>CD_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_LOCALIDADE">
+<displayName>NM_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="LAT_LOCALIDADE">
+<displayName>LAT_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="LONG_LOCALIDADE">
+<displayName>LONG_LOCALIDADE</displayName>
+</SimpleField>
+</Schema>
+<Schema name="01. Cidade" id="kml_schema_ft_01._Cidade">
+<SimpleField type="xsd:string" name="CD_UF">
+<displayName>CD_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_UF">
+<displayName>NM_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="SIGLA_UF">
+<displayName>SIGLA_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_MUN">
+<displayName>CD_MUN</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_MUN">
+<displayName>NM_MUN</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_RGINT">
+<displayName>CD_RGINT</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_RGINT">
+<displayName>NM_RGINT</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_RGI">
+<displayName>CD_RGI</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_RGI">
+<displayName>NM_RGI</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CT_LOCALIDADE">
+<displayName>CT_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="SCT_LOCALIDADE">
+<displayName>SCT_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_LOCALIDADE">
+<displayName>CD_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_LOCALIDADE">
+<displayName>NM_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="LAT_LOCALIDADE">
+<displayName>LAT_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="LONG_LOCALIDADE">
+<displayName>LONG_LOCALIDADE</displayName>
+</SimpleField>
+</Schema>
+<Schema name="Município" id="kml_schema_ft_Município">
+<SimpleField type="xsd:string" name="CD_UF">
+<displayName>CD_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_UF">
+<displayName>NM_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_MUN">
+<displayName>CD_MUN</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_MUN">
+<displayName>NM_MUN</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_RGINT">
+<displayName>CD_RGINT</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_RGINT">
+<displayName>NM_RGINT</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_RGI">
+<displayName>CD_RGI</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_RGI">
+<displayName>NM_RGI</displayName>
+</SimpleField>
+</Schema>
+<Folder id="01. Cidade">
+<name>01. Cidade</name>
+<Folder id="01.03. Sede Municipal">
+<name>01.03. Sede Municipal</name>
+<Placemark id="01.03. Sede Municipal">
+<name>Martins [2407401]</name>
+<visibility>1</visibility>
+<snippet> </snippet>
+<description>&lt;center&gt;&lt;table&gt;&lt;tr&gt;&lt;th colspan='2' align='center'&gt;&lt;em&gt;Atributos&lt;/em&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_UF&lt;/th&gt;
+&lt;td&gt;24&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_UF&lt;/th&gt;
+&lt;td&gt;Rio Grande do Norte&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;SIGLA_UF&lt;/th&gt;
+&lt;td&gt;RN&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_MUN&lt;/th&gt;
+&lt;td&gt;2407401&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_MUN&lt;/th&gt;
+&lt;td&gt;Martins&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGINT&lt;/th&gt;
+&lt;td&gt;2403&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGINT&lt;/th&gt;
+&lt;td&gt;Mossoró&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGI&lt;/th&gt;
+&lt;td&gt;240010&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGI&lt;/th&gt;
+&lt;td&gt;Pau dos Ferros&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Cidade&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;SCT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Sede Municipal&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;2407401&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Martins&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;LAT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;-6.0906&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;LONG_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;-37.9118&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;&lt;/center&gt;</description>
+<Style>
+<IconStyle>
+<color>ff00aaff</color>
+<scale>1.0</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<scale>1.0</scale>
+</LabelStyle>
+<LineStyle>
+<color>ffffffff</color>
+<width>3</width>
+<gx:labelVisibility>1</gx:labelVisibility>
+</LineStyle>
+<PolyStyle>
+<color>00ffffff</color>
+</PolyStyle>
+</Style>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_01._Cidade">
+<SimpleData name="CD_UF">24</SimpleData>
+<SimpleData name="NM_UF">Rio Grande do Norte</SimpleData>
+<SimpleData name="SIGLA_UF">RN</SimpleData>
+<SimpleData name="CD_MUN">2407401</SimpleData>
+<SimpleData name="NM_MUN">Martins</SimpleData>
+<SimpleData name="CD_RGINT">2403</SimpleData>
+<SimpleData name="NM_RGINT">Mossoró</SimpleData>
+<SimpleData name="CD_RGI">240010</SimpleData>
+<SimpleData name="NM_RGI">Pau dos Ferros</SimpleData>
+<SimpleData name="CT_LOCALIDADE">Cidade</SimpleData>
+<SimpleData name="SCT_LOCALIDADE">Sede Municipal</SimpleData>
+<SimpleData name="CD_LOCALIDADE">2407401</SimpleData>
+<SimpleData name="NM_LOCALIDADE">Martins</SimpleData>
+<SimpleData name="LAT_LOCALIDADE">-6.0906</SimpleData>
+<SimpleData name="LONG_LOCALIDADE">-37.9118</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<extrude>0</extrude>
+<coordinates>-37.911792,-6.09057899980012,0.0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+</Folder>
+<Folder id="04. Vilas">
+<name>04. Vilas</name>
+<Placemark id="04. Vilas">
+<name>Salva Vida [240740110]</name>
+<visibility>1</visibility>
+<snippet> </snippet>
+<description>&lt;center&gt;&lt;table&gt;&lt;tr&gt;&lt;th colspan='2' align='center'&gt;&lt;em&gt;Atributos&lt;/em&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_UF&lt;/th&gt;
+&lt;td&gt;24&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_UF&lt;/th&gt;
+&lt;td&gt;Rio Grande do Norte&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;SIGLA_UF&lt;/th&gt;
+&lt;td&gt;RN&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_MUN&lt;/th&gt;
+&lt;td&gt;2407401&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_MUN&lt;/th&gt;
+&lt;td&gt;Martins&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGINT&lt;/th&gt;
+&lt;td&gt;2403&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGINT&lt;/th&gt;
+&lt;td&gt;Mossoró&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGI&lt;/th&gt;
+&lt;td&gt;240010&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGI&lt;/th&gt;
+&lt;td&gt;Pau dos Ferros&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Vila&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;240740110&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Salva Vida&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;LAT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;-6.056&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;LONG_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;-37.8612&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;&lt;/center&gt;</description>
+<Style>
+<IconStyle>
+<color>ffff5400</color>
+<scale>1.0</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<scale>0.9</scale>
+</LabelStyle>
+<LineStyle>
+<color>72ffffff</color>
+<width>1.0</width>
+<gx:labelVisibility>1</gx:labelVisibility>
+</LineStyle>
+<PolyStyle>
+<color>660054ff</color>
+</PolyStyle>
+</Style>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_Vilas">
+<SimpleData name="CD_UF">24</SimpleData>
+<SimpleData name="NM_UF">Rio Grande do Norte</SimpleData>
+<SimpleData name="SIGLA_UF">RN</SimpleData>
+<SimpleData name="CD_MUN">2407401</SimpleData>
+<SimpleData name="NM_MUN">Martins</SimpleData>
+<SimpleData name="CD_RGINT">2403</SimpleData>
+<SimpleData name="NM_RGINT">Mossoró</SimpleData>
+<SimpleData name="CD_RGI">240010</SimpleData>
+<SimpleData name="NM_RGI">Pau dos Ferros</SimpleData>
+<SimpleData name="CT_LOCALIDADE">Vila</SimpleData>
+<SimpleData name="CD_LOCALIDADE">240740110</SimpleData>
+<SimpleData name="NM_LOCALIDADE">Salva Vida</SimpleData>
+<SimpleData name="LAT_LOCALIDADE">-6.056</SimpleData>
+<SimpleData name="LONG_LOCALIDADE">-37.8612</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<extrude>0</extrude>
+<coordinates>-37.86117,-6.05595399980124,0.0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Folder id="06. Povoados">
+<name>06. Povoados</name>
+<Placemark id="06. Povoados">
+<name>Lagoa Nova [240740100002]</name>
+<visibility>1</visibility>
+<snippet> </snippet>
+<description>&lt;center&gt;&lt;table&gt;&lt;tr&gt;&lt;th colspan='2' align='center'&gt;&lt;em&gt;Atributos&lt;/em&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_UF&lt;/th&gt;
+&lt;td&gt;24&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_UF&lt;/th&gt;
+&lt;td&gt;Rio Grande do Norte&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;SIGLA_UF&lt;/th&gt;
+&lt;td&gt;RN&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_MUN&lt;/th&gt;
+&lt;td&gt;2407401&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_MUN&lt;/th&gt;
+&lt;td&gt;Martins&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGINT&lt;/th&gt;
+&lt;td&gt;2403&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGINT&lt;/th&gt;
+&lt;td&gt;Mossoró&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGI&lt;/th&gt;
+&lt;td&gt;240010&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGI&lt;/th&gt;
+&lt;td&gt;Pau dos Ferros&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Povoado&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;240740100002&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Lagoa Nova&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;LAT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;-6.0796&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;LONG_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;-37.932&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;&lt;/center&gt;</description>
+<Style>
+<IconStyle>
+<color>ff00ff54</color>
+<scale>0.8</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<scale>0.8</scale>
+</LabelStyle>
+<LineStyle>
+<color>72ff54ff</color>
+<width>1.0</width>
+<gx:labelVisibility>1</gx:labelVisibility>
+</LineStyle>
+<PolyStyle>
+<color>66ff54ff</color>
+</PolyStyle>
+</Style>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_Povoados">
+<SimpleData name="CD_UF">24</SimpleData>
+<SimpleData name="NM_UF">Rio Grande do Norte</SimpleData>
+<SimpleData name="SIGLA_UF">RN</SimpleData>
+<SimpleData name="CD_MUN">2407401</SimpleData>
+<SimpleData name="NM_MUN">Martins</SimpleData>
+<SimpleData name="CD_RGINT">2403</SimpleData>
+<SimpleData name="NM_RGINT">Mossoró</SimpleData>
+<SimpleData name="CD_RGI">240010</SimpleData>
+<SimpleData name="NM_RGI">Pau dos Ferros</SimpleData>
+<SimpleData name="CT_LOCALIDADE">Povoado</SimpleData>
+<SimpleData name="CD_LOCALIDADE">240740100002</SimpleData>
+<SimpleData name="NM_LOCALIDADE">Lagoa Nova</SimpleData>
+<SimpleData name="LAT_LOCALIDADE">-6.0796</SimpleData>
+<SimpleData name="LONG_LOCALIDADE">-37.932</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<extrude>0</extrude>
+<coordinates>-37.9319943429002,-6.07962305267055,0.0</coordinates>
+</Point>
+</Placemark>
+<Placemark id="06. Povoados">
+<name>Salva Vidas [240740100003]</name>
+<visibility>1</visibility>
+<snippet> </snippet>
+<description>&lt;center&gt;&lt;table&gt;&lt;tr&gt;&lt;th colspan='2' align='center'&gt;&lt;em&gt;Atributos&lt;/em&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_UF&lt;/th&gt;
+&lt;td&gt;24&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_UF&lt;/th&gt;
+&lt;td&gt;Rio Grande do Norte&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;SIGLA_UF&lt;/th&gt;
+&lt;td&gt;RN&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_MUN&lt;/th&gt;
+&lt;td&gt;2407401&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_MUN&lt;/th&gt;
+&lt;td&gt;Martins&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGINT&lt;/th&gt;
+&lt;td&gt;2403&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGINT&lt;/th&gt;
+&lt;td&gt;Mossoró&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGI&lt;/th&gt;
+&lt;td&gt;240010&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGI&lt;/th&gt;
+&lt;td&gt;Pau dos Ferros&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Povoado&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;240740100003&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Salva Vidas&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;LAT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;-6.0562&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;LONG_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;-37.8612&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;&lt;/center&gt;</description>
+<Style>
+<IconStyle>
+<color>ff00ff54</color>
+<scale>0.8</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<scale>0.8</scale>
+</LabelStyle>
+<LineStyle>
+<color>72ff54ff</color>
+<width>1.0</width>
+<gx:labelVisibility>1</gx:labelVisibility>
+</LineStyle>
+<PolyStyle>
+<color>66ff54ff</color>
+</PolyStyle>
+</Style>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_Povoados">
+<SimpleData name="CD_UF">24</SimpleData>
+<SimpleData name="NM_UF">Rio Grande do Norte</SimpleData>
+<SimpleData name="SIGLA_UF">RN</SimpleData>
+<SimpleData name="CD_MUN">2407401</SimpleData>
+<SimpleData name="NM_MUN">Martins</SimpleData>
+<SimpleData name="CD_RGINT">2403</SimpleData>
+<SimpleData name="NM_RGINT">Mossoró</SimpleData>
+<SimpleData name="CD_RGI">240010</SimpleData>
+<SimpleData name="NM_RGI">Pau dos Ferros</SimpleData>
+<SimpleData name="CT_LOCALIDADE">Povoado</SimpleData>
+<SimpleData name="CD_LOCALIDADE">240740100003</SimpleData>
+<SimpleData name="NM_LOCALIDADE">Salva Vidas</SimpleData>
+<SimpleData name="LAT_LOCALIDADE">-6.0562</SimpleData>
+<SimpleData name="LONG_LOCALIDADE">-37.8612</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<extrude>0</extrude>
+<coordinates>-37.8611791956521,-6.05617639110557,0.0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Folder id="13. Referência">
+<name>13. Referência</name>
+<Placemark id="13. Referência">
+<name>Martins [2407401]</name>
+<visibility>1</visibility>
+<snippet> </snippet>
+<description>&lt;center&gt;&lt;table&gt;&lt;tr&gt;&lt;th colspan='2' align='center'&gt;&lt;em&gt;Attributes&lt;/em&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_UF&lt;/th&gt;
+&lt;td&gt;24&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_UF&lt;/th&gt;
+&lt;td&gt;Rio Grande do Norte&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_MUN&lt;/th&gt;
+&lt;td&gt;2407401&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_MUN&lt;/th&gt;
+&lt;td&gt;Martins&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_RGINT&lt;/th&gt;
+&lt;td&gt;2403&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_RGINT&lt;/th&gt;
+&lt;td&gt;Mossoró&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_RGI&lt;/th&gt;
+&lt;td&gt;240010&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_RGI&lt;/th&gt;
+&lt;td&gt;Pau dos Ferros&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;&lt;/center&gt;</description>
+<Style>
+<IconStyle>
+<scale>0.7</scale>
+</IconStyle>
+<LabelStyle>
+<scale>0.7</scale>
+</LabelStyle>
+<LineStyle>
+<color>ffffffff</color>
+<width>3</width>
+<gx:labelVisibility>1</gx:labelVisibility>
+</LineStyle>
+<PolyStyle>
+<color>00ffffff</color>
+</PolyStyle>
+</Style>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_Município">
+<SimpleData name="CD_UF">24</SimpleData>
+<SimpleData name="NM_UF">Rio Grande do Norte</SimpleData>
+<SimpleData name="CD_MUN">2407401</SimpleData>
+<SimpleData name="NM_MUN">Martins</SimpleData>
+<SimpleData name="CD_RGINT">2403</SimpleData>
+<SimpleData name="NM_RGINT">Mossoró</SimpleData>
+<SimpleData name="CD_RGI">240010</SimpleData>
+<SimpleData name="NM_RGI">Pau dos Ferros</SimpleData>
+</SchemaData>
+</ExtendedData>
+<MultiGeometry>
+<Polygon>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>-37.9196785,-6.14317879979842,0.0 -37.9213748,-6.14351079979841,0.0 -37.9230715,-6.14344929979841,0.0 -37.9245692,-6.14318709979842,0.0 -37.9252473,-6.14338599979841,0.0 -37.9249741,-6.14398059979839,0.0 -37.9214404,-6.14467059979837,0.0 -37.9200811,-6.14572029979834,0.0 -37.92008,-6.14631309979832,0.0 -37.9208257,-6.1468430997983,0.0 -37.922591,-6.1470464997983,0.0 -37.9238129,-6.14737529979828,0.0 -37.9242864,-6.14790609979827,0.0 -37.9238781,-6.14863079979825,0.0 -37.9231991,-6.14922489979823,0.0 -37.9231272,-6.15018039979819,0.0 -37.923535,-6.15090699979817,0.0 -37.9212177,-6.15470859979805,0.0 -37.9200602,-6.15589559979801,0.0 -37.9196503,-6.15734449979796,0.0 -37.9196458,-6.15889649979791,0.0 -37.9210697,-6.16061449979786,0.0 -37.9216095,-6.16160519979783,0.0 -37.9219453,-6.16384449979775,0.0 -37.9222828,-6.16497289979772,0.0 -37.9230974,-6.16517239979771,0.0 -37.9237092,-6.16471049979773,0.0 -37.9237085,-6.16347339979776,0.0 -37.9233123,-6.16111399979784,0.0 -37.9235145,-6.16012479979787,0.0 -37.9233133,-6.1592666997979,0.0 -37.9224357,-6.15794579979794,0.0 -37.9223708,-6.15744079979796,0.0 -37.9227731,-6.15708769979797,0.0 -37.9245378,-6.15722329979797,0.0 -37.9255589,-6.15706049979797,0.0 -37.9260346,-6.15646569979799,0.0 -37.9261731,-6.15560869979802,0.0 -37.9268537,-6.15508349979803,0.0 -37.9275304,-6.15541479979802,0.0 -37.9279363,-6.156205699798,0.0 -37.928479,-6.15660449979798,0.0 -37.9302456,-6.15647629979799,0.0 -37.9318757,-6.15687439979798,0.0 -37.9326876,-6.15756999979796,0.0 -37.9330925,-6.15888939979791,0.0 -37.932136,-6.16185569979782,0.0 -37.9321299,-6.16462749979773,0.0 -37.9331496,-6.16562089979769,0.0 -37.934099,-6.1655543997977,0.0 -37.9345774,-6.16466719979773,0.0 -37.9345102,-6.16347769979776,0.0 -37.9341066,-6.16202689979781,0.0 -37.9345227,-6.16143299979783,0.0 -37.9383773,-6.16107199979784,0.0 -37.9401486,-6.16213849979781,0.0 -37.9412337,-6.16332619979777,0.0 -37.9421836,-6.16359399979776,0.0 -37.9424491,-6.16304539979778,0.0 -37.9423234,-6.16143449979783,0.0 -37.9424257,-6.16087159979785,0.0 -37.9426996,-6.16060789979786,0.0 -37.9447903,-6.16116819979784,0.0 -37.9454481,-6.16117329979784,0.0 -37.9470786,-6.16047609979786,0.0 -37.9438643,-6.15757339979796,0.0 -37.9415769,-6.15594789979801,0.0 -37.9404166,-6.15485299979804,0.0 -37.9403817,-6.15360869979808,0.0 -37.9412365,-6.15185729979814,0.0 -37.9424029,-6.15046499979819,0.0 -37.9430257,-6.15020259979819,0.0 -37.9443046,-6.15046949979818,0.0 -37.946901,-6.15171819979815,0.0 -37.9480649,-6.15202269979813,0.0 -37.9493846,-6.15208089979813,0.0 -37.9496158,-6.15170449979814,0.0 -37.9493452,-6.15095219979817,0.0 -37.9453589,-6.14713839979829,0.0 -37.9440833,-6.14441209979838,0.0 -37.9438142,-6.14358329979841,0.0 -37.9437015,-6.14098549979849,0.0 -37.9430106,-6.13876279979856,0.0 -37.942733,-6.13697169979862,0.0 -37.9438572,-6.13379759979872,0.0 -37.943859,-6.13270929979876,0.0 -37.9424063,-6.12953569979886,0.0 -37.9420196,-6.12702669979894,0.0 -37.9416814,-6.12629519979897,0.0 -37.940417,-6.125202699799,0.0 -37.9399803,-6.12458679979902,0.0 -37.9395572,-6.12270359979908,0.0 -37.9395543,-6.1192314997992,0.0 -37.939647,-6.11851349979922,0.0 -37.9396123,-6.11850729979922,0.0 -37.9396603,-6.11814009979923,0.0 -37.9396606,-6.11813789979923,0.0 -37.9396632,-6.11788889979923,0.0 -37.9396656,-6.11766179979924,0.0 -37.9396719,-6.11706689979926,0.0 -37.9396721,-6.11704779979926,0.0 -37.9396865,-6.11566659979931,0.0 -37.939689,-6.11544329979932,0.0 -37.9396751,-6.11513819979933,0.0 -37.9396573,-6.11481119979934,0.0 -37.939648,-6.11464209979934,0.0 -37.9396399,-6.11449199979935,0.0 -37.9396307,-6.11432459979935,0.0 -37.93963,-6.11430999979935,0.0 -37.939629,-6.11429929979935,0.0 -37.9396266,-6.11427149979935,0.0 -37.939625,-6.11425289979936,0.0 -37.9396097,-6.11407659979936,0.0 -37.9396116,-6.11389329979936,0.0 -37.9396133,-6.11373169979937,0.0 -37.9374817,-6.10851549979954,0.0 -37.941054,-6.09924579979984,0.0 -37.9809908,-6.0755548998006,0.0 -37.9803631,-6.07441019980064,0.0 -37.9795049,-6.07362379980067,0.0 -37.9789643,-6.07285259980069,0.0 -37.9787178,-6.07192169980072,0.0 -37.9787186,-6.07115189980075,0.0 -37.9789693,-6.07042149980077,0.0 -37.9780991,-6.0696443998008,0.0 -37.978222,-6.06919769980081,0.0 -37.9780157,-6.06854999980083,0.0 -37.9767527,-6.06826759980084,0.0 -37.9756376,-6.06835339980084,0.0 -37.9749578,-6.06809109980085,0.0 -37.9741316,-6.06711319980088,0.0 -37.9724159,-6.06584439980092,0.0 -37.9719147,-6.06517449980094,0.0 -37.9715896,-6.06433279980097,0.0 -37.9715043,-6.06240339980103,0.0 -37.9708565,-6.05956379980112,0.0 -37.969862,-6.05829119980116,0.0 -37.9690041,-6.05782269980118,0.0 -37.9679081,-6.05671009980121,0.0 -37.9648505,-6.05490169980127,0.0 -37.9641297,-6.0539329998013,0.0 -37.9632859,-6.05320799980133,0.0 -37.9622096,-6.05114519980139,0.0 -37.9620861,-6.04975989980144,0.0 -37.9622553,-6.04882689980147,0.0 -37.9622581,-6.04729889980152,0.0 -37.9617612,-6.04624959980155,0.0 -37.9594849,-6.04379399980163,0.0 -37.9590736,-6.04316759980165,0.0 -37.9587116,-6.04145249980171,0.0 -37.9576821,-6.04029049980174,0.0 -37.9569561,-6.03976229980176,0.0 -37.9563423,-6.0386921998018,0.0 -37.9562145,-6.03633949980187,0.0 -37.9554727,-6.03334339980197,0.0 -37.9552606,-6.03039619980206,0.0 -37.9544159,-6.02955209980209,0.0 -37.9525146,-6.02846999980213,0.0 -37.9506361,-6.02705329980217,0.0 -37.950137,-6.02430439980226,0.0 -37.9498356,-6.02351139980229,0.0 -37.9489834,-6.02234499980232,0.0 -37.9475926,-6.02153769980235,0.0 -37.9461747,-6.02027949980239,0.0 -37.94467,-6.0168928998025,0.0 -37.9438088,-6.01542069980255,0.0 -37.9432481,-6.01348679980261,0.0 -37.9430813,-6.01143089980268,0.0 -37.943208,-6.00983169980273,0.0 -37.9413951,-6.01007909980272,0.0 -37.9402694,-6.01043289980271,0.0 -37.9396195,-6.01097779980269,0.0 -37.9388388,-6.01202739980266,0.0 -37.9373242,-6.01299099980263,0.0 -37.9366699,-6.01359489980261,0.0 -37.9364158,-6.01449919980258,0.0 -37.935396,-6.01556639980254,0.0 -37.9348752,-6.01719619980249,0.0 -37.9339269,-6.00426999980291,0.0 -37.9331532,-6.00496549980289,0.0 -37.9308685,-6.00596819980285,0.0 -37.9266904,-6.00745879980281,0.0 -37.9158641,-6.00724389980281,0.0 -37.9094834,-6.0074888998028,0.0 -37.9087477,-6.00791369980279,0.0 -37.9023699,-6.00794109980279,0.0 -37.9018308,-6.0076289998028,0.0 -37.9013857,-6.0076563998028,0.0 -37.8971521,-6.00791679980279,0.0 -37.8967428,-6.00821509980278,0.0 -37.8706782,-6.02723739980217,0.0 -37.8694001,-6.02781369980215,0.0 -37.8650696,-6.0292751998021,0.0 -37.8615486,-6.03089279980205,0.0 -37.8605054,-6.03212499980201,0.0 -37.8482674,-6.05230229980136,0.0 -37.8458225,-6.05690629980121,0.0 -37.8323788,-6.08221129980039,0.0 -37.8412684,-6.08833769980019,0.0 -37.8639581,-6.10398039979969,0.0 -37.8658771,-6.10694349979959,0.0 -37.8657765,-6.10765769979957,0.0 -37.8650084,-6.10874259979953,0.0 -37.8586602,-6.11373149979937,0.0 -37.8578497,-6.11516229979932,0.0 -37.8582453,-6.11772459979924,0.0 -37.8576852,-6.11883109979921,0.0 -37.8583421,-6.12006759979917,0.0 -37.8581375,-6.12060829979915,0.0 -37.8569704,-6.1219347997991,0.0 -37.8573769,-6.12267499979908,0.0 -37.8576765,-6.12321889979906,0.0 -37.8586893,-6.12364239979905,0.0 -37.8607166,-6.12364539979905,0.0 -37.861481,-6.12344909979906,0.0 -37.8623931,-6.12364949979905,0.0 -37.8626454,-6.12428949979903,0.0 -37.8626419,-6.12616319979897,0.0 -37.8628938,-6.12658389979896,0.0 -37.8647662,-6.12639099979896,0.0 -37.8674088,-6.12683909979895,0.0 -37.8689823,-6.12622659979897,0.0 -37.8724374,-6.12421249979903,0.0 -37.8752839,-6.12153229979912,0.0 -37.8766549,-6.12044829979915,0.0 -37.8783321,-6.11966469979918,0.0 -37.879398,-6.11971719979918,0.0 -37.8802074,-6.12040729979915,0.0 -37.8804551,-6.12349039979905,0.0 -37.8799433,-6.12560899979899,0.0 -37.8772992,-6.12796949979891,0.0 -37.8769427,-6.12883129979888,0.0 -37.8771399,-6.13178939979879,0.0 -37.8767827,-6.13238129979877,0.0 -37.8752616,-6.13223109979877,0.0 -37.8727757,-6.13229749979877,0.0 -37.8710995,-6.13313319979874,0.0 -37.8702871,-6.13377199979872,0.0 -37.8701831,-6.13485869979869,0.0 -37.8710407,-6.13638579979864,0.0 -37.8710898,-6.13737239979861,0.0 -37.8714956,-6.13784199979859,0.0 -37.8731166,-6.13838859979858,0.0 -37.8731661,-6.13912719979855,0.0 -37.8726986,-6.13966019979853,0.0 -37.87002,-6.13976179979853,0.0 -37.8696641,-6.14010579979852,0.0 -37.8704228,-6.1408239997985,0.0 -37.8713374,-6.14112039979849,0.0 -37.8724507,-6.14186109979846,0.0 -37.8726033,-6.14230679979845,0.0 -37.8722476,-6.14284919979843,0.0 -37.8704173,-6.1439283997984,0.0 -37.8700617,-6.14464309979837,0.0 -37.8701575,-6.14557979979834,0.0 -37.8704622,-6.14622049979832,0.0 -37.871426,-6.1467654997983,0.0 -37.8752299,-6.1470481997983,0.0 -37.8760396,-6.14857569979825,0.0 -37.8770019,-6.14946269979822,0.0 -37.8780152,-6.1501065997982,0.0 -37.8807992,-6.15069139979818,0.0 -37.8809465,-6.15501719979804,0.0 -37.8831249,-6.15694659979798,0.0 -37.8838829,-6.15815589979794,0.0 -37.8846878,-6.16155909979783,0.0 -37.8855963,-6.16348479979776,0.0 -37.8862049,-6.16417529979774,0.0 -37.8890428,-6.16620239979768,0.0 -37.8894967,-6.16687009979766,0.0 -37.8909707,-6.16793059979762,0.0 -37.8940719,-6.16977209979756,0.0 -37.896193,-6.1718010997975,0.0 -37.8957165,-6.17259069979747,0.0 -37.8940837,-6.17318289979745,0.0 -37.8940837,-6.17370949979743,0.0 -37.897084,-6.17527839979738,0.0 -37.8986968,-6.17664239979734,0.0 -37.8998502,-6.17679179979733,0.0 -37.903994,-6.17567719979737,0.0 -37.906915,-6.17555069979737,0.0 -37.9073912,-6.17456259979741,0.0 -37.9070516,-6.17373709979743,0.0 -37.9052926,-6.1717524997975,0.0 -37.9027886,-6.1685153997976,0.0 -37.9023109,-6.16838229979761,0.0 -37.901359,-6.16943569979757,0.0 -37.9006105,-6.16996239979756,0.0 -37.8996599,-6.16963009979757,0.0 -37.89912,-6.16768279979763,0.0 -37.8984451,-6.16682399979766,0.0 -37.8964103,-6.1653694997977,0.0 -37.8939052,-6.1624598997978,0.0 -37.8939735,-6.16179939979782,0.0 -37.894449,-6.16100979979785,0.0 -37.8951301,-6.16035149979786,0.0 -37.8952685,-6.15906469979791,0.0 -37.8946601,-6.15781009979795,0.0 -37.8938449,-6.15701609979797,0.0 -37.8937797,-6.156025299798,0.0 -37.8944627,-6.15404829979807,0.0 -37.8952134,-6.15339029979809,0.0 -37.8965018,-6.1532605997981,0.0 -37.897318,-6.15352539979809,0.0 -37.8984716,-6.15342919979809,0.0 -37.9003084,-6.15211229979813,0.0 -37.9012594,-6.15204849979813,0.0 -37.9021415,-6.15257899979812,0.0 -37.9071354,-6.16071759979785,0.0 -37.9097241,-6.16338169979777,0.0 -37.911625,-6.16437709979774,0.0 -37.9140668,-6.16504169979771,0.0 -37.914814,-6.16484659979772,0.0 -37.9146122,-6.16388749979775,0.0 -37.9137297,-6.16296259979778,0.0 -37.9127816,-6.1624310997978,0.0 -37.9116279,-6.16150529979783,0.0 -37.9098657,-6.16064539979786,0.0 -37.9086447,-6.15958629979789,0.0 -37.9081711,-6.15879339979792,0.0 -37.9081728,-6.15806749979794,0.0 -37.9087154,-6.15770629979795,0.0 -37.9102103,-6.15797419979794,0.0 -37.9108903,-6.15764489979795,0.0 -37.9110944,-6.15691959979798,0.0 -37.9110984,-6.15500539979804,0.0 -37.910762,-6.15348789979809,0.0 -37.9108325,-6.15190389979814,0.0 -37.9116506,-6.15081769979817,0.0 -37.9123975,-6.15075229979818,0.0 -37.9129382,-6.15095169979817,0.0 -37.9138911,-6.15220499979813,0.0 -37.9140912,-6.15339559979809,0.0 -37.914153,-6.15563979979802,0.0 -37.9145592,-6.156300999798,0.0 -37.915102,-6.15643259979799,0.0 -37.915579,-6.156234899798,0.0 -37.9157867,-6.15395919979807,0.0 -37.9154534,-6.15098969979817,0.0 -37.9147767,-6.15013179979819,0.0 -37.9122659,-6.14880549979824,0.0 -37.9108388,-6.14877019979824,0.0 -37.910092,-6.14936319979822,0.0 -37.9093598,-6.14942469979822,0.0 -37.9086672,-6.14896239979823,0.0 -37.9079874,-6.14896269979823,0.0 -37.9064248,-6.14948499979822,0.0 -37.9045212,-6.14974659979821,0.0 -37.9028932,-6.14954539979821,0.0 -37.9022822,-6.14904799979823,0.0 -37.9026252,-6.14812659979826,0.0 -37.9050728,-6.14628329979832,0.0 -37.9073803,-6.14549529979835,0.0 -37.907383,-6.14496869979836,0.0 -37.9060288,-6.1437125997984,0.0 -37.9052837,-6.14331489979841,0.0 -37.9053509,-6.14268839979844,0.0 -37.9060317,-6.14235809979845,0.0 -37.9077962,-6.14229779979845,0.0 -37.9086808,-6.14183769979846,0.0 -37.9093615,-6.14098249979849,0.0 -37.9099739,-6.1405858997985,0.0 -37.9107204,-6.1405882997985,0.0 -37.9111975,-6.14118189979849,0.0 -37.911397,-6.14203989979846,0.0 -37.9113948,-6.14322629979842,0.0 -37.911937,-6.14458089979838,0.0 -37.9128842,-6.14511149979836,0.0 -37.9139037,-6.14484759979837,0.0 -37.9144469,-6.14432359979838,0.0 -37.9162859,-6.14175389979847,0.0 -37.9178466,-6.14208639979846,0.0 -37.9196785,-6.14317879979842,0.0</coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</MultiGeometry>
+</Placemark>
+</Folder>
+</Document></kml>

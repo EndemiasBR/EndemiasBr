@@ -1,0 +1,787 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<kml xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:atom="http://www.w3.org/2005/Atom" xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+<name>medianeira_4115804_localidades_2022</name>
+<visibility>1</visibility>
+<Schema name="Povoados" id="kml_schema_ft_Povoados">
+<SimpleField type="xsd:string" name="CD_UF">
+<displayName>CD_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_UF">
+<displayName>NM_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="SIGLA_UF">
+<displayName>SIGLA_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_MUN">
+<displayName>CD_MUN</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_MUN">
+<displayName>NM_MUN</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_RGINT">
+<displayName>CD_RGINT</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_RGINT">
+<displayName>NM_RGINT</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_RGI">
+<displayName>CD_RGI</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_RGI">
+<displayName>NM_RGI</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CT_LOCALIDADE">
+<displayName>CT_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_LOCALIDADE">
+<displayName>CD_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_LOCALIDADE">
+<displayName>NM_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="LAT_LOCALIDADE">
+<displayName>LAT_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="LONG_LOCALIDADE">
+<displayName>LONG_LOCALIDADE</displayName>
+</SimpleField>
+</Schema>
+<Schema name="Vilas" id="kml_schema_ft_Vilas">
+<SimpleField type="xsd:string" name="CD_UF">
+<displayName>CD_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_UF">
+<displayName>NM_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="SIGLA_UF">
+<displayName>SIGLA_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_MUN">
+<displayName>CD_MUN</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_MUN">
+<displayName>NM_MUN</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_RGINT">
+<displayName>CD_RGINT</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_RGINT">
+<displayName>NM_RGINT</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_RGI">
+<displayName>CD_RGI</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_RGI">
+<displayName>NM_RGI</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CT_LOCALIDADE">
+<displayName>CT_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_LOCALIDADE">
+<displayName>CD_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_LOCALIDADE">
+<displayName>NM_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="LAT_LOCALIDADE">
+<displayName>LAT_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="LONG_LOCALIDADE">
+<displayName>LONG_LOCALIDADE</displayName>
+</SimpleField>
+</Schema>
+<Schema name="Localidades" id="kml_schema_ft_Localidades">
+<SimpleField type="xsd:string" name="CD_UF">
+<displayName>CD_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_UF">
+<displayName>NM_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="SIGLA_UF">
+<displayName>SIGLA_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_MUN">
+<displayName>CD_MUN</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_MUN">
+<displayName>NM_MUN</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_RGINT">
+<displayName>CD_RGINT</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_RGINT">
+<displayName>NM_RGINT</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_RGI">
+<displayName>CD_RGI</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_RGI">
+<displayName>NM_RGI</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CT_LOCALIDADE">
+<displayName>CT_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="SCT_LOCALIDADE">
+<displayName>SCT_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_LOCALIDADE">
+<displayName>CD_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_LOCALIDADE">
+<displayName>NM_LOCALIDADE</displayName>
+</SimpleField>
+</Schema>
+<Schema name="Núcleos Urbanos" id="kml_schema_ft_Núcleos_Urbanos">
+<SimpleField type="xsd:string" name="CD_UF">
+<displayName>CD_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_UF">
+<displayName>NM_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="SIGLA_UF">
+<displayName>SIGLA_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_MUN">
+<displayName>CD_MUN</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_MUN">
+<displayName>NM_MUN</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_RGINT">
+<displayName>CD_RGINT</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_RGINT">
+<displayName>NM_RGINT</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_RGI">
+<displayName>CD_RGI</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_RGI">
+<displayName>NM_RGI</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CT_LOCALIDADE">
+<displayName>CT_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_LOCALIDADE">
+<displayName>CD_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_LOCALIDADE">
+<displayName>NM_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="LAT_LOCALIDADE">
+<displayName>LAT_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="LONG_LOCALIDADE">
+<displayName>LONG_LOCALIDADE</displayName>
+</SimpleField>
+</Schema>
+<Schema name="01. Cidade" id="kml_schema_ft_01._Cidade">
+<SimpleField type="xsd:string" name="CD_UF">
+<displayName>CD_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_UF">
+<displayName>NM_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="SIGLA_UF">
+<displayName>SIGLA_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_MUN">
+<displayName>CD_MUN</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_MUN">
+<displayName>NM_MUN</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_RGINT">
+<displayName>CD_RGINT</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_RGINT">
+<displayName>NM_RGINT</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_RGI">
+<displayName>CD_RGI</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_RGI">
+<displayName>NM_RGI</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CT_LOCALIDADE">
+<displayName>CT_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="SCT_LOCALIDADE">
+<displayName>SCT_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_LOCALIDADE">
+<displayName>CD_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_LOCALIDADE">
+<displayName>NM_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="LAT_LOCALIDADE">
+<displayName>LAT_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="LONG_LOCALIDADE">
+<displayName>LONG_LOCALIDADE</displayName>
+</SimpleField>
+</Schema>
+<Schema name="Município" id="kml_schema_ft_Município">
+<SimpleField type="xsd:string" name="CD_UF">
+<displayName>CD_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_UF">
+<displayName>NM_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_MUN">
+<displayName>CD_MUN</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_MUN">
+<displayName>NM_MUN</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_RGINT">
+<displayName>CD_RGINT</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_RGINT">
+<displayName>NM_RGINT</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_RGI">
+<displayName>CD_RGI</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_RGI">
+<displayName>NM_RGI</displayName>
+</SimpleField>
+</Schema>
+<Folder id="01. Cidade">
+<name>01. Cidade</name>
+<Folder id="01.03. Sede Municipal">
+<name>01.03. Sede Municipal</name>
+<Placemark id="01.03. Sede Municipal">
+<name>Medianeira [4115804]</name>
+<visibility>1</visibility>
+<snippet> </snippet>
+<description>&lt;center&gt;&lt;table&gt;&lt;tr&gt;&lt;th colspan='2' align='center'&gt;&lt;em&gt;Atributos&lt;/em&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_UF&lt;/th&gt;
+&lt;td&gt;41&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_UF&lt;/th&gt;
+&lt;td&gt;Paraná&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;SIGLA_UF&lt;/th&gt;
+&lt;td&gt;PR&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_MUN&lt;/th&gt;
+&lt;td&gt;4115804&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_MUN&lt;/th&gt;
+&lt;td&gt;Medianeira&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGINT&lt;/th&gt;
+&lt;td&gt;4103&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGINT&lt;/th&gt;
+&lt;td&gt;Cascavel&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGI&lt;/th&gt;
+&lt;td&gt;410007&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGI&lt;/th&gt;
+&lt;td&gt;Foz do Iguaçu&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Cidade&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;SCT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Sede Municipal&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;4115804&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Medianeira&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;LAT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;-25.2904&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;LONG_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;-54.0875&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;&lt;/center&gt;</description>
+<Style>
+<IconStyle>
+<color>ff00aaff</color>
+<scale>1.0</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<scale>1.0</scale>
+</LabelStyle>
+<LineStyle>
+<color>ffffffff</color>
+<width>3</width>
+<gx:labelVisibility>1</gx:labelVisibility>
+</LineStyle>
+<PolyStyle>
+<color>00ffffff</color>
+</PolyStyle>
+</Style>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_01._Cidade">
+<SimpleData name="CD_UF">41</SimpleData>
+<SimpleData name="NM_UF">Paraná</SimpleData>
+<SimpleData name="SIGLA_UF">PR</SimpleData>
+<SimpleData name="CD_MUN">4115804</SimpleData>
+<SimpleData name="NM_MUN">Medianeira</SimpleData>
+<SimpleData name="CD_RGINT">4103</SimpleData>
+<SimpleData name="NM_RGINT">Cascavel</SimpleData>
+<SimpleData name="CD_RGI">410007</SimpleData>
+<SimpleData name="NM_RGI">Foz do Iguaçu</SimpleData>
+<SimpleData name="CT_LOCALIDADE">Cidade</SimpleData>
+<SimpleData name="SCT_LOCALIDADE">Sede Municipal</SimpleData>
+<SimpleData name="CD_LOCALIDADE">4115804</SimpleData>
+<SimpleData name="NM_LOCALIDADE">Medianeira</SimpleData>
+<SimpleData name="LAT_LOCALIDADE">-25.2904</SimpleData>
+<SimpleData name="LONG_LOCALIDADE">-54.0875</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<extrude>0</extrude>
+<coordinates>-54.08746,-25.2904039992698,0.0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+</Folder>
+<Folder id="04. Vilas">
+<name>04. Vilas</name>
+<Placemark id="04. Vilas">
+<name>Maralúcia [411580425]</name>
+<visibility>1</visibility>
+<snippet> </snippet>
+<description>&lt;center&gt;&lt;table&gt;&lt;tr&gt;&lt;th colspan='2' align='center'&gt;&lt;em&gt;Atributos&lt;/em&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_UF&lt;/th&gt;
+&lt;td&gt;41&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_UF&lt;/th&gt;
+&lt;td&gt;Paraná&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;SIGLA_UF&lt;/th&gt;
+&lt;td&gt;PR&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_MUN&lt;/th&gt;
+&lt;td&gt;4115804&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_MUN&lt;/th&gt;
+&lt;td&gt;Medianeira&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGINT&lt;/th&gt;
+&lt;td&gt;4103&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGINT&lt;/th&gt;
+&lt;td&gt;Cascavel&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGI&lt;/th&gt;
+&lt;td&gt;410007&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGI&lt;/th&gt;
+&lt;td&gt;Foz do Iguaçu&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Vila&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;411580425&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Maralúcia&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;LAT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;-25.203&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;LONG_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;-54.1405&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;&lt;/center&gt;</description>
+<Style>
+<IconStyle>
+<color>ffff5400</color>
+<scale>1.0</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<scale>0.9</scale>
+</LabelStyle>
+<LineStyle>
+<color>72ffffff</color>
+<width>1.0</width>
+<gx:labelVisibility>1</gx:labelVisibility>
+</LineStyle>
+<PolyStyle>
+<color>660054ff</color>
+</PolyStyle>
+</Style>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_Vilas">
+<SimpleData name="CD_UF">41</SimpleData>
+<SimpleData name="NM_UF">Paraná</SimpleData>
+<SimpleData name="SIGLA_UF">PR</SimpleData>
+<SimpleData name="CD_MUN">4115804</SimpleData>
+<SimpleData name="NM_MUN">Medianeira</SimpleData>
+<SimpleData name="CD_RGINT">4103</SimpleData>
+<SimpleData name="NM_RGINT">Cascavel</SimpleData>
+<SimpleData name="CD_RGI">410007</SimpleData>
+<SimpleData name="NM_RGI">Foz do Iguaçu</SimpleData>
+<SimpleData name="CT_LOCALIDADE">Vila</SimpleData>
+<SimpleData name="CD_LOCALIDADE">411580425</SimpleData>
+<SimpleData name="NM_LOCALIDADE">Maralúcia</SimpleData>
+<SimpleData name="LAT_LOCALIDADE">-25.203</SimpleData>
+<SimpleData name="LONG_LOCALIDADE">-54.1405</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<extrude>0</extrude>
+<coordinates>-54.140505,-25.2029539992716,0.0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Folder id="05. Núcleos Urbanos">
+<name>05. Núcleos Urbanos</name>
+<Placemark id="localidades">
+<name>Área Industrial [4115804001]</name>
+<visibility>1</visibility>
+<snippet> </snippet>
+<description>&lt;center&gt;&lt;table&gt;&lt;tr&gt;&lt;th colspan='2' align='center'&gt;&lt;em&gt;Attributes&lt;/em&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_UF&lt;/th&gt;
+&lt;td&gt;41&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_UF&lt;/th&gt;
+&lt;td&gt;Paraná&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;SIGLA_UF&lt;/th&gt;
+&lt;td&gt;PR&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_MUN&lt;/th&gt;
+&lt;td&gt;4115804&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_MUN&lt;/th&gt;
+&lt;td&gt;Medianeira&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGINT&lt;/th&gt;
+&lt;td&gt;4103&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGINT&lt;/th&gt;
+&lt;td&gt;Cascavel&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGI&lt;/th&gt;
+&lt;td&gt;410007&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGI&lt;/th&gt;
+&lt;td&gt;Foz do Iguaçu&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Núcleo Urbano&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;4115804001&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Área Industrial&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;LAT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;-25.2686&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;LONG_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;-54.0525&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;&lt;/center&gt;</description>
+<Style>
+<IconStyle>
+<color>ff0000ff</color>
+<scale>0.9</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<scale>0.9</scale>
+</LabelStyle>
+<LineStyle>
+<color>72ffffff</color>
+<width>1.0</width>
+<gx:labelVisibility>1</gx:labelVisibility>
+</LineStyle>
+<PolyStyle>
+<color>66ff54ff</color>
+</PolyStyle>
+</Style>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_Núcleos_Urbanos">
+<SimpleData name="CD_UF">41</SimpleData>
+<SimpleData name="NM_UF">Paraná</SimpleData>
+<SimpleData name="SIGLA_UF">PR</SimpleData>
+<SimpleData name="CD_MUN">4115804</SimpleData>
+<SimpleData name="NM_MUN">Medianeira</SimpleData>
+<SimpleData name="CD_RGINT">4103</SimpleData>
+<SimpleData name="NM_RGINT">Cascavel</SimpleData>
+<SimpleData name="CD_RGI">410007</SimpleData>
+<SimpleData name="NM_RGI">Foz do Iguaçu</SimpleData>
+<SimpleData name="CT_LOCALIDADE">Núcleo Urbano</SimpleData>
+<SimpleData name="CD_LOCALIDADE">4115804001</SimpleData>
+<SimpleData name="NM_LOCALIDADE">Área Industrial</SimpleData>
+<SimpleData name="LAT_LOCALIDADE">-25.2686</SimpleData>
+<SimpleData name="LONG_LOCALIDADE">-54.0525</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<extrude>0</extrude>
+<coordinates>-54.0524806875,-25.2686012909368,0.0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Folder id="06. Povoados">
+<name>06. Povoados</name>
+<Placemark id="06. Povoados">
+<name>Vila Rural [411580400002]</name>
+<visibility>1</visibility>
+<snippet> </snippet>
+<description>&lt;center&gt;&lt;table&gt;&lt;tr&gt;&lt;th colspan='2' align='center'&gt;&lt;em&gt;Atributos&lt;/em&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_UF&lt;/th&gt;
+&lt;td&gt;41&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_UF&lt;/th&gt;
+&lt;td&gt;Paraná&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;SIGLA_UF&lt;/th&gt;
+&lt;td&gt;PR&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_MUN&lt;/th&gt;
+&lt;td&gt;4115804&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_MUN&lt;/th&gt;
+&lt;td&gt;Medianeira&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGINT&lt;/th&gt;
+&lt;td&gt;4103&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGINT&lt;/th&gt;
+&lt;td&gt;Cascavel&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGI&lt;/th&gt;
+&lt;td&gt;410007&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGI&lt;/th&gt;
+&lt;td&gt;Foz do Iguaçu&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Povoado&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;411580400002&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Vila Rural&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;LAT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;-25.3181&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;LONG_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;-54.0633&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;&lt;/center&gt;</description>
+<Style>
+<IconStyle>
+<color>ff00ff54</color>
+<scale>0.8</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<scale>0.8</scale>
+</LabelStyle>
+<LineStyle>
+<color>72ff54ff</color>
+<width>1.0</width>
+<gx:labelVisibility>1</gx:labelVisibility>
+</LineStyle>
+<PolyStyle>
+<color>66ff54ff</color>
+</PolyStyle>
+</Style>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_Povoados">
+<SimpleData name="CD_UF">41</SimpleData>
+<SimpleData name="NM_UF">Paraná</SimpleData>
+<SimpleData name="SIGLA_UF">PR</SimpleData>
+<SimpleData name="CD_MUN">4115804</SimpleData>
+<SimpleData name="NM_MUN">Medianeira</SimpleData>
+<SimpleData name="CD_RGINT">4103</SimpleData>
+<SimpleData name="NM_RGINT">Cascavel</SimpleData>
+<SimpleData name="CD_RGI">410007</SimpleData>
+<SimpleData name="NM_RGI">Foz do Iguaçu</SimpleData>
+<SimpleData name="CT_LOCALIDADE">Povoado</SimpleData>
+<SimpleData name="CD_LOCALIDADE">411580400002</SimpleData>
+<SimpleData name="NM_LOCALIDADE">Vila Rural</SimpleData>
+<SimpleData name="LAT_LOCALIDADE">-25.3181</SimpleData>
+<SimpleData name="LONG_LOCALIDADE">-54.0633</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<extrude>0</extrude>
+<coordinates>-54.0633481240875,-25.3181297072983,0.0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Folder id="12. Outras Localidades">
+<name>12. Outras Localidades</name>
+<Placemark id="12. Outras Localidades">
+<name>Espigão do Norte [411580400001]</name>
+<visibility>1</visibility>
+<snippet> </snippet>
+<description>&lt;center&gt;&lt;table&gt;&lt;tr&gt;&lt;th colspan='2' align='center'&gt;&lt;em&gt;Attributes&lt;/em&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_UF&lt;/th&gt;
+&lt;td&gt;41&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_UF&lt;/th&gt;
+&lt;td&gt;Paraná&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;SIGLA_UF&lt;/th&gt;
+&lt;td&gt;PR&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_MUN&lt;/th&gt;
+&lt;td&gt;4115804&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_MUN&lt;/th&gt;
+&lt;td&gt;Medianeira&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGINT&lt;/th&gt;
+&lt;td&gt;4103&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGINT&lt;/th&gt;
+&lt;td&gt;Cascavel&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGI&lt;/th&gt;
+&lt;td&gt;410007&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGI&lt;/th&gt;
+&lt;td&gt;Foz do Iguaçu&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Outras Localidades&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;SCT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;411580400001&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Espigão do Norte&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;&lt;/center&gt;</description>
+<Style>
+<IconStyle>
+<color>ff0069d3</color>
+<scale>0.6</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<scale>0.6</scale>
+</LabelStyle>
+<LineStyle>
+<width>1.0</width>
+<gx:labelVisibility>1</gx:labelVisibility>
+</LineStyle>
+</Style>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_Localidades">
+<SimpleData name="CD_UF">41</SimpleData>
+<SimpleData name="NM_UF">Paraná</SimpleData>
+<SimpleData name="SIGLA_UF">PR</SimpleData>
+<SimpleData name="CD_MUN">4115804</SimpleData>
+<SimpleData name="NM_MUN">Medianeira</SimpleData>
+<SimpleData name="CD_RGINT">4103</SimpleData>
+<SimpleData name="NM_RGINT">Cascavel</SimpleData>
+<SimpleData name="CD_RGI">410007</SimpleData>
+<SimpleData name="NM_RGI">Foz do Iguaçu</SimpleData>
+<SimpleData name="CT_LOCALIDADE">Outras Localidades</SimpleData>
+<SimpleData name="CD_LOCALIDADE">411580400001</SimpleData>
+<SimpleData name="NM_LOCALIDADE">Espigão do Norte</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<extrude>0</extrude>
+<coordinates>-54.058224,-25.1899022992719,0.0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Folder id="13. Referência">
+<name>13. Referência</name>
+<Placemark id="13. Referência">
+<name>Medianeira [4115804]</name>
+<visibility>1</visibility>
+<snippet> </snippet>
+<description>&lt;center&gt;&lt;table&gt;&lt;tr&gt;&lt;th colspan='2' align='center'&gt;&lt;em&gt;Attributes&lt;/em&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_UF&lt;/th&gt;
+&lt;td&gt;41&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_UF&lt;/th&gt;
+&lt;td&gt;Paraná&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_MUN&lt;/th&gt;
+&lt;td&gt;4115804&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_MUN&lt;/th&gt;
+&lt;td&gt;Medianeira&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_RGINT&lt;/th&gt;
+&lt;td&gt;4103&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_RGINT&lt;/th&gt;
+&lt;td&gt;Cascavel&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_RGI&lt;/th&gt;
+&lt;td&gt;410007&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_RGI&lt;/th&gt;
+&lt;td&gt;Foz do Iguaçu&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;&lt;/center&gt;</description>
+<Style>
+<IconStyle>
+<scale>0.7</scale>
+</IconStyle>
+<LabelStyle>
+<scale>0.7</scale>
+</LabelStyle>
+<LineStyle>
+<color>ffffffff</color>
+<width>3</width>
+<gx:labelVisibility>1</gx:labelVisibility>
+</LineStyle>
+<PolyStyle>
+<color>00ffffff</color>
+</PolyStyle>
+</Style>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_Município">
+<SimpleData name="CD_UF">41</SimpleData>
+<SimpleData name="NM_UF">Paraná</SimpleData>
+<SimpleData name="CD_MUN">4115804</SimpleData>
+<SimpleData name="NM_MUN">Medianeira</SimpleData>
+<SimpleData name="CD_RGINT">4103</SimpleData>
+<SimpleData name="NM_RGINT">Cascavel</SimpleData>
+<SimpleData name="CD_RGI">410007</SimpleData>
+<SimpleData name="NM_RGI">Foz do Iguaçu</SimpleData>
+</SchemaData>
+</ExtendedData>
+<MultiGeometry>
+<Polygon>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>-54.1139284,-25.3604035992683,0.0 -54.1147302,-25.3604237992683,0.0 -54.1152162,-25.3595865992683,0.0 -54.1158997,-25.3595318992683,0.0 -54.1162536,-25.3597355992683,0.0 -54.117258,-25.3597889992683,0.0 -54.1182085,-25.3605238992683,0.0 -54.1186078,-25.3603700992683,0.0 -54.1191315,-25.3594985992683,0.0 -54.1199046,-25.3586981992683,0.0 -54.1215964,-25.3585017992683,0.0 -54.1229042,-25.3578751992684,0.0 -54.1257087,-25.3568165992684,0.0 -54.1288338,-25.3545634992684,0.0 -54.1300569,-25.3528896992685,0.0 -54.1311151,-25.3521602992685,0.0 -54.1372059,-25.3451325992686,0.0 -54.138103,-25.3446170992686,0.0 -54.139242,-25.3439625992687,0.0 -54.1396826,-25.3435459992687,0.0 -54.1400254,-25.3427693992687,0.0 -54.1416953,-25.3420139992687,0.0 -54.1434249,-25.3370248992688,0.0 -54.143905,-25.3365134992688,0.0 -54.1445883,-25.3364288992688,0.0 -54.1463533,-25.3346343992688,0.0 -54.1470065,-25.3343204992689,0.0 -54.1472815,-25.3334129992689,0.0 -54.148634,-25.3322967992689,0.0 -54.1488044,-25.3311555992689,0.0 -54.1492854,-25.3305213992689,0.0 -54.1500693,-25.3307254992689,0.0 -54.150539,-25.3306338992689,0.0 -54.1514934,-25.3297400992689,0.0 -54.1521833,-25.329393699269,0.0 -54.1551329,-25.329059299269,0.0 -54.1560731,-25.328783899269,0.0 -54.1578641,-25.327381899269,0.0 -54.1602801,-25.326972199269,0.0 -54.1707341,-25.3342235992689,0.0 -54.1731092,-25.329432899269,0.0 -54.1732932,-25.327516199269,0.0 -54.173277,-25.327267999269,0.0 -54.1732611,-25.327025499269,0.0 -54.1731755,-25.325714499269,0.0 -54.1729298,-25.3247660992691,0.0 -54.1712618,-25.3224173992691,0.0 -54.1705547,-25.3188786992692,0.0 -54.1718742,-25.3129607992693,0.0 -54.1731049,-25.3110275992693,0.0 -54.1734106,-25.3102174992694,0.0 -54.1733595,-25.3078009992694,0.0 -54.172886,-25.3065187992694,0.0 -54.1729377,-25.3058669992694,0.0 -54.1725911,-25.3037712992695,0.0 -54.1718608,-25.3027123992695,0.0 -54.171678,-25.3012692992695,0.0 -54.1714671,-25.2996047992696,0.0 -54.171754,-25.2981086992696,0.0 -54.1715044,-25.2964389992696,0.0 -54.1719069,-25.2945861992697,0.0 -54.172476,-25.2932900992697,0.0 -54.1739022,-25.2921094992697,0.0 -54.174845,-25.2917364992697,0.0 -54.1765242,-25.2904959992698,0.0 -54.1780535,-25.2878807992698,0.0 -54.1782529,-25.2871023992698,0.0 -54.1781926,-25.2865770992698,0.0 -54.1779151,-25.2862460992699,0.0 -54.1779756,-25.2855328992699,0.0 -54.1785055,-25.2839407992699,0.0 -54.1783068,-25.2832179992699,0.0 -54.1766816,-25.28057409927,0.0 -54.1767663,-25.28005489927,0.0 -54.1766024,-25.27936719927,0.0 -54.1757246,-25.27856669927,0.0 -54.1754489,-25.27807139927,0.0 -54.1755748,-25.27728769927,0.0 -54.1762208,-25.2756692992701,0.0 -54.1761254,-25.2748867992701,0.0 -54.1754519,-25.2732725992701,0.0 -54.1756033,-25.2729492992701,0.0 -54.1763981,-25.2726368992701,0.0 -54.1767687,-25.2721218992702,0.0 -54.1779323,-25.2714921992702,0.0 -54.1784835,-25.2709805992702,0.0 -54.1790064,-25.2700753992702,0.0 -54.1793259,-25.2686126992702,0.0 -54.1791988,-25.2679249992702,0.0 -54.1786963,-25.2664143992703,0.0 -54.1779391,-25.2652543992703,0.0 -54.1780102,-25.2650304992703,0.0 -54.1785548,-25.2647454992703,0.0 -54.178391,-25.2640577992703,0.0 -54.1790946,-25.2631902992703,0.0 -54.1804283,-25.2628564992703,0.0 -54.1806493,-25.2625998992704,0.0 -54.181078,-25.2611396992704,0.0 -54.1823935,-25.2586185992704,0.0 -54.1837759,-25.2576960992705,0.0 -54.1837842,-25.2573051992705,0.0 -54.1832528,-25.2570666992705,0.0 -54.1833748,-25.2563524992705,0.0 -54.183213,-25.2556638992705,0.0 -54.1834076,-25.2550145992705,0.0 -54.1833397,-25.2549074992705,0.0 -54.1831319,-25.2545797992705,0.0 -54.1835521,-25.2534183992705,0.0 -54.1828788,-25.2532639992705,0.0 -54.1827723,-25.2530429992706,0.0 -54.1822736,-25.2528052992705,0.0 -54.1821062,-25.2523459992706,0.0 -54.1822478,-25.2508138992706,0.0 -54.1821171,-25.2503545992706,0.0 -54.1816878,-25.2498821992706,0.0 -54.1812402,-25.2493897992706,0.0 -54.1805948,-25.2478775992707,0.0 -54.1804437,-25.2451000992707,0.0 -54.1797672,-25.2419639992708,0.0 -54.1787575,-25.2404314992708,0.0 -54.1786258,-25.2399387992708,0.0 -54.1794652,-25.2391018992708,0.0 -54.1795255,-25.2382261992709,0.0 -54.1800041,-25.2377461992709,0.0 -54.1801629,-25.2370644992709,0.0 -54.179499,-25.2364676992709,0.0 -54.178453,-25.2365086992709,0.0 -54.1785461,-25.2356626992709,0.0 -54.1778717,-25.2353547992709,0.0 -54.1778792,-25.2350306992709,0.0 -54.1788901,-25.2347541992709,0.0 -54.1790396,-25.2344659992709,0.0 -54.1791589,-25.2339449992709,0.0 -54.1786754,-25.233151199271,0.0 -54.1785803,-25.232627799271,0.0 -54.1788914,-25.231555899271,0.0 -54.1806966,-25.229501799271,0.0 -54.1823665,-25.2285545992711,0.0 -54.1832345,-25.2283088992711,0.0 -54.1844203,-25.2282333992711,0.0 -54.1848914,-25.2279817992711,0.0 -54.1850933,-25.2270056992711,0.0 -54.1837842,-25.2262634992711,0.0 -54.1835818,-25.2256715992711,0.0 -54.1837857,-25.2246322992711,0.0 -54.1848095,-25.2237373992712,0.0 -54.1848179,-25.2233753992712,0.0 -54.1842347,-25.2222557992712,0.0 -54.1847293,-25.2205887992712,0.0 -54.1871256,-25.2197335992712,0.0 -54.1896377,-25.2181162992713,0.0 -54.1906832,-25.2178423992713,0.0 -54.1913621,-25.2178883992713,0.0 -54.1921079,-25.2182611992713,0.0 -54.1932927,-25.2182180992713,0.0 -54.1935812,-25.2180163992713,0.0 -54.1926231,-25.2145827992714,0.0 -54.1930018,-25.2136931992714,0.0 -54.1942681,-25.2131769992714,0.0 -54.1946589,-25.2118132992714,0.0 -54.195161,-25.2086883992715,0.0 -54.1944163,-25.2052454992716,0.0 -54.1950695,-25.2048049992716,0.0 -54.1980922,-25.2044037992716,0.0 -54.200713,-25.2057912992715,0.0 -54.2014396,-25.2053804992715,0.0 -54.2038919,-25.1984992992717,0.0 -54.2037896,-25.1966524992717,0.0 -54.2026571,-25.1951798992718,0.0 -54.2012307,-25.1941617992718,0.0 -54.1968159,-25.1919163992718,0.0 -54.195855,-25.1909435992718,0.0 -54.1956545,-25.1902550992719,0.0 -54.1952067,-25.1900552992719,0.0 -54.1948675,-25.1901423992719,0.0 -54.1939833,-25.1912682992718,0.0 -54.1933319,-25.1915173992718,0.0 -54.1927106,-25.1920273992718,0.0 -54.1923019,-25.1926742992718,0.0 -54.1920494,-25.1942669992718,0.0 -54.1913219,-25.1947120992718,0.0 -54.1905271,-25.1966213992717,0.0 -54.1898296,-25.1972605992717,0.0 -54.1893267,-25.1973153992717,0.0 -54.188866,-25.1970784992717,0.0 -54.187681,-25.1955878992717,0.0 -54.185995,-25.1940878992718,0.0 -54.1855644,-25.1940784992718,0.0 -54.1828468,-25.1953645992718,0.0 -54.1817281,-25.1956692992718,0.0 -54.1798666,-25.1955379992718,0.0 -54.1794069,-25.1952667992718,0.0 -54.1792376,-25.1948390992718,0.0 -54.1797871,-25.1927612992718,0.0 -54.179662,-25.1919751992718,0.0 -54.1789597,-25.1913756992718,0.0 -54.1785438,-25.1906151992719,0.0 -54.1791727,-25.1898110992719,0.0 -54.1802659,-25.1890811992719,0.0 -54.1807132,-25.1883385992719,0.0 -54.1806191,-25.1877492992719,0.0 -54.1800249,-25.1871180992719,0.0 -54.1787078,-25.1867025992719,0.0 -54.1778278,-25.185998699272,0.0 -54.1759746,-25.183939999272,0.0 -54.1751734,-25.181444899272,0.0 -54.1750876,-25.1804627992721,0.0 -54.1756267,-25.1772737992721,0.0 -54.1756135,-25.1770679992721,0.0 -54.1755466,-25.1760325992722,0.0 -54.175442,-25.1757510992722,0.0 -54.1752777,-25.1753089992722,0.0 -54.1734053,-25.1756315992722,0.0 -54.1721299,-25.1765872992721,0.0 -54.1712408,-25.1778096992721,0.0 -54.1709258,-25.1788806992721,0.0 -54.1696271,-25.1809123992721,0.0 -54.1693601,-25.182262299272,0.0 -54.1692212,-25.182962099272,0.0 -54.1683687,-25.184185299272,0.0 -54.1679335,-25.184405199272,0.0 -54.1673243,-25.184395099272,0.0 -54.1663354,-25.183755199272,0.0 -54.166012,-25.183782699272,0.0 -54.1663025,-25.185157199272,0.0 -54.1662735,-25.1863975992719,0.0 -54.1659699,-25.1871444992719,0.0 -54.1641547,-25.1881520992719,0.0 -54.1622906,-25.1896508992719,0.0 -54.159979,-25.1919571992718,0.0 -54.1566726,-25.1938482992718,0.0 -54.1561706,-25.1938388992718,0.0 -54.1559252,-25.1920417992718,0.0 -54.1555821,-25.1914156992718,0.0 -54.1554683,-25.1901077992719,0.0 -54.1549081,-25.1895414992719,0.0 -54.1551027,-25.1888930992719,0.0 -54.1549061,-25.1880085992719,0.0 -54.1544183,-25.1874430992719,0.0 -54.1534886,-25.1873925992719,0.0 -54.1515371,-25.1865072992719,0.0 -54.1504993,-25.1864541992719,0.0 -54.1500753,-25.186185599272,0.0 -54.1497765,-25.185166699272,0.0 -54.1499955,-25.183407999272,0.0 -54.1497135,-25.183206999272,0.0 -54.1492106,-25.183196699272,0.0 -54.146553,-25.185038199272,0.0 -54.1458573,-25.185648199272,0.0 -54.1448118,-25.1874537992719,0.0 -54.144275,-25.1873784992719,0.0 -54.1434676,-25.1866452992719,0.0 -54.1402921,-25.1859956992719,0.0 -54.1397262,-25.185658599272,0.0 -54.13959,-25.185330199272,0.0 -54.1398467,-25.185138499272,0.0 -54.1411769,-25.184966699272,0.0 -54.1417337,-25.182596499272,0.0 -54.1423531,-25.182118299272,0.0 -54.1429183,-25.1809866992721,0.0 -54.1432203,-25.1788387992721,0.0 -54.1430587,-25.1780508992721,0.0 -54.1423539,-25.1767904992721,0.0 -54.1412185,-25.1754708992722,0.0 -54.1400568,-25.1745655992722,0.0 -54.1395934,-25.1744269992722,0.0 -54.1379805,-25.1744610992722,0.0 -54.1359171,-25.1753683992722,0.0 -54.1348181,-25.1763253992721,0.0 -54.1340687,-25.1777487992721,0.0 -54.1329203,-25.1808921992721,0.0 -54.1324397,-25.1813701992721,0.0 -54.1316192,-25.181289599272,0.0 -54.1302713,-25.1806760992721,0.0 -54.1298775,-25.1806700992721,0.0 -54.1295841,-25.1809248992721,0.0 -54.1290142,-25.182316499272,0.0 -54.1280193,-25.183439499272,0.0 -54.1274488,-25.183363199272,0.0 -54.1272035,-25.183097999272,0.0 -54.1271115,-25.182443699272,0.0 -54.1259632,-25.1809487992721,0.0 -54.1259412,-25.1788291992721,0.0 -54.1253925,-25.1778086992721,0.0 -54.125029,-25.1764287992722,0.0 -54.1236936,-25.1752933992722,0.0 -54.1219492,-25.1748027992722,0.0 -54.121232,-25.1747889992722,0.0 -54.1186557,-25.1757542992722,0.0 -54.1174998,-25.1765766992721,0.0 -54.1172721,-25.1770290992721,0.0 -54.1174035,-25.1775218992721,0.0 -54.1173101,-25.1784327992721,0.0 -54.1152023,-25.1796973992721,0.0 -54.1129153,-25.1793596992721,0.0 -54.1129084,-25.1793349992721,0.0 -54.1129016,-25.1793102992721,0.0 -54.1127511,-25.1787685992721,0.0 -54.1133863,-25.1770041992721,0.0 -54.1135967,-25.1760335992722,0.0 -54.1137075,-25.1746414992722,0.0 -54.1134014,-25.1739826992722,0.0 -54.1118827,-25.1730079992722,0.0 -54.1107341,-25.1730837992722,0.0 -54.1105644,-25.1741238992722,0.0 -54.1098754,-25.1745350992722,0.0 -54.1094032,-25.1745200992722,0.0 -54.1083567,-25.1735585992722,0.0 -54.107931,-25.1733873992722,0.0 -54.1050226,-25.1735257992722,0.0 -54.1041703,-25.1732483992722,0.0 -54.1024861,-25.1723413992722,0.0 -54.1020937,-25.1716717992722,0.0 -54.102361,-25.1709611992723,0.0 -54.1022363,-25.1701424992723,0.0 -54.1024312,-25.1694598992723,0.0 -54.1039616,-25.1669763992723,0.0 -54.1039731,-25.1664879992724,0.0 -54.1037317,-25.1660584992724,0.0 -54.1028822,-25.1655850992724,0.0 -54.0996263,-25.1662309992724,0.0 -54.0993003,-25.1765204992721,0.0 -54.0213181,-25.1752396992722,0.0 -54.0109368,-25.1750638992722,0.0 -54.0107278,-25.1889631992719,0.0 -54.010341,-25.2146158992714,0.0 -54.01013,-25.2285915992711,0.0 -54.0101219,-25.229125299271,0.0 -54.0097898,-25.2511870992706,0.0 -54.0097823,-25.2516806992706,0.0 -54.0094762,-25.2719926992702,0.0 -54.0085611,-25.3326025992689,0.0 -54.0082622,-25.3330187992689,0.0 -54.0077695,-25.3330629992689,0.0 -54.0074795,-25.3338727992689,0.0 -54.0060969,-25.3348648992688,0.0 -54.0060175,-25.3350869992688,0.0 -54.0064247,-25.3352683992688,0.0 -54.0062459,-25.3354570992688,0.0 -54.0056033,-25.3355915992688,0.0 -54.005197,-25.3353523992688,0.0 -54.0047093,-25.3341030992689,0.0 -54.0039911,-25.3346708992688,0.0 -54.0036494,-25.3343467992689,0.0 -54.003416,-25.3343413992688,0.0 -54.0032253,-25.3349732992688,0.0 -54.0024634,-25.3350653992688,0.0 -54.0022171,-25.3355916992688,0.0 -54.0022688,-25.3359112992688,0.0 -54.0016748,-25.3362713992688,0.0 -54.001637,-25.3366153992688,0.0 -54.0023751,-25.3374810992688,0.0 -54.0022529,-25.3376904992688,0.0 -54.0017274,-25.3376796992688,0.0 -54.0017195,-25.3379991992688,0.0 -54.0020592,-25.3384830992688,0.0 -54.0019927,-25.3388007992688,0.0 -54.0017533,-25.3390083992688,0.0 -54.0017454,-25.3393812992688,0.0 -54.0012666,-25.3397955992687,0.0 -54.0013729,-25.3402767992687,0.0 -54.0021755,-25.3407686992687,0.0 -54.001648,-25.3408643992687,0.0 -54.0023404,-25.3423962992687,0.0 -54.0020037,-25.3442468992686,0.0 -54.0012746,-25.3453995992686,0.0 -54.0010044,-25.3467238992686,0.0 -54.0000666,-25.3478431992686,0.0 -53.9994477,-25.3481094992686,0.0 -53.9982179,-25.3501026992685,0.0 -53.9979149,-25.3502552992685,0.0 -53.9974708,-25.3501938992685,0.0 -53.9961962,-25.3506586992685,0.0 -53.9959767,-25.3509267992685,0.0 -53.9961167,-25.3513627992685,0.0 -53.9949594,-25.3521020992685,0.0 -53.9946941,-25.3525832992685,0.0 -53.9946762,-25.3536303992685,0.0 -53.9944,-25.3541629992684,0.0 -53.9941764,-25.3555106992684,0.0 -53.9933885,-25.3562002992684,0.0 -53.9933696,-25.3565821992684,0.0 -53.9937501,-25.3569567992684,0.0 -53.9949194,-25.3570868992684,0.0 -53.9952731,-25.3574524992684,0.0 -53.9956486,-25.3586412992683,0.0 -53.9950296,-25.3589662992683,0.0 -53.9949124,-25.3592830992683,0.0 -53.995266,-25.3596170992683,0.0 -53.9952819,-25.3603302992683,0.0 -53.9941204,-25.3615515992683,0.0 -53.9938393,-25.3615867992683,0.0 -53.9933723,-25.3610685992683,0.0 -53.992969,-25.3612184992683,0.0 -53.9922754,-25.3623738992683,0.0 -53.9923777,-25.3627123992683,0.0 -53.9929977,-25.3631917992682,0.0 -53.9930672,-25.3630698992683,0.0 -53.9952291,-25.3631051992683,0.0 -53.9956116,-25.3643887992682,0.0 -53.9966697,-25.3658268992682,0.0 -53.9982862,-25.3666040992682,0.0 -54.0015242,-25.3659469992682,0.0 -54.0034188,-25.3645955992682,0.0 -54.0052957,-25.3650179992682,0.0 -54.0118767,-25.3627183992683,0.0 -54.013203,-25.3627850992683,0.0 -54.0149048,-25.3616890992683,0.0 -54.0172571,-25.3591431992683,0.0 -54.0238793,-25.3567617992684,0.0 -54.0270974,-25.3535737992685,0.0 -54.0311003,-25.3507727992685,0.0 -54.0384181,-25.3388418992688,0.0 -54.0432649,-25.3343738992688,0.0 -54.0464562,-25.3364103992688,0.0 -54.0468464,-25.3366593992688,0.0 -54.0521931,-25.3400724992687,0.0 -54.0566141,-25.3435110992687,0.0 -54.0617586,-25.3433031992687,0.0 -54.0673598,-25.3515333992685,0.0 -54.0689517,-25.3521708992685,0.0 -54.0718178,-25.3522281992685,0.0 -54.0725225,-25.3528073992685,0.0 -54.0731615,-25.3548995992684,0.0 -54.0770854,-25.3560683992684,0.0 -54.085314,-25.3611577992683,0.0 -54.0872271,-25.3607133992683,0.0 -54.0992257,-25.3618170992683,0.0 -54.1039973,-25.3615672992683,0.0 -54.1062025,-25.3622156992683,0.0 -54.1084731,-25.3638370992682,0.0 -54.1123072,-25.3616659992683,0.0 -54.1138698,-25.3615256992683,0.0 -54.1135626,-25.3612190992683,0.0 -54.1135034,-25.3606611992683,0.0 -54.1139284,-25.3604035992683,0.0</coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</MultiGeometry>
+</Placemark>
+</Folder>
+</Document></kml>

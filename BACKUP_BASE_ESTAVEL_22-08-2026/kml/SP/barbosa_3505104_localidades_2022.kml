@@ -1,0 +1,963 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<kml xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:atom="http://www.w3.org/2005/Atom" xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+<name>barbosa_3505104_localidades_2022</name>
+<visibility>1</visibility>
+<Schema name="Localidades" id="kml_schema_ft_Localidades">
+<SimpleField type="xsd:string" name="CD_UF">
+<displayName>CD_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_UF">
+<displayName>NM_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="SIGLA_UF">
+<displayName>SIGLA_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_MUN">
+<displayName>CD_MUN</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_MUN">
+<displayName>NM_MUN</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_RGINT">
+<displayName>CD_RGINT</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_RGINT">
+<displayName>NM_RGINT</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_RGI">
+<displayName>CD_RGI</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_RGI">
+<displayName>NM_RGI</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CT_LOCALIDADE">
+<displayName>CT_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="SCT_LOCALIDADE">
+<displayName>SCT_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_LOCALIDADE">
+<displayName>CD_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_LOCALIDADE">
+<displayName>NM_LOCALIDADE</displayName>
+</SimpleField>
+</Schema>
+<Schema name="Núcleos Urbanos" id="kml_schema_ft_Núcleos_Urbanos">
+<SimpleField type="xsd:string" name="CD_UF">
+<displayName>CD_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_UF">
+<displayName>NM_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="SIGLA_UF">
+<displayName>SIGLA_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_MUN">
+<displayName>CD_MUN</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_MUN">
+<displayName>NM_MUN</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_RGINT">
+<displayName>CD_RGINT</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_RGINT">
+<displayName>NM_RGINT</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_RGI">
+<displayName>CD_RGI</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_RGI">
+<displayName>NM_RGI</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CT_LOCALIDADE">
+<displayName>CT_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_LOCALIDADE">
+<displayName>CD_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_LOCALIDADE">
+<displayName>NM_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="LAT_LOCALIDADE">
+<displayName>LAT_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="LONG_LOCALIDADE">
+<displayName>LONG_LOCALIDADE</displayName>
+</SimpleField>
+</Schema>
+<Schema name="01. Cidade" id="kml_schema_ft_01._Cidade">
+<SimpleField type="xsd:string" name="CD_UF">
+<displayName>CD_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_UF">
+<displayName>NM_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="SIGLA_UF">
+<displayName>SIGLA_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_MUN">
+<displayName>CD_MUN</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_MUN">
+<displayName>NM_MUN</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_RGINT">
+<displayName>CD_RGINT</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_RGINT">
+<displayName>NM_RGINT</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_RGI">
+<displayName>CD_RGI</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_RGI">
+<displayName>NM_RGI</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CT_LOCALIDADE">
+<displayName>CT_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="SCT_LOCALIDADE">
+<displayName>SCT_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_LOCALIDADE">
+<displayName>CD_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_LOCALIDADE">
+<displayName>NM_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="LAT_LOCALIDADE">
+<displayName>LAT_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="LONG_LOCALIDADE">
+<displayName>LONG_LOCALIDADE</displayName>
+</SimpleField>
+</Schema>
+<Schema name="Município" id="kml_schema_ft_Município">
+<SimpleField type="xsd:string" name="CD_UF">
+<displayName>CD_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_UF">
+<displayName>NM_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_MUN">
+<displayName>CD_MUN</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_MUN">
+<displayName>NM_MUN</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_RGINT">
+<displayName>CD_RGINT</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_RGINT">
+<displayName>NM_RGINT</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_RGI">
+<displayName>CD_RGI</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_RGI">
+<displayName>NM_RGI</displayName>
+</SimpleField>
+</Schema>
+<Folder id="01. Cidade">
+<name>01. Cidade</name>
+<Folder id="01.03. Sede Municipal">
+<name>01.03. Sede Municipal</name>
+<Placemark id="01.03. Sede Municipal">
+<name>Barbosa [3505104]</name>
+<visibility>1</visibility>
+<snippet> </snippet>
+<description>&lt;center&gt;&lt;table&gt;&lt;tr&gt;&lt;th colspan='2' align='center'&gt;&lt;em&gt;Atributos&lt;/em&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_UF&lt;/th&gt;
+&lt;td&gt;35&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_UF&lt;/th&gt;
+&lt;td&gt;São Paulo&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;SIGLA_UF&lt;/th&gt;
+&lt;td&gt;SP&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_MUN&lt;/th&gt;
+&lt;td&gt;3505104&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_MUN&lt;/th&gt;
+&lt;td&gt;Barbosa&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGINT&lt;/th&gt;
+&lt;td&gt;3506&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGINT&lt;/th&gt;
+&lt;td&gt;Araçatuba&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGI&lt;/th&gt;
+&lt;td&gt;350023&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGI&lt;/th&gt;
+&lt;td&gt;Birigui - Penápolis&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Cidade&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;SCT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Sede Municipal&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;3505104&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Barbosa&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;LAT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;-21.2678&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;LONG_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;-49.9503&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;&lt;/center&gt;</description>
+<Style>
+<IconStyle>
+<color>ff00aaff</color>
+<scale>1.0</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<scale>1.0</scale>
+</LabelStyle>
+<LineStyle>
+<color>ffffffff</color>
+<width>3</width>
+<gx:labelVisibility>1</gx:labelVisibility>
+</LineStyle>
+<PolyStyle>
+<color>00ffffff</color>
+</PolyStyle>
+</Style>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_01._Cidade">
+<SimpleData name="CD_UF">35</SimpleData>
+<SimpleData name="NM_UF">São Paulo</SimpleData>
+<SimpleData name="SIGLA_UF">SP</SimpleData>
+<SimpleData name="CD_MUN">3505104</SimpleData>
+<SimpleData name="NM_MUN">Barbosa</SimpleData>
+<SimpleData name="CD_RGINT">3506</SimpleData>
+<SimpleData name="NM_RGINT">Araçatuba</SimpleData>
+<SimpleData name="CD_RGI">350023</SimpleData>
+<SimpleData name="NM_RGI">Birigui - Penápolis</SimpleData>
+<SimpleData name="CT_LOCALIDADE">Cidade</SimpleData>
+<SimpleData name="SCT_LOCALIDADE">Sede Municipal</SimpleData>
+<SimpleData name="CD_LOCALIDADE">3505104</SimpleData>
+<SimpleData name="NM_LOCALIDADE">Barbosa</SimpleData>
+<SimpleData name="LAT_LOCALIDADE">-21.2678</SimpleData>
+<SimpleData name="LONG_LOCALIDADE">-49.9503</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<extrude>0</extrude>
+<coordinates>-49.950265,-21.2677669993606,0.0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+</Folder>
+<Folder id="05. Núcleos Urbanos">
+<name>05. Núcleos Urbanos</name>
+<Placemark id="localidades">
+<name>Vila Anglo [3505104001]</name>
+<visibility>1</visibility>
+<snippet> </snippet>
+<description>&lt;center&gt;&lt;table&gt;&lt;tr&gt;&lt;th colspan='2' align='center'&gt;&lt;em&gt;Attributes&lt;/em&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_UF&lt;/th&gt;
+&lt;td&gt;35&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_UF&lt;/th&gt;
+&lt;td&gt;São Paulo&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;SIGLA_UF&lt;/th&gt;
+&lt;td&gt;SP&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_MUN&lt;/th&gt;
+&lt;td&gt;3505104&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_MUN&lt;/th&gt;
+&lt;td&gt;Barbosa&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGINT&lt;/th&gt;
+&lt;td&gt;3506&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGINT&lt;/th&gt;
+&lt;td&gt;Araçatuba&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGI&lt;/th&gt;
+&lt;td&gt;350023&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGI&lt;/th&gt;
+&lt;td&gt;Birigui - Penápolis&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Núcleo Urbano&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;3505104001&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Vila Anglo&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;LAT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;-21.2501&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;LONG_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;-49.9531&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;&lt;/center&gt;</description>
+<Style>
+<IconStyle>
+<color>ff0000ff</color>
+<scale>0.9</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<scale>0.9</scale>
+</LabelStyle>
+<LineStyle>
+<color>72ffffff</color>
+<width>1.0</width>
+<gx:labelVisibility>1</gx:labelVisibility>
+</LineStyle>
+<PolyStyle>
+<color>66ff54ff</color>
+</PolyStyle>
+</Style>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_Núcleos_Urbanos">
+<SimpleData name="CD_UF">35</SimpleData>
+<SimpleData name="NM_UF">São Paulo</SimpleData>
+<SimpleData name="SIGLA_UF">SP</SimpleData>
+<SimpleData name="CD_MUN">3505104</SimpleData>
+<SimpleData name="NM_MUN">Barbosa</SimpleData>
+<SimpleData name="CD_RGINT">3506</SimpleData>
+<SimpleData name="NM_RGINT">Araçatuba</SimpleData>
+<SimpleData name="CD_RGI">350023</SimpleData>
+<SimpleData name="NM_RGI">Birigui - Penápolis</SimpleData>
+<SimpleData name="CT_LOCALIDADE">Núcleo Urbano</SimpleData>
+<SimpleData name="CD_LOCALIDADE">3505104001</SimpleData>
+<SimpleData name="NM_LOCALIDADE">Vila Anglo</SimpleData>
+<SimpleData name="LAT_LOCALIDADE">-21.2501</SimpleData>
+<SimpleData name="LONG_LOCALIDADE">-49.9531</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<extrude>0</extrude>
+<coordinates>-49.9531456842105,-21.2500571572558,0.0</coordinates>
+</Point>
+</Placemark>
+<Placemark id="localidades">
+<name>Salto do Avanhandava Empr. e Part. [3505104002]</name>
+<visibility>1</visibility>
+<snippet> </snippet>
+<description>&lt;center&gt;&lt;table&gt;&lt;tr&gt;&lt;th colspan='2' align='center'&gt;&lt;em&gt;Attributes&lt;/em&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_UF&lt;/th&gt;
+&lt;td&gt;35&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_UF&lt;/th&gt;
+&lt;td&gt;São Paulo&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;SIGLA_UF&lt;/th&gt;
+&lt;td&gt;SP&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_MUN&lt;/th&gt;
+&lt;td&gt;3505104&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_MUN&lt;/th&gt;
+&lt;td&gt;Barbosa&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGINT&lt;/th&gt;
+&lt;td&gt;3506&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGINT&lt;/th&gt;
+&lt;td&gt;Araçatuba&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGI&lt;/th&gt;
+&lt;td&gt;350023&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGI&lt;/th&gt;
+&lt;td&gt;Birigui - Penápolis&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Núcleo Urbano&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;3505104002&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Salto do Avanhandava Empr. e Part.&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;LAT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;-21.2466&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;LONG_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;-49.9471&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;&lt;/center&gt;</description>
+<Style>
+<IconStyle>
+<color>ff0000ff</color>
+<scale>0.9</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<scale>0.9</scale>
+</LabelStyle>
+<LineStyle>
+<color>72ffffff</color>
+<width>1.0</width>
+<gx:labelVisibility>1</gx:labelVisibility>
+</LineStyle>
+<PolyStyle>
+<color>66ff54ff</color>
+</PolyStyle>
+</Style>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_Núcleos_Urbanos">
+<SimpleData name="CD_UF">35</SimpleData>
+<SimpleData name="NM_UF">São Paulo</SimpleData>
+<SimpleData name="SIGLA_UF">SP</SimpleData>
+<SimpleData name="CD_MUN">3505104</SimpleData>
+<SimpleData name="NM_MUN">Barbosa</SimpleData>
+<SimpleData name="CD_RGINT">3506</SimpleData>
+<SimpleData name="NM_RGINT">Araçatuba</SimpleData>
+<SimpleData name="CD_RGI">350023</SimpleData>
+<SimpleData name="NM_RGI">Birigui - Penápolis</SimpleData>
+<SimpleData name="CT_LOCALIDADE">Núcleo Urbano</SimpleData>
+<SimpleData name="CD_LOCALIDADE">3505104002</SimpleData>
+<SimpleData name="NM_LOCALIDADE">Salto do Avanhandava Empr. e Part.</SimpleData>
+<SimpleData name="LAT_LOCALIDADE">-21.2466</SimpleData>
+<SimpleData name="LONG_LOCALIDADE">-49.9471</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<extrude>0</extrude>
+<coordinates>-49.9470551666666,-21.246619451742,0.0</coordinates>
+</Point>
+</Placemark>
+<Placemark id="localidades">
+<name>Condomínio Recreio Pousada da Garça [3505104003]</name>
+<visibility>1</visibility>
+<snippet> </snippet>
+<description>&lt;center&gt;&lt;table&gt;&lt;tr&gt;&lt;th colspan='2' align='center'&gt;&lt;em&gt;Attributes&lt;/em&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_UF&lt;/th&gt;
+&lt;td&gt;35&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_UF&lt;/th&gt;
+&lt;td&gt;São Paulo&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;SIGLA_UF&lt;/th&gt;
+&lt;td&gt;SP&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_MUN&lt;/th&gt;
+&lt;td&gt;3505104&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_MUN&lt;/th&gt;
+&lt;td&gt;Barbosa&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGINT&lt;/th&gt;
+&lt;td&gt;3506&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGINT&lt;/th&gt;
+&lt;td&gt;Araçatuba&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGI&lt;/th&gt;
+&lt;td&gt;350023&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGI&lt;/th&gt;
+&lt;td&gt;Birigui - Penápolis&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Núcleo Urbano&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;3505104003&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Condomínio Recreio Pousada da Garça&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;LAT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;-21.2508&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;LONG_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;-49.9215&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;&lt;/center&gt;</description>
+<Style>
+<IconStyle>
+<color>ff0000ff</color>
+<scale>0.9</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<scale>0.9</scale>
+</LabelStyle>
+<LineStyle>
+<color>72ffffff</color>
+<width>1.0</width>
+<gx:labelVisibility>1</gx:labelVisibility>
+</LineStyle>
+<PolyStyle>
+<color>66ff54ff</color>
+</PolyStyle>
+</Style>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_Núcleos_Urbanos">
+<SimpleData name="CD_UF">35</SimpleData>
+<SimpleData name="NM_UF">São Paulo</SimpleData>
+<SimpleData name="SIGLA_UF">SP</SimpleData>
+<SimpleData name="CD_MUN">3505104</SimpleData>
+<SimpleData name="NM_MUN">Barbosa</SimpleData>
+<SimpleData name="CD_RGINT">3506</SimpleData>
+<SimpleData name="NM_RGINT">Araçatuba</SimpleData>
+<SimpleData name="CD_RGI">350023</SimpleData>
+<SimpleData name="NM_RGI">Birigui - Penápolis</SimpleData>
+<SimpleData name="CT_LOCALIDADE">Núcleo Urbano</SimpleData>
+<SimpleData name="CD_LOCALIDADE">3505104003</SimpleData>
+<SimpleData name="NM_LOCALIDADE">Condomínio Recreio Pousada da Garça</SimpleData>
+<SimpleData name="LAT_LOCALIDADE">-21.2508</SimpleData>
+<SimpleData name="LONG_LOCALIDADE">-49.9215</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<extrude>0</extrude>
+<coordinates>-49.9214572272727,-21.2508321357246,0.0</coordinates>
+</Point>
+</Placemark>
+<Placemark id="localidades">
+<name>Sociedade Esportiva de Pesca Salto do Avanhandava [3505104004]</name>
+<visibility>1</visibility>
+<snippet> </snippet>
+<description>&lt;center&gt;&lt;table&gt;&lt;tr&gt;&lt;th colspan='2' align='center'&gt;&lt;em&gt;Attributes&lt;/em&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_UF&lt;/th&gt;
+&lt;td&gt;35&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_UF&lt;/th&gt;
+&lt;td&gt;São Paulo&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;SIGLA_UF&lt;/th&gt;
+&lt;td&gt;SP&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_MUN&lt;/th&gt;
+&lt;td&gt;3505104&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_MUN&lt;/th&gt;
+&lt;td&gt;Barbosa&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGINT&lt;/th&gt;
+&lt;td&gt;3506&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGINT&lt;/th&gt;
+&lt;td&gt;Araçatuba&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGI&lt;/th&gt;
+&lt;td&gt;350023&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGI&lt;/th&gt;
+&lt;td&gt;Birigui - Penápolis&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Núcleo Urbano&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;3505104004&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Sociedade Esportiva de Pesca Salto do Avanhandava&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;LAT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;-21.2376&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;LONG_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;-49.9442&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;&lt;/center&gt;</description>
+<Style>
+<IconStyle>
+<color>ff0000ff</color>
+<scale>0.9</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<scale>0.9</scale>
+</LabelStyle>
+<LineStyle>
+<color>72ffffff</color>
+<width>1.0</width>
+<gx:labelVisibility>1</gx:labelVisibility>
+</LineStyle>
+<PolyStyle>
+<color>66ff54ff</color>
+</PolyStyle>
+</Style>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_Núcleos_Urbanos">
+<SimpleData name="CD_UF">35</SimpleData>
+<SimpleData name="NM_UF">São Paulo</SimpleData>
+<SimpleData name="SIGLA_UF">SP</SimpleData>
+<SimpleData name="CD_MUN">3505104</SimpleData>
+<SimpleData name="NM_MUN">Barbosa</SimpleData>
+<SimpleData name="CD_RGINT">3506</SimpleData>
+<SimpleData name="NM_RGINT">Araçatuba</SimpleData>
+<SimpleData name="CD_RGI">350023</SimpleData>
+<SimpleData name="NM_RGI">Birigui - Penápolis</SimpleData>
+<SimpleData name="CT_LOCALIDADE">Núcleo Urbano</SimpleData>
+<SimpleData name="CD_LOCALIDADE">3505104004</SimpleData>
+<SimpleData name="NM_LOCALIDADE">Sociedade Esportiva de Pesca Salto do Avanhandava</SimpleData>
+<SimpleData name="LAT_LOCALIDADE">-21.2376</SimpleData>
+<SimpleData name="LONG_LOCALIDADE">-49.9442</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<extrude>0</extrude>
+<coordinates>-49.9441957650602,-21.2376249933373,0.0</coordinates>
+</Point>
+</Placemark>
+<Placemark id="localidades">
+<name>Vila dos Pescadores / Marina Grandes Lagos [3505104005]</name>
+<visibility>1</visibility>
+<snippet> </snippet>
+<description>&lt;center&gt;&lt;table&gt;&lt;tr&gt;&lt;th colspan='2' align='center'&gt;&lt;em&gt;Attributes&lt;/em&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_UF&lt;/th&gt;
+&lt;td&gt;35&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_UF&lt;/th&gt;
+&lt;td&gt;São Paulo&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;SIGLA_UF&lt;/th&gt;
+&lt;td&gt;SP&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_MUN&lt;/th&gt;
+&lt;td&gt;3505104&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_MUN&lt;/th&gt;
+&lt;td&gt;Barbosa&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGINT&lt;/th&gt;
+&lt;td&gt;3506&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGINT&lt;/th&gt;
+&lt;td&gt;Araçatuba&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGI&lt;/th&gt;
+&lt;td&gt;350023&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGI&lt;/th&gt;
+&lt;td&gt;Birigui - Penápolis&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Núcleo Urbano&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;3505104005&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Vila dos Pescadores / Marina Grandes Lagos&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;LAT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;-21.2384&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;LONG_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;-49.9407&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;&lt;/center&gt;</description>
+<Style>
+<IconStyle>
+<color>ff0000ff</color>
+<scale>0.9</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<scale>0.9</scale>
+</LabelStyle>
+<LineStyle>
+<color>72ffffff</color>
+<width>1.0</width>
+<gx:labelVisibility>1</gx:labelVisibility>
+</LineStyle>
+<PolyStyle>
+<color>66ff54ff</color>
+</PolyStyle>
+</Style>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_Núcleos_Urbanos">
+<SimpleData name="CD_UF">35</SimpleData>
+<SimpleData name="NM_UF">São Paulo</SimpleData>
+<SimpleData name="SIGLA_UF">SP</SimpleData>
+<SimpleData name="CD_MUN">3505104</SimpleData>
+<SimpleData name="NM_MUN">Barbosa</SimpleData>
+<SimpleData name="CD_RGINT">3506</SimpleData>
+<SimpleData name="NM_RGINT">Araçatuba</SimpleData>
+<SimpleData name="CD_RGI">350023</SimpleData>
+<SimpleData name="NM_RGI">Birigui - Penápolis</SimpleData>
+<SimpleData name="CT_LOCALIDADE">Núcleo Urbano</SimpleData>
+<SimpleData name="CD_LOCALIDADE">3505104005</SimpleData>
+<SimpleData name="NM_LOCALIDADE">Vila dos Pescadores / Marina Grandes Lagos</SimpleData>
+<SimpleData name="LAT_LOCALIDADE">-21.2384</SimpleData>
+<SimpleData name="LONG_LOCALIDADE">-49.9407</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<extrude>0</extrude>
+<coordinates>-49.9406899333333,-21.2384250326946,0.0</coordinates>
+</Point>
+</Placemark>
+<Placemark id="localidades">
+<name>Vila Paulista [3505104007]</name>
+<visibility>1</visibility>
+<snippet> </snippet>
+<description>&lt;center&gt;&lt;table&gt;&lt;tr&gt;&lt;th colspan='2' align='center'&gt;&lt;em&gt;Attributes&lt;/em&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_UF&lt;/th&gt;
+&lt;td&gt;35&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_UF&lt;/th&gt;
+&lt;td&gt;São Paulo&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;SIGLA_UF&lt;/th&gt;
+&lt;td&gt;SP&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_MUN&lt;/th&gt;
+&lt;td&gt;3505104&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_MUN&lt;/th&gt;
+&lt;td&gt;Barbosa&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGINT&lt;/th&gt;
+&lt;td&gt;3506&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGINT&lt;/th&gt;
+&lt;td&gt;Araçatuba&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGI&lt;/th&gt;
+&lt;td&gt;350023&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGI&lt;/th&gt;
+&lt;td&gt;Birigui - Penápolis&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Núcleo Urbano&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;3505104007&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Vila Paulista&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;LAT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;-21.2432&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;LONG_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;-49.9465&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;&lt;/center&gt;</description>
+<Style>
+<IconStyle>
+<color>ff0000ff</color>
+<scale>0.9</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<scale>0.9</scale>
+</LabelStyle>
+<LineStyle>
+<color>72ffffff</color>
+<width>1.0</width>
+<gx:labelVisibility>1</gx:labelVisibility>
+</LineStyle>
+<PolyStyle>
+<color>66ff54ff</color>
+</PolyStyle>
+</Style>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_Núcleos_Urbanos">
+<SimpleData name="CD_UF">35</SimpleData>
+<SimpleData name="NM_UF">São Paulo</SimpleData>
+<SimpleData name="SIGLA_UF">SP</SimpleData>
+<SimpleData name="CD_MUN">3505104</SimpleData>
+<SimpleData name="NM_MUN">Barbosa</SimpleData>
+<SimpleData name="CD_RGINT">3506</SimpleData>
+<SimpleData name="NM_RGINT">Araçatuba</SimpleData>
+<SimpleData name="CD_RGI">350023</SimpleData>
+<SimpleData name="NM_RGI">Birigui - Penápolis</SimpleData>
+<SimpleData name="CT_LOCALIDADE">Núcleo Urbano</SimpleData>
+<SimpleData name="CD_LOCALIDADE">3505104007</SimpleData>
+<SimpleData name="NM_LOCALIDADE">Vila Paulista</SimpleData>
+<SimpleData name="LAT_LOCALIDADE">-21.2432</SimpleData>
+<SimpleData name="LONG_LOCALIDADE">-49.9465</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<extrude>0</extrude>
+<coordinates>-49.946514516129,-21.2432034509741,0.0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Folder id="12. Outras Localidades">
+<name>12. Outras Localidades</name>
+<Placemark id="12. Outras Localidades">
+<name>Rodovia [350510400001]</name>
+<visibility>1</visibility>
+<snippet> </snippet>
+<description>&lt;center&gt;&lt;table&gt;&lt;tr&gt;&lt;th colspan='2' align='center'&gt;&lt;em&gt;Attributes&lt;/em&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_UF&lt;/th&gt;
+&lt;td&gt;35&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_UF&lt;/th&gt;
+&lt;td&gt;São Paulo&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;SIGLA_UF&lt;/th&gt;
+&lt;td&gt;SP&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_MUN&lt;/th&gt;
+&lt;td&gt;3505104&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_MUN&lt;/th&gt;
+&lt;td&gt;Barbosa&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGINT&lt;/th&gt;
+&lt;td&gt;3506&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGINT&lt;/th&gt;
+&lt;td&gt;Araçatuba&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGI&lt;/th&gt;
+&lt;td&gt;350023&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGI&lt;/th&gt;
+&lt;td&gt;Birigui - Penápolis&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Outras Localidades&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;SCT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;350510400001&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Rodovia&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;&lt;/center&gt;</description>
+<Style>
+<IconStyle>
+<color>ff0069d3</color>
+<scale>0.6</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<scale>0.6</scale>
+</LabelStyle>
+<LineStyle>
+<width>1.0</width>
+<gx:labelVisibility>1</gx:labelVisibility>
+</LineStyle>
+</Style>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_Localidades">
+<SimpleData name="CD_UF">35</SimpleData>
+<SimpleData name="NM_UF">São Paulo</SimpleData>
+<SimpleData name="SIGLA_UF">SP</SimpleData>
+<SimpleData name="CD_MUN">3505104</SimpleData>
+<SimpleData name="NM_MUN">Barbosa</SimpleData>
+<SimpleData name="CD_RGINT">3506</SimpleData>
+<SimpleData name="NM_RGINT">Araçatuba</SimpleData>
+<SimpleData name="CD_RGI">350023</SimpleData>
+<SimpleData name="NM_RGI">Birigui - Penápolis</SimpleData>
+<SimpleData name="CT_LOCALIDADE">Outras Localidades</SimpleData>
+<SimpleData name="CD_LOCALIDADE">350510400001</SimpleData>
+<SimpleData name="NM_LOCALIDADE">Rodovia</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<extrude>0</extrude>
+<coordinates>-49.985017,-21.2770219993604,0.0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Folder id="13. Referência">
+<name>13. Referência</name>
+<Placemark id="13. Referência">
+<name>Barbosa [3505104]</name>
+<visibility>1</visibility>
+<snippet> </snippet>
+<description>&lt;center&gt;&lt;table&gt;&lt;tr&gt;&lt;th colspan='2' align='center'&gt;&lt;em&gt;Attributes&lt;/em&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_UF&lt;/th&gt;
+&lt;td&gt;35&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_UF&lt;/th&gt;
+&lt;td&gt;São Paulo&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_MUN&lt;/th&gt;
+&lt;td&gt;3505104&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_MUN&lt;/th&gt;
+&lt;td&gt;Barbosa&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_RGINT&lt;/th&gt;
+&lt;td&gt;3506&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_RGINT&lt;/th&gt;
+&lt;td&gt;Araçatuba&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_RGI&lt;/th&gt;
+&lt;td&gt;350023&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_RGI&lt;/th&gt;
+&lt;td&gt;Birigui - Penápolis&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;&lt;/center&gt;</description>
+<Style>
+<IconStyle>
+<scale>0.7</scale>
+</IconStyle>
+<LabelStyle>
+<scale>0.7</scale>
+</LabelStyle>
+<LineStyle>
+<color>ffffffff</color>
+<width>3</width>
+<gx:labelVisibility>1</gx:labelVisibility>
+</LineStyle>
+<PolyStyle>
+<color>00ffffff</color>
+</PolyStyle>
+</Style>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_Município">
+<SimpleData name="CD_UF">35</SimpleData>
+<SimpleData name="NM_UF">São Paulo</SimpleData>
+<SimpleData name="CD_MUN">3505104</SimpleData>
+<SimpleData name="NM_MUN">Barbosa</SimpleData>
+<SimpleData name="CD_RGINT">3506</SimpleData>
+<SimpleData name="NM_RGINT">Araçatuba</SimpleData>
+<SimpleData name="CD_RGI">350023</SimpleData>
+<SimpleData name="NM_RGI">Birigui - Penápolis</SimpleData>
+</SchemaData>
+</ExtendedData>
+<MultiGeometry>
+<Polygon>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>-49.8952263,-21.3418232993588,0.0 -49.8953058,-21.3418240993588,0.0 -49.8957489,-21.3418289993588,0.0 -49.9005807,-21.3418817993588,0.0 -49.9060901,-21.3414992993588,0.0 -49.9095826,-21.3411648993589,0.0 -49.9118718,-21.3411366993589,0.0 -49.9132051,-21.3409436993589,0.0 -49.9159728,-21.3411162993589,0.0 -49.9190662,-21.3416798993588,0.0 -49.9204146,-21.3422290993588,0.0 -49.9211567,-21.3402953993589,0.0 -49.9213109,-21.3388720993589,0.0 -49.9218522,-21.3373616993589,0.0 -49.9219425,-21.336711199359,0.0 -49.9218772,-21.335972299359,0.0 -49.9216718,-21.335237999359,0.0 -49.9206023,-21.333675999359,0.0 -49.9204378,-21.333277099359,0.0 -49.9209416,-21.333435399359,0.0 -49.9216263,-21.333433899359,0.0 -49.9225989,-21.333170799359,0.0 -49.9230903,-21.332869899359,0.0 -49.9240596,-21.3318520993591,0.0 -49.9249545,-21.3301789993591,0.0 -49.9252402,-21.3298523993591,0.0 -49.9260902,-21.3292797993591,0.0 -49.9267993,-21.3284594993592,0.0 -49.9268841,-21.3283613993592,0.0 -49.9284421,-21.3274272993592,0.0 -49.9294181,-21.3266511993592,0.0 -49.9301675,-21.3261906993592,0.0 -49.9311682,-21.3258136993592,0.0 -49.932349,-21.3256185993592,0.0 -49.9339958,-21.3255888993592,0.0 -49.934821,-21.3258386993592,0.0 -49.9355717,-21.3262221993592,0.0 -49.9355814,-21.3262270993592,0.0 -49.935656,-21.3262651993592,0.0 -49.9356615,-21.3262679993592,0.0 -49.9357139,-21.3262947993592,0.0 -49.9357456,-21.3263186993592,0.0 -49.9357542,-21.3263251993592,0.0 -49.9366793,-21.3270211993592,0.0 -49.9373212,-21.3277659993592,0.0 -49.9375159,-21.3282944993592,0.0 -49.9378149,-21.3287478993592,0.0 -49.9382573,-21.3292065993591,0.0 -49.9397674,-21.3304302993591,0.0 -49.941049,-21.3322821993591,0.0 -49.9415487,-21.333466199359,0.0 -49.9417524,-21.334403299359,0.0 -49.9418218,-21.335346999359,0.0 -49.9417817,-21.336032099359,0.0 -49.9414006,-21.3379303993589,0.0 -49.9413797,-21.3385825993589,0.0 -49.9415267,-21.3398986993589,0.0 -49.9421881,-21.3419664993588,0.0 -49.9427523,-21.3426300993588,0.0 -49.9432285,-21.3428136993588,0.0 -49.9451756,-21.3430561993588,0.0 -49.9476092,-21.3430345993588,0.0 -49.9481096,-21.3431457993588,0.0 -49.948666,-21.3433890993588,0.0 -49.9512718,-21.3449644993588,0.0 -49.953167,-21.3458700993587,0.0 -49.9537852,-21.3463248993587,0.0 -49.9543568,-21.3465098993587,0.0 -49.9551168,-21.3465758993587,0.0 -49.9568597,-21.3463905993587,0.0 -49.9603757,-21.3457618993587,0.0 -49.9612607,-21.3457741993587,0.0 -49.9623894,-21.3461789993587,0.0 -49.9637498,-21.3470364993587,0.0 -49.9649819,-21.3473309993587,0.0 -49.9653913,-21.3475589993587,0.0 -49.9659512,-21.3482088993587,0.0 -49.9661688,-21.3488532993587,0.0 -49.9664878,-21.3491439993587,0.0 -49.9668755,-21.3492839993587,0.0 -49.9780731,-21.3497394993586,0.0 -49.9781525,-21.3491643993587,0.0 -49.9791547,-21.3459058993587,0.0 -49.9797714,-21.3418988993588,0.0 -49.9798433,-21.3410324993589,0.0 -49.9798037,-21.3391635993589,0.0 -49.9795591,-21.335863499359,0.0 -49.9797289,-21.335366299359,0.0 -49.9801483,-21.334769599359,0.0 -49.9805006,-21.334436399359,0.0 -49.9824418,-21.333162799359,0.0 -49.9831033,-21.3326395993591,0.0 -49.9831431,-21.3326080993591,0.0 -49.9831815,-21.3325776993591,0.0 -49.9841467,-21.3318141993591,0.0 -49.9844618,-21.3314692993591,0.0 -49.9846705,-21.3309233993591,0.0 -49.984708,-21.3303256993591,0.0 -49.9846061,-21.3300320993591,0.0 -49.984189,-21.3294838993591,0.0 -49.9829142,-21.3283923993592,0.0 -49.9827203,-21.3279351993592,0.0 -49.98267,-21.3275517993592,0.0 -49.9827588,-21.3266270993592,0.0 -49.9832847,-21.3245967993592,0.0 -49.9835821,-21.3226366993593,0.0 -49.9838573,-21.3218084993593,0.0 -49.9843385,-21.3209904993593,0.0 -49.9857802,-21.3190712993594,0.0 -49.98714,-21.3178189993594,0.0 -49.9882631,-21.3169756993594,0.0 -49.9890283,-21.3165638993594,0.0 -49.9911575,-21.3157716993595,0.0 -49.9919554,-21.3153244993595,0.0 -49.9929456,-21.3145105993595,0.0 -49.9945184,-21.3129395993595,0.0 -49.9957684,-21.3115357993596,0.0 -49.9968348,-21.3105748993596,0.0 -49.9980169,-21.3097061993596,0.0 -49.9980661,-21.3096699993596,0.0 -49.9981224,-21.3096285993596,0.0 -49.9982061,-21.3095670993596,0.0 -50.000173,-21.3086048993596,0.0 -50.0015607,-21.3075965993597,0.0 -50.0023942,-21.3072231993597,0.0 -50.0044732,-21.3055018993597,0.0 -50.0052448,-21.3045969993597,0.0 -50.0056304,-21.3039249993598,0.0 -50.0056669,-21.3038614993598,0.0 -50.0057042,-21.3037964993598,0.0 -50.0075701,-21.3029514993598,0.0 -50.0103469,-21.3018110993598,0.0 -50.0106922,-21.3015414993598,0.0 -50.0113062,-21.3012131993598,0.0 -50.0119093,-21.3009049993598,0.0 -50.011955,-21.3004927993598,0.0 -50.0115928,-21.3000883993598,0.0 -50.0106831,-21.2997007993599,0.0 -50.0101268,-21.2994158993599,0.0 -50.0097866,-21.2989410993599,0.0 -50.0096819,-21.2985482993599,0.0 -50.0098341,-21.2982473993599,0.0 -50.0101902,-21.2979678993599,0.0 -50.0108004,-21.2982027993599,0.0 -50.011391,-21.2981659993599,0.0 -50.011931,-21.2976662993599,0.0 -50.012644,-21.2969663993599,0.0 -50.0133862,-21.2967292993599,0.0 -50.0138389,-21.2964301993599,0.0 -50.014325,-21.2959703993599,0.0 -50.014995,-21.29528029936,0.0 -50.0152131,-21.29475849936,0.0 -50.0153517,-21.29412299936,0.0 -50.0152846,-21.29370279936,0.0 -50.0149649,-21.29334889936,0.0 -50.0144318,-21.29282269936,0.0 -50.0135678,-21.29202299936,0.0 -50.0132845,-21.2914956993601,0.0 -50.0134147,-21.2908452993601,0.0 -50.0141276,-21.2901553993601,0.0 -50.0146027,-21.2897256993601,0.0 -50.0151205,-21.2893263993601,0.0 -50.0156066,-21.2888564993601,0.0 -50.0158252,-21.2882642993601,0.0 -50.0155165,-21.2878802993601,0.0 -50.0150475,-21.2873947993602,0.0 -50.0145028,-21.2869992993602,0.0 -50.0138299,-21.2865124993602,0.0 -50.0136065,-21.2862295993602,0.0 -50.0137059,-21.2858076993602,0.0 -50.0139759,-21.2855477993602,0.0 -50.0143208,-21.2853184993602,0.0 -50.0154359,-21.2854758993602,0.0 -50.0164026,-21.2853507993602,0.0 -50.0169308,-21.2850117993602,0.0 -50.0176315,-21.2845431993602,0.0 -50.0182255,-21.2839732993602,0.0 -50.0183725,-21.2835233993602,0.0 -50.018252,-21.2832190993602,0.0 -50.0181148,-21.2828661993603,0.0 -50.0177523,-21.2825120993603,0.0 -50.0174218,-21.2820287993603,0.0 -50.0172635,-21.2817749993603,0.0 -50.0173307,-21.2813528993603,0.0 -50.0175911,-21.2809218993603,0.0 -50.0178837,-21.2805011993603,0.0 -50.0182535,-21.2797488993603,0.0 -50.0187297,-21.2791481993603,0.0 -50.0193485,-21.2789232993604,0.0 -50.020085,-21.2786832993604,0.0 -50.0207728,-21.2785263993604,0.0 -50.0215913,-21.2780885993604,0.0 -50.0220993,-21.2776095993604,0.0 -50.0218317,-21.2768432993604,0.0 -50.0212832,-21.2758070993604,0.0 -50.0212386,-21.2753137993604,0.0 -50.0217686,-21.2746753993605,0.0 -50.0228394,-21.2743540993605,0.0 -50.0235796,-21.2743885993605,0.0 -50.0241912,-21.2745214993605,0.0 -50.0246548,-21.2748091993605,0.0 -50.0251625,-21.2752853993604,0.0 -50.0253711,-21.2758781993604,0.0 -50.0255534,-21.2760519993604,0.0 -50.026611,-21.2761164993604,0.0 -50.0277687,-21.2760427993604,0.0 -50.0286844,-21.2757911993604,0.0 -50.0287872,-21.2756249993604,0.0 -50.0286174,-21.2755596993604,0.0 -50.0272712,-21.2750447993604,0.0 -50.0259485,-21.2739046993605,0.0 -50.0250372,-21.2728103993605,0.0 -50.0236255,-21.2704330993606,0.0 -50.0232209,-21.2693849993606,0.0 -50.0223997,-21.2656601993607,0.0 -50.0218118,-21.2643318993607,0.0 -50.021141,-21.2633296993607,0.0 -50.020541,-21.2626682993608,0.0 -50.0198429,-21.2622118993608,0.0 -50.0195893,-21.2619984993608,0.0 -50.0195084,-21.2619304993608,0.0 -50.0194402,-21.2618730993608,0.0 -50.0187855,-21.2613222993608,0.0 -50.0176564,-21.2605861993608,0.0 -50.0171056,-21.2594966993608,0.0 -50.0151596,-21.2576025993609,0.0 -50.0064342,-21.251508499361,0.0 -50.0059289,-21.250985399361,0.0 -50.0058149,-21.250746499361,0.0 -50.0055001,-21.2475908993611,0.0 -50.0050038,-21.2459121993612,0.0 -50.0044094,-21.2444420993612,0.0 -50.0035714,-21.2432132993612,0.0 -50.0023935,-21.2423667993612,0.0 -50.0011145,-21.2418388993613,0.0 -50.0002369,-21.2413267993613,0.0 -49.9994505,-21.2405075993613,0.0 -49.9992302,-21.2396044993613,0.0 -49.9993164,-21.2391241993613,0.0 -49.9998708,-21.2381149993614,0.0 -49.9996045,-21.2370213993614,0.0 -49.9995965,-21.2366037993614,0.0 -49.9997464,-21.2358337993614,0.0 -49.9999429,-21.2354092993614,0.0 -50.0000505,-21.2347076993614,0.0 -50.0000194,-21.2344337993614,0.0 -49.9997618,-21.2339814993614,0.0 -49.9993031,-21.2335180993615,0.0 -49.9988668,-21.2326881993615,0.0 -49.9985305,-21.2323655993615,0.0 -49.9978016,-21.2319904993615,0.0 -49.9973303,-21.2312796993615,0.0 -49.9965551,-21.2306897993615,0.0 -49.9960078,-21.2298689993615,0.0 -49.995473,-21.2293000993616,0.0 -49.994951,-21.2290758993616,0.0 -49.9942032,-21.2288994993616,0.0 -49.9931503,-21.2288149993616,0.0 -49.9926229,-21.2286870993616,0.0 -49.9922503,-21.2284961993616,0.0 -49.9920824,-21.2282541993616,0.0 -49.9915675,-21.2266660993616,0.0 -49.9891808,-21.2265562993616,0.0 -49.9882191,-21.2266975993616,0.0 -49.9870269,-21.2270271993616,0.0 -49.985026,-21.2278640993616,0.0 -49.9817882,-21.2290394993616,0.0 -49.9805411,-21.2293676993616,0.0 -49.9786293,-21.2297234993615,0.0 -49.9779859,-21.2297468993616,0.0 -49.9731025,-21.2292808993616,0.0 -49.9724907,-21.2291013993616,0.0 -49.9703651,-21.2281770993616,0.0 -49.9697548,-21.2280119993616,0.0 -49.9682591,-21.2279501993616,0.0 -49.9660496,-21.2276288993616,0.0 -49.9646371,-21.2277673993616,0.0 -49.9620609,-21.2277121993616,0.0 -49.9600771,-21.2282336993616,0.0 -49.9592272,-21.2283755993616,0.0 -49.9563936,-21.2285043993616,0.0 -49.9555096,-21.2286590993616,0.0 -49.9538387,-21.2292239993616,0.0 -49.9526572,-21.2292299993616,0.0 -49.9485695,-21.2304987993615,0.0 -49.9445569,-21.2320883993615,0.0 -49.9438292,-21.2322322993615,0.0 -49.9417574,-21.2324750993615,0.0 -49.9416851,-21.2324835993615,0.0 -49.9416225,-21.2324908993615,0.0 -49.9415748,-21.2324964993615,0.0 -49.9395415,-21.2320428993615,0.0 -49.9391122,-21.2320262993615,0.0 -49.9382718,-21.2321701993615,0.0 -49.9366518,-21.2327000993615,0.0 -49.9358999,-21.2326413993615,0.0 -49.9352167,-21.2324635993615,0.0 -49.933981,-21.2319497993615,0.0 -49.9330434,-21.2313547993615,0.0 -49.9325846,-21.2308326993615,0.0 -49.931387,-21.2289665993616,0.0 -49.9306386,-21.2281471993616,0.0 -49.9297762,-21.2275854993616,0.0 -49.9282596,-21.2267754993616,0.0 -49.926611,-21.2261750993616,0.0 -49.9248617,-21.2258038993616,0.0 -49.9234156,-21.2256878993616,0.0 -49.9221928,-21.2257593993616,0.0 -49.9211211,-21.2259399993616,0.0 -49.9203924,-21.2262288993616,0.0 -49.9196361,-21.2266785993616,0.0 -49.9190632,-21.2273299993616,0.0 -49.9174463,-21.2302658993615,0.0 -49.9165152,-21.2327188993615,0.0 -49.9156711,-21.2362475993614,0.0 -49.9150931,-21.2375650993614,0.0 -49.9145744,-21.2381682993614,0.0 -49.9137011,-21.2389106993613,0.0 -49.9127403,-21.2395725993613,0.0 -49.9102542,-21.2406131993613,0.0 -49.9061708,-21.2414229993613,0.0 -49.9033435,-21.2422866993612,0.0 -49.8930954,-21.2460088993612,0.0 -49.8869413,-21.2473141993611,0.0 -49.8846692,-21.2481683993611,0.0 -49.8835319,-21.2487951993611,0.0 -49.8825013,-21.2495353993611,0.0 -49.8798013,-21.252459699361,0.0 -49.8780924,-21.254159599361,0.0 -49.8740323,-21.2576022993609,0.0 -49.870572,-21.2599244993608,0.0 -49.8689121,-21.2607267993608,0.0 -49.8668401,-21.2614422993608,0.0 -49.8652054,-21.2617204993608,0.0 -49.8636667,-21.2618369993608,0.0 -49.8622812,-21.2616831993608,0.0 -49.8586976,-21.2603756993608,0.0 -49.857446,-21.2602602993608,0.0 -49.8564836,-21.2603123993608,0.0 -49.8557555,-21.2604964993608,0.0 -49.8549865,-21.2611103993608,0.0 -49.8542283,-21.2620274993608,0.0 -49.8535742,-21.2629794993607,0.0 -49.8517788,-21.2668169993607,0.0 -49.8501331,-21.2694032993606,0.0 -49.8490499,-21.2707341993606,0.0 -49.8485287,-21.2712414993605,0.0 -49.8476578,-21.2718420993605,0.0 -49.8456109,-21.2727859993605,0.0 -49.8431238,-21.2733172993605,0.0 -49.8389831,-21.2737899993605,0.0 -49.8346448,-21.2743402993605,0.0 -49.8316287,-21.2749524993605,0.0 -49.833027,-21.2760766993604,0.0 -49.8331372,-21.2772644993604,0.0 -49.8326376,-21.2772807993604,0.0 -49.8319166,-21.2768075993604,0.0 -49.8317842,-21.2775320993604,0.0 -49.8322715,-21.2782014993604,0.0 -49.8322044,-21.2786692993604,0.0 -49.8317142,-21.2790723993604,0.0 -49.8316387,-21.2792561993603,0.0 -49.8314416,-21.2793739993603,0.0 -49.8311243,-21.2793795993603,0.0 -49.8308725,-21.2790804993603,0.0 -49.8305851,-21.2789831993604,0.0 -49.830294,-21.2802451993603,0.0 -49.8305894,-21.2808169993603,0.0 -49.8295583,-21.2813789993603,0.0 -49.8289537,-21.2812506993603,0.0 -49.8282446,-21.2810479993603,0.0 -49.8277894,-21.2807875993603,0.0 -49.8272572,-21.2804607993603,0.0 -49.8264657,-21.2800133993603,0.0 -49.8258888,-21.2800027993603,0.0 -49.8254927,-21.2802769993603,0.0 -49.8258056,-21.2807407993603,0.0 -49.8271593,-21.2812711993603,0.0 -49.8280587,-21.2814290993603,0.0 -49.8290624,-21.2817328993603,0.0 -49.8294451,-21.2822828993603,0.0 -49.8296039,-21.2826664993603,0.0 -49.8301367,-21.2829108993603,0.0 -49.8308628,-21.2831730993603,0.0 -49.8310628,-21.2835047993602,0.0 -49.8307271,-21.2838744993602,0.0 -49.8316454,-21.2843817993602,0.0 -49.8317876,-21.2845709993602,0.0 -49.8313157,-21.2846270993602,0.0 -49.830752,-21.2847286993602,0.0 -49.830307,-21.2849497993602,0.0 -49.8300369,-21.2852907993602,0.0 -49.8296418,-21.2856951993602,0.0 -49.8294316,-21.2863083993602,0.0 -49.8293414,-21.2869313993602,0.0 -49.8292632,-21.2874847993602,0.0 -49.8291783,-21.2879787993601,0.0 -49.829182,-21.2884007993601,0.0 -49.8290612,-21.2889934993601,0.0 -49.8290941,-21.2892838993601,0.0 -49.8291102,-21.2894784993601,0.0 -49.8288577,-21.2898163993601,0.0 -49.828623,-21.2901345993601,0.0 -49.8282717,-21.2905146993601,0.0 -49.8279382,-21.2908650993601,0.0 -49.8274807,-21.2908816993601,0.0 -49.8270114,-21.2910564993601,0.0 -49.8259071,-21.29177339936,0.0 -49.8262174,-21.29346379936,0.0 -49.8255238,-21.29307649936,0.0 -49.8251015,-21.29308669936,0.0 -49.8248468,-21.29326959936,0.0 -49.824676,-21.29351239936,0.0 -49.8247833,-21.29373069936,0.0 -49.8247855,-21.29399869936,0.0 -49.8238284,-21.29435059936,0.0 -49.823448,-21.29484909936,0.0 -49.8231699,-21.29530879936,0.0 -49.8233331,-21.2960187993599,0.0 -49.8232346,-21.2964665993599,0.0 -49.8238609,-21.2977930993599,0.0 -49.8237505,-21.2983957993599,0.0 -49.8244349,-21.2999403993598,0.0 -49.8239176,-21.3003950993598,0.0 -49.8230472,-21.3009956993598,0.0 -49.8220764,-21.3009624993598,0.0 -49.8202919,-21.3023612993598,0.0 -49.8201336,-21.3027953993598,0.0 -49.8194539,-21.3024344993598,0.0 -49.8180553,-21.3031038993598,0.0 -49.8184987,-21.3039708993598,0.0 -49.8191445,-21.3041666993597,0.0 -49.8187246,-21.3047638993597,0.0 -49.8184344,-21.3058498993597,0.0 -49.8176917,-21.3072097993597,0.0 -49.8174373,-21.3082169993596,0.0 -49.8173668,-21.3089077993596,0.0 -49.8179282,-21.3093084993596,0.0 -49.8177204,-21.3106588993596,0.0 -49.8182608,-21.3126014993595,0.0 -49.8177244,-21.3136660993595,0.0 -49.816767,-21.3145891993595,0.0 -49.8166182,-21.3155970993595,0.0 -49.8174356,-21.3163347993594,0.0 -49.8181087,-21.3166494993594,0.0 -49.8186325,-21.3162772993595,0.0 -49.8195828,-21.3162509993595,0.0 -49.8201362,-21.3165713993594,0.0 -49.8213289,-21.3170347993594,0.0 -49.8223537,-21.3173716993594,0.0 -49.8234333,-21.3179067993594,0.0 -49.8239847,-21.3184777993594,0.0 -49.8240718,-21.3190257993594,0.0 -49.8237507,-21.3195840993594,0.0 -49.8233926,-21.3203662993593,0.0 -49.8231126,-21.3210567993593,0.0 -49.8229258,-21.3215302993593,0.0 -49.8228136,-21.3219752993593,0.0 -49.8228005,-21.3220272993593,0.0 -49.8228292,-21.3220641993593,0.0 -49.8236626,-21.3231345993593,0.0 -49.8232526,-21.3233558993593,0.0 -49.8228711,-21.3235444993593,0.0 -49.8229644,-21.3237495993593,0.0 -49.8238994,-21.3243265993593,0.0 -49.8245732,-21.3245554993593,0.0 -49.82586,-21.3253722993592,0.0 -49.825949,-21.3256828993592,0.0 -49.8254052,-21.3259197993592,0.0 -49.8254542,-21.3261673993592,0.0 -49.8253875,-21.3264892993592,0.0 -49.8252379,-21.3265994993592,0.0 -49.8248212,-21.3281099993592,0.0 -49.8253115,-21.3284002993592,0.0 -49.8249757,-21.3290310993591,0.0 -49.8247583,-21.3293789993591,0.0 -49.8243668,-21.3299235993591,0.0 -49.8239765,-21.3303330993591,0.0 -49.8242646,-21.3308362993591,0.0 -49.8247229,-21.3307306993591,0.0 -49.8256405,-21.3312909993591,0.0 -49.826699,-21.3316099993591,0.0 -49.8266,-21.3325423993591,0.0 -49.8273252,-21.333404799359,0.0 -49.8275198,-21.334095699359,0.0 -49.8273864,-21.334580999359,0.0 -49.827185,-21.334875999359,0.0 -49.8265285,-21.335344599359,0.0 -49.8262524,-21.335761399359,0.0 -49.826072,-21.336769199359,0.0 -49.8260977,-21.3375111993589,0.0 -49.8264911,-21.3380687993589,0.0 -49.8268267,-21.3383339993589,0.0 -49.8267483,-21.3387935993589,0.0 -49.8268862,-21.3392684993589,0.0 -49.8272837,-21.3391935993589,0.0 -49.8278567,-21.3387022993589,0.0 -49.8291691,-21.3383090993589,0.0 -49.8310797,-21.3379102993589,0.0 -49.8321825,-21.3377497993589,0.0 -49.8329815,-21.3377388993589,0.0 -49.8332657,-21.3391816993589,0.0 -49.8340873,-21.3392088993589,0.0 -49.8338262,-21.3401846993589,0.0 -49.8334206,-21.3403244993589,0.0 -49.8339801,-21.3412748993588,0.0 -49.834563,-21.3420247993588,0.0 -49.8348572,-21.3426499993588,0.0 -49.8350774,-21.3440079993588,0.0 -49.8353504,-21.3446629993588,0.0 -49.8354467,-21.3448941993588,0.0 -49.8354693,-21.3453905993588,0.0 -49.835487,-21.3457551993587,0.0 -49.835615,-21.3459331993587,0.0 -49.8361983,-21.3461783993587,0.0 -49.8363446,-21.3464622993587,0.0 -49.8362337,-21.3473131993587,0.0 -49.8362623,-21.3474599993587,0.0 -49.8369633,-21.3473763993587,0.0 -49.8375637,-21.3475618993587,0.0 -49.8375024,-21.3481911993587,0.0 -49.8377225,-21.3484053993587,0.0 -49.8379364,-21.3484216993587,0.0 -49.8382137,-21.3483725993587,0.0 -49.8379531,-21.3486807993587,0.0 -49.8384719,-21.3486660993587,0.0 -49.838839,-21.3489009993587,0.0 -49.8392261,-21.3496538993586,0.0 -49.8401265,-21.3496230993586,0.0 -49.8402628,-21.3497393993586,0.0 -49.8402615,-21.3500237993586,0.0 -49.840193,-21.3503334993586,0.0 -49.8403248,-21.3507206993586,0.0 -49.8394695,-21.3507024993586,0.0 -49.8394103,-21.3508471993586,0.0 -49.8404806,-21.3510193993586,0.0 -49.8406735,-21.3513503993586,0.0 -49.8414371,-21.3520267993586,0.0 -49.8413883,-21.3524352993586,0.0 -49.8413708,-21.3532990993586,0.0 -49.8419176,-21.3538072993586,0.0 -49.8425376,-21.3548633993585,0.0 -49.8430375,-21.3550827993585,0.0 -49.8432007,-21.3553303993585,0.0 -49.8433029,-21.3552634993585,0.0 -49.8445828,-21.3552607993585,0.0 -49.8459179,-21.3553865993585,0.0 -49.8464791,-21.3553580993585,0.0 -49.8467212,-21.3553207993585,0.0 -49.848531,-21.3545162993585,0.0 -49.8495106,-21.3543908993585,0.0 -49.853015,-21.3546533993585,0.0 -49.8548421,-21.3546130993585,0.0 -49.8567597,-21.3542436993585,0.0 -49.8592907,-21.3529622993586,0.0 -49.8611192,-21.3520030993586,0.0 -49.8618329,-21.3518312993586,0.0 -49.8621049,-21.3518203993586,0.0 -49.8634743,-21.3517652993586,0.0 -49.8652675,-21.3513405993586,0.0 -49.8670615,-21.3504408993586,0.0 -49.8699211,-21.3482727993587,0.0 -49.8727581,-21.3467341993587,0.0 -49.8745537,-21.3459443993587,0.0 -49.8776387,-21.3443973993588,0.0 -49.8790846,-21.3434222993588,0.0 -49.8799085,-21.3425508993588,0.0 -49.8801732,-21.3420155993588,0.0 -49.8804925,-21.3406333993589,0.0 -49.8810486,-21.3388873993589,0.0 -49.8820351,-21.3374745993589,0.0 -49.8828565,-21.336859199359,0.0 -49.8837515,-21.336683599359,0.0 -49.8849594,-21.336800599359,0.0 -49.8866655,-21.337105499359,0.0 -49.8881785,-21.3376237993589,0.0 -49.8893797,-21.3383598993589,0.0 -49.8923942,-21.3407122993589,0.0 -49.8942558,-21.3415617993588,0.0 -49.8951473,-21.3418223993588,0.0 -49.8952263,-21.3418232993588,0.0</coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</MultiGeometry>
+</Placemark>
+</Folder>
+</Document></kml>

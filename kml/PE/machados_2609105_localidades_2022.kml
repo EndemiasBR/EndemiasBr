@@ -1,0 +1,846 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<kml xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:atom="http://www.w3.org/2005/Atom" xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+<name>machados_2609105_localidades_2022</name>
+<visibility>1</visibility>
+<Schema name="Povoados" id="kml_schema_ft_Povoados">
+<SimpleField type="xsd:string" name="CD_UF">
+<displayName>CD_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_UF">
+<displayName>NM_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="SIGLA_UF">
+<displayName>SIGLA_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_MUN">
+<displayName>CD_MUN</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_MUN">
+<displayName>NM_MUN</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_RGINT">
+<displayName>CD_RGINT</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_RGINT">
+<displayName>NM_RGINT</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_RGI">
+<displayName>CD_RGI</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_RGI">
+<displayName>NM_RGI</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CT_LOCALIDADE">
+<displayName>CT_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_LOCALIDADE">
+<displayName>CD_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_LOCALIDADE">
+<displayName>NM_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="LAT_LOCALIDADE">
+<displayName>LAT_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="LONG_LOCALIDADE">
+<displayName>LONG_LOCALIDADE</displayName>
+</SimpleField>
+</Schema>
+<Schema name="Localidades" id="kml_schema_ft_Localidades">
+<SimpleField type="xsd:string" name="CD_UF">
+<displayName>CD_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_UF">
+<displayName>NM_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="SIGLA_UF">
+<displayName>SIGLA_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_MUN">
+<displayName>CD_MUN</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_MUN">
+<displayName>NM_MUN</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_RGINT">
+<displayName>CD_RGINT</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_RGINT">
+<displayName>NM_RGINT</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_RGI">
+<displayName>CD_RGI</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_RGI">
+<displayName>NM_RGI</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CT_LOCALIDADE">
+<displayName>CT_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="SCT_LOCALIDADE">
+<displayName>SCT_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_LOCALIDADE">
+<displayName>CD_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_LOCALIDADE">
+<displayName>NM_LOCALIDADE</displayName>
+</SimpleField>
+</Schema>
+<Schema name="01. Cidade" id="kml_schema_ft_01._Cidade">
+<SimpleField type="xsd:string" name="CD_UF">
+<displayName>CD_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_UF">
+<displayName>NM_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="SIGLA_UF">
+<displayName>SIGLA_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_MUN">
+<displayName>CD_MUN</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_MUN">
+<displayName>NM_MUN</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_RGINT">
+<displayName>CD_RGINT</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_RGINT">
+<displayName>NM_RGINT</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_RGI">
+<displayName>CD_RGI</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_RGI">
+<displayName>NM_RGI</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CT_LOCALIDADE">
+<displayName>CT_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="SCT_LOCALIDADE">
+<displayName>SCT_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_LOCALIDADE">
+<displayName>CD_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_LOCALIDADE">
+<displayName>NM_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="LAT_LOCALIDADE">
+<displayName>LAT_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="LONG_LOCALIDADE">
+<displayName>LONG_LOCALIDADE</displayName>
+</SimpleField>
+</Schema>
+<Schema name="Município" id="kml_schema_ft_Município">
+<SimpleField type="xsd:string" name="CD_UF">
+<displayName>CD_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_UF">
+<displayName>NM_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_MUN">
+<displayName>CD_MUN</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_MUN">
+<displayName>NM_MUN</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_RGINT">
+<displayName>CD_RGINT</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_RGINT">
+<displayName>NM_RGINT</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_RGI">
+<displayName>CD_RGI</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_RGI">
+<displayName>NM_RGI</displayName>
+</SimpleField>
+</Schema>
+<Folder id="01. Cidade">
+<name>01. Cidade</name>
+<Folder id="01.03. Sede Municipal">
+<name>01.03. Sede Municipal</name>
+<Placemark id="01.03. Sede Municipal">
+<name>Machados [2609105]</name>
+<visibility>1</visibility>
+<snippet> </snippet>
+<description>&lt;center&gt;&lt;table&gt;&lt;tr&gt;&lt;th colspan='2' align='center'&gt;&lt;em&gt;Atributos&lt;/em&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_UF&lt;/th&gt;
+&lt;td&gt;26&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_UF&lt;/th&gt;
+&lt;td&gt;Pernambuco&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;SIGLA_UF&lt;/th&gt;
+&lt;td&gt;PE&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_MUN&lt;/th&gt;
+&lt;td&gt;2609105&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_MUN&lt;/th&gt;
+&lt;td&gt;Machados&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGINT&lt;/th&gt;
+&lt;td&gt;2601&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGINT&lt;/th&gt;
+&lt;td&gt;Recife&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGI&lt;/th&gt;
+&lt;td&gt;260004&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGI&lt;/th&gt;
+&lt;td&gt;Limoeiro&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Cidade&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;SCT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Sede Municipal&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;2609105&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Machados&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;LAT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;-7.6838&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;LONG_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;-35.5153&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;&lt;/center&gt;</description>
+<Style>
+<IconStyle>
+<color>ff00aaff</color>
+<scale>1.0</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<scale>1.0</scale>
+</LabelStyle>
+<LineStyle>
+<color>ffffffff</color>
+<width>3</width>
+<gx:labelVisibility>1</gx:labelVisibility>
+</LineStyle>
+<PolyStyle>
+<color>00ffffff</color>
+</PolyStyle>
+</Style>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_01._Cidade">
+<SimpleData name="CD_UF">26</SimpleData>
+<SimpleData name="NM_UF">Pernambuco</SimpleData>
+<SimpleData name="SIGLA_UF">PE</SimpleData>
+<SimpleData name="CD_MUN">2609105</SimpleData>
+<SimpleData name="NM_MUN">Machados</SimpleData>
+<SimpleData name="CD_RGINT">2601</SimpleData>
+<SimpleData name="NM_RGINT">Recife</SimpleData>
+<SimpleData name="CD_RGI">260004</SimpleData>
+<SimpleData name="NM_RGI">Limoeiro</SimpleData>
+<SimpleData name="CT_LOCALIDADE">Cidade</SimpleData>
+<SimpleData name="SCT_LOCALIDADE">Sede Municipal</SimpleData>
+<SimpleData name="CD_LOCALIDADE">2609105</SimpleData>
+<SimpleData name="NM_LOCALIDADE">Machados</SimpleData>
+<SimpleData name="LAT_LOCALIDADE">-7.6838</SimpleData>
+<SimpleData name="LONG_LOCALIDADE">-35.5153</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<extrude>0</extrude>
+<coordinates>-35.515292,-7.68380599974899,0.0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+</Folder>
+<Folder id="06. Povoados">
+<name>06. Povoados</name>
+<Placemark id="06. Povoados">
+<name>Chã dos Tavares [260910500001]</name>
+<visibility>1</visibility>
+<snippet> </snippet>
+<description>&lt;center&gt;&lt;table&gt;&lt;tr&gt;&lt;th colspan='2' align='center'&gt;&lt;em&gt;Atributos&lt;/em&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_UF&lt;/th&gt;
+&lt;td&gt;26&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_UF&lt;/th&gt;
+&lt;td&gt;Pernambuco&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;SIGLA_UF&lt;/th&gt;
+&lt;td&gt;PE&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_MUN&lt;/th&gt;
+&lt;td&gt;2609105&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_MUN&lt;/th&gt;
+&lt;td&gt;Machados&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGINT&lt;/th&gt;
+&lt;td&gt;2601&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGINT&lt;/th&gt;
+&lt;td&gt;Recife&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGI&lt;/th&gt;
+&lt;td&gt;260004&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGI&lt;/th&gt;
+&lt;td&gt;Limoeiro&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Povoado&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;260910500001&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Chã dos Tavares&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;LAT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;-7.661&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;LONG_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;-35.5105&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;&lt;/center&gt;</description>
+<Style>
+<IconStyle>
+<color>ff00ff54</color>
+<scale>0.8</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<scale>0.8</scale>
+</LabelStyle>
+<LineStyle>
+<color>72ff54ff</color>
+<width>1.0</width>
+<gx:labelVisibility>1</gx:labelVisibility>
+</LineStyle>
+<PolyStyle>
+<color>66ff54ff</color>
+</PolyStyle>
+</Style>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_Povoados">
+<SimpleData name="CD_UF">26</SimpleData>
+<SimpleData name="NM_UF">Pernambuco</SimpleData>
+<SimpleData name="SIGLA_UF">PE</SimpleData>
+<SimpleData name="CD_MUN">2609105</SimpleData>
+<SimpleData name="NM_MUN">Machados</SimpleData>
+<SimpleData name="CD_RGINT">2601</SimpleData>
+<SimpleData name="NM_RGINT">Recife</SimpleData>
+<SimpleData name="CD_RGI">260004</SimpleData>
+<SimpleData name="NM_RGI">Limoeiro</SimpleData>
+<SimpleData name="CT_LOCALIDADE">Povoado</SimpleData>
+<SimpleData name="CD_LOCALIDADE">260910500001</SimpleData>
+<SimpleData name="NM_LOCALIDADE">Chã dos Tavares</SimpleData>
+<SimpleData name="LAT_LOCALIDADE">-7.661</SimpleData>
+<SimpleData name="LONG_LOCALIDADE">-35.5105</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<extrude>0</extrude>
+<coordinates>-35.5105227479675,-7.66100568267654,0.0</coordinates>
+</Point>
+</Placemark>
+<Placemark id="06. Povoados">
+<name>Chã do Hilário [260910500007]</name>
+<visibility>1</visibility>
+<snippet> </snippet>
+<description>&lt;center&gt;&lt;table&gt;&lt;tr&gt;&lt;th colspan='2' align='center'&gt;&lt;em&gt;Atributos&lt;/em&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_UF&lt;/th&gt;
+&lt;td&gt;26&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_UF&lt;/th&gt;
+&lt;td&gt;Pernambuco&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;SIGLA_UF&lt;/th&gt;
+&lt;td&gt;PE&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_MUN&lt;/th&gt;
+&lt;td&gt;2609105&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_MUN&lt;/th&gt;
+&lt;td&gt;Machados&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGINT&lt;/th&gt;
+&lt;td&gt;2601&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGINT&lt;/th&gt;
+&lt;td&gt;Recife&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGI&lt;/th&gt;
+&lt;td&gt;260004&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGI&lt;/th&gt;
+&lt;td&gt;Limoeiro&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Povoado&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;260910500007&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Chã do Hilário&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;LAT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;-7.7056&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;LONG_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;-35.5161&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;&lt;/center&gt;</description>
+<Style>
+<IconStyle>
+<color>ff00ff54</color>
+<scale>0.8</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<scale>0.8</scale>
+</LabelStyle>
+<LineStyle>
+<color>72ff54ff</color>
+<width>1.0</width>
+<gx:labelVisibility>1</gx:labelVisibility>
+</LineStyle>
+<PolyStyle>
+<color>66ff54ff</color>
+</PolyStyle>
+</Style>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_Povoados">
+<SimpleData name="CD_UF">26</SimpleData>
+<SimpleData name="NM_UF">Pernambuco</SimpleData>
+<SimpleData name="SIGLA_UF">PE</SimpleData>
+<SimpleData name="CD_MUN">2609105</SimpleData>
+<SimpleData name="NM_MUN">Machados</SimpleData>
+<SimpleData name="CD_RGINT">2601</SimpleData>
+<SimpleData name="NM_RGINT">Recife</SimpleData>
+<SimpleData name="CD_RGI">260004</SimpleData>
+<SimpleData name="NM_RGI">Limoeiro</SimpleData>
+<SimpleData name="CT_LOCALIDADE">Povoado</SimpleData>
+<SimpleData name="CD_LOCALIDADE">260910500007</SimpleData>
+<SimpleData name="NM_LOCALIDADE">Chã do Hilário</SimpleData>
+<SimpleData name="LAT_LOCALIDADE">-7.7056</SimpleData>
+<SimpleData name="LONG_LOCALIDADE">-35.5161</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<extrude>0</extrude>
+<coordinates>-35.5161412608695,-7.70560627800915,0.0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Folder id="12. Outras Localidades">
+<name>12. Outras Localidades</name>
+<Placemark id="12. Outras Localidades">
+<name>Jaqueira [260910500003]</name>
+<visibility>1</visibility>
+<snippet> </snippet>
+<description>&lt;center&gt;&lt;table&gt;&lt;tr&gt;&lt;th colspan='2' align='center'&gt;&lt;em&gt;Attributes&lt;/em&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_UF&lt;/th&gt;
+&lt;td&gt;26&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_UF&lt;/th&gt;
+&lt;td&gt;Pernambuco&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;SIGLA_UF&lt;/th&gt;
+&lt;td&gt;PE&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_MUN&lt;/th&gt;
+&lt;td&gt;2609105&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_MUN&lt;/th&gt;
+&lt;td&gt;Machados&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGINT&lt;/th&gt;
+&lt;td&gt;2601&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGINT&lt;/th&gt;
+&lt;td&gt;Recife&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGI&lt;/th&gt;
+&lt;td&gt;260004&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGI&lt;/th&gt;
+&lt;td&gt;Limoeiro&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Outras Localidades&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;SCT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;260910500003&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Jaqueira&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;&lt;/center&gt;</description>
+<Style>
+<IconStyle>
+<color>ff0069d3</color>
+<scale>0.6</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<scale>0.6</scale>
+</LabelStyle>
+<LineStyle>
+<width>1.0</width>
+<gx:labelVisibility>1</gx:labelVisibility>
+</LineStyle>
+</Style>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_Localidades">
+<SimpleData name="CD_UF">26</SimpleData>
+<SimpleData name="NM_UF">Pernambuco</SimpleData>
+<SimpleData name="SIGLA_UF">PE</SimpleData>
+<SimpleData name="CD_MUN">2609105</SimpleData>
+<SimpleData name="NM_MUN">Machados</SimpleData>
+<SimpleData name="CD_RGINT">2601</SimpleData>
+<SimpleData name="NM_RGINT">Recife</SimpleData>
+<SimpleData name="CD_RGI">260004</SimpleData>
+<SimpleData name="NM_RGI">Limoeiro</SimpleData>
+<SimpleData name="CT_LOCALIDADE">Outras Localidades</SimpleData>
+<SimpleData name="CD_LOCALIDADE">260910500003</SimpleData>
+<SimpleData name="NM_LOCALIDADE">Jaqueira</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<extrude>0</extrude>
+<coordinates>-35.531617,-7.73947499974721,0.0</coordinates>
+</Point>
+</Placemark>
+<Placemark id="12. Outras Localidades">
+<name>Pedra Fina [260910500004]</name>
+<visibility>1</visibility>
+<snippet> </snippet>
+<description>&lt;center&gt;&lt;table&gt;&lt;tr&gt;&lt;th colspan='2' align='center'&gt;&lt;em&gt;Attributes&lt;/em&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_UF&lt;/th&gt;
+&lt;td&gt;26&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_UF&lt;/th&gt;
+&lt;td&gt;Pernambuco&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;SIGLA_UF&lt;/th&gt;
+&lt;td&gt;PE&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_MUN&lt;/th&gt;
+&lt;td&gt;2609105&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_MUN&lt;/th&gt;
+&lt;td&gt;Machados&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGINT&lt;/th&gt;
+&lt;td&gt;2601&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGINT&lt;/th&gt;
+&lt;td&gt;Recife&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGI&lt;/th&gt;
+&lt;td&gt;260004&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGI&lt;/th&gt;
+&lt;td&gt;Limoeiro&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Outras Localidades&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;SCT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;260910500004&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Pedra Fina&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;&lt;/center&gt;</description>
+<Style>
+<IconStyle>
+<color>ff0069d3</color>
+<scale>0.6</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<scale>0.6</scale>
+</LabelStyle>
+<LineStyle>
+<width>1.0</width>
+<gx:labelVisibility>1</gx:labelVisibility>
+</LineStyle>
+</Style>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_Localidades">
+<SimpleData name="CD_UF">26</SimpleData>
+<SimpleData name="NM_UF">Pernambuco</SimpleData>
+<SimpleData name="SIGLA_UF">PE</SimpleData>
+<SimpleData name="CD_MUN">2609105</SimpleData>
+<SimpleData name="NM_MUN">Machados</SimpleData>
+<SimpleData name="CD_RGINT">2601</SimpleData>
+<SimpleData name="NM_RGINT">Recife</SimpleData>
+<SimpleData name="CD_RGI">260004</SimpleData>
+<SimpleData name="NM_RGI">Limoeiro</SimpleData>
+<SimpleData name="CT_LOCALIDADE">Outras Localidades</SimpleData>
+<SimpleData name="CD_LOCALIDADE">260910500004</SimpleData>
+<SimpleData name="NM_LOCALIDADE">Pedra Fina</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<extrude>0</extrude>
+<coordinates>-35.506232,-7.74266099974711,0.0</coordinates>
+</Point>
+</Placemark>
+<Placemark id="12. Outras Localidades">
+<name>Siqueira [260910500005]</name>
+<visibility>1</visibility>
+<snippet> </snippet>
+<description>&lt;center&gt;&lt;table&gt;&lt;tr&gt;&lt;th colspan='2' align='center'&gt;&lt;em&gt;Attributes&lt;/em&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_UF&lt;/th&gt;
+&lt;td&gt;26&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_UF&lt;/th&gt;
+&lt;td&gt;Pernambuco&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;SIGLA_UF&lt;/th&gt;
+&lt;td&gt;PE&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_MUN&lt;/th&gt;
+&lt;td&gt;2609105&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_MUN&lt;/th&gt;
+&lt;td&gt;Machados&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGINT&lt;/th&gt;
+&lt;td&gt;2601&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGINT&lt;/th&gt;
+&lt;td&gt;Recife&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGI&lt;/th&gt;
+&lt;td&gt;260004&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGI&lt;/th&gt;
+&lt;td&gt;Limoeiro&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Outras Localidades&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;SCT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;260910500005&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Siqueira&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;&lt;/center&gt;</description>
+<Style>
+<IconStyle>
+<color>ff0069d3</color>
+<scale>0.6</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<scale>0.6</scale>
+</LabelStyle>
+<LineStyle>
+<width>1.0</width>
+<gx:labelVisibility>1</gx:labelVisibility>
+</LineStyle>
+</Style>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_Localidades">
+<SimpleData name="CD_UF">26</SimpleData>
+<SimpleData name="NM_UF">Pernambuco</SimpleData>
+<SimpleData name="SIGLA_UF">PE</SimpleData>
+<SimpleData name="CD_MUN">2609105</SimpleData>
+<SimpleData name="NM_MUN">Machados</SimpleData>
+<SimpleData name="CD_RGINT">2601</SimpleData>
+<SimpleData name="NM_RGINT">Recife</SimpleData>
+<SimpleData name="CD_RGI">260004</SimpleData>
+<SimpleData name="NM_RGI">Limoeiro</SimpleData>
+<SimpleData name="CT_LOCALIDADE">Outras Localidades</SimpleData>
+<SimpleData name="CD_LOCALIDADE">260910500005</SimpleData>
+<SimpleData name="NM_LOCALIDADE">Siqueira</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<extrude>0</extrude>
+<coordinates>-35.523702,-7.72161999974778,0.0</coordinates>
+</Point>
+</Placemark>
+<Placemark id="12. Outras Localidades">
+<name>Sítio Siqueira [260910500006]</name>
+<visibility>1</visibility>
+<snippet> </snippet>
+<description>&lt;center&gt;&lt;table&gt;&lt;tr&gt;&lt;th colspan='2' align='center'&gt;&lt;em&gt;Attributes&lt;/em&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_UF&lt;/th&gt;
+&lt;td&gt;26&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_UF&lt;/th&gt;
+&lt;td&gt;Pernambuco&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;SIGLA_UF&lt;/th&gt;
+&lt;td&gt;PE&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_MUN&lt;/th&gt;
+&lt;td&gt;2609105&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_MUN&lt;/th&gt;
+&lt;td&gt;Machados&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGINT&lt;/th&gt;
+&lt;td&gt;2601&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGINT&lt;/th&gt;
+&lt;td&gt;Recife&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGI&lt;/th&gt;
+&lt;td&gt;260004&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGI&lt;/th&gt;
+&lt;td&gt;Limoeiro&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Outras Localidades&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;SCT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;260910500006&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Sítio Siqueira&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;&lt;/center&gt;</description>
+<Style>
+<IconStyle>
+<color>ff0069d3</color>
+<scale>0.6</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<scale>0.6</scale>
+</LabelStyle>
+<LineStyle>
+<width>1.0</width>
+<gx:labelVisibility>1</gx:labelVisibility>
+</LineStyle>
+</Style>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_Localidades">
+<SimpleData name="CD_UF">26</SimpleData>
+<SimpleData name="NM_UF">Pernambuco</SimpleData>
+<SimpleData name="SIGLA_UF">PE</SimpleData>
+<SimpleData name="CD_MUN">2609105</SimpleData>
+<SimpleData name="NM_MUN">Machados</SimpleData>
+<SimpleData name="CD_RGINT">2601</SimpleData>
+<SimpleData name="NM_RGINT">Recife</SimpleData>
+<SimpleData name="CD_RGI">260004</SimpleData>
+<SimpleData name="NM_RGI">Limoeiro</SimpleData>
+<SimpleData name="CT_LOCALIDADE">Outras Localidades</SimpleData>
+<SimpleData name="CD_LOCALIDADE">260910500006</SimpleData>
+<SimpleData name="NM_LOCALIDADE">Sítio Siqueira</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<extrude>0</extrude>
+<coordinates>-35.52544,-7.72500399974767,0.0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Folder id="13. Referência">
+<name>13. Referência</name>
+<Placemark id="13. Referência">
+<name>Machados [2609105]</name>
+<visibility>1</visibility>
+<snippet> </snippet>
+<description>&lt;center&gt;&lt;table&gt;&lt;tr&gt;&lt;th colspan='2' align='center'&gt;&lt;em&gt;Attributes&lt;/em&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_UF&lt;/th&gt;
+&lt;td&gt;26&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_UF&lt;/th&gt;
+&lt;td&gt;Pernambuco&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_MUN&lt;/th&gt;
+&lt;td&gt;2609105&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_MUN&lt;/th&gt;
+&lt;td&gt;Machados&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_RGINT&lt;/th&gt;
+&lt;td&gt;2601&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_RGINT&lt;/th&gt;
+&lt;td&gt;Recife&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_RGI&lt;/th&gt;
+&lt;td&gt;260004&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_RGI&lt;/th&gt;
+&lt;td&gt;Limoeiro&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;&lt;/center&gt;</description>
+<Style>
+<IconStyle>
+<scale>0.7</scale>
+</IconStyle>
+<LabelStyle>
+<scale>0.7</scale>
+</LabelStyle>
+<LineStyle>
+<color>ffffffff</color>
+<width>3</width>
+<gx:labelVisibility>1</gx:labelVisibility>
+</LineStyle>
+<PolyStyle>
+<color>00ffffff</color>
+</PolyStyle>
+</Style>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_Município">
+<SimpleData name="CD_UF">26</SimpleData>
+<SimpleData name="NM_UF">Pernambuco</SimpleData>
+<SimpleData name="CD_MUN">2609105</SimpleData>
+<SimpleData name="NM_MUN">Machados</SimpleData>
+<SimpleData name="CD_RGINT">2601</SimpleData>
+<SimpleData name="NM_RGINT">Recife</SimpleData>
+<SimpleData name="CD_RGI">260004</SimpleData>
+<SimpleData name="NM_RGI">Limoeiro</SimpleData>
+</SchemaData>
+</ExtendedData>
+<MultiGeometry>
+<Polygon>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>-35.4711162,-7.67517589974926,0.0 -35.4647394,-7.67121829974939,0.0 -35.4611121,-7.67530849974925,0.0 -35.4456726,-7.6927184997487,0.0 -35.4527007,-7.69948199974849,0.0 -35.4530774,-7.69984449974847,0.0 -35.4725271,-7.71856199974788,0.0 -35.4803342,-7.72607519974764,0.0 -35.480565,-7.72629729974763,0.0 -35.4837048,-7.72931889974754,0.0 -35.4838087,-7.72941889974753,0.0 -35.4838186,-7.72942839974753,0.0 -35.4843581,-7.72994759974751,0.0 -35.4907004,-7.72991059974752,0.0 -35.4925277,-7.73260919974743,0.0 -35.4960563,-7.73434359974738,0.0 -35.5007492,-7.73771829974727,0.0 -35.5007998,-7.73775469974727,0.0 -35.5009498,-7.73786249974726,0.0 -35.5022772,-7.73901209974723,0.0 -35.5044573,-7.74219719974712,0.0 -35.5043826,-7.7429463997471,0.0 -35.5049072,-7.74374869974708,0.0 -35.511645,-7.74786149974695,0.0 -35.5140931,-7.74794499974694,0.0 -35.5145207,-7.74795959974694,0.0 -35.5164713,-7.74957479974689,0.0 -35.5174588,-7.7491723997469,0.0 -35.5178311,-7.74902069974691,0.0 -35.5202614,-7.7491536997469,0.0 -35.5211415,-7.74805239974694,0.0 -35.5225829,-7.746248799747,0.0 -35.5231949,-7.74414789974706,0.0 -35.5234014,-7.74417619974706,0.0 -35.5263074,-7.74897369974691,0.0 -35.52666,-7.74900289974691,0.0 -35.5268566,-7.74883839974691,0.0 -35.5270532,-7.74867389974692,0.0 -35.5294318,-7.74804379974694,0.0 -35.5319965,-7.74787239974694,0.0 -35.5331432,-7.74842249974693,0.0 -35.5335986,-7.74790239974694,0.0 -35.5333838,-7.74682859974698,0.0 -35.5297135,-7.74402759974707,0.0 -35.5297375,-7.74323489974709,0.0 -35.5386546,-7.73723829974728,0.0 -35.5387304,-7.73718729974728,0.0 -35.5388588,-7.73710099974729,0.0 -35.5389394,-7.73704489974729,0.0 -35.5414142,-7.73538109974734,0.0 -35.5414672,-7.73503119974735,0.0 -35.5387121,-7.72872299974756,0.0 -35.54128,-7.72603419974764,0.0 -35.5432526,-7.72655869974762,0.0 -35.5436245,-7.72650079974763,0.0 -35.5441316,-7.72597929974764,0.0 -35.5441282,-7.72342749974772,0.0 -35.5450187,-7.72281239974774,0.0 -35.5468912,-7.72302099974774,0.0 -35.5486386,-7.72282159974774,0.0 -35.5492753,-7.72217969974777,0.0 -35.5493692,-7.72012769974783,0.0 -35.5484464,-7.71719889974792,0.0 -35.548446,-7.71719759974792,0.0 -35.5483887,-7.71718499974792,0.0 -35.5480957,-7.71719089974792,0.0 -35.5468018,-7.71725489974792,0.0 -35.5464224,-7.71724179974792,0.0 -35.5458725,-7.71718469974792,0.0 -35.545657,-7.71717849974792,0.0 -35.5445647,-7.71715669974792,0.0 -35.5441722,-7.71698669974793,0.0 -35.5440087,-7.71673159974794,0.0 -35.543891,-7.71650919974794,0.0 -35.5437274,-7.71628679974795,0.0 -35.543662,-7.71614289974796,0.0 -35.5436947,-7.71595969974796,0.0 -35.5436947,-7.71572419974797,0.0 -35.5436489,-7.71550179974798,0.0 -35.5434462,-7.71529249974798,0.0 -35.5430799,-7.71524999974798,0.0 -35.5427397,-7.71500139974799,0.0 -35.5424061,-7.71495559974799,0.0 -35.5422099,-7.71504069974799,0.0 -35.5419678,-7.71526309974798,0.0 -35.541438,-7.71543309974798,0.0 -35.5412025,-7.71544619974797,0.0 -35.5408558,-7.71538079974798,0.0 -35.540797,-7.71506679974799,0.0 -35.5408755,-7.714746299748,0.0 -35.5408362,-7.71447809974801,0.0 -35.5408362,-7.71421649974802,0.0 -35.5410194,-7.71382399974803,0.0 -35.5414118,-7.71328109974805,0.0 -35.5413464,-7.71296049974806,0.0 -35.5412156,-7.71250919974807,0.0 -35.5410455,-7.71213639974808,0.0 -35.5408016,-7.71184739974809,0.0 -35.5406138,-7.7116391997481,0.0 -35.5405092,-7.7114658997481,0.0 -35.5403685,-7.71080979974812,0.0 -35.5401416,-7.70981009974816,0.0 -35.5399335,-7.70882319974819,0.0 -35.5397831,-7.70823129974821,0.0 -35.5396392,-7.70777989974822,0.0 -35.5378363,-7.70701619974825,0.0 -35.5374152,-7.70684289974825,0.0 -35.5354005,-7.70582239974828,0.0 -35.5343507,-7.7054560997483,0.0 -35.5337783,-7.7052860997483,0.0 -35.5333465,-7.70485439974831,0.0 -35.533111,-7.70422639974834,0.0 -35.5330064,-7.70391239974835,0.0 -35.5324831,-7.70277419974838,0.0 -35.5318028,-7.7022378997484,0.0 -35.5312926,-7.7020677997484,0.0 -35.531044,-7.70168839974842,0.0 -35.5299974,-7.70149219974842,0.0 -35.5292125,-7.70170799974841,0.0 -35.5289378,-7.70176039974841,0.0 -35.528578,-7.70152489974842,0.0 -35.528264,-7.70104739974844,0.0 -35.5277603,-7.70068109974845,0.0 -35.5270735,-7.70053709974845,0.0 -35.5260204,-7.70006949974847,0.0 -35.5254709,-7.69987319974847,0.0 -35.5250915,-7.69937609974849,0.0 -35.524699,-7.6991013997485,0.0 -35.5237964,-7.69853879974851,0.0 -35.5236263,-7.69849959974852,0.0 -35.5231684,-7.69834259974852,0.0 -35.5229852,-7.69763609974855,0.0 -35.5226189,-7.69730909974855,0.0 -35.5222526,-7.69690349974857,0.0 -35.521834,-7.69658949974858,0.0 -35.5215526,-7.69623909974859,0.0 -35.5213381,-7.6959762997486,0.0 -35.5211799,-7.6957783997486,0.0 -35.5209614,-7.69558109974861,0.0 -35.5207351,-7.69537289974862,0.0 -35.5205618,-7.69526459974862,0.0 -35.5205258,-7.69524199974862,0.0 -35.5204603,-7.69486259974864,0.0 -35.5202903,-7.69449629974864,0.0 -35.5200025,-7.69409409974866,0.0 -35.519937,-7.69379319974867,0.0 -35.5198978,-7.69295589974869,0.0 -35.5207428,-7.69189459974873,0.0 -35.5226,-7.69118999974875,0.0 -35.5232335,-7.69043729974877,0.0 -35.5235694,-7.69013509974878,0.0 -35.5243,-7.68888999974882,0.0 -35.5248,-7.68795999974885,0.0 -35.5250528,-7.68757029974887,0.0 -35.5251677,-7.68723189974887,0.0 -35.5251985,-7.68686409974889,0.0 -35.5250767,-7.68663049974889,0.0 -35.5250512,-7.6865619997489,0.0 -35.5251117,-7.6864760997489,0.0 -35.5251556,-7.6864028997489,0.0 -35.5251624,-7.6863406997489,0.0 -35.5251917,-7.68626239974891,0.0 -35.5252216,-7.68622639974891,0.0 -35.5252649,-7.68615769974891,0.0 -35.5252693,-7.68608639974891,0.0 -35.5252837,-7.68600789974891,0.0 -35.5253091,-7.68595189974892,0.0 -35.5253066,-7.68587859974892,0.0 -35.5252993,-7.68582219974892,0.0 -35.5253202,-7.68573789974892,0.0 -35.5253273,-7.68565269974893,0.0 -35.5253259,-7.68557239974893,0.0 -35.5253247,-7.68551809974893,0.0 -35.5253136,-7.68543569974893,0.0 -35.5253038,-7.68538489974893,0.0 -35.5252938,-7.68532289974894,0.0 -35.5252789,-7.68524349974894,0.0 -35.5252707,-7.68516139974894,0.0 -35.5252494,-7.68504969974895,0.0 -35.5252388,-7.68494069974895,0.0 -35.5252276,-7.68484319974895,0.0 -35.5252276,-7.68480669974895,0.0 -35.5252219,-7.68471749974895,0.0 -35.5263608,-7.68494979974895,0.0 -35.5268077,-7.68502239974895,0.0 -35.5269227,-7.68421359974897,0.0 -35.5270068,-7.68413139974898,0.0 -35.5270705,-7.68395279974898,0.0 -35.5271026,-7.68366399974899,0.0 -35.5270631,-7.68360359974899,0.0 -35.5269947,-7.683499099749,0.0 -35.5269206,-7.683363299749,0.0 -35.5268958,-7.683288899749,0.0 -35.5268153,-7.68306259974901,0.0 -35.5268222,-7.68293109974901,0.0 -35.5267553,-7.68248639974903,0.0 -35.526748,-7.68229669974903,0.0 -35.526707,-7.68182939974905,0.0 -35.5265076,-7.68105959974908,0.0 -35.526252,-7.68061869974908,0.0 -35.5261544,-7.67989359974911,0.0 -35.5260911,-7.67944769974912,0.0 -35.5260605,-7.67924009974913,0.0 -35.5258522,-7.67890809974914,0.0 -35.5259343,-7.67865249974915,0.0 -35.5262685,-7.67777089974918,0.0 -35.5260658,-7.67736559974919,0.0 -35.5254971,-7.67648459974922,0.0 -35.5252356,-7.67622969974923,0.0 -35.5248956,-7.67585049974924,0.0 -35.5247845,-7.67524249974926,0.0 -35.5244445,-7.67483709974927,0.0 -35.5240588,-7.67454299974928,0.0 -35.5237709,-7.67408059974929,0.0 -35.5235423,-7.67370609974931,0.0 -35.5231632,-7.67344459974931,0.0 -35.521483,-7.67357539974931,0.0 -35.5211169,-7.67374699974931,0.0 -35.5201559,-7.67323709974932,0.0 -35.5199859,-7.67308019974933,0.0 -35.5195348,-7.67291669974933,0.0 -35.5187307,-7.67280559974933,0.0 -35.5180115,-7.67267479974934,0.0 -35.5173705,-7.67250249974935,0.0 -35.5168282,-7.67238719974935,0.0 -35.5161941,-7.67239369974935,0.0 -35.5156188,-7.67232179974935,0.0 -35.5150435,-7.67207339974936,0.0 -35.5148343,-7.67170729974937,0.0 -35.5147362,-7.67139999974938,0.0 -35.5145531,-7.67111889974939,0.0 -35.5143178,-7.6708246997494,0.0 -35.5139321,-7.67054359974941,0.0 -35.5136902,-7.67045209974941,0.0 -35.5131541,-7.67039319974941,0.0 -35.5125722,-7.66998129974942,0.0 -35.512448,-7.66964629974944,0.0 -35.5123565,-7.66945019974944,0.0 -35.5122519,-7.66926709974945,0.0 -35.5120885,-7.66918209974945,0.0 -35.5119446,-7.66903829974946,0.0 -35.5120166,-7.66880949974946,0.0 -35.5122127,-7.66848259974947,0.0 -35.5122317,-7.66839629974948,0.0 -35.5122056,-7.66815439974948,0.0 -35.512199,-7.66795829974949,0.0 -35.512258,-7.6677718997495,0.0 -35.5122905,-7.6676249997495,0.0 -35.5122252,-7.66750079974951,0.0 -35.5121533,-7.66739619974951,0.0 -35.5121859,-7.66725889974951,0.0 -35.5121467,-7.66716739974952,0.0 -35.5120814,-7.66706279974952,0.0 -35.5118133,-7.66667059974953,0.0 -35.5117676,-7.66646799974954,0.0 -35.5118133,-7.66626529974955,0.0 -35.5119898,-7.66610189974955,0.0 -35.5121075,-7.66592539974955,0.0 -35.5122056,-7.66565739974956,0.0 -35.5121467,-7.66544169974957,0.0 -35.512016,-7.66528479974957,0.0 -35.5120094,-7.66512789974958,0.0 -35.5122252,-7.66489909974959,0.0 -35.5122709,-7.6645869997496,0.0 -35.5123886,-7.6645085997496,0.0 -35.5124997,-7.6643843997496,0.0 -35.5126893,-7.66424059974961,0.0 -35.5129507,-7.66405749974962,0.0 -35.5129181,-7.66388759974962,0.0 -35.512722,-7.66360649974963,0.0 -35.5126566,-7.66342349974964,0.0 -35.5127285,-7.66309009974965,0.0 -35.5127481,-7.66271749974966,0.0 -35.5127154,-7.66256059974966,0.0 -35.512722,-7.66237099974967,0.0 -35.5128265,-7.66230569974967,0.0 -35.5131403,-7.66222069974967,0.0 -35.5132907,-7.66216839974967,0.0 -35.513271,-7.66197879974968,0.0 -35.5135521,-7.66196579974968,0.0 -35.5137221,-7.66185459974968,0.0 -35.5138594,-7.66158659974969,0.0 -35.5137613,-7.6613577997497,0.0 -35.5134214,-7.66119439974971,0.0 -35.5132253,-7.66102449974971,0.0 -35.5135325,-7.66065839974972,0.0 -35.5135194,-7.66044919974973,0.0 -35.5136502,-7.66037079974973,0.0 -35.5139901,-7.66017469974974,0.0 -35.5142254,-7.66001129974974,0.0 -35.5143496,-7.65984789974975,0.0 -35.5146115,-7.65997429974974,0.0 -35.5145972,-7.66012679974974,0.0 -35.5146735,-7.66028409974973,0.0 -35.5149261,-7.66046529974973,0.0 -35.5150977,-7.66067499974972,0.0 -35.5153551,-7.66080369974972,0.0 -35.515479,-7.66098959974971,0.0 -35.5155696,-7.6612040997497,0.0 -35.5157364,-7.6614043997497,0.0 -35.5158603,-7.66180949974969,0.0 -35.5161368,-7.66190009974968,0.0 -35.5165372,-7.66193829974968,0.0 -35.5170329,-7.66176669974968,0.0 -35.5174763,-7.66151879974969,0.0 -35.5182151,-7.6613614997497,0.0 -35.5184391,-7.6614568997497,0.0 -35.5186822,-7.66154749974969,0.0 -35.5189063,-7.66149979974969,0.0 -35.5191208,-7.66153789974969,0.0 -35.5194497,-7.66163329974969,0.0 -35.5197404,-7.66188119974968,0.0 -35.5200169,-7.66248179974967,0.0 -35.5202219,-7.66274869974966,0.0 -35.5204221,-7.66286309974965,0.0 -35.5206072,-7.66294919974965,0.0 -35.5207605,-7.66302049974965,0.0 -35.5209416,-7.66302049974965,0.0 -35.5211371,-7.66308239974965,0.0 -35.521628,-7.66337319974964,0.0 -35.5221714,-7.66353529974963,0.0 -35.5224717,-7.66339709974964,0.0 -35.5184026,-7.65568619974988,0.0 -35.5158424,-7.65083389975004,0.0 -35.4749929,-7.67758179974919,0.0 -35.4711162,-7.67517589974926,0.0</coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</MultiGeometry>
+</Placemark>
+</Folder>
+</Document></kml>

@@ -1,0 +1,787 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<kml xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:atom="http://www.w3.org/2005/Atom" xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+<name>butia_4302709_localidades_2022</name>
+<visibility>1</visibility>
+<Schema name="Povoados" id="kml_schema_ft_Povoados">
+<SimpleField type="xsd:string" name="CD_UF">
+<displayName>CD_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_UF">
+<displayName>NM_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="SIGLA_UF">
+<displayName>SIGLA_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_MUN">
+<displayName>CD_MUN</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_MUN">
+<displayName>NM_MUN</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_RGINT">
+<displayName>CD_RGINT</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_RGINT">
+<displayName>NM_RGINT</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_RGI">
+<displayName>CD_RGI</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_RGI">
+<displayName>NM_RGI</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CT_LOCALIDADE">
+<displayName>CT_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_LOCALIDADE">
+<displayName>CD_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_LOCALIDADE">
+<displayName>NM_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="LAT_LOCALIDADE">
+<displayName>LAT_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="LONG_LOCALIDADE">
+<displayName>LONG_LOCALIDADE</displayName>
+</SimpleField>
+</Schema>
+<Schema name="Vilas" id="kml_schema_ft_Vilas">
+<SimpleField type="xsd:string" name="CD_UF">
+<displayName>CD_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_UF">
+<displayName>NM_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="SIGLA_UF">
+<displayName>SIGLA_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_MUN">
+<displayName>CD_MUN</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_MUN">
+<displayName>NM_MUN</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_RGINT">
+<displayName>CD_RGINT</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_RGINT">
+<displayName>NM_RGINT</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_RGI">
+<displayName>CD_RGI</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_RGI">
+<displayName>NM_RGI</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CT_LOCALIDADE">
+<displayName>CT_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_LOCALIDADE">
+<displayName>CD_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_LOCALIDADE">
+<displayName>NM_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="LAT_LOCALIDADE">
+<displayName>LAT_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="LONG_LOCALIDADE">
+<displayName>LONG_LOCALIDADE</displayName>
+</SimpleField>
+</Schema>
+<Schema name="Localidades" id="kml_schema_ft_Localidades">
+<SimpleField type="xsd:string" name="CD_UF">
+<displayName>CD_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_UF">
+<displayName>NM_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="SIGLA_UF">
+<displayName>SIGLA_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_MUN">
+<displayName>CD_MUN</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_MUN">
+<displayName>NM_MUN</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_RGINT">
+<displayName>CD_RGINT</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_RGINT">
+<displayName>NM_RGINT</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_RGI">
+<displayName>CD_RGI</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_RGI">
+<displayName>NM_RGI</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CT_LOCALIDADE">
+<displayName>CT_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="SCT_LOCALIDADE">
+<displayName>SCT_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_LOCALIDADE">
+<displayName>CD_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_LOCALIDADE">
+<displayName>NM_LOCALIDADE</displayName>
+</SimpleField>
+</Schema>
+<Schema name="Núcleos Urbanos" id="kml_schema_ft_Núcleos_Urbanos">
+<SimpleField type="xsd:string" name="CD_UF">
+<displayName>CD_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_UF">
+<displayName>NM_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="SIGLA_UF">
+<displayName>SIGLA_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_MUN">
+<displayName>CD_MUN</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_MUN">
+<displayName>NM_MUN</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_RGINT">
+<displayName>CD_RGINT</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_RGINT">
+<displayName>NM_RGINT</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_RGI">
+<displayName>CD_RGI</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_RGI">
+<displayName>NM_RGI</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CT_LOCALIDADE">
+<displayName>CT_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_LOCALIDADE">
+<displayName>CD_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_LOCALIDADE">
+<displayName>NM_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="LAT_LOCALIDADE">
+<displayName>LAT_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="LONG_LOCALIDADE">
+<displayName>LONG_LOCALIDADE</displayName>
+</SimpleField>
+</Schema>
+<Schema name="01. Cidade" id="kml_schema_ft_01._Cidade">
+<SimpleField type="xsd:string" name="CD_UF">
+<displayName>CD_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_UF">
+<displayName>NM_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="SIGLA_UF">
+<displayName>SIGLA_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_MUN">
+<displayName>CD_MUN</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_MUN">
+<displayName>NM_MUN</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_RGINT">
+<displayName>CD_RGINT</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_RGINT">
+<displayName>NM_RGINT</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_RGI">
+<displayName>CD_RGI</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_RGI">
+<displayName>NM_RGI</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CT_LOCALIDADE">
+<displayName>CT_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="SCT_LOCALIDADE">
+<displayName>SCT_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_LOCALIDADE">
+<displayName>CD_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_LOCALIDADE">
+<displayName>NM_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="LAT_LOCALIDADE">
+<displayName>LAT_LOCALIDADE</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="LONG_LOCALIDADE">
+<displayName>LONG_LOCALIDADE</displayName>
+</SimpleField>
+</Schema>
+<Schema name="Município" id="kml_schema_ft_Município">
+<SimpleField type="xsd:string" name="CD_UF">
+<displayName>CD_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_UF">
+<displayName>NM_UF</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_MUN">
+<displayName>CD_MUN</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_MUN">
+<displayName>NM_MUN</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_RGINT">
+<displayName>CD_RGINT</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_RGINT">
+<displayName>NM_RGINT</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="CD_RGI">
+<displayName>CD_RGI</displayName>
+</SimpleField>
+<SimpleField type="xsd:string" name="NM_RGI">
+<displayName>NM_RGI</displayName>
+</SimpleField>
+</Schema>
+<Folder id="01. Cidade">
+<name>01. Cidade</name>
+<Folder id="01.03. Sede Municipal">
+<name>01.03. Sede Municipal</name>
+<Placemark id="01.03. Sede Municipal">
+<name>Butiá [4302709]</name>
+<visibility>1</visibility>
+<snippet> </snippet>
+<description>&lt;center&gt;&lt;table&gt;&lt;tr&gt;&lt;th colspan='2' align='center'&gt;&lt;em&gt;Atributos&lt;/em&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_UF&lt;/th&gt;
+&lt;td&gt;43&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_UF&lt;/th&gt;
+&lt;td&gt;Rio Grande do Sul&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;SIGLA_UF&lt;/th&gt;
+&lt;td&gt;RS&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_MUN&lt;/th&gt;
+&lt;td&gt;4302709&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_MUN&lt;/th&gt;
+&lt;td&gt;Butiá&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGINT&lt;/th&gt;
+&lt;td&gt;4301&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGINT&lt;/th&gt;
+&lt;td&gt;Porto Alegre&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGI&lt;/th&gt;
+&lt;td&gt;430006&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGI&lt;/th&gt;
+&lt;td&gt;Charqueadas - Triunfo - São Jerônimo&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Cidade&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;SCT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Sede Municipal&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;4302709&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Butiá&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;LAT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;-30.1179&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;LONG_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;-51.9701&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;&lt;/center&gt;</description>
+<Style>
+<IconStyle>
+<color>ff00aaff</color>
+<scale>1.0</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<scale>1.0</scale>
+</LabelStyle>
+<LineStyle>
+<color>ffffffff</color>
+<width>3</width>
+<gx:labelVisibility>1</gx:labelVisibility>
+</LineStyle>
+<PolyStyle>
+<color>00ffffff</color>
+</PolyStyle>
+</Style>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_01._Cidade">
+<SimpleData name="CD_UF">43</SimpleData>
+<SimpleData name="NM_UF">Rio Grande do Sul</SimpleData>
+<SimpleData name="SIGLA_UF">RS</SimpleData>
+<SimpleData name="CD_MUN">4302709</SimpleData>
+<SimpleData name="NM_MUN">Butiá</SimpleData>
+<SimpleData name="CD_RGINT">4301</SimpleData>
+<SimpleData name="NM_RGINT">Porto Alegre</SimpleData>
+<SimpleData name="CD_RGI">430006</SimpleData>
+<SimpleData name="NM_RGI">Charqueadas - Triunfo - São Jerônimo</SimpleData>
+<SimpleData name="CT_LOCALIDADE">Cidade</SimpleData>
+<SimpleData name="SCT_LOCALIDADE">Sede Municipal</SimpleData>
+<SimpleData name="CD_LOCALIDADE">4302709</SimpleData>
+<SimpleData name="NM_LOCALIDADE">Butiá</SimpleData>
+<SimpleData name="LAT_LOCALIDADE">-30.1179</SimpleData>
+<SimpleData name="LONG_LOCALIDADE">-51.9701</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<extrude>0</extrude>
+<coordinates>-51.970099,-30.1179229991799,0.0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+</Folder>
+<Folder id="04. Vilas">
+<name>04. Vilas</name>
+<Placemark id="04. Vilas">
+<name>Cerro do Roque [430270910]</name>
+<visibility>1</visibility>
+<snippet> </snippet>
+<description>&lt;center&gt;&lt;table&gt;&lt;tr&gt;&lt;th colspan='2' align='center'&gt;&lt;em&gt;Atributos&lt;/em&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_UF&lt;/th&gt;
+&lt;td&gt;43&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_UF&lt;/th&gt;
+&lt;td&gt;Rio Grande do Sul&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;SIGLA_UF&lt;/th&gt;
+&lt;td&gt;RS&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_MUN&lt;/th&gt;
+&lt;td&gt;4302709&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_MUN&lt;/th&gt;
+&lt;td&gt;Butiá&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGINT&lt;/th&gt;
+&lt;td&gt;4301&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGINT&lt;/th&gt;
+&lt;td&gt;Porto Alegre&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGI&lt;/th&gt;
+&lt;td&gt;430006&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGI&lt;/th&gt;
+&lt;td&gt;Charqueadas - Triunfo - São Jerônimo&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Vila&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;430270910&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Cerro do Roque&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;LAT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;-30.3167&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;LONG_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;-52.0827&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;&lt;/center&gt;</description>
+<Style>
+<IconStyle>
+<color>ffff5400</color>
+<scale>1.0</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<scale>0.9</scale>
+</LabelStyle>
+<LineStyle>
+<color>72ffffff</color>
+<width>1.0</width>
+<gx:labelVisibility>1</gx:labelVisibility>
+</LineStyle>
+<PolyStyle>
+<color>660054ff</color>
+</PolyStyle>
+</Style>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_Vilas">
+<SimpleData name="CD_UF">43</SimpleData>
+<SimpleData name="NM_UF">Rio Grande do Sul</SimpleData>
+<SimpleData name="SIGLA_UF">RS</SimpleData>
+<SimpleData name="CD_MUN">4302709</SimpleData>
+<SimpleData name="NM_MUN">Butiá</SimpleData>
+<SimpleData name="CD_RGINT">4301</SimpleData>
+<SimpleData name="NM_RGINT">Porto Alegre</SimpleData>
+<SimpleData name="CD_RGI">430006</SimpleData>
+<SimpleData name="NM_RGI">Charqueadas - Triunfo - São Jerônimo</SimpleData>
+<SimpleData name="CT_LOCALIDADE">Vila</SimpleData>
+<SimpleData name="CD_LOCALIDADE">430270910</SimpleData>
+<SimpleData name="NM_LOCALIDADE">Cerro do Roque</SimpleData>
+<SimpleData name="LAT_LOCALIDADE">-30.3167</SimpleData>
+<SimpleData name="LONG_LOCALIDADE">-52.0827</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<extrude>0</extrude>
+<coordinates>-52.082692,-30.3166899991767,0.0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Folder id="05. Núcleos Urbanos">
+<name>05. Núcleos Urbanos</name>
+<Placemark id="localidades">
+<name>Santo Antônio [4302709001]</name>
+<visibility>1</visibility>
+<snippet> </snippet>
+<description>&lt;center&gt;&lt;table&gt;&lt;tr&gt;&lt;th colspan='2' align='center'&gt;&lt;em&gt;Attributes&lt;/em&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_UF&lt;/th&gt;
+&lt;td&gt;43&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_UF&lt;/th&gt;
+&lt;td&gt;Rio Grande do Sul&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;SIGLA_UF&lt;/th&gt;
+&lt;td&gt;RS&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_MUN&lt;/th&gt;
+&lt;td&gt;4302709&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_MUN&lt;/th&gt;
+&lt;td&gt;Butiá&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGINT&lt;/th&gt;
+&lt;td&gt;4301&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGINT&lt;/th&gt;
+&lt;td&gt;Porto Alegre&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGI&lt;/th&gt;
+&lt;td&gt;430006&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGI&lt;/th&gt;
+&lt;td&gt;Charqueadas - Triunfo - São Jerônimo&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Núcleo Urbano&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;4302709001&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Santo Antônio&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;LAT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;-30.1328&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;LONG_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;-52.0074&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;&lt;/center&gt;</description>
+<Style>
+<IconStyle>
+<color>ff0000ff</color>
+<scale>0.9</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<scale>0.9</scale>
+</LabelStyle>
+<LineStyle>
+<color>72ffffff</color>
+<width>1.0</width>
+<gx:labelVisibility>1</gx:labelVisibility>
+</LineStyle>
+<PolyStyle>
+<color>66ff54ff</color>
+</PolyStyle>
+</Style>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_Núcleos_Urbanos">
+<SimpleData name="CD_UF">43</SimpleData>
+<SimpleData name="NM_UF">Rio Grande do Sul</SimpleData>
+<SimpleData name="SIGLA_UF">RS</SimpleData>
+<SimpleData name="CD_MUN">4302709</SimpleData>
+<SimpleData name="NM_MUN">Butiá</SimpleData>
+<SimpleData name="CD_RGINT">4301</SimpleData>
+<SimpleData name="NM_RGINT">Porto Alegre</SimpleData>
+<SimpleData name="CD_RGI">430006</SimpleData>
+<SimpleData name="NM_RGI">Charqueadas - Triunfo - São Jerônimo</SimpleData>
+<SimpleData name="CT_LOCALIDADE">Núcleo Urbano</SimpleData>
+<SimpleData name="CD_LOCALIDADE">4302709001</SimpleData>
+<SimpleData name="NM_LOCALIDADE">Santo Antônio</SimpleData>
+<SimpleData name="LAT_LOCALIDADE">-30.1328</SimpleData>
+<SimpleData name="LONG_LOCALIDADE">-52.0074</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<extrude>0</extrude>
+<coordinates>-52.0074390954773,-30.1328219841043,0.0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Folder id="06. Povoados">
+<name>06. Povoados</name>
+<Placemark id="06. Povoados">
+<name>Aglomerado Rural Ponte de Arame [430270900002]</name>
+<visibility>1</visibility>
+<snippet> </snippet>
+<description>&lt;center&gt;&lt;table&gt;&lt;tr&gt;&lt;th colspan='2' align='center'&gt;&lt;em&gt;Atributos&lt;/em&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_UF&lt;/th&gt;
+&lt;td&gt;43&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_UF&lt;/th&gt;
+&lt;td&gt;Rio Grande do Sul&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;SIGLA_UF&lt;/th&gt;
+&lt;td&gt;RS&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_MUN&lt;/th&gt;
+&lt;td&gt;4302709&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_MUN&lt;/th&gt;
+&lt;td&gt;Butiá&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGINT&lt;/th&gt;
+&lt;td&gt;4301&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGINT&lt;/th&gt;
+&lt;td&gt;Porto Alegre&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGI&lt;/th&gt;
+&lt;td&gt;430006&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGI&lt;/th&gt;
+&lt;td&gt;Charqueadas - Triunfo - São Jerônimo&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Povoado&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;430270900002&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Aglomerado Rural Ponte de Arame&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;LAT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;-30.2543&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;LONG_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;-52.0228&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;&lt;/center&gt;</description>
+<Style>
+<IconStyle>
+<color>ff00ff54</color>
+<scale>0.8</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<scale>0.8</scale>
+</LabelStyle>
+<LineStyle>
+<color>72ff54ff</color>
+<width>1.0</width>
+<gx:labelVisibility>1</gx:labelVisibility>
+</LineStyle>
+<PolyStyle>
+<color>66ff54ff</color>
+</PolyStyle>
+</Style>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_Povoados">
+<SimpleData name="CD_UF">43</SimpleData>
+<SimpleData name="NM_UF">Rio Grande do Sul</SimpleData>
+<SimpleData name="SIGLA_UF">RS</SimpleData>
+<SimpleData name="CD_MUN">4302709</SimpleData>
+<SimpleData name="NM_MUN">Butiá</SimpleData>
+<SimpleData name="CD_RGINT">4301</SimpleData>
+<SimpleData name="NM_RGINT">Porto Alegre</SimpleData>
+<SimpleData name="CD_RGI">430006</SimpleData>
+<SimpleData name="NM_RGI">Charqueadas - Triunfo - São Jerônimo</SimpleData>
+<SimpleData name="CT_LOCALIDADE">Povoado</SimpleData>
+<SimpleData name="CD_LOCALIDADE">430270900002</SimpleData>
+<SimpleData name="NM_LOCALIDADE">Aglomerado Rural Ponte de Arame</SimpleData>
+<SimpleData name="LAT_LOCALIDADE">-30.2543</SimpleData>
+<SimpleData name="LONG_LOCALIDADE">-52.0228</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<extrude>0</extrude>
+<coordinates>-52.0227516260162,-30.2543463731614,0.0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Folder id="12. Outras Localidades">
+<name>12. Outras Localidades</name>
+<Placemark id="12. Outras Localidades">
+<name>Martinzinho [430270900003]</name>
+<visibility>1</visibility>
+<snippet> </snippet>
+<description>&lt;center&gt;&lt;table&gt;&lt;tr&gt;&lt;th colspan='2' align='center'&gt;&lt;em&gt;Attributes&lt;/em&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_UF&lt;/th&gt;
+&lt;td&gt;43&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_UF&lt;/th&gt;
+&lt;td&gt;Rio Grande do Sul&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;SIGLA_UF&lt;/th&gt;
+&lt;td&gt;RS&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_MUN&lt;/th&gt;
+&lt;td&gt;4302709&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_MUN&lt;/th&gt;
+&lt;td&gt;Butiá&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGINT&lt;/th&gt;
+&lt;td&gt;4301&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGINT&lt;/th&gt;
+&lt;td&gt;Porto Alegre&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_RGI&lt;/th&gt;
+&lt;td&gt;430006&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_RGI&lt;/th&gt;
+&lt;td&gt;Charqueadas - Triunfo - São Jerônimo&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Outras Localidades&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;SCT_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;CD_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;430270900003&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;NM_LOCALIDADE&lt;/th&gt;
+&lt;td&gt;Martinzinho&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;&lt;/center&gt;</description>
+<Style>
+<IconStyle>
+<color>ff0069d3</color>
+<scale>0.6</scale>
+<Icon>
+<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+</Icon>
+</IconStyle>
+<LabelStyle>
+<scale>0.6</scale>
+</LabelStyle>
+<LineStyle>
+<width>1.0</width>
+<gx:labelVisibility>1</gx:labelVisibility>
+</LineStyle>
+</Style>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_Localidades">
+<SimpleData name="CD_UF">43</SimpleData>
+<SimpleData name="NM_UF">Rio Grande do Sul</SimpleData>
+<SimpleData name="SIGLA_UF">RS</SimpleData>
+<SimpleData name="CD_MUN">4302709</SimpleData>
+<SimpleData name="NM_MUN">Butiá</SimpleData>
+<SimpleData name="CD_RGINT">4301</SimpleData>
+<SimpleData name="NM_RGINT">Porto Alegre</SimpleData>
+<SimpleData name="CD_RGI">430006</SimpleData>
+<SimpleData name="NM_RGI">Charqueadas - Triunfo - São Jerônimo</SimpleData>
+<SimpleData name="CT_LOCALIDADE">Outras Localidades</SimpleData>
+<SimpleData name="CD_LOCALIDADE">430270900003</SimpleData>
+<SimpleData name="NM_LOCALIDADE">Martinzinho</SimpleData>
+</SchemaData>
+</ExtendedData>
+<Point>
+<extrude>0</extrude>
+<coordinates>-51.933614,-30.1593639991792,0.0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Folder id="13. Referência">
+<name>13. Referência</name>
+<Placemark id="13. Referência">
+<name>Butiá [4302709]</name>
+<visibility>1</visibility>
+<snippet> </snippet>
+<description>&lt;center&gt;&lt;table&gt;&lt;tr&gt;&lt;th colspan='2' align='center'&gt;&lt;em&gt;Attributes&lt;/em&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_UF&lt;/th&gt;
+&lt;td&gt;43&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_UF&lt;/th&gt;
+&lt;td&gt;Rio Grande do Sul&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_MUN&lt;/th&gt;
+&lt;td&gt;4302709&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_MUN&lt;/th&gt;
+&lt;td&gt;Butiá&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_RGINT&lt;/th&gt;
+&lt;td&gt;4301&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_RGINT&lt;/th&gt;
+&lt;td&gt;Porto Alegre&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor="#E3E3F3"&gt;
+&lt;th&gt;CD_RGI&lt;/th&gt;
+&lt;td&gt;430006&lt;/td&gt;
+&lt;/tr&gt;&lt;tr bgcolor=""&gt;
+&lt;th&gt;NM_RGI&lt;/th&gt;
+&lt;td&gt;Charqueadas - Triunfo - São Jerônimo&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;&lt;/center&gt;</description>
+<Style>
+<IconStyle>
+<scale>0.7</scale>
+</IconStyle>
+<LabelStyle>
+<scale>0.7</scale>
+</LabelStyle>
+<LineStyle>
+<color>ffffffff</color>
+<width>3</width>
+<gx:labelVisibility>1</gx:labelVisibility>
+</LineStyle>
+<PolyStyle>
+<color>00ffffff</color>
+</PolyStyle>
+</Style>
+<ExtendedData>
+<SchemaData schemaUrl="#kml_schema_ft_Município">
+<SimpleData name="CD_UF">43</SimpleData>
+<SimpleData name="NM_UF">Rio Grande do Sul</SimpleData>
+<SimpleData name="CD_MUN">4302709</SimpleData>
+<SimpleData name="NM_MUN">Butiá</SimpleData>
+<SimpleData name="CD_RGINT">4301</SimpleData>
+<SimpleData name="NM_RGINT">Porto Alegre</SimpleData>
+<SimpleData name="CD_RGI">430006</SimpleData>
+<SimpleData name="NM_RGI">Charqueadas - Triunfo - São Jerônimo</SimpleData>
+</SchemaData>
+</ExtendedData>
+<MultiGeometry>
+<Polygon>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>-51.9935324,-30.2003404991786,0.0 -52.0173067,-30.1393961991796,0.0 -52.0163355,-30.1357950991796,0.0 -52.0132726,-30.1244382991798,0.0 -51.9800935,-30.0672159991807,0.0 -51.9793224,-30.0661128991808,0.0 -51.9751595,-30.0647547991808,0.0 -51.9728667,-30.0615703991809,0.0 -51.971803,-30.0458264991811,0.0 -51.970584,-30.0277921991814,0.0 -52.0155397,-30.0418191991812,0.0 -52.0149994,-29.988689099182,0.0 -52.0069332,-29.9496316991827,0.0 -52.0034631,-29.9525525991826,0.0 -52.0014772,-29.9555444991826,0.0 -52.0016712,-29.9594676991825,0.0 -52.0032683,-29.9640568991824,0.0 -52.003769,-29.9675707991824,0.0 -52.0028718,-29.9708254991823,0.0 -52.0007124,-29.9720597991823,0.0 -51.9968422,-29.9727657991823,0.0 -51.9920252,-29.9718563991823,0.0 -51.9889067,-29.9701197991823,0.0 -51.9868721,-29.9682399991824,0.0 -51.9857605,-29.9658123991824,0.0 -51.9857232,-29.9617526991825,0.0 -51.9845926,-29.9572957991826,0.0 -51.9848907,-29.9560756991826,0.0 -51.9890143,-29.9495489991827,0.0 -51.9872675,-29.9456381991827,0.0 -51.9844449,-29.9422753991828,0.0 -51.9789926,-29.9396100991828,0.0 -51.9716938,-29.9383102991829,0.0 -51.9661036,-29.9378102991829,0.0 -51.9610034,-29.9391996991829,0.0 -51.9568261,-29.9401765991828,0.0 -51.952938,-29.9391242991829,0.0 -51.9501389,-29.9380617991829,0.0 -51.9480817,-29.9336108991829,0.0 -51.947441,-29.931314799183,0.0 -51.9451101,-29.930924099183,0.0 -51.940693,-29.931884199183,0.0 -51.9433507,-29.9413188991828,0.0 -51.9447018,-29.9436765991828,0.0 -51.9445901,-29.9462837991827,0.0 -51.9393082,-29.9488589991827,0.0 -51.9203814,-29.9501101991827,0.0 -51.917412,-29.9511057991827,0.0 -51.9086027,-29.9524182991826,0.0 -51.9079135,-29.9520348991826,0.0 -51.9076366,-29.9512558991826,0.0 -51.907584,-29.9490663991827,0.0 -51.9057805,-29.9479176991827,0.0 -51.8986802,-29.9468451991827,0.0 -51.8958092,-29.9473900991827,0.0 -51.8953908,-29.9474695991827,0.0 -51.8941543,-29.9477044991827,0.0 -51.8874056,-29.9504894991827,0.0 -51.8681337,-29.9600412991825,0.0 -51.859897,-29.9595164991825,0.0 -51.8475987,-29.9570130991826,0.0 -51.8471571,-29.9568263991826,0.0 -51.8398046,-29.9537130991826,0.0 -51.8194057,-29.9529885991826,0.0 -51.7953301,-29.9542735991826,0.0 -51.782155,-29.9593874991825,0.0 -51.7854732,-29.9605406991825,0.0 -51.7951801,-29.9603173991825,0.0 -51.7953849,-29.9605673991825,0.0 -51.7959389,-29.9612435991825,0.0 -51.796506,-29.9619353991825,0.0 -51.797842,-29.9635649991825,0.0 -51.8010362,-29.9650517991824,0.0 -51.8027758,-29.9658614991824,0.0 -51.8027991,-29.9658722991824,0.0 -51.8045154,-29.9666710991824,0.0 -51.8159911,-29.9720117991823,0.0 -51.8232152,-29.9715397991823,0.0 -51.8246873,-29.9686621991824,0.0 -51.8296112,-29.9670641991824,0.0 -51.8378456,-29.9697777991823,0.0 -51.8389827,-29.9734503991823,0.0 -51.8398897,-29.9741100991823,0.0 -51.8448654,-29.9739056991823,0.0 -51.8462234,-29.9701385991823,0.0 -51.8475331,-29.9701464991823,0.0 -51.852533,-29.9821026991821,0.0 -51.8526016,-29.9846918991821,0.0 -51.8519955,-29.9880492991821,0.0 -51.8492371,-29.992249899182,0.0 -51.8460922,-29.9944123991819,0.0 -51.8479562,-30.0007381991818,0.0 -51.85108,-30.0045621991818,0.0 -51.8526691,-30.0088480991817,0.0 -51.8525501,-30.0111925991817,0.0 -51.8501475,-30.0158299991816,0.0 -51.8521164,-30.0186179991815,0.0 -51.8522384,-30.0210836991815,0.0 -51.8557365,-30.0279310991814,0.0 -51.8552666,-30.0315016991813,0.0 -51.8560111,-30.0335025991813,0.0 -51.8579515,-30.0387171991812,0.0 -51.8633896,-30.0405983991812,0.0 -51.8678262,-30.0387449991812,0.0 -51.8712997,-30.0392998991812,0.0 -51.8719383,-30.0386798991812,0.0 -51.8718977,-30.0342226991813,0.0 -51.8736712,-30.0320725991813,0.0 -51.8807365,-30.0315543991813,0.0 -51.8836031,-30.0294280991814,0.0 -51.8869989,-30.0296260991814,0.0 -51.8962869,-30.0346101991813,0.0 -51.9004645,-30.0359484991813,0.0 -51.9043767,-30.0401499991812,0.0 -51.9044855,-30.0418299991812,0.0 -51.9057166,-30.0433014991811,0.0 -51.9068931,-30.0473177991811,0.0 -51.906304,-30.049734299181,0.0 -51.9070318,-30.051917399181,0.0 -51.9124291,-30.054679599181,0.0 -51.8338204,-30.11382979918,0.0 -51.8336758,-30.11393829918,0.0 -51.8458012,-30.1233617991798,0.0 -51.8499606,-30.1239556991798,0.0 -51.8521548,-30.1251025991798,0.0 -51.855243,-30.1281053991798,0.0 -51.8577027,-30.1321042991797,0.0 -51.8576719,-30.1334443991797,0.0 -51.8575617,-30.1382438991796,0.0 -51.8587535,-30.1415069991796,0.0 -51.8570598,-30.1515709991794,0.0 -51.8570917,-30.1605584991792,0.0 -51.84901,-30.1642272991792,0.0 -51.8423399,-30.1688041991791,0.0 -51.8428362,-30.173903699179,0.0 -51.8493373,-30.173113099179,0.0 -51.8516398,-30.173284299179,0.0 -51.8531476,-30.174289199179,0.0 -51.8593748,-30.175261099179,0.0 -51.8618528,-30.173032699179,0.0 -51.8628545,-30.173435799179,0.0 -51.8644587,-30.172188699179,0.0 -51.8663165,-30.172327999179,0.0 -51.8714198,-30.175297399179,0.0 -51.8732241,-30.175076799179,0.0 -51.8742366,-30.176477499179,0.0 -51.8790657,-30.177236399179,0.0 -51.8809417,-30.1801676991789,0.0 -51.8813022,-30.1834126991789,0.0 -51.8828117,-30.1846967991788,0.0 -51.8850896,-30.1897310991788,0.0 -51.8961057,-30.1968635991786,0.0 -51.9002712,-30.1978645991786,0.0 -51.9083924,-30.2026329991786,0.0 -51.9190258,-30.2068203991785,0.0 -51.9223786,-30.2094066991784,0.0 -51.9214945,-30.2141999991784,0.0 -51.9231544,-30.2188569991783,0.0 -51.9262163,-30.2204744991783,0.0 -51.9273657,-30.2220382991782,0.0 -51.9260542,-30.2241862991782,0.0 -51.9266281,-30.2269412991782,0.0 -51.9291399,-30.2285942991781,0.0 -51.9377002,-30.2314236991781,0.0 -51.9480406,-30.2322144991781,0.0 -51.9490985,-30.2332563991781,0.0 -51.9484171,-30.236545399178,0.0 -51.950329,-30.237998299178,0.0 -51.9507657,-30.238330699178,0.0 -51.9528771,-30.238031799178,0.0 -51.9599221,-30.239184999178,0.0 -51.9634519,-30.237975599178,0.0 -51.9673626,-30.2403610991779,0.0 -51.9674406,-30.2425797991779,0.0 -51.9662955,-30.2444466991779,0.0 -51.9676526,-30.2469710991778,0.0 -51.9722434,-30.2476887991778,0.0 -51.9724819,-30.2491813991778,0.0 -51.9713583,-30.2516717991778,0.0 -51.9720559,-30.2525690991777,0.0 -51.9707616,-30.2537050991777,0.0 -51.9719867,-30.2548215991777,0.0 -51.9757608,-30.2546427991777,0.0 -51.9775557,-30.2534674991777,0.0 -51.9766571,-30.2505119991778,0.0 -51.9766737,-30.2503102991778,0.0 -51.9777691,-30.2485848991778,0.0 -51.9798082,-30.2480626991778,0.0 -51.9849976,-30.2488873991778,0.0 -51.9859673,-30.2506652991778,0.0 -51.9862307,-30.2511490991778,0.0 -51.9851288,-30.2549845991777,0.0 -51.9875208,-30.2585157991776,0.0 -51.9870908,-30.2610522991776,0.0 -51.9856006,-30.2617588991776,0.0 -51.9874593,-30.2644855991776,0.0 -51.9864095,-30.2662730991775,0.0 -51.9871542,-30.2696111991775,0.0 -51.98905,-30.2710810991774,0.0 -51.9899333,-30.2717658991774,0.0 -51.9925979,-30.2714279991774,0.0 -51.9989829,-30.2733300991774,0.0 -51.9975372,-30.2761928991774,0.0 -51.9944313,-30.2792014991773,0.0 -51.9969419,-30.2807774991773,0.0 -51.99563,-30.2849713991772,0.0 -51.9959611,-30.2872976991772,0.0 -51.9972549,-30.2878882991772,0.0 -52.0005732,-30.2870182991772,0.0 -52.0039104,-30.2900892991771,0.0 -52.005723,-30.2907319991771,0.0 -52.0082838,-30.2897933991771,0.0 -52.0137864,-30.2932027991771,0.0 -52.0091284,-30.298211799177,0.0 -52.0070459,-30.299186499177,0.0 -52.0077268,-30.300887699177,0.0 -52.0110685,-30.3041831991769,0.0 -52.0075957,-30.3064434991769,0.0 -52.0076354,-30.3079274991768,0.0 -52.011256,-30.3132282991768,0.0 -52.0109699,-30.3154467991767,0.0 -52.0122955,-30.3169025991767,0.0 -52.0128888,-30.3216630991766,0.0 -52.0140493,-30.3236276991766,0.0 -52.0134847,-30.3261991991766,0.0 -52.0178954,-30.3295999991765,0.0 -52.0254995,-30.3310792991765,0.0 -52.0258255,-30.3327660991765,0.0 -52.0239882,-30.3344499991764,0.0 -52.0241854,-30.3351986991764,0.0 -52.0323187,-30.3462265991762,0.0 -52.0301243,-30.3524357991761,0.0 -52.0306904,-30.3541414991761,0.0 -52.0338676,-30.3554291991761,0.0 -52.0342058,-30.358442699176,0.0 -52.0357383,-30.361456999176,0.0 -52.033194,-30.3659591991759,0.0 -52.0318343,-30.3710428991758,0.0 -52.0323158,-30.3730763991758,0.0 -52.0305843,-30.3744868991758,0.0 -52.0333385,-30.3841990991756,0.0 -52.0370918,-30.3974278991754,0.0 -52.0681643,-30.4014376991754,0.0 -52.0963198,-30.4050649991753,0.0 -52.1587231,-30.4427262991747,0.0 -52.1609407,-30.4379661991748,0.0 -52.1627014,-30.4341852991748,0.0 -52.1638708,-30.4293950991749,0.0 -52.1688744,-30.426148499175,0.0 -52.1702122,-30.423191299175,0.0 -52.1735576,-30.421476899175,0.0 -52.1756333,-30.4137565991752,0.0 -52.1751096,-30.4130385991752,0.0 -52.175359,-30.4105999991752,0.0 -52.1743887,-30.4082641991752,0.0 -52.176682,-30.4045464991753,0.0 -52.1785514,-30.4031936991753,0.0 -52.1785768,-30.4017132991753,0.0 -52.1770066,-30.3994565991754,0.0 -52.1787565,-30.3968585991754,0.0 -52.1779801,-30.3929346991755,0.0 -52.1794989,-30.3926844991755,0.0 -52.1802551,-30.3914134991755,0.0 -52.1789053,-30.3896207991755,0.0 -52.1797864,-30.3863837991756,0.0 -52.1786572,-30.3848791991756,0.0 -52.1780364,-30.3782357991757,0.0 -52.177122,-30.3769370991757,0.0 -52.1749975,-30.3767576991758,0.0 -52.1709566,-30.3705318991759,0.0 -52.1719933,-30.363354299176,0.0 -52.1665518,-30.360865799176,0.0 -52.1655841,-30.3551364991761,0.0 -52.163616,-30.3501199991762,0.0 -52.1640662,-30.3465631991762,0.0 -52.162034,-30.3451015991763,0.0 -52.1589288,-30.3455070991762,0.0 -52.1584704,-30.3428753991763,0.0 -52.1600793,-30.3411656991763,0.0 -52.1593472,-30.3391000991763,0.0 -52.1602322,-30.3378265991764,0.0 -52.1535283,-30.3345846991764,0.0 -52.1535182,-30.3337945991764,0.0 -52.1580002,-30.3304389991765,0.0 -52.1586984,-30.3258079991766,0.0 -52.1600625,-30.3254348991766,0.0 -52.1631941,-30.3222431991766,0.0 -52.162591,-30.3214801991766,0.0 -52.1587171,-30.3165798991767,0.0 -52.1626511,-30.3134507991768,0.0 -52.1656254,-30.3131534991768,0.0 -52.1672551,-30.3107341991768,0.0 -52.1645064,-30.3092535991768,0.0 -52.1648498,-30.3066187991769,0.0 -52.1672496,-30.3066144991769,0.0 -52.1694171,-30.3080354991768,0.0 -52.1711249,-30.3071132991769,0.0 -52.1714322,-30.299579199177,0.0 -52.1726193,-30.295723299177,0.0 -52.1703961,-30.2927820991771,0.0 -52.1718086,-30.2916203991771,0.0 -52.1729726,-30.2886118991772,0.0 -52.1706863,-30.2841483991772,0.0 -52.1732611,-30.2812920991773,0.0 -52.1746604,-30.2809463991773,0.0 -52.1770753,-30.2769442991774,0.0 -52.1759989,-30.2752329991774,0.0 -52.1729349,-30.2771832991773,0.0 -52.1704216,-30.2739863991774,0.0 -52.1692175,-30.2740128991774,0.0 -52.1676867,-30.2753414991774,0.0 -52.1659807,-30.2747990991774,0.0 -52.1663978,-30.2716511991774,0.0 -52.1650231,-30.2653732991775,0.0 -52.1657363,-30.2632377991776,0.0 -52.1642151,-30.2617662991776,0.0 -52.1656107,-30.2593689991776,0.0 -52.1653315,-30.2581754991777,0.0 -52.1664754,-30.2553958991777,0.0 -52.1656341,-30.2542540991777,0.0 -52.1643875,-30.2540634991777,0.0 -52.1600846,-30.2553738991777,0.0 -52.1588737,-30.2542710991777,0.0 -52.1594387,-30.2505553991778,0.0 -52.1561043,-30.2475882991778,0.0 -52.1519789,-30.2467004991778,0.0 -52.1518613,-30.2422140991779,0.0 -52.1464673,-30.2402836991779,0.0 -52.1453899,-30.236518699178,0.0 -52.1410614,-30.2325379991781,0.0 -52.1400503,-30.2325379991781,0.0 -52.1390338,-30.2321250991781,0.0 -52.1384938,-30.2313785991781,0.0 -52.1385891,-30.2292026991781,0.0 -52.136291,-30.2276039991782,0.0 -52.1369606,-30.2211806991783,0.0 -52.1359811,-30.2172077991783,0.0 -52.140026,-30.2137994991784,0.0 -52.1543291,-30.2105195991784,0.0 -52.1574945,-30.2070450991785,0.0 -52.1607451,-30.2057361991785,0.0 -52.1613536,-30.2050159991785,0.0 -52.1609546,-30.2025113991786,0.0 -52.1629248,-30.1996142991786,0.0 -52.1621137,-30.1968703991787,0.0 -52.1587594,-30.1913229991787,0.0 -52.1561155,-30.1933709991787,0.0 -52.1296922,-30.1969396991786,0.0 -52.1084387,-30.1906531991787,0.0 -52.1030032,-30.1959486991787,0.0 -52.0919113,-30.2000164991786,0.0 -52.0863803,-30.2131240991784,0.0 -52.0796494,-30.2165202991783,0.0 -52.077097,-30.2143879991784,0.0 -52.0729484,-30.2133521991784,0.0 -52.0691363,-30.2093515991784,0.0 -52.0637927,-30.2071372991785,0.0 -52.0577608,-30.2058648991785,0.0 -52.0522268,-30.2056439991785,0.0 -52.0427219,-30.2088743991785,0.0 -52.0349208,-30.2095557991784,0.0 -52.0175901,-30.2024060991786,0.0 -52.0089332,-30.2009357991786,0.0 -52.0034089,-30.2015344991786,0.0 -52.0016847,-30.2013260991786,0.0 -51.9935324,-30.2003404991786,0.0</coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</MultiGeometry>
+</Placemark>
+</Folder>
+</Document></kml>
