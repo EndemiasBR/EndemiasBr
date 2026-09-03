@@ -38,7 +38,7 @@ CHAVES_NAVEGACAO_PERSISTENTE = (
 )
 
 
-st.mast.markdown(
+st.markdown(
     """
     <style>
     /* Sidebar - Visual Moderno com Gradiente */
@@ -247,15 +247,26 @@ st.mast.markdown(
 )
 
 def conectar_banco():
+    """Conecta ao PostgreSQL usando variáveis de ambiente / Secrets."""
     try:
-        return psycopg2.connect(
-            host="aws-0-sa-east-1.pooler.supabase.com",
-            database="postgres",
-            user="postgres.gwperarqwoflsmowaxgs",
-            password=st.secrets["DB_PASSWORD"],
-            port="6543",
-            client_encoding="UTF8"
+        host = os.getenv("DB_HOST")
+        port = int(os.getenv("DB_PORT", "5432"))
+        dbname = os.getenv("DB_NAME")
+        user = os.getenv("DB_USER")
+        password = os.getenv("DB_PASSWORD")
+
+        if not all([host, port, dbname, user, password]):
+            st.error("Configuração incompleta do banco de dados.")
+            return None
+
+        conn = psycopg2.connect(
+            host=host,
+            port=port,
+            dbname=dbname,
+            user=user,
+            password=password
         )
+        return conn
     except Exception as e:
         st.error(f"Erro ao conectar ao banco de dados: {e}")
         return None
@@ -3207,9 +3218,7 @@ elif st.session_state.pagina == "Sisloc":
             estado_id = None; df_nucleos = pd.DataFrame(); df_regionais = pd.DataFrame(); df_mun = pd.DataFrame(); nucleo_id = None
             if estado_sel != "Selecione...":
                 estado_id = int(df_estados_view[df_estados_view["nome"] == estado_sel].iloc[0]["id"])
-                info_est = carregar_estado_info(conn, estado_id)
-                if info_est:
-                    st.markdown(f'<div class="auth-box"><b>Estado:</b> {info_est["nome"]} ({info_est["sigla"]})<br><b>Governador:</b> {info_est["governador"]}<br><b>Secretário(a):</b> {info_est["secretario_saude"]}</div>', unsafe_allow_html=True)
+               
                 try:
                     df_nucleos = pd.read_sql("SELECT id, nome FROM regionais_saude WHERE estado_id=%s AND (parent_id IS NULL OR parent_id=0) ORDER BY nome", conn, params=(estado_id,))
                 except Exception:
