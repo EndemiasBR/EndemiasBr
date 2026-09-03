@@ -6,6 +6,10 @@ import os
 import re
 import hashlib
 import base64
+import secrets
+import json
+from datetime import timedelta, datetime
+import extra_streamlit_components as stx
 
 # =========================================================
 # CONTROLE CENTRAL DA SIMULAÇÃO
@@ -15,105 +19,232 @@ MODO_SIMULACAO = True
 
 st.set_page_config(page_title="EndemiasBR", page_icon="mosquito", layout="wide", initial_sidebar_state="expanded")
 
-st.markdown("""
-<style>
+# =========================================================
+# SESSÃO PERSISTENTE DE LOGIN
+# =========================================================
+# O login não depende apenas de st.session_state. Um token aleatório
+# é mantido em cookie e sua versão com hash é guardada no Supabase.
+# Assim, F5/atualização da página não obriga novo login.
+# A senha nunca é armazenada no cookie.
+COOKIES = stx.CookieManager()
+NOME_COOKIE_SESSAO = "endemiasbr_session"
+DIAS_SESSAO = 30
+NOME_COOKIE_NAVEGACAO = "endemiasbr_navigation"
+CHAVES_NAVEGACAO_PERSISTENTE = (
+    "pagina", "modulo", "modulo_inicio", "config_aberta", "atividades_aberta",
+    "atividade_aba", "contato_aberto", "contato_aba", "menu_sisloc", "pcdch_menu",
+    "pcdch_sub", "pce_menu", "pce_group", "pce_rel_sub", "pce_sub", "cad_aux_menu",
+    "cad_aux_item", "pcl_doenca", "pcl_menu", "pcl_sub",
+)
+
+
+st.markdown(
+    """
+    <style>
+    /* Sidebar - Visual Moderno com Gradiente */
     [data-testid="stSidebar"] {
         background: linear-gradient(180deg, #005f3b 0%, #00452c 100%);
         border-right: 1px solid rgba(255,255,255,0.08);
     }
-    [data-testid="stSidebar"] * { color: white !important; }
-    [data-testid="stSidebar"] .stButton > button {
-        background: linear-gradient(135deg, #00a63c, #008f36) !important;
+    [data-testid="stSidebar"] * {
         color: white !important;
-        border: 1px solid #ffd700 !important;
-        border-radius: 9px !important;
-        height: 44px !important;
+    }
+    
+    /* Botoes principais - Gradiente moderno com sombra 3D */
+    [data-testid="stSidebar"] .stButton > button {
+        background: linear-gradient(135deg, #00c853, #009688) !important;
+        color: white !important;
+        border: 1.5px solid #ffd700 !important;
+        border-radius: 10px !important;
+        height: 48px !important;
         font-weight: 700 !important;
         text-align: left !important;
-        padding-left: 15px !important;
-        box-shadow: 0 1px 2px rgba(0,0,0,0.12) !important;
-        transition: all 0.15s ease;
-        margin-bottom: 5px !important;
+        padding-left: 18px !important;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.15), 0 2px 4px rgba(0,0,0,0.1) !important;
+        transition: all 0.2s ease !important;
+        margin-bottom: 6px !important;
+        font-size: 14px !important;
     }
+    
+    /* Hover effect - Levanta e brilha */
     [data-testid="stSidebar"] .stButton > button:hover {
-        background: linear-gradient(135deg, #00b944, #009c3b) !important;
-        border-color: #ffe45c !important;
+        background: linear-gradient(135deg, #00e676, #00bfa5) !important;
+        border-color: #ffe082 !important;
         color: white !important;
-        transform: translateY(-1px);
+        transform: translateY(-2px) !important;
+        box-shadow: 0 6px 14px rgba(0,0,0,0.2), 0 3px 6px rgba(0,0,0,0.12) !important;
     }
+    
+    /* Submenus - Hierarquia visual clara */
     [data-testid="stSidebar"] .sidebar-submenu .stButton > button {
         background: linear-gradient(135deg, #008f36, #007b31) !important;
-        height: 38px !important;
+        height: 40px !important;
         font-size: 13px !important;
         font-weight: 600 !important;
         border-color: rgba(255,215,0,0.75) !important;
-        padding-left: 12px !important;
-        margin-bottom: 4px !important;
+        padding-left: 14px !important;
+        margin-bottom: 5px !important;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1) !important;
     }
+    
+    [data-testid="stSidebar"] .sidebar-submenu .stButton > button:hover {
+        background: linear-gradient(135deg, #00a63c, #008f36) !important;
+        border-color: #ffd700 !important;
+        transform: translateY(-1px) !important;
+    }
+    
+    /* Elementos da sidebar */
     .sidebar-brand {
-        font-size: 23px; font-weight: 800; letter-spacing: 0.3px;
-        padding: 6px 8px 2px 8px;
+        font-size: 24px;
+        font-weight: 800;
+        letter-spacing: 0.4px;
+        padding: 8px 10px 4px 10px;
+        color: #ffd700 !important;
+        text-shadow: 0 2px 4px rgba(0,0,0,0.3);
     }
+    
     .sidebar-user {
-        padding: 5px 8px 12px 8px;
-        border-bottom: 1px solid rgba(255,255,255,0.12);
-        margin-bottom: 12px;
-    }
-    .sidebar-user strong { display:block; font-size: 14px; }
-    .sidebar-user span { display:block; font-size: 11px; opacity: .72; margin-top: 3px; }
-    .sidebar-section {
-        font-size: 10px; font-weight: 800; letter-spacing: 1.2px;
-        opacity: .55; padding: 12px 12px 6px 12px;
-    }
-    .sidebar-submenu {
-        margin: 2px 0 8px 8px;
-        padding-left: 10px;
-        border-left: 2px solid rgba(255,215,0,0.65);
-    }
-    .sidebar-submenu .stButton > button {
-        height: 38px !important; font-size: 13px !important;
-        font-weight: 500 !important; opacity: .88;
-        padding-left: 10px !important;
-    }
-    .sidebar-module-active {
-        font-size: 18px; font-weight: 800;
         padding: 8px 10px 14px 10px;
-        border-bottom: 1px solid rgba(255,255,255,0.12);
-        margin-bottom: 10px;
+        border-bottom: 1px solid rgba(255,255,255,0.15);
+        margin-bottom: 14px;
+        background: rgba(255,255,255,0.05);
+        border-radius: 8px;
     }
-    .sidebar-spacer { min-height: 120px; }
+    
+    .sidebar-user strong {
+        display: block;
+        font-size: 15px;
+        font-weight: 700;
+    }
+    
+    .sidebar-user span {
+        display: block;
+        font-size: 12px;
+        opacity: 0.85;
+        margin-top: 4px;
+        color: #c8e6c9 !important;
+    }
+    
+    .sidebar-section {
+        font-size: 11px;
+        font-weight: 800;
+        letter-spacing: 1.4px;
+        opacity: 0.65;
+        padding: 14px 12px 8px 12px;
+        text-transform: uppercase;
+    }
+    
+    .sidebar-submenu {
+        margin: 4px 0 10px 10px;
+        padding-left: 12px;
+        border-left: 2px solid rgba(255,215,0,0.7);
+    }
+    
+    .sidebar-module-active {
+        font-size: 19px;
+        font-weight: 800;
+        padding: 10px 12px 16px 12px;
+        border-bottom: 1px solid rgba(255,255,255,0.15);
+        margin-bottom: 12px;
+        color: #ffd700 !important;
+    }
+    
+    .sidebar-spacer {
+        min-height: 140px;
+    }
+    
     .sidebar-footer-line {
-        height: 1px; background: rgba(255,255,255,0.12); margin: 8px 0 10px 0;
+        height: 1px;
+        background: rgba(255,255,255,0.15);
+        margin: 10px 0 12px 0;
     }
-    .main { background: linear-gradient(180deg, #f0fff4 0%, #ffffff 100%); }
-    h1, h2, h3 { color: #006B3F !important; }
+    
+    /* Area principal */
+    .main {
+        background: linear-gradient(180deg, #f0fff4 0%, #ffffff 100%);
+    }
+    
+    h1, h2, h3 {
+        color: #006B3F !important;
+    }
+    
     .module-header {
-        padding: 18px 24px; border-radius: 12px; margin-bottom: 20px;
-        background: linear-gradient(135deg, #006B3F, #009C3B); border-left: 6px solid #FFD700;
+        padding: 20px 26px;
+        border-radius: 14px;
+        margin-bottom: 22px;
+        background: linear-gradient(135deg, #006B3F, #009C3B);
+        border-left: 7px solid #FFD700;
+        box-shadow: 0 3px 8px rgba(0,0,0,0.12);
     }
-    .module-header h1 { color: white !important; margin: 0; font-size: 28px; }
-    .module-header p { margin: 4px 0 0 0; font-size: 15px; color: #FFD700 !important; }
+    
+    .module-header h1 {
+        color: white !important;
+        margin: 0;
+        font-size: 30px;
+        font-weight: 800;
+    }
+    
+    .module-header p {
+        margin: 6px 0 0 0;
+        font-size: 16px;
+        color: #FFE082 !important;
+    }
+    
     .card-header {
-        padding: 16px 10px; text-align: center; font-size: 22px; font-weight: 700; color: #1a1a1a;
-        border-radius: 12px 12px 0 0; background: linear-gradient(135deg, #FFD700, #F4C430);
-        border-bottom: 3px solid #006B3F;
+        padding: 18px 12px;
+        text-align: center;
+        font-size: 23px;
+        font-weight: 700;
+        color: #1a1a1a;
+        border-radius: 14px 14px 0 0;
+        background: linear-gradient(135deg, #FFD700, #F4C430);
+        border-bottom: 4px solid #006B3F;
     }
-    .card-subtitle { text-align: center; font-size: 16px; font-weight: 700; margin: 10px 0 6px 0; color: #006B3F; }
+    
+    .card-subtitle {
+        text-align: center;
+        font-size: 17px;
+        font-weight: 700;
+        margin: 12px 0 8px 0;
+        color: #006B3F;
+    }
+    
     .card-text {
-        text-align: justify; font-size: 14.5px; line-height: 1.55; color: #333; padding: 12px 14px;
-        border-radius: 0 0 12px 12px; min-height: 175px; background: linear-gradient(180deg, #e8f8ee, #c8ecd4);
-        border: 1px solid #a8d5b5; border-top: none; box-sizing: border-box;
+        text-align: justify;
+        font-size: 15px;
+        line-height: 1.6;
+        color: #333;
+        padding: 14px 16px;
+        border-radius: 0 0 14px 14px;
+        min-height: 180px;
+        background: linear-gradient(180deg, #e8f8ee, #c8ecd4);
+        border: 1px solid #a8d5b5;
+        border-top: none;
+        box-sizing: border-box;
     }
+    
     .auth-box {
-        background: #f7fbf8; border: 1px solid #c8e6d0; border-radius: 8px; padding: 12px 16px;
-        margin: 12px 0 18px 0; font-size: 14px; color: #333; line-height: 1.6;
+        background: #f7fbf8;
+        border: 1px solid #c8e6d0;
+        border-radius: 10px;
+        padding: 14px 18px;
+        margin: 14px 0 20px 0;
+        font-size: 15px;
+        color: #333;
+        line-height: 1.7;
     }
+    
     .diario-box {
-        background: #eef6f0; border: 1px solid #b7d9c2; border-radius: 10px;
-        padding: 14px 16px; margin: 10px 0 16px 0;
+        background: #eef6f0;
+        border: 1px solid #b7d9c2;
+        border-radius: 12px;
+        padding: 16px 18px;
+        margin: 12px 0 18px 0;
     }
-</style>
-""", unsafe_allow_html=True)
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
 
 def conectar_banco():
     try:
@@ -121,13 +252,99 @@ def conectar_banco():
             host="aws-0-sa-east-1.pooler.supabase.com",
             database="postgres",
             user="postgres.gwperarqwoflsmowaxgs",
-            password="Am2806or993",
+            password=st.secrets["DB_PASSWORD"],
             port="6543",
             client_encoding="UTF8"
         )
     except Exception as e:
-        st.error(f"Erro ao conectar: {e}")
+        st.error(f"Erro ao conectar ao banco de dados: {e}")
         return None
+
+
+def hash_token_sessao(token):
+    return hashlib.sha256(str(token).encode("utf-8")).hexdigest()
+
+
+def criar_sessao_persistente(usuario):
+    token = secrets.token_urlsafe(48)
+    conn = conectar_banco()
+    if not conn:
+        return None
+    cur = None
+    try:
+        cur = conn.cursor()
+        cur.execute("DELETE FROM sessoes_login WHERE expira_em <= CURRENT_TIMESTAMP")
+        cur.execute("INSERT INTO sessoes_login (responsavel_id, token_hash, expira_em) VALUES (%s, %s, %s)", (int(usuario["id"]), hash_token_sessao(token), datetime.utcnow() + timedelta(days=DIAS_SESSAO)))
+        conn.commit()
+        COOKIES.set(NOME_COOKIE_SESSAO, token, expires_at=datetime.now() + timedelta(days=DIAS_SESSAO), path="/", secure=True, same_site="lax")
+        return token
+    except Exception as e:
+        try: conn.rollback()
+        except Exception: pass
+        st.error(f"Não foi possível criar a sessão persistente: {e}")
+        return None
+    finally:
+        if cur: cur.close()
+        conn.close()
+
+
+def ler_cookie_sessao():
+    try:
+        token = st.context.cookies.get(NOME_COOKIE_SESSAO)
+        if token: return token
+    except Exception: pass
+    try:
+        token = COOKIES.get(NOME_COOKIE_SESSAO)
+        if token: return token
+    except Exception: pass
+    return None
+
+
+def restaurar_sessao_persistente():
+    token = ler_cookie_sessao()
+    if not token:
+        return None, None
+    conn = conectar_banco()
+    if not conn:
+        return None, token
+    cur = None
+    try:
+        cur = conn.cursor()
+        cur.execute("""
+            SELECT r.*, e.nome AS estado_nome, e.sigla AS estado_sigla
+            FROM sessoes_login s JOIN responsaveis r ON r.id = s.responsavel_id
+            LEFT JOIN estados e ON e.id = r.estado_id
+            WHERE s.token_hash = %s AND s.expira_em > CURRENT_TIMESTAMP AND r.ativo = TRUE
+            LIMIT 1
+        """, (hash_token_sessao(token),))
+        registro = cur.fetchone()
+        if not registro: return None, token
+        return dict(zip([d[0] for d in cur.description], registro)), token
+    except Exception as e:
+        print(f"Erro ao restaurar sessão: {e}")
+        return None, token
+    finally:
+        if cur: cur.close()
+        conn.close()
+
+
+def encerrar_sessao_persistente(token=None):
+    if token:
+        conn = conectar_banco()
+        if conn:
+            cur = None
+            try:
+                cur = conn.cursor()
+                cur.execute("DELETE FROM sessoes_login WHERE token_hash=%s", (hash_token_sessao(token),))
+                conn.commit()
+            except Exception:
+                try: conn.rollback()
+                except Exception: pass
+            finally:
+                if cur: cur.close()
+                conn.close()
+    try: COOKIES.delete(NOME_COOKIE_SESSAO)
+    except Exception: pass
 
 def garantir_tabela_colecoes_hidricas(conn):
     """Garante a tabela usada exclusivamente pelo cadastro PCE-102A."""
@@ -162,10 +379,10 @@ def hash_senha(senha, cpf):
     return hashlib.sha256((str(senha) + so_numeros(cpf)).encode("utf-8")).hexdigest()
 
 def senha_valida(senha):
-    if len(senha) < 8: return False, "Mínimo 8 caracteres."
-    if not re.search(r"[A-Z]", senha): return False, "Precisa de 1 letra maiúscula."
-    if not re.search(r"[0-9]", senha): return False, "Precisa de 1 número."
-    if not re.search(r"[^A-Za-z0-9]", senha): return False, "Precisa de 1 símbolo."
+    # O sistema aceita senha simples, conforme a regra definida para o EndemiasBR.
+    # Na primeira troca, apenas orienta o usuário a preferir uma senha mais forte.
+    if len(str(senha or "")) < 6:
+        return False, "A senha deve ter pelo menos 6 caracteres."
     return True, ""
 
 def buscar_usuario_por_cpf(cpf):
@@ -350,34 +567,88 @@ def mostrar_escopo_usuario(usuario):
     st.caption(texto)
 
 
+def garantir_tabela_responsavel_programas(conn):
+    """Garante a tabela de vínculos entre responsáveis e programas."""
+    cur = None
+    try:
+        cur = conn.cursor()
+        cur.execute("""
+            CREATE TABLE IF NOT EXISTS responsavel_programas (
+                id SERIAL PRIMARY KEY,
+                responsavel_id INTEGER NOT NULL REFERENCES responsaveis(id) ON DELETE CASCADE,
+                programa VARCHAR(20) NOT NULL,
+                esfera VARCHAR(20),
+                ativo BOOLEAN NOT NULL DEFAULT TRUE,
+                UNIQUE(responsavel_id, programa)
+            )
+        """)
+        cur.execute(
+            "ALTER TABLE responsavel_programas "
+            "ADD COLUMN IF NOT EXISTS esfera VARCHAR(20)"
+        )
+        cur.execute(
+            "ALTER TABLE responsavel_programas "
+            "ADD COLUMN IF NOT EXISTS ativo BOOLEAN NOT NULL DEFAULT TRUE"
+        )
+        conn.commit()
+        return True
+    except Exception as e:
+        try:
+            conn.rollback()
+        except Exception:
+            pass
+        st.error(f"Erro ao preparar os vínculos de responsáveis: {e}")
+        return False
+    finally:
+        if cur:
+            cur.close()
+
+
 def localizar_imagem_modulo(*palavras):
-    """Localiza automaticamente a imagem do módulo na pasta assets/imagens/img.
-    Aceita qualquer nome de arquivo que contenha uma das palavras informadas.
+    """Localiza imagens do módulo de forma recursiva e tolerante a
+    maiúsculas/minúsculas e acentos, inclusive em subpastas do projeto.
     """
+    import unicodedata
+
+    def normalizar(valor):
+        valor = str(valor).lower()
+        valor = unicodedata.normalize("NFKD", valor)
+        valor = "".join(ch for ch in valor if not unicodedata.combining(ch))
+        return valor
+
+    base = os.path.dirname(os.path.abspath(__file__))
     pastas = [
-        os.path.join(os.path.dirname(__file__), "assets"),
-        os.path.join(os.path.dirname(__file__), "imagens"),
-        os.path.join(os.path.dirname(__file__), "img"),
-        os.path.dirname(__file__),
+        os.path.join(base, "assets"),
+        os.path.join(base, "imagens"),
+        os.path.join(base, "img"),
+        base,
     ]
     extensoes = {".png", ".jpg", ".jpeg", ".webp"}
-    palavras_norm = [str(p).lower() for p in palavras]
+    palavras_norm = [normalizar(p) for p in palavras if str(p).strip()]
+
+    candidatos = []
+    vistos = set()
+
     for pasta in pastas:
         if not os.path.isdir(pasta):
             continue
-        try:
-            arquivos = sorted(os.listdir(pasta))
-        except Exception:
-            continue
-        for nome in arquivos:
-            caminho = os.path.join(pasta, nome)
-            if not os.path.isfile(caminho):
-                continue
-            if os.path.splitext(nome)[1].lower() not in extensoes:
-                continue
-            nome_norm = nome.lower()
-            if any(p in nome_norm for p in palavras_norm):
-                return caminho
+        for raiz, _, arquivos in os.walk(pasta):
+            for nome in sorted(arquivos):
+                caminho = os.path.join(raiz, nome)
+                caminho_real = os.path.realpath(caminho)
+                if caminho_real in vistos:
+                    continue
+                vistos.add(caminho_real)
+
+                if os.path.splitext(nome)[1].lower() not in extensoes:
+                    continue
+
+                nome_norm = normalizar(nome)
+                if any(p in nome_norm for p in palavras_norm):
+                    candidatos.append(caminho)
+
+    if candidatos:
+        return sorted(candidatos)[0]
     return None
 
 def caminho_imagem(*nomes):
@@ -978,6 +1249,46 @@ def garantir_tabelas_pcl(conn):
     finally:
         cur.close()
 
+
+def salvar_navegacao_persistente():
+    """Salva somente a rota da tela; não salva campos, dados pessoais ou credenciais."""
+    try:
+        rota = {chave: st.session_state.get(chave) for chave in CHAVES_NAVEGACAO_PERSISTENTE}
+        COOKIES.set(NOME_COOKIE_NAVEGACAO, json.dumps(rota, separators=(",", ":")), expires_at=datetime.now() + timedelta(days=DIAS_SESSAO), path="/", secure=True, same_site="lax")
+    except Exception:
+        pass
+
+
+def ler_navegacao_persistente():
+    valor = None
+    try: valor = st.context.cookies.get(NOME_COOKIE_NAVEGACAO)
+    except Exception: pass
+    if not valor:
+        try: valor = COOKIES.get(NOME_COOKIE_NAVEGACAO)
+        except Exception: pass
+    if not valor: return {}
+    try:
+        rota = json.loads(valor)
+        return rota if isinstance(rota, dict) else {}
+    except Exception:
+        return {}
+
+
+def restaurar_navegacao_persistente():
+    rota = ler_navegacao_persistente()
+    paginas_validas = {"Inicio", "Atividades", "Configuracao", "CentralAtividades", "CadastrosAuxiliares", "Responsaveis", "TrocarSenha", "Contato", "Sisloc", "PCDCh", "PCE", "PCL"}
+    if rota.get("pagina") not in paginas_validas:
+        return False
+    for chave in CHAVES_NAVEGACAO_PERSISTENTE:
+        if chave in rota:
+            st.session_state[chave] = rota[chave]
+    return True
+
+
+def limpar_navegacao_persistente():
+    try: COOKIES.delete(NOME_COOKIE_NAVEGACAO)
+    except Exception: pass
+
 for k, v in {
     "usuario": None,
     "pagina": "Inicio",
@@ -985,6 +1296,10 @@ for k, v in {
     "modulo_inicio": False,
     "forcar_troca_senha": False,
     "config_aberta": False,
+    "atividades_aberta": False,
+    "atividade_aba": "Gestão de Atividades",
+    "contato_aberto": False,
+    "contato_aba": "Inicio",
     "menu_sisloc": "Navegação Hierárquica",
     "pcdch_menu": "Cadastro",
     "pce_menu": None,
@@ -999,6 +1314,18 @@ for k, v in {
 }.items():
     if k not in st.session_state:
         st.session_state[k] = v
+
+# Na primeira execução desta sessão, tenta recuperar o login persistente.
+if st.session_state.usuario is None:
+    usuario_restaurado, token_restaurado = restaurar_sessao_persistente()
+    if usuario_restaurado is not None:
+        st.session_state.usuario = usuario_restaurado
+        st.session_state.session_token = token_restaurado
+        st.session_state.forcar_troca_senha = bool(usuario_restaurado.get("deve_trocar_senha"))
+        if not st.session_state.forcar_troca_senha:
+            if not restaurar_navegacao_persistente():
+                st.session_state.pagina = "Inicio"
+                st.session_state.modulo = None
 
 if st.session_state.usuario is None and not st.session_state.forcar_troca_senha:
     st.markdown('<div class="module-header"><h1>EndemiasBR</h1><p>Sistema de Apoio à Vigilância de Endemias</p></div>', unsafe_allow_html=True)
@@ -1024,6 +1351,7 @@ if st.session_state.usuario is None and not st.session_state.forcar_troca_senha:
                     u["nivel"] = "Federal"
                     st.session_state.usuario = u
                     st.session_state.forcar_troca_senha = False
+                    st.session_state.session_token = criar_sessao_persistente(u)
                     st.session_state.pagina = "Inicio"
                     st.rerun()
 
@@ -1038,6 +1366,7 @@ if st.session_state.usuario is None and not st.session_state.forcar_troca_senha:
                 else:
                     st.session_state.usuario = u
                     st.session_state.forcar_troca_senha = bool(u.get("deve_trocar_senha"))
+                    st.session_state.session_token = criar_sessao_persistente(u)
                     if not st.session_state.forcar_troca_senha:
                         st.session_state.pagina = "Inicio"
                     st.rerun()
@@ -1045,7 +1374,8 @@ if st.session_state.usuario is None and not st.session_state.forcar_troca_senha:
 
 if st.session_state.forcar_troca_senha and st.session_state.usuario:
     u = st.session_state.usuario
-    st.markdown('<div class="module-header"><h1>Troca de senha obrigatória</h1></div>', unsafe_allow_html=True)
+    st.markdown('<div class="module-header"><h1>Troca de senha obrigatória</h1><p>Este é seu primeiro acesso. Antes de continuar, crie uma nova senha.</p></div>', unsafe_allow_html=True)
+    st.info("🔐 Para maior segurança, recomendamos combinar letras maiúsculas e minúsculas, números e símbolos. Evite nomes, CPF, datas de nascimento e sequências fáceis de adivinhar.")
     n1 = st.text_input("Nova senha", type="password")
     n2 = st.text_input("Confirmar", type="password")
     if st.button("Salvar nova senha", type="primary"):
@@ -1110,6 +1440,78 @@ with st.sidebar:
         st.rerun()
 
     st.markdown("<div class='sidebar-section'>MÓDULOS</div>", unsafe_allow_html=True)
+
+    # ------------------------------------------------------
+    # ITENS ESPECIAIS ATIVOS — ficam logo abaixo de INÍCIO
+    # ------------------------------------------------------
+    especial_ativo = None
+    if st.session_state.get("atividades_aberta", False):
+        especial_ativo = "atividades"
+    elif st.session_state.get("contato_aberto", False):
+        especial_ativo = "contato"
+    elif st.session_state.get("config_aberta", False):
+        especial_ativo = "config"
+
+    if especial_ativo == "atividades":
+        if st.button("📋 ATIVIDADES", key="nav_atividades_top", use_container_width=True):
+            st.session_state.atividades_aberta = False
+            st.session_state.pagina = "Inicio"
+            st.rerun()
+        if st.button("Gestão de Atividades", key="nav_gestao_atividades_top", use_container_width=True):
+            st.session_state.atividade_aba = "Gestão de Atividades"
+            st.session_state.pagina = "CentralAtividades"
+            st.rerun()
+        if st.button("Recebimentos", key="nav_recebimentos_top", use_container_width=True):
+            st.session_state.atividade_aba = "Recebimentos"
+            st.session_state.pagina = "CentralAtividades"
+            st.rerun()
+        if st.button("Histórico", key="nav_historico_atividades_top", use_container_width=True):
+            st.session_state.atividade_aba = "Histórico"
+            st.session_state.pagina = "CentralAtividades"
+            st.rerun()
+
+    elif especial_ativo == "contato":
+        if st.button("📇 CONTATO", key="nav_contato_top", use_container_width=True):
+            st.session_state.contato_aberto = False
+            st.session_state.pagina = "Inicio"
+            st.rerun()
+        if st.button("🇧🇷 Federal", key="nav_contato_federal_top", use_container_width=True):
+            st.session_state.contato_aba = "Federal"
+            st.session_state.pagina = "Contato"
+            st.rerun()
+        if st.button("🏛️ Estadual", key="nav_contato_estadual_top", use_container_width=True):
+            st.session_state.contato_aba = "Estadual"
+            st.session_state.pagina = "Contato"
+            st.rerun()
+        if st.button("🏢 Núcleos", key="nav_contato_nucleos_top", use_container_width=True):
+            st.session_state.contato_aba = "Núcleos"
+            st.session_state.pagina = "Contato"
+            st.rerun()
+        if st.button("🏘️ Municipal", key="nav_contato_municipal_top", use_container_width=True):
+            st.session_state.contato_aba = "Municipal"
+            st.session_state.pagina = "Contato"
+            st.rerun()
+
+    elif especial_ativo == "config":
+        st.markdown("<div class='sidebar-section'>SISTEMA</div>", unsafe_allow_html=True)
+        if st.button("CONFIGURAÇÃO", key="nav_config_top", use_container_width=True):
+            st.session_state.config_aberta = False
+            st.session_state.pagina = "Inicio"
+            st.rerun()
+        st.markdown("<div class='sidebar-submenu'>", unsafe_allow_html=True)
+        if not usuario_simulacao:
+            if st.button("GESTÃO", key="config_cad_aux_top", use_container_width=True):
+                st.session_state.pagina = "CadastrosAuxiliares"
+                st.session_state.cad_aux_menu = "PCDCh"
+                st.session_state.cad_aux_item = "Desalojantes"
+                st.rerun()
+            if st.button("Responsáveis", key="config_responsaveis_top", use_container_width=True):
+                st.session_state.pagina = "Responsaveis"
+                st.rerun()
+        if st.button("Trocar minha senha", key="config_senha_top", use_container_width=True):
+            st.session_state.pagina = "TrocarSenha"
+            st.rerun()
+        st.markdown("</div>", unsafe_allow_html=True)
 
     # ------------------------------------------------------
     # MENU SISLOC
@@ -1441,6 +1843,15 @@ with st.sidebar:
             st.session_state.pce_group = None
             st.rerun()
 
+ # --------------------------------------------------
+    # BOTAO OFFLINE - NOVO
+    # --------------------------------------------------
+    if st.button("📱 OFFLINE", key="nav_offline", use_container_width=True):
+        st.session_state.modulo = None
+        st.session_state.pagina = "Offline"
+        salvar_navegacao_persistente()
+        st.rerun()
+
     # ------------------------------------------------------
     # NENHUM MODULO ABERTO
     # ------------------------------------------------------
@@ -1479,29 +1890,104 @@ with st.sidebar:
             st.rerun()
 
     # ------------------------------------------------------
-    # CONFIGURACAO
+    # ATIVIDADES
     # ------------------------------------------------------
-    st.markdown("<div class='sidebar-section'>SISTEMA</div>", unsafe_allow_html=True)
+    if especial_ativo != "atividades" and not st.session_state.get("atividades_aberta", False):
+        if st.button("📋 ATIVIDADES", key="nav_atividades", use_container_width=True):
+            st.session_state.modulo = None
+            st.session_state.config_aberta = False
+            st.session_state.contato_aberto = False
+            st.session_state.atividades_aberta = True
+            st.session_state.atividade_aba = "Gestão de Atividades"
+            st.session_state.pagina = "Atividades"
+            st.rerun()
+    elif especial_ativo != "atividades":
+        if st.button("📋 ATIVIDADES", key="nav_atividades", use_container_width=True):
+            st.session_state.atividades_aberta = False
+            st.session_state.pagina = "Inicio"
+            st.rerun()
 
-    if st.button("CONFIGURAÇÃO", key="nav_config", use_container_width=True):
-        st.session_state.modulo = None
-        st.session_state.config_aberta = not st.session_state.get("config_aberta", False)
-        st.session_state.pagina = "Configuracao" if st.session_state.config_aberta else "Inicio"
+        if st.button("Gestão de Atividades", key="nav_gestao_atividades", use_container_width=True):
+            st.session_state.atividade_aba = "Gestão de Atividades"
+            st.session_state.pagina = "CentralAtividades"
+            st.rerun()
+
+        if st.button("Recebimentos", key="nav_recebimentos", use_container_width=True):
+            st.session_state.atividade_aba = "Recebimentos"
+            st.session_state.pagina = "CentralAtividades"
+            st.rerun()
+
+        if st.button("Histórico", key="nav_historico_atividades", use_container_width=True):
+            st.session_state.atividade_aba = "Histórico"
+            st.session_state.pagina = "CentralAtividades"
+            st.rerun()
+
+    # ------------------------------------------------------
+    # CONTATO
+    # ------------------------------------------------------
+    if especial_ativo != "contato" and not st.session_state.get("contato_aberto", False):
+        if st.button("📇 CONTATO", key="nav_contato", use_container_width=True):
+            st.session_state.modulo = None
+            st.session_state.config_aberta = False
+            st.session_state.atividades_aberta = False
+            st.session_state.contato_aberto = True
+            st.session_state.contato_aba = "Inicio"
+            st.session_state.pagina = "Contato"
+            st.rerun()
+    elif especial_ativo != "contato":
+        if st.button("📇 CONTATO", key="nav_contato", use_container_width=True):
+            st.session_state.contato_aberto = False
+            st.session_state.pagina = "Inicio"
+            st.rerun()
+
+        if st.button("🇧🇷 Federal", key="nav_contato_federal", use_container_width=True):
+            st.session_state.contato_aba = "Federal"
+            st.session_state.pagina = "Contato"
+            st.rerun()
+
+        if st.button("🏛️ Estadual", key="nav_contato_estadual", use_container_width=True):
+            st.session_state.contato_aba = "Estadual"
+            st.session_state.pagina = "Contato"
+            st.rerun()
+
+        if st.button("🏢 Núcleos", key="nav_contato_nucleos", use_container_width=True):
+            st.session_state.contato_aba = "Núcleos"
+            st.session_state.pagina = "Contato"
+            st.rerun()
+
+        if st.button("🏘️ Municipal", key="nav_contato_municipal", use_container_width=True):
+            st.session_state.contato_aba = "Municipal"
+            st.session_state.pagina = "Contato"
+            st.rerun()
+
+    # ------------------------------------------------------
+    # CONFIGURAÇÃO
+    # ------------------------------------------------------
+    if especial_ativo != "config":
+        st.markdown("<div class='sidebar-section'>SISTEMA</div>", unsafe_allow_html=True)
+
+    if especial_ativo != "config" and st.button("CONFIGURAÇÃO", key="nav_config", use_container_width=True):
+        if st.session_state.get("config_aberta", False):
+            st.session_state.config_aberta = False
+            st.session_state.pagina = "Inicio"
+        else:
+            st.session_state.modulo = None
+            st.session_state.atividades_aberta = False
+            st.session_state.contato_aberto = False
+            st.session_state.config_aberta = True
+            st.session_state.pagina = "Configuracao"
         st.rerun()
 
-    if st.session_state.get("config_aberta", False):
+    if especial_ativo != "config" and st.session_state.get("config_aberta", False):
         st.markdown("<div class='sidebar-submenu'>", unsafe_allow_html=True)
         if not usuario_simulacao:
-            if st.button("Cadastros / Tabelas auxiliares", key="config_cad_aux", use_container_width=True):
+            if st.button("GESTÃO", key="config_cad_aux", use_container_width=True):
                 st.session_state.pagina = "CadastrosAuxiliares"
                 st.session_state.cad_aux_menu = "PCDCh"
                 st.session_state.cad_aux_item = "Desalojantes"
                 st.rerun()
             if st.button("Responsáveis", key="config_responsaveis", use_container_width=True):
                 st.session_state.pagina = "Responsaveis"
-                st.rerun()
-            if st.button("Autoridades", key="config_autoridades", use_container_width=True):
-                st.session_state.pagina = "Autoridades"
                 st.rerun()
         if st.button("Trocar minha senha", key="config_senha", use_container_width=True):
             st.session_state.pagina = "TrocarSenha"
@@ -1511,9 +1997,15 @@ with st.sidebar:
     st.markdown("<div class='sidebar-spacer'></div>", unsafe_allow_html=True)
     st.markdown("<div class='sidebar-footer-line'></div>", unsafe_allow_html=True)
     if st.button("SAIR", key="nav_sair", use_container_width=True):
+        encerrar_sessao_persistente(st.session_state.get("session_token"))
+        limpar_navegacao_persistente()
         for k in list(st.session_state.keys()):
             del st.session_state[k]
         st.rerun()
+
+
+# Guarda a rota atual de forma não sensível para restaurá-la após F5.
+salvar_navegacao_persistente()
 
 if st.session_state.pagina == "Inicio":
     imagem_inicio = localizar_imagem_modulo("endemiasbr", "endemia")
@@ -1527,187 +2019,810 @@ if st.session_state.pagina == "Inicio":
         st.success("Escopo: **Nacional** (cadastro e visualização)")
     elif usuario.get("estado_nome"):
         st.success(f"Cadastro: **{usuario['estado_nome']}** · Visualização: **todos os estados**")
-    conn = conectar_banco()
-    if conn:
-        nac = carregar_nacional(conn)
-        linhas = [f"<b>Presidente da República:</b> {nac['presidente']}", f"<b>Ministro da Saúde:</b> {nac['ministro_saude']}"]
-        estado_id = usuario.get("estado_id")
-        if estado_id is not None and not (isinstance(estado_id, float) and pd.isna(estado_id)):
-            info_est = carregar_estado_info(conn, int(estado_id))
-            if info_est:
-                linhas.append(f"<b>Governador ({info_est['sigla']}):</b> {info_est['governador']}")
-                linhas.append(f"<b>Secretário(a) Estadual de Saúde:</b> {info_est['secretario_saude']}")
-                if info_est["secretaria_nome"] and info_est["secretaria_nome"] != "—":
-                    linhas.append(f"<b>Secretaria:</b> {info_est['secretaria_nome']}")
-        mun_id = usuario.get("municipio_id")
-        if mun_id is not None and not (isinstance(mun_id, float) and pd.isna(mun_id)):
-            info_m = carregar_municipio_info(conn, int(mun_id))
-            if info_m:
-                linhas.append(f"<b>Prefeito(a):</b> {info_m['prefeito']}")
-                linhas.append(f"<b>Secretário(a) Municipal de Saúde:</b> {info_m['secretario_saude']}")
-        st.markdown(f'<div class="auth-box">{"<br>".join(linhas)}</div>', unsafe_allow_html=True)
-        conn.close()
+
+elif st.session_state.pagina == "Atividades":
+    imagem_atividades = localizar_imagem_modulo("atividades", "atividade")
+    if imagem_atividades:
+        st.image(imagem_atividades, use_container_width=True)
+
+    st.markdown(
+        """
+        <div class="module-header">
+            <h1>📋 Atividades</h1>
+            <p>Gestão, acompanhamento e histórico das atividades desenvolvidas.</p>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+    st.info("Selecione uma opção no menu lateral para acessar Gestão de Atividades, Recebimentos ou Histórico.")
+
 elif st.session_state.pagina == "Configuracao":
-    st.markdown('<div class="module-header"><h1>Configuração</h1><p>Administração e segurança do sistema</p></div>', unsafe_allow_html=True)
-    if usuario_simulacao:
-        st.info("Na simulação, esta conta utiliza apenas as rotinas de trabalho do nível Municipal.")
-        st.markdown("### Segurança")
-        st.caption("Altere sua senha de acesso.")
-        if st.button("Trocar minha senha", key="cfg_card_senha", use_container_width=True):
-            st.session_state.pagina = "TrocarSenha"
-            st.rerun()
-    else:
-        st.info("Escolha uma opção no menu Configuração, na lateral.")
-        col1, col2, col3 = st.columns(3)
-        with col1:
-            st.markdown("### Cadastros / Tabelas auxiliares")
-            st.caption("Cadastros de apoio usados pelos módulos do EndemiasBR.")
-            if st.button("Abrir Cadastros auxiliares", key="cfg_card_cad_aux", use_container_width=True):
-                st.session_state.pagina = "CadastrosAuxiliares"
-                st.session_state.cad_aux_menu = "PCDCh"
-                st.session_state.cad_aux_item = "Desalojantes"
-                st.rerun()
-        with col2:
-            st.markdown("### Responsáveis")
-            st.caption("Gerencie os usuários e permissões de acesso.")
-            if st.button("Abrir Responsáveis", key="cfg_card_resp", use_container_width=True):
-                st.session_state.pagina = "Responsaveis"
-                st.rerun()
-        with col2:
-            st.markdown("### Autoridades")
-            st.caption("Consulte e gerencie as autoridades institucionais.")
-            if st.button("Abrir Autoridades", key="cfg_card_aut", use_container_width=True):
-                st.session_state.pagina = "Autoridades"
-                st.rerun()
-        with col3:
-            st.markdown("### Segurança")
-            st.caption("Altere sua senha de acesso.")
-            if st.button("Trocar minha senha", key="cfg_card_senha", use_container_width=True):
-                st.session_state.pagina = "TrocarSenha"
-                st.rerun()
+    imagem_configuracao = localizar_imagem_modulo("configuracao", "configuracao")
+    if imagem_configuracao:
+        st.image(imagem_configuracao, use_container_width=True)
 
-elif st.session_state.pagina == "CadastrosAuxiliares":
-    st.markdown('<div class="module-header"><h1>Cadastros / Tabelas auxiliares</h1><p>Dados de apoio utilizados pelos módulos do EndemiasBR</p></div>', unsafe_allow_html=True)
-    conn = conectar_banco()
-    if not conn: st.stop()
+    st.markdown(
+        '<div class="module-header"><h1>Configuração</h1><p>Administração e segurança do sistema</p></div>',
+        unsafe_allow_html=True,
+    )
+    st.info("Selecione uma opção no menu lateral para acessar as configurações disponíveis.")
 
-    modulos_aux = ["PCDCh", "SISLOC", "PCE"]
-    modulo_aux = st.radio(
-        "Módulo",
-        modulos_aux,
-        horizontal=True,
-        key="cad_aux_menu"
+elif st.session_state.pagina == "CentralAtividades":
+
+    st.markdown(
+        '<div class="module-header">'
+        '<h1>📋 Central de Atividades</h1>'
+        '<p>Planejamento, recebimento, validação e acompanhamento das atividades</p>'
+        '</div>',
+        unsafe_allow_html=True
     )
 
-    st.markdown("---")
+    conn = conectar_banco()
 
-    if modulo_aux == "PCDCh":
-        itens_aux = [
-            "Desalojantes",
-            "Inseticidas",
-            "Triatomínios",
-        ]
-        item_aux = st.radio("Tabela", itens_aux, horizontal=True, key="cad_aux_item")
+    if not conn:
+        st.stop()
 
-        if item_aux == "Desalojantes":
-            st.subheader("Cadastro de Desalojantes")
-            st.caption("Produtos utilizados nas atividades de borrifação e/ou atendimento relacionado ao PCDCh. Os registros inativos deixam de aparecer nos formulários de lançamento.")
+    if not garantir_tabela_responsavel_programas(conn):
+        conn.close()
+        st.stop()
 
-            if not garantir_tabela_desalojantes(conn):
-                st.stop()
+    # ======================================================
+    # PROGRAMAS AOS QUAIS O USUÁRIO TEM ACESSO
+    # ======================================================
 
-            tab_lista, tab_novo, tab_situacao = st.tabs(["Lista", "Novo", "Ativar / Inativar"])
+    programas_validos = ["SISLOC", "PCDCh", "PCE", "PCL"]
 
-            with tab_lista:
-                try:
-                    df = pd.read_sql("SELECT id, nome, ativo, criado_em, atualizado_em FROM desalojantes ORDER BY nome", conn)
-                    if df.empty:
-                        st.info("Nenhum desalojante cadastrado.")
-                    else:
-                        df_show = df.copy()
-                        df_show["ativo"] = df_show["ativo"].apply(lambda x: "Ativo" if x else "Inativo")
-                        st.dataframe(df_show, use_container_width=True, hide_index=True)
-                except Exception as e:
-                    st.error(f"Erro ao listar desalojantes: {e}")
+    try:
+        df_programas = pd.read_sql(
+            """
+            SELECT programa
+            FROM responsavel_programas
+            WHERE responsavel_id = %s
+              AND ativo = TRUE
+            ORDER BY programa
+            """,
+            conn,
+            params=(int(usuario["id"]),)
+        )
 
-            with tab_novo:
-                nome = st.text_input("Nome do desalojante *", key="aux_des_nome")
-                if st.button("Salvar desalojante", type="primary", key="aux_des_salvar"):
-                    if not nome.strip():
-                        st.warning("Informe o nome do desalojante.")
-                    else:
-                        try:
-                            cur = conn.cursor()
-                            cur.execute("INSERT INTO desalojantes (nome, ativo) VALUES (%s, TRUE)", (nome.strip(),))
-                            conn.commit()
-                            cur.close()
-                            st.success(f"Desalojante **{nome.strip()}** cadastrado.")
-                            st.rerun()
-                        except Exception as e:
-                            try: conn.rollback()
-                            except Exception: pass
-                            st.error(f"Não foi possível cadastrar: {e}")
+        programas_usuario = (
+            df_programas["programa"].tolist()
+            if not df_programas.empty
+            else []
+        )
 
-            with tab_situacao:
-                try:
-                    df = pd.read_sql("SELECT id, nome, ativo FROM desalojantes ORDER BY nome", conn)
-                    if df.empty:
-                        st.info("Nenhum desalojante cadastrado.")
-                    else:
-                        opcoes = [
-                            f"#{int(r['id'])} — {r['nome']} [{'Ativo' if r['ativo'] else 'Inativo'}]"
-                            for _, r in df.iterrows()
-                        ]
-                        escolhido = st.selectbox("Desalojante", opcoes, key="aux_des_ed_sel")
-                        did = int(escolhido.split("—")[0].replace("#", "").strip())
-                        row = df[df["id"] == did].iloc[0]
-                        situacao = st.selectbox(
-                            "Situação",
-                            ["Ativo", "Inativo"],
-                            index=0 if row["ativo"] else 1,
-                            key="aux_des_ed_sit"
+    except Exception as e:
+        st.error(f"Erro ao carregar os programas do responsável: {e}")
+        conn.close()
+        st.stop()
+
+    # ======================================================
+    # IDENTIFICAÇÃO DA ESFERA
+    # ======================================================
+
+    esfera_atual = str(nivel or "").strip()
+
+    if esfera_atual == "Federal":
+        esfera_destino_padrao = "Estadual"
+
+    elif esfera_atual == "Estadual":
+        esfera_destino_padrao = "Regional"
+
+    elif esfera_atual in ["Regional", "Núcleo", "NRS"]:
+        esfera_destino_padrao = "Municipal"
+
+    else:
+        esfera_destino_padrao = None
+
+    # ======================================================
+    # CABEÇALHO DO USUÁRIO
+    # ======================================================
+
+    if programas_usuario:
+
+        nomes_programas = ", ".join(programas_usuario)
+
+        st.info(
+            f"Responsável: **{usuario['nome']}**  \n"
+            f"Esfera: **{esfera_atual}**  \n"
+            f"Programa(s): **{nomes_programas}**"
+        )
+
+    else:
+
+        st.warning(
+            "Nenhum programa foi vinculado a este responsável ainda. "
+            "O acesso aos programas será definido na área de Responsáveis."
+        )
+
+    # ======================================================
+    # CONTROLE DA ÁREA SELECIONADA NO MENU LATERAL
+    # ======================================================
+
+    atividade_aba = st.session_state.get(
+        "atividade_aba",
+        "Gestão de Atividades"
+    )
+
+    # ======================================================
+    # GESTÃO DE ATIVIDADES
+    # ======================================================
+
+    if atividade_aba == "Gestão de Atividades":
+
+        st.subheader("Gestão de Atividades")
+
+        if esfera_destino_padrao is None:
+
+            st.info(
+                "Na esfera Municipal, as atividades são recebidas "
+                "da estrutura regional responsável."
+            )
+
+        elif not programas_usuario:
+
+            st.warning(
+                "Este responsável ainda não possui nenhum programa vinculado."
+            )
+
+        else:
+
+            st.caption(
+                f"Defina atividades, critérios, rotinas e prazos "
+                f"para a esfera **{esfera_destino_padrao}**."
+            )
+
+            programa_selecionado = st.selectbox(
+                "Programa",
+                programas_usuario,
+                key="central_programa_gestao"
+            )
+
+            with st.form("form_nova_atividade"):
+
+                atividade = st.text_input(
+                    "Nome da atividade"
+                )
+
+                competencia = st.text_input(
+                    "Competência",
+                    placeholder="Ex.: Setembro/2026"
+                )
+
+                col1, col2 = st.columns(2)
+
+                with col1:
+                    data_inicio = st.date_input(
+                        "Data inicial"
+                    )
+
+                with col2:
+                    data_final = st.date_input(
+                        "Prazo final"
+                    )
+
+                criterios = st.text_area(
+                    "Critérios",
+                    placeholder=(
+                        "Informe os critérios que deverão ser "
+                        "observados na realização da atividade."
+                    ),
+                    height=120
+                )
+
+                orientacoes = st.text_area(
+                    "Orientações e rotinas",
+                    placeholder=(
+                        "Informe as orientações para execução "
+                        "da atividade."
+                    ),
+                    height=120
+                )
+
+                publicar = st.form_submit_button(
+                    "PUBLICAR ATIVIDADE",
+                    type="primary",
+                    use_container_width=True
+                )
+
+            if publicar:
+
+                if not atividade.strip():
+
+                    st.warning(
+                        "Informe o nome da atividade."
+                    )
+
+                elif data_final < data_inicio:
+
+                    st.warning(
+                        "A data final não pode ser anterior "
+                        "à data inicial."
+                    )
+
+                else:
+
+                    try:
+
+                        estado_id = usuario.get("estado_id")
+                        regional_id = usuario.get("regional_id")
+
+                        cur = conn.cursor()
+
+                        cur.execute(
+                            """
+                            INSERT INTO criterios_atividades (
+                                programa,
+                                atividade,
+                                esfera_origem,
+                                esfera_destino,
+                                estado_id,
+                                regional_id,
+                                competencia,
+                                data_inicio,
+                                data_final,
+                                criterios,
+                                orientacoes,
+                                criado_por,
+                                ativo
+                            )
+                            VALUES (
+                                %s, %s, %s, %s,
+                                %s, %s, %s, %s,
+                                %s, %s, %s, %s,
+                                TRUE
+                            )
+                            """,
+                            (
+                                programa_selecionado,
+                                atividade.strip(),
+                                esfera_atual,
+                                esfera_destino_padrao,
+                                int(estado_id)
+                                if estado_id is not None
+                                else None,
+                                int(regional_id)
+                                if regional_id is not None
+                                else None,
+                                competencia.strip()
+                                if competencia
+                                else None,
+                                data_inicio,
+                                data_final,
+                                criterios.strip()
+                                if criterios
+                                else None,
+                                orientacoes.strip()
+                                if orientacoes
+                                else None,
+                                int(usuario["id"])
+                            )
                         )
-                        if st.button("Salvar situação", type="primary", key="aux_des_ed_salvar"):
-                            cur = conn.cursor()
-                            cur.execute("UPDATE desalojantes SET ativo=%s, atualizado_em=CURRENT_TIMESTAMP WHERE id=%s", (situacao == "Ativo", did))
-                            conn.commit()
-                            cur.close()
-                            st.success("Situação atualizada.")
-                            st.rerun()
-                except Exception as e:
-                    st.error(f"Erro ao atualizar desalojante: {e}")
 
-        elif item_aux == "Inseticidas":
-            st.subheader("Inseticidas")
-            st.caption("O cadastro já utilizado pelo Diário e pelos lançamentos do PCDCh.")
-            st.info("Este cadastro já existe dentro de PCDCh → Cadastro → Inseticida. Vamos centralizá-lo nesta área nas próximas etapas, sem duplicar os dados.")
-            if st.button("Abrir cadastro de Inseticida", type="primary", key="aux_abrir_inseticida"):
-                st.session_state.modulo = "PCDCh"
-                st.session_state.pagina = "PCDCh"
-                st.session_state.pcdch_menu = "Cadastro"
-                st.session_state.pcdch_cad_sub = "Inseticida"
-                st.rerun()
+                        conn.commit()
 
-        elif item_aux == "Triatomínios":
-            st.subheader("Triatomínios")
-            st.caption("Espécies de triatomínios usadas no PCDCh.")
-            st.info("Este cadastro já existe dentro de PCDCh → Cadastro → Triatomínio. Vamos centralizá-lo nesta área nas próximas etapas, sem duplicar os dados.")
-            if st.button("Abrir cadastro de Triatomínio", type="primary", key="aux_abrir_triat"):
-                st.session_state.modulo = "PCDCh"
-                st.session_state.pagina = "PCDCh"
-                st.session_state.pcdch_menu = "Cadastro"
-                st.session_state.pcdch_cad_sub = "Triatomínio"
-                st.rerun()
+                        cur.close()
 
-    elif modulo_aux == "SISLOC":
-        st.subheader("Tabelas auxiliares do SISLOC")
-        st.info("A estrutura desta área será inserida na próxima etapa. Nenhum cadastro existente será duplicado.")
+                        st.success(
+                            "Atividade publicada com sucesso!"
+                        )
 
-    elif modulo_aux == "PCE":
-        st.subheader("Tabelas auxiliares do PCE")
-        st.info("A estrutura desta área será inserida na próxima etapa. Nenhum cadastro existente será duplicado.")
+                        st.rerun()
+
+                    except Exception as e:
+
+                        conn.rollback()
+
+                        st.error(
+                            f"Erro ao publicar atividade: {e}"
+                        )
+
+        st.markdown("---")
+
+        st.subheader("Atividades publicadas")
+
+        try:
+
+            if esfera_atual == "Federal":
+
+                sql_atividades = """
+                    SELECT
+                        id,
+                        programa,
+                        atividade,
+                        competencia,
+                        data_inicio,
+                        data_final,
+                        esfera_destino,
+                        ativo
+                    FROM criterios_atividades
+                    WHERE esfera_origem = %s
+                    ORDER BY criado_em DESC
+                """
+
+                params_atividades = (
+                    esfera_atual,
+                )
+
+            else:
+
+                estado_id = usuario.get("estado_id")
+
+                sql_atividades = """
+                    SELECT
+                        id,
+                        programa,
+                        atividade,
+                        competencia,
+                        data_inicio,
+                        data_final,
+                        esfera_destino,
+                        ativo
+                    FROM criterios_atividades
+                    WHERE esfera_origem = %s
+                      AND (
+                            estado_id = %s
+                            OR estado_id IS NULL
+                          )
+                    ORDER BY criado_em DESC
+                """
+
+                params_atividades = (
+                    esfera_atual,
+                    int(estado_id)
+                    if estado_id is not None
+                    else None
+                )
+
+            df_atividades = pd.read_sql(
+                sql_atividades,
+                conn,
+                params=params_atividades
+            )
+
+            if not df_atividades.empty:
+
+                if programas_usuario:
+                    df_atividades = df_atividades[
+                        df_atividades["programa"].isin(
+                            programas_usuario
+                        )
+                    ]
+
+                st.dataframe(
+                    df_atividades,
+                    use_container_width=True,
+                    hide_index=True
+                )
+
+            else:
+
+                st.info(
+                    "Nenhuma atividade publicada por esta esfera."
+                )
+
+        except Exception as e:
+
+            st.error(
+                f"Erro ao carregar atividades: {e}"
+            )
+
+    # ======================================================
+    # RECEBIMENTOS
+    # ======================================================
+
+    if atividade_aba == "Recebimentos":
+
+        st.subheader("📥 Recebimentos")
+
+        if not programas_usuario:
+
+            st.warning(
+                "Nenhum programa foi vinculado a este responsável."
+            )
+
+        else:
+
+            try:
+
+                placeholders = ",".join(
+                    ["%s"] * len(programas_usuario)
+                )
+
+                sql_recebimentos = f"""
+                    SELECT
+                        id,
+                        programa,
+                        atividade,
+                        competencia,
+                        status,
+                        origem_esfera,
+                        destino_esfera,
+                        data_envio,
+                        observacao
+                    FROM atividades_fluxo
+                    WHERE programa IN ({placeholders})
+                      AND destino_esfera = %s
+                    ORDER BY data_envio DESC NULLS LAST
+                """
+
+                params_recebimentos = (
+                    *programas_usuario,
+                    esfera_atual
+                )
+
+                df_recebimentos = pd.read_sql(
+                    sql_recebimentos,
+                    conn,
+                    params=params_recebimentos
+                )
+
+                if df_recebimentos.empty:
+
+                    st.info(
+                        "Nenhuma atividade aguardando recebimento."
+                    )
+
+                else:
+
+                    st.dataframe(
+                        df_recebimentos,
+                        use_container_width=True,
+                        hide_index=True
+                    )
+
+            except Exception as e:
+
+                st.error(
+                    f"Erro ao carregar recebimentos: {e}"
+                )
+
+    # ======================================================
+    # HISTÓRICO
+    # ======================================================
+
+    if atividade_aba == "Histórico":
+
+        st.subheader("📜 Histórico de tramitação")
+
+        try:
+
+            if programas_usuario:
+
+                placeholders = ",".join(
+                    ["%s"] * len(programas_usuario)
+                )
+
+                sql_historico = f"""
+                    SELECT
+                        h.id,
+                        f.programa,
+                        f.atividade,
+                        h.acao,
+                        h.esfera_origem,
+                        h.esfera_destino,
+                        h.observacao,
+                        h.data_acao
+                    FROM atividades_fluxo_historico h
+                    JOIN atividades_fluxo f
+                        ON f.id = h.atividade_fluxo_id
+                    WHERE f.programa IN ({placeholders})
+                    ORDER BY h.data_acao DESC
+                """
+
+                df_historico = pd.read_sql(
+                    sql_historico,
+                    conn,
+                    params=tuple(programas_usuario)
+                )
+
+                if df_historico.empty:
+
+                    st.info(
+                        "Ainda não existe histórico de tramitação."
+                    )
+
+                else:
+
+                    st.dataframe(
+                        df_historico,
+                        use_container_width=True,
+                        hide_index=True
+                    )
+
+            else:
+
+                st.info(
+                    "Nenhum programa vinculado a este responsável."
+                )
+
+        except Exception as e:
+
+            st.error(
+                f"Erro ao carregar histórico: {e}"
+            )
 
     conn.close()
+
+elif st.session_state.pagina == "CadastrosAuxiliares":
+    st.markdown('<div class="module-header"><h1>Responsáveis</h1><p>Gerenciamento dos responsáveis e seus vínculos com os programas do EndemiasBR</p></div>', unsafe_allow_html=True)
+    conn = conectar_banco()
+    if not conn:
+        st.stop()
+
+    # ======================================================
+    # GESTÃO DE RESPONSÁVEIS
+    # ======================================================
+    modulos_aux = ["SISLOC", "PCDCh", "PCE", "PCL"]
+
+    try:
+        if not garantir_tabela_responsavel_programas(conn):
+            conn.close()
+            st.stop()
+
+        # --------------------------------------------------
+        # QUEM JÁ ESTÁ CADASTRADO
+        # --------------------------------------------------
+        st.subheader("Responsáveis já cadastrados")
+        st.caption("Selecione uma pessoa para visualizar os programas aos quais ela está vinculada.")
+
+        df_responsaveis = pd.read_sql(
+            "SELECT id, cpf, nome, nivel FROM responsaveis WHERE ativo=TRUE ORDER BY nome",
+            conn
+        )
+
+        if df_responsaveis.empty:
+            st.info("Ainda não existe nenhum responsável cadastrado.")
+        else:
+            opcoes_cadastrados = {
+                f"{row['nome']} — CPF {formatar_cpf(row['cpf'])}": int(row['id'])
+                for _, row in df_responsaveis.iterrows()
+            }
+            pessoa_escolhida = st.selectbox(
+                "Responsável cadastrado",
+                list(opcoes_cadastrados.keys()),
+                key="responsavel_visualizar"
+            )
+            responsavel_id_escolhido = opcoes_cadastrados[pessoa_escolhida]
+
+            df_vinculos = pd.read_sql(
+                """
+                SELECT programa
+                FROM responsavel_programas
+                WHERE responsavel_id=%s AND COALESCE(ativo, TRUE)=TRUE
+                ORDER BY programa
+                """,
+                conn,
+                params=(responsavel_id_escolhido,)
+            )
+            programas_vinculados = set(df_vinculos["programa"].tolist()) if not df_vinculos.empty else set()
+
+            st.markdown("**Programas vinculados:**")
+            st.caption("Marque ou desmarque os programas e depois clique em Salvar vínculos. Assim, uma pessoa já cadastrada pode receber novos programas.")
+            c1, c2, c3, c4 = st.columns(4)
+            programas_editados = []
+            for coluna, programa in zip([c1, c2, c3, c4], modulos_aux):
+                marcado = coluna.checkbox(
+                    programa,
+                    value=programa in programas_vinculados,
+                    key=f"vinculo_edit_{responsavel_id_escolhido}_{programa}"
+                )
+                if marcado:
+                    programas_editados.append(programa)
+
+            col_salvar_vinculos, col_excluir_resp = st.columns([1, 1])
+            with col_salvar_vinculos:
+                salvar_vinculos = st.button(
+                    "Salvar vínculos",
+                    type="primary",
+                    key=f"salvar_vinculos_{responsavel_id_escolhido}",
+                    use_container_width=True
+                )
+            with col_excluir_resp:
+                excluir_responsavel = st.button(
+                    "Excluir responsável selecionado",
+                    key=f"excluir_responsavel_{responsavel_id_escolhido}",
+                    use_container_width=True
+                )
+
+            if salvar_vinculos:
+                try:
+                    cur = conn.cursor()
+                    cur.execute(
+                        "UPDATE responsavel_programas SET ativo=FALSE WHERE responsavel_id=%s",
+                        (responsavel_id_escolhido,)
+                    )
+                    esfera_atual = df_responsaveis.loc[
+                        df_responsaveis["id"] == responsavel_id_escolhido, "nivel"
+                    ].iloc[0]
+                    for programa in programas_editados:
+                        cur.execute(
+                            """
+                            INSERT INTO responsavel_programas
+                                (responsavel_id, programa, esfera, ativo)
+                            VALUES (%s, %s, %s, TRUE)
+                            ON CONFLICT (responsavel_id, programa)
+                            DO UPDATE SET esfera=EXCLUDED.esfera, ativo=TRUE
+                            """,
+                            (responsavel_id_escolhido, programa, esfera_atual)
+                        )
+                    conn.commit()
+                    cur.close()
+                    st.success("Vínculos atualizados com sucesso.")
+                    st.rerun()
+                except Exception as e:
+                    try:
+                        conn.rollback()
+                    except Exception:
+                        pass
+                    st.error(f"Não foi possível atualizar os vínculos: {e}")
+
+            if excluir_responsavel:
+                try:
+                    cur = conn.cursor()
+                    cur.execute("DELETE FROM responsavel_programas WHERE responsavel_id=%s", (responsavel_id_escolhido,))
+                    cur.execute("DELETE FROM responsaveis WHERE id=%s", (responsavel_id_escolhido,))
+                    conn.commit()
+                    cur.close()
+                    st.success("Responsável excluído com sucesso.")
+                    st.rerun()
+                except Exception as e:
+                    try:
+                        conn.rollback()
+                    except Exception:
+                        pass
+                    st.error(f"Não foi possível excluir o responsável: {e}")
+
+        st.markdown("---")
+
+        # --------------------------------------------------
+        # CADASTRAR NOVO RESPONSÁVEL
+        # --------------------------------------------------
+        st.subheader("Cadastrar novo responsável")
+        st.caption("Informe os dados da pessoa e marque um ou mais programas aos quais ela ficará vinculada.")
+
+        with st.form(key="novo_responsavel_unificado", clear_on_submit=True):
+            col_cpf, col_nome = st.columns([1, 2])
+            with col_cpf:
+                cpf_novo = st.text_input("CPF *", key="novo_resp_cpf_unificado")
+            with col_nome:
+                nome_novo = st.text_input("Nome completo *", key="novo_resp_nome_unificado")
+
+            esfera_nova = st.selectbox(
+                "Esfera *",
+                ["Federal", "Estadual", "Núcleo", "Municipal"],
+                key="novo_resp_esfera_unificado"
+            )
+
+            st.markdown("**Programas aos quais o responsável será vinculado:**")
+            p1, p2, p3, p4 = st.columns(4)
+            with p1:
+                prog_sisloc = st.checkbox("SISLOC", key="novo_resp_prog_sisloc")
+            with p2:
+                prog_pcdch = st.checkbox("PCDCh", key="novo_resp_prog_pcdch")
+            with p3:
+                prog_pce = st.checkbox("PCE", key="novo_resp_prog_pce")
+            with p4:
+                prog_pcl = st.checkbox("PCL", key="novo_resp_prog_pcl")
+
+            st.caption('Senha inicial automática: **123456**. No primeiro acesso, o responsável será orientado a criar uma nova senha.')
+            salvar_novo_resp = st.form_submit_button("Cadastrar responsável", type="primary")
+
+            if salvar_novo_resp:
+                cpf_limpo = so_numeros(cpf_novo)
+                programas_escolhidos = [
+                    programa for programa, marcado in [
+                        ("SISLOC", prog_sisloc),
+                        ("PCDCh", prog_pcdch),
+                        ("PCE", prog_pce),
+                        ("PCL", prog_pcl),
+                    ] if marcado
+                ]
+
+                if not nome_novo.strip():
+                    st.warning("Informe o nome completo.")
+                elif len(cpf_limpo) != 11:
+                    st.warning("Informe um CPF com 11 números.")
+                elif not programas_escolhidos:
+                    st.warning("Selecione pelo menos um programa.")
+                else:
+                    try:
+                        cur = conn.cursor()
+                        cur.execute(
+                            "SELECT id FROM responsaveis WHERE regexp_replace(cpf, '[^0-9]', '', 'g')=%s LIMIT 1",
+                            (cpf_limpo,)
+                        )
+                        existente = cur.fetchone()
+
+                        if existente:
+                            cur.close()
+                            st.warning("Já existe uma pessoa cadastrada com este CPF. Selecione-a acima para consultar seus programas vinculados.")
+                        else:
+                            cur.execute(
+                                """
+                                INSERT INTO responsaveis
+                                    (cpf, nome, nivel, estado_id, ativo, senha_hash, deve_trocar_senha)
+                                VALUES (%s, %s, %s, NULL, TRUE, %s, TRUE)
+                                RETURNING id
+                                """,
+                                (
+                                    cpf_limpo,
+                                    nome_novo.strip(),
+                                    esfera_nova,
+                                    hash_senha("123456", cpf_limpo),
+                                )
+                            )
+                            novo_id = int(cur.fetchone()[0])
+
+                            for programa in programas_escolhidos:
+                                cur.execute(
+                                    """
+                                    INSERT INTO responsavel_programas
+                                        (responsavel_id, programa, esfera, ativo)
+                                    VALUES (%s, %s, %s, TRUE)
+                                    ON CONFLICT (responsavel_id, programa)
+                                    DO UPDATE SET esfera=EXCLUDED.esfera, ativo=TRUE
+                                    """,
+                                    (novo_id, programa, esfera_nova)
+                                )
+
+                            conn.commit()
+                            cur.close()
+                            st.success(
+                                f"{nome_novo.strip()} foi cadastrado(a) com sucesso. "
+                                f"Senha inicial: 123456. Programas vinculados: {', '.join(programas_escolhidos)}."
+                            )
+                            st.rerun()
+
+                    except Exception as e:
+                        try:
+                            conn.rollback()
+                        except Exception:
+                            pass
+                        st.error(f"Não foi possível cadastrar o responsável: {e}")
+
+    except Exception as e:
+        try:
+            conn.rollback()
+        except Exception:
+            pass
+        st.error(f"Erro ao gerenciar responsáveis: {e}")
+
+    conn.close()
+
+elif st.session_state.pagina == "Offline":
+    # Imagem do modulo Offline
+    imagem_offline = localizar_imagem_modulo("offline", "mobile", "celular")
+    if imagem_offline:
+        st.image(imagem_offline, use_container_width=True)
+
+    st.markdown(
+        '<div class="module-header">'
+        '<h1>📱 Modo Offline</h1>'
+        '<p>Trabalhe sem internet e sincronize depois</p>'
+        '</div>',
+        unsafe_allow_html=True,
+    )
+
+    st.info("""
+    ### 🚀 Módulo Offline em Desenvolvimento
+
+    **Funcionalidades previstas:**
+    - 📝 Criar registros sem internet (Diario PCDCh, Pesquisas, etc.)
+    - 💾 Armazenamento local no navegador
+    - 🔄 Sincronizar quando voltar online
+    - 📋 Ver histórico de registros offline
+
+    **Como usar:**
+    1. Acesse o módulo offline antes de sair de casa (com internet)
+    2. Preencha os formulá¡´rios no campo (sem internet)
+    3. Ao retornar, clique em "Sincronizar Todos"
+    4. Os dados serão enviados ao banco de dados
+
+    ---
+
+    *Em breve: integração completa com offline_utils.py e offline.py*
+    """)
 
 elif st.session_state.pagina == "TrocarSenha":
     st.subheader("Trocar minha senha")
@@ -1745,64 +2860,330 @@ elif st.session_state.pagina == "Responsaveis":
             st.error(f"Erro: {e}")
         conn.close()
 
-elif st.session_state.pagina == "Autoridades":
-    st.markdown('<div class="module-header"><h1>Autoridades</h1></div>', unsafe_allow_html=True)
+elif st.session_state.pagina == "Contato":
+    contato_aba = st.session_state.get("contato_aba", "Inicio")
+
+    # A imagem é apenas a apresentação inicial do módulo.
+    # Ao selecionar uma esfera na lateral, ela desaparece e fica somente o conteúdo escolhido.
+    if contato_aba == "Inicio":
+        imagem_contato = localizar_imagem_modulo("contato", "contato")
+        if imagem_contato:
+            st.image(imagem_contato, use_container_width=True)
+
+    st.markdown(
+        '<div class="module-header">'
+        '<h1>📇 Contato</h1>'
+        '<p>Contatos institucionais por esfera de atuação</p>'
+        '</div>',
+        unsafe_allow_html=True,
+    )
+
+    if st.session_state.get("contato_aba", "Inicio") == "Inicio":
+        st.info("Selecione uma opção no menu lateral para consultar os contatos da esfera Federal, Estadual, dos Núcleos ou Municipal.")
+
     conn = conectar_banco()
-    if not conn: st.stop()
-    nac = carregar_nacional(conn)
-    if nivel == "Federal":
-        st.subheader("Nível Federal")
-        pres = st.text_input("Presidente da República", value=nac["presidente"] if nac["presidente"] != "—" else "")
-        mini = st.text_input("Ministro da Saúde", value=nac["ministro_saude"] if nac["ministro_saude"] != "—" else "")
-        if st.button("Salvar Federal", type="primary"):
+
+    if not conn:
+        st.stop()
+
+    # ======================================================
+    # FEDERAL
+    # ======================================================
+    if contato_aba == "Federal":
+
+        st.subheader("Esfera Federal")
+
+        nac = carregar_nacional(conn)
+
+        dados_federal = [
+            {
+                "Cargo": "Presidente da República",
+                "Nome": nac["presidente"] if nac["presidente"] != "—" else "Não informado",
+                "E-mail": "Não informado"
+            },
+            {
+                "Cargo": "Ministro da Saúde",
+                "Nome": nac["ministro_saude"] if nac["ministro_saude"] != "—" else "Não informado",
+                "E-mail": "Não informado"
+            }
+        ]
+
+        st.dataframe(
+            pd.DataFrame(dados_federal),
+            use_container_width=True,
+            hide_index=True
+        )
+
+    # ======================================================
+    # ESTADUAL
+    # ======================================================
+    elif contato_aba == "Estadual":
+
+        st.subheader("Esfera Estadual")
+
+        df_estados = carregar_estados_todos(conn)
+
+        if not df_estados.empty:
+
+            estado_contato = st.selectbox(
+                "Selecione o Estado",
+                df_estados["nome"].tolist(),
+                key="contato_estado"
+            )
+
+            estado_id_contato = int(
+                df_estados[
+                    df_estados["nome"] == estado_contato
+                ].iloc[0]["id"]
+            )
+
+            info_estado = carregar_estado_info(
+                conn,
+                estado_id_contato
+            )
+
+            dados_estadual = [
+                {
+                    "Cargo": "Governador",
+                    "Nome": info_estado["governador"]
+                    if info_estado and info_estado["governador"] != "—"
+                    else "Não informado",
+                    "E-mail": "Não informado"
+                },
+                {
+                    "Cargo": "Secretário Estadual de Saúde",
+                    "Nome": info_estado["secretario_saude"]
+                    if info_estado and info_estado["secretario_saude"] != "—"
+                    else "Não informado",
+                    "E-mail": "Não informado"
+                },
+                {
+                    "Cargo": "Coordenador do SISLOC",
+                    "Nome": "Não informado",
+                    "E-mail": "Não informado"
+                },
+                {
+                    "Cargo": "Coordenador do PCDCh",
+                    "Nome": "Não informado",
+                    "E-mail": "Não informado"
+                },
+                {
+                    "Cargo": "Coordenador do PCE",
+                    "Nome": "Não informado",
+                    "E-mail": "Não informado"
+                },
+                {
+                    "Cargo": "Coordenador do PCL",
+                    "Nome": "Não informado",
+                    "E-mail": "Não informado"
+                }
+            ]
+
+            st.dataframe(
+                pd.DataFrame(dados_estadual),
+                use_container_width=True,
+                hide_index=True
+            )
+
+    # ======================================================
+    # NÚCLEOS
+    # ======================================================
+    elif contato_aba == "Núcleos":
+
+        st.subheader("Núcleos de Saúde")
+
+        df_estados = carregar_estados_todos(conn)
+
+        if not df_estados.empty:
+
+            estado_nucleo = st.selectbox(
+                "Estado",
+                df_estados["nome"].tolist(),
+                key="contato_nucleo_estado"
+            )
+
+            estado_id_nucleo = int(
+                df_estados[
+                    df_estados["nome"] == estado_nucleo
+                ].iloc[0]["id"]
+            )
+
             try:
-                cur = conn.cursor()
-                cur.execute("SELECT id FROM config_nacional ORDER BY id LIMIT 1")
-                row = cur.fetchone()
-                if row:
-                    cur.execute("UPDATE config_nacional SET presidente=%s, ministro_saude=%s, atualizado_em=CURRENT_TIMESTAMP WHERE id=%s", (pres.strip() or None, mini.strip() or None, row[0]))
-                else:
-                    cur.execute("INSERT INTO config_nacional (presidente, ministro_saude) VALUES (%s,%s)", (pres.strip() or None, mini.strip() or None))
-                conn.commit(); cur.close(); st.success("Salvo!")
-            except Exception as e:
-                st.error(f"Erro: {e}")
-        st.markdown("---")
-    if nivel in ("Federal", "Estadual"):
-        st.subheader("Nível Estadual")
-        df_est = carregar_estados_cadastro(conn, usuario) if nivel == "Estadual" else carregar_estados_todos(conn)
-        if not df_est.empty:
-            est_nome = st.selectbox("Estado", df_est["nome"].tolist(), key="aut_est")
-            eid = int(df_est[df_est["nome"] == est_nome].iloc[0]["id"])
-            info = carregar_estado_info(conn, eid)
-            gov = st.text_input("Governador", value=(info["governador"] if info and info["governador"] != "—" else ""), key="aut_gov")
-            sec = st.text_input("Secretário(a) Estadual de Saúde", value=(info["secretario_saude"] if info and info["secretario_saude"] != "—" else ""), key="aut_sec")
-            if st.button("Salvar Estado", type="primary"):
-                try:
-                    cur = conn.cursor()
-                    cur.execute("UPDATE estados SET governador=%s, secretario_saude=%s WHERE id=%s", (gov.strip() or None, sec.strip() or None, eid))
-                    conn.commit(); cur.close(); st.success("Salvo!")
-                except Exception as e:
-                    st.error(f"Erro: {e}")
-    if nivel in ("Federal", "Estadual", "Municipal"):
-        st.subheader("Nível Municipal")
-        df_est2 = carregar_estados_cadastro(conn, usuario) if nivel != "Federal" else carregar_estados_todos(conn)
-        if not df_est2.empty:
-            est2 = st.selectbox("Estado (município)", df_est2["nome"].tolist(), key="aut_est2")
-            eid2 = int(df_est2[df_est2["nome"] == est2].iloc[0]["id"])
-            df_m = municipios_para_cadastro(conn, usuario, True, estado_id=eid2)
-            if not df_m.empty:
-                mun_n = st.selectbox("Município", df_m["nome"].tolist(), key="aut_mun")
-                mid = int(df_m[df_m["nome"] == mun_n].iloc[0]["id"])
-                info_m = carregar_municipio_info(conn, mid)
-                pref = st.text_input("Prefeito(a)", value=(info_m["prefeito"] if info_m and info_m["prefeito"] != "—" else ""), key="aut_pref")
-                sec_m = st.text_input("Secretário(a) Municipal", value=(info_m["secretario_saude"] if info_m and info_m["secretario_saude"] != "—" else ""), key="aut_secm")
-                if st.button("Salvar Município", type="primary"):
-                    try:
-                        cur = conn.cursor()
-                        cur.execute("UPDATE municipios SET prefeito=%s, secretario_saude=%s WHERE id=%s", (pref.strip() or None, sec_m.strip() or None, mid))
-                        conn.commit(); cur.close(); st.success("Salvo!")
-                    except Exception as e:
-                        st.error(f"Erro: {e}")
+
+                df_nucleos_contato = pd.read_sql(
+                    """
+                    SELECT id, nome
+                    FROM regionais_saude
+                    WHERE estado_id=%s
+                    AND (parent_id IS NULL OR parent_id=0)
+                    ORDER BY nome
+                    """,
+                    conn,
+                    params=(estado_id_nucleo,)
+                )
+
+            except Exception:
+
+                df_nucleos_contato = pd.DataFrame()
+
+            if not df_nucleos_contato.empty:
+
+                nucleo_contato = st.selectbox(
+                    "Núcleo",
+                    df_nucleos_contato["nome"].tolist(),
+                    key="contato_nucleo"
+                )
+
+                dados_nucleo = [
+                    {
+                        "Cargo": "Coordenador de Saúde",
+                        "Nome": "Não informado",
+                        "E-mail": "Não informado"
+                    },
+                    {
+                        "Cargo": "Coordenador Administrativo",
+                        "Nome": "Não informado",
+                        "E-mail": "Não informado"
+                    },
+                    {
+                        "Cargo": "Coordenador do SISLOC",
+                        "Nome": "Não informado",
+                        "E-mail": "Não informado"
+                    },
+                    {
+                        "Cargo": "Coordenador do PCDCh",
+                        "Nome": "Não informado",
+                        "E-mail": "Não informado"
+                    },
+                    {
+                        "Cargo": "Coordenador do PCE",
+                        "Nome": "Não informado",
+                        "E-mail": "Não informado"
+                    },
+                    {
+                        "Cargo": "Coordenador do PCL",
+                        "Nome": "Não informado",
+                        "E-mail": "Não informado"
+                    }
+                ]
+
+                st.dataframe(
+                    pd.DataFrame(dados_nucleo),
+                    use_container_width=True,
+                    hide_index=True
+                )
+
+            else:
+
+                st.info("Nenhum núcleo encontrado para este estado.")
+
+    # ======================================================
+    # MUNICIPAL
+    # ======================================================
+    elif contato_aba == "Municipal":
+
+        st.subheader("Esfera Municipal")
+
+        df_estados = carregar_estados_todos(conn)
+
+        if not df_estados.empty:
+
+            estado_municipal = st.selectbox(
+                "Estado",
+                df_estados["nome"].tolist(),
+                key="contato_municipal_estado"
+            )
+
+            estado_id_municipal = int(
+                df_estados[
+                    df_estados["nome"] == estado_municipal
+                ].iloc[0]["id"]
+            )
+
+            df_municipios_contato = pd.read_sql(
+                """
+                SELECT m.id, m.nome
+                FROM municipios m
+                LEFT JOIN regionais_saude r
+                    ON r.id = m.regional_id
+                WHERE r.estado_id=%s
+                ORDER BY m.nome
+                """,
+                conn,
+                params=(estado_id_municipal,)
+            )
+
+            if not df_municipios_contato.empty:
+
+                municipio_contato = st.selectbox(
+                    "Município",
+                    df_municipios_contato["nome"].tolist(),
+                    key="contato_municipio"
+                )
+
+                municipio_id_contato = int(
+                    df_municipios_contato[
+                        df_municipios_contato["nome"] == municipio_contato
+                    ].iloc[0]["id"]
+                )
+
+                info_municipio = carregar_municipio_info(
+                    conn,
+                    municipio_id_contato
+                )
+
+                dados_municipal = [
+                    {
+                        "Cargo": "Prefeito",
+                        "Nome": info_municipio["prefeito"]
+                        if info_municipio and info_municipio["prefeito"] != "—"
+                        else "Não informado",
+                        "E-mail": "Não informado"
+                    },
+                    {
+                        "Cargo": "Secretário Municipal de Saúde",
+                        "Nome": info_municipio["secretario_saude"]
+                        if info_municipio and info_municipio["secretario_saude"] != "—"
+                        else "Não informado",
+                        "E-mail": "Não informado"
+                    },
+                    {
+                        "Cargo": "Digitador",
+                        "Nome": "Não informado",
+                        "E-mail": "Não informado"
+                    },
+                    {
+                        "Cargo": "Coordenador do SISLOC",
+                        "Nome": "Não informado",
+                        "E-mail": "Não informado"
+                    },
+                    {
+                        "Cargo": "Coordenador do PCDCh",
+                        "Nome": "Não informado",
+                        "E-mail": "Não informado"
+                    },
+                    {
+                        "Cargo": "Coordenador do PCE",
+                        "Nome": "Não informado",
+                        "E-mail": "Não informado"
+                    },
+                    {
+                        "Cargo": "Coordenador do PCL",
+                        "Nome": "Não informado",
+                        "E-mail": "Não informado"
+                    }
+                ]
+
+                st.dataframe(
+                    pd.DataFrame(dados_municipal),
+                    use_container_width=True,
+                    hide_index=True
+                )
+
+            else:
+
+                st.info("Nenhum município encontrado para este estado.")
+
     conn.close()
 
 elif st.session_state.pagina == "Sisloc":
