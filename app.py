@@ -3207,7 +3207,9 @@ elif st.session_state.pagina == "Sisloc":
             estado_id = None; df_nucleos = pd.DataFrame(); df_regionais = pd.DataFrame(); df_mun = pd.DataFrame(); nucleo_id = None
             if estado_sel != "Selecione...":
                 estado_id = int(df_estados_view[df_estados_view["nome"] == estado_sel].iloc[0]["id"])
-               
+                info_est = carregar_estado_info(conn, estado_id)
+                if info_est:
+                    st.markdown(f'<div class="auth-box"><b>Estado:</b> {info_est["nome"]} ({info_est["sigla"]})</div>', unsafe_allow_html=True)
                 try:
                     df_nucleos = pd.read_sql("SELECT id, nome FROM regionais_saude WHERE estado_id=%s AND (parent_id IS NULL OR parent_id=0) ORDER BY nome", conn, params=(estado_id,))
                 except Exception:
