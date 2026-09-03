@@ -3198,48 +3198,31 @@ elif st.session_state.pagina == "Sisloc":
     df_estados_view = carregar_estados_todos(conn)
     df_estados_cad = carregar_estados_cadastro(conn, usuario)
 
-   if menu_sisloc == "Navegação Hierárquica":
-    st.subheader("Navegação Hierárquica")
-    try:
-        c1, c2, c3, c4 = st.columns(4)
-        with c1:
-            estado_sel = st.selectbox("Estado", ["Selecione..."] + df_estados_view["nome"].tolist(), key="nav_estado")
-        estado_id = None
-        df_nucleos = pd.DataFrame()
-        df_regionais = pd.DataFrame()
-        df_mun = pd.DataFrame()
-        nucleo_id = None
-
-        if estado_sel != "Selecione...":
-            estado_id = int(df_estados_view[df_estados_view["nome"] == estado_sel].iloc[0]["id"])
-
-            try:
-                df_nucleos = pd.read_sql(
-                    "SELECT id, nome FROM regionais_saude WHERE estado_id=%s AND (parent_id IS NULL OR parent_id=0) ORDER BY nome",
-                    conn,
-                    params=(estado_id,)
-                )
-            except Exception:
-                df_nucleos = pd.read_sql(
-                    "SELECT id, nome FROM regionais_saude WHERE estado_id=%s ORDER BY nome",
-                    conn,
-                    params=(estado_id,)
-                )
-
-        with c2:
-            lista_n = (["Selecione..."] + df_nucleos["nome"].tolist()) if estado_id and not df_nucleos.empty else ["Selecione o estado primeiro"]
-            nucleo_sel = st.selectbox("Núcleo", lista_n, key="nav_nucleo")
-
-        if estado_id and nucleo_sel not in ["Selecione...", "Selecione o estado primeiro"]:
-            nucleo_id = int(df_nucleos[df_nucleos["nome"] == nucleo_sel].iloc[0]["id"])
-            try:
-                df_regionais = pd.read_sql(
-                    "SELECT id, nome FROM regionais_saude WHERE parent_id=%s ORDER BY nome",
-                    conn,
-                    params=(nucleo_id,)
-                )
-            except Exception:
-                df_regionais = pd.DataFrame()
+    if menu_sisloc == "Navegação Hierárquica":
+        st.subheader("Navegação Hierárquica")
+        try:
+            c1, c2, c3, c4 = st.columns(4)
+            with c1:
+                estado_sel = st.selectbox("Estado", ["Selecione..."] + df_estados_view["nome"].tolist(), key="nav_estado")
+            estado_id = None; df_nucleos = pd.DataFrame(); df_regionais = pd.DataFrame(); df_mun = pd.DataFrame(); nucleo_id = None
+            if estado_sel != "Selecione...":
+                estado_id = int(df_estados_view[df_estados_view["nome"] == estado_sel].iloc[0]["id"])
+                info_est = carregar_estado_info(conn, estado_id)
+                if info_est:
+                    st.markdown(f'<div class="auth-box"><b>Estado:</b> {info_est["nome"]} ({info_est["sigla"]})<br><b>Governador:</b> {info_est["governador"]}<br><b>Secretário(a):</b> {info_est["secretario_saude"]}</div>', unsafe_allow_html=True)
+                try:
+                    df_nucleos = pd.read_sql("SELECT id, nome FROM regionais_saude WHERE estado_id=%s AND (parent_id IS NULL OR parent_id=0) ORDER BY nome", conn, params=(estado_id,))
+                except Exception:
+                    df_nucleos = pd.read_sql("SELECT id, nome FROM regionais_saude WHERE estado_id=%s ORDER BY nome", conn, params=(estado_id,))
+            with c2:
+                lista_n = (["Selecione..."] + df_nucleos["nome"].tolist()) if estado_id and not df_nucleos.empty else ["Selecione o estado primeiro"]
+                nucleo_sel = st.selectbox("Núcleo", lista_n, key="nav_nucleo")
+            if estado_id and nucleo_sel not in ["Selecione...", "Selecione o estado primeiro"]:
+                nucleo_id = int(df_nucleos[df_nucleos["nome"] == nucleo_sel].iloc[0]["id"])
+                try:
+                    df_regionais = pd.read_sql("SELECT id, nome FROM regionais_saude WHERE parent_id=%s ORDER BY nome", conn, params=(nucleo_id,))
+                except Exception:
+                    df_regionais = pd.DataFrame()
             with c3:
                 lista_r = (["Todos do núcleo"] + df_regionais["nome"].tolist()) if nucleo_id and not df_regionais.empty else (["Todos do núcleo"] if nucleo_id else ["Selecione o núcleo"])
                 reg_sel = st.selectbox("Regional", lista_r, key="nav_regional")
