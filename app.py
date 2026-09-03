@@ -38,7 +38,7 @@ CHAVES_NAVEGACAO_PERSISTENTE = (
 )
 
 
-st.markdown(
+st.mast.markdown(
     """
     <style>
     /* Sidebar - Visual Moderno com Gradiente */
