@@ -284,7 +284,7 @@ def conectar_banco():
     """Conecta ao PostgreSQL hospedado no Supabase."""
     try:
         host = obter_secret("DB_HOST")
-        porta = obter_secret("DB_PORT", "6543")
+        porta = obter_secret("DB_PORT", "5432")
         banco = obter_secret("DB_NAME", "postgres")
         usuario = obter_secret("DB_USER")
         senha = obter_secret("DB_PASSWORD")
