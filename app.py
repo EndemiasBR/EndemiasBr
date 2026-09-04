@@ -17,7 +17,7 @@ import extra_streamlit_components as stx
 
 MODO_SIMULACAO = True
 
-st.set_page_config(page_title="EndemiasBR", page_icon="mosquito", layout="wide", initial_sidebar_state="collapsed")
+st.set_page_config(page_title="EndemiasBR", page_icon="mosquito", layout="wide", initial_sidebar_state="expanded")
 
 # =========================================================
 # SESSÃO PERSISTENTE DE LOGIN
@@ -38,123 +38,225 @@ CHAVES_NAVEGACAO_PERSISTENTE = (
 )
 
 
-st.markdown("""
-<style>
+st.markdown(
+    """
+    <style>
+    /* Sidebar - Visual Moderno com Gradiente */
     [data-testid="stSidebar"] {
         background: linear-gradient(180deg, #005f3b 0%, #00452c 100%);
         border-right: 1px solid rgba(255,255,255,0.08);
     }
-    [data-testid="stSidebar"] * { color: white !important; }
-    [data-testid="stSidebar"] .stButton > button {
-        background: linear-gradient(135deg, #00a63c, #008f36) !important;
+    [data-testid="stSidebar"] * {
         color: white !important;
-        border: 1px solid #ffd700 !important;
-        border-radius: 9px !important;
-        height: 44px !important;
+    }
+    
+    /* Botoes principais - Gradiente moderno com sombra 3D */
+    [data-testid="stSidebar"] .stButton > button {
+        background: linear-gradient(135deg, #00c853, #009688) !important;
+        color: white !important;
+        border: 1.5px solid #ffd700 !important;
+        border-radius: 10px !important;
+        height: 48px !important;
         font-weight: 700 !important;
         text-align: left !important;
-        padding-left: 15px !important;
-        box-shadow: 0 1px 2px rgba(0,0,0,0.12) !important;
-        transition: all 0.15s ease;
-        margin-bottom: 5px !important;
+        padding-left: 18px !important;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.15), 0 2px 4px rgba(0,0,0,0.1) !important;
+        transition: all 0.2s ease !important;
+        margin-bottom: 6px !important;
+        font-size: 14px !important;
     }
+    
+    /* Hover effect - Levanta e brilha */
     [data-testid="stSidebar"] .stButton > button:hover {
-        background: linear-gradient(135deg, #00b944, #009c3b) !important;
-        border-color: #ffe45c !important;
+        background: linear-gradient(135deg, #00e676, #00bfa5) !important;
+        border-color: #ffe082 !important;
         color: white !important;
-        transform: translateY(-1px);
+        transform: translateY(-2px) !important;
+        box-shadow: 0 6px 14px rgba(0,0,0,0.2), 0 3px 6px rgba(0,0,0,0.12) !important;
     }
+    
+    /* Submenus - Hierarquia visual clara */
     [data-testid="stSidebar"] .sidebar-submenu .stButton > button {
         background: linear-gradient(135deg, #008f36, #007b31) !important;
-        height: 38px !important;
+        height: 40px !important;
         font-size: 13px !important;
         font-weight: 600 !important;
         border-color: rgba(255,215,0,0.75) !important;
-        padding-left: 12px !important;
-        margin-bottom: 4px !important;
+        padding-left: 14px !important;
+        margin-bottom: 5px !important;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1) !important;
     }
+    
+    [data-testid="stSidebar"] .sidebar-submenu .stButton > button:hover {
+        background: linear-gradient(135deg, #00a63c, #008f36) !important;
+        border-color: #ffd700 !important;
+        transform: translateY(-1px) !important;
+    }
+    
+    /* Elementos da sidebar */
     .sidebar-brand {
-        font-size: 23px; font-weight: 800; letter-spacing: 0.3px;
-        padding: 6px 8px 2px 8px;
+        font-size: 24px;
+        font-weight: 800;
+        letter-spacing: 0.4px;
+        padding: 8px 10px 4px 10px;
+        color: #ffd700 !important;
+        text-shadow: 0 2px 4px rgba(0,0,0,0.3);
     }
+    
     .sidebar-user {
-        padding: 5px 8px 12px 8px;
-        border-bottom: 1px solid rgba(255,255,255,0.12);
-        margin-bottom: 12px;
-    }
-    .sidebar-user strong { display:block; font-size: 14px; }
-    .sidebar-user span { display:block; font-size: 11px; opacity: .72; margin-top: 3px; }
-    .sidebar-section {
-        font-size: 10px; font-weight: 800; letter-spacing: 1.2px;
-        opacity: .55; padding: 12px 12px 6px 12px;
-    }
-    .sidebar-submenu {
-        margin: 2px 0 8px 8px;
-        padding-left: 10px;
-        border-left: 2px solid rgba(255,215,0,0.65);
-    }
-    .sidebar-submenu .stButton > button {
-        height: 38px !important; font-size: 13px !important;
-        font-weight: 500 !important; opacity: .88;
-        padding-left: 10px !important;
-    }
-    .sidebar-module-active {
-        font-size: 18px; font-weight: 800;
         padding: 8px 10px 14px 10px;
-        border-bottom: 1px solid rgba(255,255,255,0.12);
-        margin-bottom: 10px;
+        border-bottom: 1px solid rgba(255,255,255,0.15);
+        margin-bottom: 14px;
+        background: rgba(255,255,255,0.05);
+        border-radius: 8px;
     }
-    .sidebar-spacer { min-height: 120px; }
+    
+    .sidebar-user strong {
+        display: block;
+        font-size: 15px;
+        font-weight: 700;
+    }
+    
+    .sidebar-user span {
+        display: block;
+        font-size: 12px;
+        opacity: 0.85;
+        margin-top: 4px;
+        color: #c8e6c9 !important;
+    }
+    
+    .sidebar-section {
+        font-size: 11px;
+        font-weight: 800;
+        letter-spacing: 1.4px;
+        opacity: 0.65;
+        padding: 14px 12px 8px 12px;
+        text-transform: uppercase;
+    }
+    
+    .sidebar-submenu {
+        margin: 4px 0 10px 10px;
+        padding-left: 12px;
+        border-left: 2px solid rgba(255,215,0,0.7);
+    }
+    
+    .sidebar-module-active {
+        font-size: 19px;
+        font-weight: 800;
+        padding: 10px 12px 16px 12px;
+        border-bottom: 1px solid rgba(255,255,255,0.15);
+        margin-bottom: 12px;
+        color: #ffd700 !important;
+    }
+    
+    .sidebar-spacer {
+        min-height: 140px;
+    }
+    
     .sidebar-footer-line {
-        height: 1px; background: rgba(255,255,255,0.12); margin: 8px 0 10px 0;
+        height: 1px;
+        background: rgba(255,255,255,0.15);
+        margin: 10px 0 12px 0;
     }
-    .main { background: linear-gradient(180deg, #f0fff4 0%, #ffffff 100%); }
-    h1, h2, h3 { color: #006B3F !important; }
+    
+    /* Area principal */
+    .main {
+        background: linear-gradient(180deg, #f0fff4 0%, #ffffff 100%);
+    }
+    
+    h1, h2, h3 {
+        color: #006B3F !important;
+    }
+    
     .module-header {
-        padding: 18px 24px; border-radius: 12px; margin-bottom: 20px;
-        background: linear-gradient(135deg, #006B3F, #009C3B); border-left: 6px solid #FFD700;
+        padding: 20px 26px;
+        border-radius: 14px;
+        margin-bottom: 22px;
+        background: linear-gradient(135deg, #006B3F, #009C3B);
+        border-left: 7px solid #FFD700;
+        box-shadow: 0 3px 8px rgba(0,0,0,0.12);
     }
-    .module-header h1 { color: white !important; margin: 0; font-size: 28px; }
-    .module-header p { margin: 4px 0 0 0; font-size: 15px; color: #FFD700 !important; }
+    
+    .module-header h1 {
+        color: white !important;
+        margin: 0;
+        font-size: 30px;
+        font-weight: 800;
+    }
+    
+    .module-header p {
+        margin: 6px 0 0 0;
+        font-size: 16px;
+        color: #FFE082 !important;
+    }
+    
     .card-header {
-        padding: 16px 10px; text-align: center; font-size: 22px; font-weight: 700; color: #1a1a1a;
-        border-radius: 12px 12px 0 0; background: linear-gradient(135deg, #FFD700, #F4C430);
-        border-bottom: 3px solid #006B3F;
+        padding: 18px 12px;
+        text-align: center;
+        font-size: 23px;
+        font-weight: 700;
+        color: #1a1a1a;
+        border-radius: 14px 14px 0 0;
+        background: linear-gradient(135deg, #FFD700, #F4C430);
+        border-bottom: 4px solid #006B3F;
     }
-    .card-subtitle { text-align: center; font-size: 16px; font-weight: 700; margin: 10px 0 6px 0; color: #006B3F; }
+    
+    .card-subtitle {
+        text-align: center;
+        font-size: 17px;
+        font-weight: 700;
+        margin: 12px 0 8px 0;
+        color: #006B3F;
+    }
+    
     .card-text {
-        text-align: justify; font-size: 14.5px; line-height: 1.55; color: #333; padding: 12px 14px;
-        border-radius: 0 0 12px 12px; min-height: 175px; background: linear-gradient(180deg, #e8f8ee, #c8ecd4);
-        border: 1px solid #a8d5b5; border-top: none; box-sizing: border-box;
+        text-align: justify;
+        font-size: 15px;
+        line-height: 1.6;
+        color: #333;
+        padding: 14px 16px;
+        border-radius: 0 0 14px 14px;
+        min-height: 180px;
+        background: linear-gradient(180deg, #e8f8ee, #c8ecd4);
+        border: 1px solid #a8d5b5;
+        border-top: none;
+        box-sizing: border-box;
     }
+    
     .auth-box {
-        background: #f7fbf8; border: 1px solid #c8e6d0; border-radius: 8px; padding: 12px 16px;
-        margin: 12px 0 18px 0; font-size: 14px; color: #333; line-height: 1.6;
+        background: #f7fbf8;
+        border: 1px solid #c8e6d0;
+        border-radius: 10px;
+        padding: 14px 18px;
+        margin: 14px 0 20px 0;
+        font-size: 15px;
+        color: #333;
+        line-height: 1.7;
     }
+    
     .diario-box {
-        background: #eef6f0; border: 1px solid #b7d9c2; border-radius: 10px;
-        padding: 14px 16px; margin: 10px 0 16px 0;
+        background: #eef6f0;
+        border: 1px solid #b7d9c2;
+        border-radius: 12px;
+        padding: 16px 18px;
+        margin: 12px 0 18px 0;
     }
-</style>
-""", unsafe_allow_html=True)
-
-def obter_senha_banco():
-    senha = os.getenv("DB_PASSWORD")
-    if not senha:
-        try:
-            senha = st.secrets["DB_PASSWORD"]
-        except Exception:
-            senha = None
-    if not senha:
-        raise RuntimeError("DB_PASSWORD não foi configurada nas Secrets do Streamlit.")
-    return senha
-
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
 
 def conectar_banco():
     try:
         senha = os.getenv("DB_PASSWORD")
         if not senha:
-            senha = st.secrets["DB_PASSWORD"]
+            try:
+                senha = st.secrets["DB_PASSWORD"]
+            except Exception:
+                senha = None
+
+        if not senha:
+            raise RuntimeError("DB_PASSWORD não foi configurada nas Secrets do Streamlit.")
 
         return psycopg2.connect(
             host="aws-0-sa-east-1.pooler.supabase.com",
@@ -163,7 +265,7 @@ def conectar_banco():
             password=senha,
             port="6543",
             client_encoding="UTF8",
-            connect_timeout=10
+            connect_timeout=10,
         )
     except Exception as e:
         st.error(f"Erro ao conectar: {e}")
@@ -1328,34 +1430,30 @@ if usuario_simulacao and st.session_state.get("pagina") in {
     st.warning("Esta conta de simulação possui somente as rotinas de trabalho do nível Municipal.")
     st.rerun()
 
-def _phone_grid_buttons(items, key_prefix, height_class=""):
-    """Renderiza uma lista de botões em 3 colunas e retorna o item clicado."""
-    if not items:
-        return None
-    clicked = None
-    cols = st.columns(3, gap="small")
-    for i, item in enumerate(items):
-        with cols[i % 3]:
-            if st.button(str(item), key=f"{key_prefix}_{i}", use_container_width=True):
-                clicked = item
-    return clicked
-
-
-with st.container(key="phone_sidebar"):
-    st.markdown('<div class="phone-speaker"></div><div class="phone-screen">', unsafe_allow_html=True)
-    st.markdown('<div class="phone-brand">📱 ENDEMIASBR</div>', unsafe_allow_html=True)
-    st.markdown('<div class="phone-user">Navegação do sistema</div>', unsafe_allow_html=True)
+with st.sidebar:
     # ------------------------------------------------------
-    # CABEÇALHO DO USUÁRIO — compacto, sem espaço ocioso
+    # CABECALHO DO USUARIO
     # ------------------------------------------------------
-    nivel_exibicao = "Municipal" if usuario_simulacao else nivel
+    st.markdown("<div class='sidebar-brand'>EndemiasBR</div>", unsafe_allow_html=True)
+    nivel_exibicao = "Municipal • Simulação nacional" if usuario_simulacao else nivel
     st.markdown(
-        f"<div class='sidebar-user'><strong>👤 {usuario['nome']}</strong><span>{nivel_exibicao}</span></div>",
+        f"<div class='sidebar-user'><strong>{usuario['nome']}</strong><span>{nivel_exibicao}</span></div>",
         unsafe_allow_html=True,
     )
 
     # ------------------------------------------------------
-    # ESTADO ATUAL — um único botão grande, logo abaixo do cabeçalho
+    # INICIO
+    # ------------------------------------------------------
+    if st.button("INÍCIO", key="nav_inicio", use_container_width=True):
+        st.session_state.modulo = None
+        st.session_state.config_aberta = False
+        st.session_state.pagina = "Inicio"
+        st.rerun()
+
+    st.markdown("<div class='sidebar-section'>MÓDULOS</div>", unsafe_allow_html=True)
+
+    # ------------------------------------------------------
+    # ITENS ESPECIAIS ATIVOS — ficam logo abaixo de INÍCIO
     # ------------------------------------------------------
     especial_ativo = None
     if st.session_state.get("atividades_aberta", False):
@@ -1364,32 +1462,6 @@ with st.container(key="phone_sidebar"):
         especial_ativo = "contato"
     elif st.session_state.get("config_aberta", False):
         especial_ativo = "config"
-
-    if st.session_state.modulo == "Sisloc":
-        _estado_menu = "📍  SISLOC"
-    elif st.session_state.modulo == "PCDCh":
-        _estado_menu = "🦟  PCDCh"
-    elif st.session_state.modulo == "PCE":
-        _estado_menu = "⚗️  PCE"
-    elif st.session_state.modulo == "PCL":
-        _estado_menu = "🧪  PCL"
-    elif especial_ativo == "atividades":
-        _estado_menu = "📋  ATIVIDADES"
-    elif especial_ativo == "contato":
-        _estado_menu = "📇  CONTATO"
-    elif especial_ativo == "config":
-        _estado_menu = "⚙️  CONFIGURAÇÃO"
-    else:
-        _estado_menu = "🏠  INÍCIO"
-
-    if st.button(_estado_menu, key="nav_estado_atual", use_container_width=True):
-        st.session_state.modulo = None
-        st.session_state.modulo_inicio = False
-        st.session_state.config_aberta = False
-        st.session_state.atividades_aberta = False
-        st.session_state.contato_aberto = False
-        st.session_state.pagina = "Inicio"
-        st.rerun()
 
     if especial_ativo == "atividades":
         if st.button("📋 ATIVIDADES", key="nav_atividades_top", use_container_width=True):
@@ -1472,16 +1544,12 @@ with st.container(key="phone_sidebar"):
             "Imóveis",
             "Editar / Excluir Imóvel",
         ]
-        _sisloc_clicado = _phone_grid_buttons(
-            [f"{i+1}. {opcao}" for i, opcao in enumerate(sisloc_opcoes)],
-            "side_sisloc",
-        )
-        if _sisloc_clicado:
-            _idx = int(_sisloc_clicado.split(".", 1)[0]) - 1
-            st.session_state.menu_sisloc = sisloc_opcoes[_idx]
-            st.session_state.modulo_inicio = False
-            st.session_state.pagina = "Sisloc"
-            st.rerun()
+        for i, opcao in enumerate(sisloc_opcoes):
+            if st.button(f"{i+1}. {opcao}", key=f"side_sisloc_{i}", use_container_width=True):
+                st.session_state.menu_sisloc = opcao
+                st.session_state.modulo_inicio = False
+                st.session_state.pagina = "Sisloc"
+                st.rerun()
         st.markdown("</div>", unsafe_allow_html=True)
 
         if st.button("PCDCh", key="nav_pcdch_from_sisloc", use_container_width=True):
@@ -1786,43 +1854,43 @@ with st.container(key="phone_sidebar"):
             st.session_state.pce_group = None
             st.rerun()
 
+ # --------------------------------------------------
+    # BOTAO OFFLINE - NOVO
+    # --------------------------------------------------
+    if st.button("📱 OFFLINE", key="nav_offline", use_container_width=True):
+        st.session_state.modulo = None
+        st.session_state.pagina = "Offline"
+        salvar_navegacao_persistente()
+        st.rerun()
+
     # ------------------------------------------------------
-    # NENHUM MODULO ABERTO — menu principal em coluna única
-    # Todos os botões ficam com a mesma largura/altura do INÍCIO.
+    # NENHUM MODULO ABERTO
     # ------------------------------------------------------
     else:
-        if st.button("📍 SISLOC", key="nav_sisloc", use_container_width=True):
+        if st.button("SISLOC", key="nav_sisloc", use_container_width=True):
             st.session_state.modulo = "Sisloc"
             st.session_state.pagina = "Sisloc"
             st.session_state.modulo_inicio = True
             st.session_state.menu_sisloc = "Navegação Hierárquica"
             st.session_state.config_aberta = False
-            st.session_state.atividades_aberta = False
-            st.session_state.contato_aberto = False
             st.rerun()
-
-        if st.button("🦟 PCDCh", key="nav_pcdch", use_container_width=True):
+        if st.button("PCDCh", key="nav_pcdch", use_container_width=True):
             st.session_state.modulo = "PCDCh"
             st.session_state.pagina = "PCDCh"
             st.session_state.modulo_inicio = True
             st.session_state.pcdch_menu = None
             st.session_state.config_aberta = False
-            st.session_state.atividades_aberta = False
-            st.session_state.contato_aberto = False
             st.rerun()
-
-        if st.button("⚗️ PCE", key="nav_pce", use_container_width=True):
+        if st.button("PCE", key="nav_pce", use_container_width=True):
             st.session_state.modulo = "PCE"
             st.session_state.pagina = "PCE"
             st.session_state.modulo_inicio = True
             st.session_state.pce_menu = None
             st.session_state.pce_group = None
             st.session_state.config_aberta = False
-            st.session_state.atividades_aberta = False
-            st.session_state.contato_aberto = False
             st.rerun()
 
-        if st.button("🧪 PCL", key="nav_pcl", use_container_width=True):
+        if st.button("PCL", key="nav_pcl", use_container_width=True):
             st.session_state.modulo = "PCL"
             st.session_state.pagina = "PCL"
             st.session_state.modulo_inicio = True
@@ -1830,57 +1898,12 @@ with st.container(key="phone_sidebar"):
             st.session_state.pcl_menu = None
             st.session_state.pcl_sub = None
             st.session_state.config_aberta = False
-            st.session_state.atividades_aberta = False
-            st.session_state.contato_aberto = False
-            st.rerun()
-
-        if st.button("📱 OFFLINE", key="nav_offline", use_container_width=True):
-            st.session_state.modulo = None
-            st.session_state.modulo_inicio = False
-            st.session_state.config_aberta = False
-            st.session_state.atividades_aberta = False
-            st.session_state.contato_aberto = False
-            st.session_state.pagina = "Offline"
-            salvar_navegacao_persistente()
-            st.rerun()
-
-        if st.button("📋 ATIVIDADES", key="nav_grid_atividades", use_container_width=True):
-            st.session_state.modulo = None
-            st.session_state.config_aberta = False
-            st.session_state.contato_aberto = False
-            st.session_state.atividades_aberta = True
-            st.session_state.atividade_aba = "Gestão de Atividades"
-            st.session_state.pagina = "Atividades"
-            st.rerun()
-
-        if st.button("📇 CONTATO", key="nav_grid_contato", use_container_width=True):
-            st.session_state.modulo = None
-            st.session_state.config_aberta = False
-            st.session_state.atividades_aberta = False
-            st.session_state.contato_aberto = True
-            st.session_state.contato_aba = "Inicio"
-            st.session_state.pagina = "Contato"
-            st.rerun()
-
-        if st.button("⚙️ CONFIG", key="nav_grid_config", use_container_width=True):
-            st.session_state.modulo = None
-            st.session_state.atividades_aberta = False
-            st.session_state.contato_aberto = False
-            st.session_state.config_aberta = True
-            st.session_state.pagina = "Configuracao"
-            st.rerun()
-
-        if st.button("🚪 SAIR", key="nav_grid_sair", use_container_width=True):
-            encerrar_sessao_persistente(st.session_state.get("session_token"))
-            limpar_navegacao_persistente()
-            for k in list(st.session_state.keys()):
-                del st.session_state[k]
             st.rerun()
 
     # ------------------------------------------------------
     # ATIVIDADES
     # ------------------------------------------------------
-    if st.session_state.modulo is not None and especial_ativo != "atividades" and not st.session_state.get("atividades_aberta", False):
+    if especial_ativo != "atividades" and not st.session_state.get("atividades_aberta", False):
         if st.button("📋 ATIVIDADES", key="nav_atividades", use_container_width=True):
             st.session_state.modulo = None
             st.session_state.config_aberta = False
@@ -1889,7 +1912,7 @@ with st.container(key="phone_sidebar"):
             st.session_state.atividade_aba = "Gestão de Atividades"
             st.session_state.pagina = "Atividades"
             st.rerun()
-    elif st.session_state.modulo is not None and especial_ativo != "atividades":
+    elif especial_ativo != "atividades":
         if st.button("📋 ATIVIDADES", key="nav_atividades", use_container_width=True):
             st.session_state.atividades_aberta = False
             st.session_state.pagina = "Inicio"
@@ -1913,7 +1936,7 @@ with st.container(key="phone_sidebar"):
     # ------------------------------------------------------
     # CONTATO
     # ------------------------------------------------------
-    if st.session_state.modulo is not None and especial_ativo != "contato" and not st.session_state.get("contato_aberto", False):
+    if especial_ativo != "contato" and not st.session_state.get("contato_aberto", False):
         if st.button("📇 CONTATO", key="nav_contato", use_container_width=True):
             st.session_state.modulo = None
             st.session_state.config_aberta = False
@@ -1922,7 +1945,7 @@ with st.container(key="phone_sidebar"):
             st.session_state.contato_aba = "Inicio"
             st.session_state.pagina = "Contato"
             st.rerun()
-    elif st.session_state.modulo is not None and especial_ativo != "contato":
+    elif especial_ativo != "contato":
         if st.button("📇 CONTATO", key="nav_contato", use_container_width=True):
             st.session_state.contato_aberto = False
             st.session_state.pagina = "Inicio"
@@ -1951,10 +1974,10 @@ with st.container(key="phone_sidebar"):
     # ------------------------------------------------------
     # CONFIGURAÇÃO
     # ------------------------------------------------------
-    if st.session_state.modulo is not None and especial_ativo != "config":
+    if especial_ativo != "config":
         st.markdown("<div class='sidebar-section'>SISTEMA</div>", unsafe_allow_html=True)
 
-    if st.session_state.modulo is not None and especial_ativo != "config" and st.button("CONFIGURAÇÃO", key="nav_config", use_container_width=True):
+    if especial_ativo != "config" and st.button("CONFIGURAÇÃO", key="nav_config", use_container_width=True):
         if st.session_state.get("config_aberta", False):
             st.session_state.config_aberta = False
             st.session_state.pagina = "Inicio"
@@ -1966,7 +1989,7 @@ with st.container(key="phone_sidebar"):
             st.session_state.pagina = "Configuracao"
         st.rerun()
 
-    if st.session_state.modulo is not None and especial_ativo != "config" and st.session_state.get("config_aberta", False):
+    if especial_ativo != "config" and st.session_state.get("config_aberta", False):
         st.markdown("<div class='sidebar-submenu'>", unsafe_allow_html=True)
         if not usuario_simulacao:
             if st.button("GESTÃO", key="config_cad_aux", use_container_width=True):
@@ -1990,20 +2013,13 @@ with st.container(key="phone_sidebar"):
         for k in list(st.session_state.keys()):
             del st.session_state[k]
         st.rerun()
-    st.markdown('</div>', unsafe_allow_html=True)
 
 
 # Guarda a rota atual de forma não sensível para restaurá-la após F5.
 salvar_navegacao_persistente()
 
 if st.session_state.pagina == "Inicio":
-    # Prioriza a nova imagem da Índia com o celular do EndemiasBR.
-    imagem_inicio_nova = os.path.join(
-        os.path.dirname(os.path.abspath(__file__)),
-        "assets",
-        "endemiasbr_inicio_novo.png",
-    )
-    imagem_inicio = imagem_inicio_nova if os.path.exists(imagem_inicio_nova) else localizar_imagem_modulo("endemiasbr", "endemia")
+    imagem_inicio = localizar_imagem_modulo("endemiasbr", "endemia")
     if imagem_inicio:
         st.image(imagem_inicio, use_container_width=True)
         st.markdown("---")
@@ -2014,35 +2030,6 @@ if st.session_state.pagina == "Inicio":
         st.success("Escopo: **Nacional** (cadastro e visualização)")
     elif usuario.get("estado_nome"):
         st.success(f"Cadastro: **{usuario['estado_nome']}** · Visualização: **todos os estados**")
-
-elif st.session_state.pagina == "Offline":
-    imagem_offline = localizar_imagem_modulo("offline", "mobile", "celular")
-    if imagem_offline:
-        st.image(imagem_offline, use_container_width=True)
-
-    st.markdown(
-        """
-        <div class="module-header">
-            <h1>📱 Modo Offline</h1>
-            <p>Trabalhe sem internet e sincronize depois</p>
-        </div>
-        """,
-        unsafe_allow_html=True,
-    )
-    st.info("""
-    ### 🚀 Módulo Offline em Desenvolvimento
-
-    **Funcionalidades previstas:**
-    - 📝 Criar registros sem internet
-    - 💾 Armazenamento local no navegador
-    - 🔄 Sincronizar quando voltar online
-    - 📋 Ver histórico de registros offline
-
-    **Como usar:**
-    1. Acesse o módulo Offline antes de sair de casa (com internet).
-    2. Preencha os formulários no campo (sem internet).
-    3. Ao retornar, sincronize os registros.
-    """)
 
 elif st.session_state.pagina == "Atividades":
     imagem_atividades = localizar_imagem_modulo("atividades", "atividade")
@@ -2814,6 +2801,40 @@ elif st.session_state.pagina == "CadastrosAuxiliares":
 
     conn.close()
 
+elif st.session_state.pagina == "Offline":
+    # Imagem do modulo Offline
+    imagem_offline = localizar_imagem_modulo("offline", "mobile", "celular")
+    if imagem_offline:
+        st.image(imagem_offline, use_container_width=True)
+
+    st.markdown(
+        '<div class="module-header">'
+        '<h1>📱 Modo Offline</h1>'
+        '<p>Trabalhe sem internet e sincronize depois</p>'
+        '</div>',
+        unsafe_allow_html=True,
+    )
+
+    st.info("""
+    ### 🚀 Módulo Offline em Desenvolvimento
+
+    **Funcionalidades previstas:**
+    - 📝 Criar registros sem internet (Diario PCDCh, Pesquisas, etc.)
+    - 💾 Armazenamento local no navegador
+    - 🔄 Sincronizar quando voltar online
+    - 📋 Ver histórico de registros offline
+
+    **Como usar:**
+    1. Acesse o módulo offline antes de sair de casa (com internet)
+    2. Preencha os formulá¡´rios no campo (sem internet)
+    3. Ao retornar, clique em "Sincronizar Todos"
+    4. Os dados serão enviados ao banco de dados
+
+    ---
+
+    *Em breve: integração completa com offline_utils.py e offline.py*
+    """)
+
 elif st.session_state.pagina == "TrocarSenha":
     st.subheader("Trocar minha senha")
     atual = st.text_input("Senha atual", type="password")
@@ -3197,9 +3218,7 @@ elif st.session_state.pagina == "Sisloc":
             estado_id = None; df_nucleos = pd.DataFrame(); df_regionais = pd.DataFrame(); df_mun = pd.DataFrame(); nucleo_id = None
             if estado_sel != "Selecione...":
                 estado_id = int(df_estados_view[df_estados_view["nome"] == estado_sel].iloc[0]["id"])
-                info_est = carregar_estado_info(conn, estado_id)
-                if info_est:
-                    st.markdown(f'<div class="auth-box"><b>Estado:</b> {info_est["nome"]} ({info_est["sigla"]})</div>', unsafe_allow_html=True)
+               
                 try:
                     df_nucleos = pd.read_sql("SELECT id, nome FROM regionais_saude WHERE estado_id=%s AND (parent_id IS NULL OR parent_id=0) ORDER BY nome", conn, params=(estado_id,))
                 except Exception:
