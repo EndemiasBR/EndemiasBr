@@ -1,3 +1,7 @@
+# app.py - EndemiasBR - Sistema de Apoio à Vigilancia de Endemias
+# BLOCO 1/6: Configuracoes, conexao banco, sessao, CSS
+# VERSAO COMPLETA COM TODAS AS FUNCOES ORIGINAIS
+
 import streamlit as st
 import psycopg2
 import pandas as pd
@@ -10,6 +14,51 @@ import secrets
 import json
 from datetime import timedelta, datetime
 import extra_streamlit_components as stx
+
+# =========================================================
+# CONFIGURACAO DE BANCO DE DADOS
+# =========================================================
+
+MODO_LOCALHOST = True  # Mude para False quando for para producao (Supabase)
+
+
+def conectar_banco():
+    """Conecta ao banco de dados."""
+    try:
+        if MODO_LOCALHOST:
+            # Configuracao localhost
+            return psycopg2.connect(
+                host="localhost",
+                database="endemiasbr",
+                user="postgres",
+                password="Amor2806",
+                port="5432",
+                client_encoding="UTF8"
+            )
+        else:
+            # Configuracao producao (Supabase)
+            senha = os.getenv("DB_PASSWORD")
+            if not senha:
+                try:
+                    senha = st.secrets["DB_PASSWORD"]
+                except Exception:
+                    senha = None
+            if not senha:
+                raise RuntimeError("DB_PASSWORD nao foi configurada.")
+            
+            return psycopg2.connect(
+                host="aws-0-sa-east-1.pooler.supabase.com",
+                database="postgres",
+                user="postgres.gwperarqwoflsmowaxgs",
+                password=senha,
+                port="6543",
+                client_encoding="UTF8",
+                connect_timeout=10,
+            )
+    except Exception as e:
+        st.error(f"Erro ao conectar: {e}")
+        return None
+
 
 # =========================================================
 # CONTROLE CENTRAL DA SIMULACAO
@@ -41,7 +90,7 @@ CHAVES_NAVEGACAO_PERSISTENTE = (
 )
 
 # =========================================================
-# CSS - BOTONES MODERNOS E VISUAL OTIMIZADO
+# CSS - VISUAL ORIGINAL ENDÉ¢MIASBR COM MELHORIAS
 # =========================================================
 
 st.markdown(
@@ -253,32 +302,8 @@ st.markdown(
 )
 
 # =========================================================
-# CONEXAO COM BANCO DE DADOS - CONFIGURACAO ORIGINAL
+# FUNCOES DE HASH E SESSAO
 # =========================================================
-
-def obter_senha_banco():
-    """Obtem senha do banco via environment ou secrets."""
-    senha = os.getenv("DB_PASSWORD")
-    if not senha:
-        try:
-            senha = st.secrets["DB_PASSWORD"]
-        except Exception:
-            senha = None
-    if not senha:
-        raise RuntimeError("DB_PASSWORD nao foi configurada nas Secrets do Streamlit.")
-    return senha
-
-
-def conectar_banco():
-    try:
-        return psycopg2.connect(
-            host="localhost", database="endemiasbr", user="postgres",
-            password="Amor2806", port="5432", client_encoding="UTF8"
-        )
-    except Exception as e:
-        st.error(f"Erro ao conectar: {e}")
-        return None
-
 
 def hash_token_sessao(token):
     """Gera hash SHA256 do token de sessao."""
@@ -674,12 +699,6 @@ def garantir_tabela_responsavel_programas(conn):
     finally:
         if cur:
             cur.close()
-
-
-# =========================================================
-# FUNCOES DE IMAGENS E CARDS
-# =========================================================
-
 def localizar_imagem_modulo(*palavras):
     """Localiza imagens do modulo de forma recursiva e tolerante."""
     import unicodedata
@@ -883,6 +902,12 @@ def lista_especies_triatomineo(conn):
     if "Outra" not in lista:
         lista = lista + ["Outra"]
     return lista
+
+
+# =========================================================
+# GARANTIR TABELAS AUXILIARES
+# =========================================================
+
 def garantir_tabela_pits_pcdch(conn):
     """Garante tabela de PIT do PCDCh."""
     try:
@@ -1380,12 +1405,6 @@ def garantir_tabelas_pcl(conn):
         raise
     finally:
         cur.close()
-
-
-# =========================================================
-# NAVEGACAO PERSISTENTE
-# =========================================================
-
 def salvar_navegacao_persistente():
     """Salva somente a rota da tela; nao salva campos, dados pessoais ou credenciais."""
     try:
@@ -1473,8 +1492,28 @@ def limpar_navegacao_persistente():
 
 
 # =========================================================
-# INICIALIZACAO DA SESSAO
+# INICIALIZACAO DAS VARIAVEIS DE SESSAO
 # =========================================================
+
+# Inicializa variaveis de sessao se nao existirem
+if "usuario" not in st.session_state:
+    st.session_state.usuario = None
+if "session_token" not in st.session_state:
+    st.session_state.session_token = None
+if "forcar_troca_senha" not in st.session_state:
+    st.session_state.forcar_troca_senha = False
+if "pagina" not in st.session_state:
+    st.session_state.pagina = "Inicio"
+if "modulo" not in st.session_state:
+    st.session_state.modulo = None
+if "modulo_inicio" not in st.session_state:
+    st.session_state.modulo_inicio = False
+if "config_aberta" not in st.session_state:
+    st.session_state.config_aberta = False
+if "atividades_aberta" not in st.session_state:
+    st.session_state.atividades_aberta = False
+if "contato_aberto" not in st.session_state:
+    st.session_state.contato_aberto = False
 
 if st.session_state.usuario is None:
     usuario_restaurado, token_restaurado = restaurar_sessao_persistente()
@@ -1541,6 +1580,10 @@ if st.session_state.usuario is None and not st.session_state.forcar_troca_senha:
     st.markdown("---")
     st.caption("EndemiasBR - Sistema de Apoio à Vigilancia de Endemias")
     st.stop()
+
+# Usuario logado - definir variaveis
+usuario = st.session_state.usuario
+nivel = nivel_usuario(usuario)
 with st.sidebar:
     # Identificacao do usuario
     st.markdown('<div class="sidebar-brand">EndemiasBR</div>', unsafe_allow_html=True)
@@ -1658,14 +1701,6 @@ with st.sidebar:
         for k in list(st.session_state.keys()):
             del st.session_state[k]
         st.rerun()
-
-# =========================================================
-# FLUXO PRINCIPAL - PAGINAS E MODULOS
-# =========================================================
-
-# Guarda a rota atual de forma nao sensivel para restaura-la apos F5.
-salvar_navegacao_persistente()
-
 if st.session_state.pagina == "Inicio":
     imagem_inicio = localizar_imagem_modulo("endemiasbr", "endemia")
     if imagem_inicio:
