@@ -2843,38 +2843,80 @@ elif st.session_state.pagina == "CadastrosAuxiliares":
     conn.close()
 
 elif st.session_state.pagina == "Offline":
-    # Imagem do modulo Offline
     imagem_offline = localizar_imagem_modulo("offline", "mobile", "celular")
     if imagem_offline:
         st.image(imagem_offline, use_container_width=True)
 
     st.markdown(
         '<div class="module-header">'
-        '<h1>📱 Modo Offline</h1>'
-        '<p>Trabalhe sem internet e sincronize depois</p>'
+        '<h1>Modo Offline</h1>'
+        '<p>Importe os registros coletados no campo</p>'
         '</div>',
         unsafe_allow_html=True,
     )
 
-    st.info("""
-    ### 🚀 Módulo Offline em Desenvolvimento
+    st.info("No celular ou computador do campo, use o EndemiasCampo, clique em Sincronizar e envie aqui o arquivo JSON.")
 
-    **Funcionalidades previstas:**
-    - 📝 Criar registros sem internet (Diario PCDCh, Pesquisas, etc.)
-    - 💾 Armazenamento local no navegador
-    - 🔄 Sincronizar quando voltar online
-    - 📋 Ver histórico de registros offline
+    arquivo = st.file_uploader("Arquivo do campo (.json)", type=["json"], key="offline_json")
 
-    **Como usar:**
-    1. Acesse o módulo offline antes de sair de casa (com internet)
-    2. Preencha os formulá¡´rios no campo (sem internet)
-    3. Ao retornar, clique em "Sincronizar Todos"
-    4. Os dados serão enviados ao banco de dados
+    dados = None
+    if arquivo is not None:
+        try:
+            dados = json.load(arquivo)
+            if isinstance(dados, dict):
+                dados = [dados]
+            st.write(f"{len(dados)} registro(s) no arquivo:")
+            st.dataframe(pd.DataFrame(dados), use_container_width=True, hide_index=True)
+        except Exception as e:
+            st.error(f"Arquivo inválido: {e}")
+            dados = None
 
-    ---
+    if dados and st.button("Enviar para o banco", type="primary", use_container_width=True, key="offline_enviar"):
+        conn = conectar_banco()
+        if not conn:
+            st.error("Não conectou no banco. Confira DB_HOST, DB_USER e DB_PASSWORD nos Secrets.")
+        else:
+            try:
+                cur = conn.cursor()
+                cur.execute("""
+                    CREATE TABLE IF NOT EXISTS endemiascampo_diario (
+                        id BIGSERIAL PRIMARY KEY,
+                        origem_id BIGINT,
+                        data DATE,
+                        municipio TEXT,
+                        localidade TEXT,
+                        atividade TEXT,
+                        observacao TEXT,
+                        status TEXT DEFAULT 'importado',
+                        importado_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+                    )
+                """)
+                inseridos = 0
+                for r in dados:
+                    cur.execute("""
+                        INSERT INTO endemiascampo_diario
+                        (origem_id, data, municipio, localidade, atividade, observacao, status)
+                        VALUES (%s, %s, %s, %s, %s, %s, 'importado')
+                    """, (
+                        r.get("id"),
+                        r.get("data") or None,
+                        r.get("municipio") or None,
+                        r.get("localidade") or None,
+                        r.get("atividade") or None,
+                        r.get("obs") or None,
+                    ))
+                    inseridos += 1
+                conn.commit()
+                cur.close()
+                conn.close()
+                st.success(f"{inseridos} registro(s) gravado(s) no banco.")
+            except Exception as e:
+                try:
+                    conn.rollback()
+                except Exception:
+                    pass
+                st.error(f"Erro ao gravar: {e}")
 
-    *Em breve: integração completa com offline_utils.py e offline.py*
-    """)
 
 elif st.session_state.pagina == "TrocarSenha":
     st.subheader("Trocar minha senha")
