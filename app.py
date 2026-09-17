@@ -2850,12 +2850,52 @@ elif st.session_state.pagina == "Offline":
     st.markdown(
         '<div class="module-header">'
         '<h1>Modo Offline</h1>'
-        '<p>Importe os registros coletados no campo</p>'
+        '<p>Registros enviados pelo EndemiasCampo</p>'
         '</div>',
         unsafe_allow_html=True,
     )
 
-    st.info("No celular ou computador do campo, use o EndemiasCampo, clique em Sincronizar e envie aqui o arquivo JSON.")
+    st.caption("App de campo: https://endemiasbr.github.io/EndemiasBR-EndemiasCampo/")
+
+    conn_off = conectar_banco()
+    if conn_off:
+        try:
+            cur = conn_off.cursor()
+            cur.execute("""
+                CREATE TABLE IF NOT EXISTS endemiascampo_diario (
+                    id BIGSERIAL PRIMARY KEY,
+                    origem_id BIGINT,
+                    data DATE,
+                    municipio TEXT,
+                    localidade TEXT,
+                    atividade TEXT,
+                    observacao TEXT,
+                    status TEXT DEFAULT 'importado',
+                    importado_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+                )
+            """)
+            conn_off.commit()
+            cur.close()
+            df_off = pd.read_sql("""
+                SELECT id, data, municipio, localidade, atividade, observacao, status, importado_em
+                FROM endemiascampo_diario
+                ORDER BY COALESCE(importado_em, now()) DESC, id DESC
+                LIMIT 500
+            """, conn_off)
+            st.subheader("Envios do campo")
+            st.write(f"{len(df_off)} registro(s) no banco.")
+            if df_off.empty:
+                st.info("Ainda não há envios do celular.")
+            else:
+                st.dataframe(df_off, use_container_width=True, hide_index=True)
+        except Exception as e:
+            st.error(f"Erro ao listar envios do campo: {e}")
+        finally:
+            conn_off.close()
+
+    st.markdown("---")
+    st.subheader("Importar arquivo JSON (opcional)")
+    st.info("Use só se o celular não tiver enviado sozinho.")
 
     arquivo = st.file_uploader("Arquivo do campo (.json)", type=["json"], key="offline_json")
 
@@ -2910,6 +2950,7 @@ elif st.session_state.pagina == "Offline":
                 cur.close()
                 conn.close()
                 st.success(f"{inseridos} registro(s) gravado(s) no banco.")
+                st.rerun()
             except Exception as e:
                 try:
                     conn.rollback()
